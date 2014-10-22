@@ -5,6 +5,8 @@ date:   2014-10-21 09:05:42
 author: Andrew Lombardi
 ---
 
+![WebSocket book]({{site.url}}/images/websocket-book-comp.png)
+
 We've decided to take the plunge and do a quick redesign of the site.  The old one was getting a bit long in the tooth, and we couldn't
 see subjecting anybody to that design any longer.  As such, if you see any errors on the site, missing links, big foot, etc, please hit
 us up on social media and tell us.  We're using [Jekyll][jekyll] to power the site, and hosted over at [Github Pages][github-pages] to
