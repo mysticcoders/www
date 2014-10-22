@@ -1,15 +1,15 @@
-- title: Web Applications
-  icon: home
+- title: Business Value
+  icon: basket
   desc:
-    Coding for the web for nearly 20 years and you learn a bit about how it all works.
-- title: Mobile Apps
-  icon: mobile
+    Kicking butt and taking names with tech?  Yea, we do that.  We also strive to reach your business goals and bring a solution that fits with the needs you have today.
+- title: Agile Approach
+  icon: flash
   desc:
-    From Objective-C, Java, and Swift to hybrids like Titanium and PhoneGap.  We've got you covered.
-- title: Training
-  icon: chat
+    Our team is an extension of yours, just with more geek.  The solution is our focus, and working in an agile way gets us there.
+- title: Custom Solutions
+  icon: database
   desc:
-    Our team spends time giving back and teaching through training and conference talks
+    There isn't a language our technology we haven't heard of.  We'll bring that wealth of knowledge to bear on your project, and integrate the right technology.
 - title: Legendary Support
   icon: phone
   desc:
