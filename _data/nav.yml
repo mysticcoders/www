@@ -4,6 +4,7 @@
 - name: Services
   path: services.html
   section_id: services
+  title: Whatever bro
 - name: About
   path: about.html
   section_id: about
