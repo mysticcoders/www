@@ -19,7 +19,7 @@ section_id: blog
       By
       <span class='author'>{{ page.author }}</span>
       |
-      <a href='{{page.url}}#comments'>Comments 6</a>
+      <a href='{{page.url}}#disqus_thread'>Comments</a>
     </p>
   </div>
   <div class='content'>
@@ -27,7 +27,27 @@ section_id: blog
   </div>
 </div>
 
+{% if page.comments %}
 <a id='comments'></a>
+<div class='comments-wrapper'>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'gotmystic'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+{% endif %}
+
+{% comment %}
 <div class='comments-wrapper'>
   <h3 class='comments-count'>6 Comments</h3>
   <ul class='comments'>
@@ -111,3 +131,4 @@ section_id: blog
     </p>
   </form>
 </div>
+{% endcomment %}
