@@ -5,6 +5,7 @@ excerpt_separator: <!--more-->
 paginate: 3
 paginate_path: "blog/page:num"
 permalink: /blog/:title
+url: http://mysticcoders.com
 disqus:
   config:
     - label: disqus_shortname
