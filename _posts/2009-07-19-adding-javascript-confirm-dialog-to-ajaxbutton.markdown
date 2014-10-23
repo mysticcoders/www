@@ -55,18 +55,22 @@ comments:
   date_gmt: '2012-11-06 13:59:59 +0000'
   content: "very helpful\r\n\r\n--thank you so much"
 ---
-<p>If you have an AJAX button in your form, a nice way of adding javascript is to use an IAjaxCallDecorator<a id="more"></a><a id="more-3"></a></p>
+If you have an AJAX button in your form, a nice way of adding javascript is to use an IAjaxCallDecorator<a id="more"></a><a id="more-3"></a>
+
 <pre lang="java" colla="+">
-form.add(new AjaxButton("removeButton") {</p>
-<p>    @Override<br />
+form.add(new AjaxButton("removeButton") {
+
+    @Override<br />
     protected IAjaxCallDecorator getAjaxCallDecorator() {<br />
         return new AjaxPreprocessingCallDecorator(super.getAjaxCallDecorator()) {<br />
-        private static final long serialVersionUID = 1L;</p>
-<p>            @Override<br />
+        private static final long serialVersionUID = 1L;
+
+            @Override<br />
             public CharSequence preDecorateScript(CharSequence script) {<br />
                 return "if(!confirm('Are you sure you want to delete this?')) return false;" + script;<br />
             }<br />
         };<br />
     }<br />
 }<br />
-<&#47;pre></p>
+</pre>
+

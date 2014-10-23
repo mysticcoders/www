@@ -29,12 +29,21 @@ comments:
   date_gmt: '2009-04-24 18:27:09 +0000'
   content: '"He has been writing code since he was a 5-year old" ~ WOW'
 ---
-<p>Most of our developers got an email weeks ago from Sun about the <a href="http:&#47;&#47;javafx.com&#47;challenge&#47;?intcmp=2668" title="JavaFX Coding Challenge" target="_blank">JavaFX Coding Challenge<&#47;a>. We've got a great idea that we are working on implementing, and this contest just gives us some extra incentive to plow through and get it done in short order. The only caveat with the submission in this contest, is that it must run in 3 places:<&#47;p></p>
+Most of our developers got an email weeks ago from Sun about the <a href="http://javafx.com/challenge/?intcmp=2668" title="JavaFX Coding Challenge" target="_blank">JavaFX Coding Challenge</a>. We've got a great idea that we are working on implementing, and this contest just gives us some extra incentive to plow through and get it done in short order. The only caveat with the submission in this contest, is that it must run in 3 places:
+
+
 <ul>
-<li>Applet in a web browser<&#47;li>
-<li>Standalone<&#47;li>
-<li>JavaFX capable mobile<&#47;li><br />
-<&#47;ul></p>
-<p>This might hamper a bit, we're investigating any impact ... and we'll release our creation into the world in late May it seems!<&#47;p></p>
-<p>If you'd like to be part of a closed beta team to help us out, please <a href="http:&#47;&#47;www.mysticcoders.com&#47;contact&#47;" title="Mystic Contact Us" target="_top">contact us<&#47;a>!<&#47;p></p>
-<p><em>To our success!<&#47;em><&#47;p></p>
+<li>Applet in a web browser</li>
+<li>Standalone</li>
+<li>JavaFX capable mobile</li><br />
+</ul>
+
+This might hamper a bit, we're investigating any impact ... and we'll release our creation into the world in late May it seems!
+
+
+If you'd like to be part of a closed beta team to help us out, please <a href="http://www.mysticcoders.com/contact/" title="Mystic Contact Us" target="_top">contact us</a>!
+
+
+<em>To our success!</em>
+
+

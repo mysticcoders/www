@@ -22,7 +22,15 @@ tags:
 - Apple Mac
 comments: []
 ---
-<p>Alas, Firefox on OSX has been really good, and thanks to a <a href="http:&#47;&#47;revision3.com&#47;tekzilla&#47;" title="Tekzilla">TekZilla<&#47;a> podcast, it's even better. A major gripe I've had for quite a while, was Firefox's inability to tab to dropdowns. Apparently, the boys at <a href="http:&#47;&#47;www.mozilla.org" title="Mozilla">Mozilla<&#47;a> are pulling the keyboard preferences and applying them to form fields.<br &#47;><&#47;p></p>
-<p><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2009&#47;02&#47;picture-1.png" width="480" height="437" alt="Picture 1.png" &#47;><&#47;p></p>
-<p>As you can see in this screenshot, if you select "All Controls", you can now tab to those pesky dropdowns.<&#47;p></p>
-<p>Personally, I think <a href="http:&#47;&#47;www.mozilla.org" title="Mozilla">Mozilla<&#47;a> should get a bit smarter about this like Safari does, and if you're in a form ... I don't know ... use some common sense?<&#47;p></p>
+Alas, Firefox on OSX has been really good, and thanks to a <a href="http://revision3.com/tekzilla/" title="Tekzilla">TekZilla</a> podcast, it's even better. A major gripe I've had for quite a while, was Firefox's inability to tab to dropdowns. Apparently, the boys at <a href="http://www.mozilla.org" title="Mozilla">Mozilla</a> are pulling the keyboard preferences and applying them to form fields.<br />
+
+
+<img src="http://www.mysticcoders.com/wp-content/uploads/2009/02/picture-1.png" width="480" height="437" alt="Picture 1.png" />
+
+
+As you can see in this screenshot, if you select "All Controls", you can now tab to those pesky dropdowns.
+
+
+Personally, I think <a href="http://www.mozilla.org" title="Mozilla">Mozilla</a> should get a bit smarter about this like Safari does, and if you're in a form ... I don't know ... use some common sense?
+
+

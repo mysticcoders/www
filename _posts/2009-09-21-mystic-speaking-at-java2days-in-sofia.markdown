@@ -20,5 +20,7 @@ categories:
 tags: []
 comments: []
 ---
-<p>Andrew Lombardi, head geek around here will be speaking at <a href="http:&#47;&#47;java2days.com" target="_blank">Java2Days<&#47;a> in Sofia, Bulgaria on October 8th - 9th, 2009!  We'll be talking about delving into Apache Wicket for the first time, and cover an actual application and look at real source code.  In addition we'll be giving a more advanced talk covering custom components, models, ajax, and integration with 3rd party libraries (namely javascript).</p>
-<p>If you're in the area, or will be at the conference, make sure to stop by and say hello!</p>
+Andrew Lombardi, head geek around here will be speaking at <a href="http://java2days.com" target="_blank">Java2Days</a> in Sofia, Bulgaria on October 8th - 9th, 2009!  We'll be talking about delving into Apache Wicket for the first time, and cover an actual application and look at real source code.  In addition we'll be giving a more advanced talk covering custom components, models, ajax, and integration with 3rd party libraries (namely javascript).
+
+If you're in the area, or will be at the conference, make sure to stop by and say hello!
+

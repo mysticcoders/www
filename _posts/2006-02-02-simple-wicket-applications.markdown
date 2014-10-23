@@ -20,7 +20,10 @@ categories:
 tags: []
 comments: []
 ---
-<p>I will be preparing a full tutorial on building a simple but functional application using <a href="http:&#47;&#47;wicket.sf.net">Wicket<&#47;a>.  Here are two applications which were built in a very short amount of time, with the very simple framework.</p>
-<blockquote><p><a href="http:&#47;&#47;www.papernapkin.org&#47;pastebin">Pastebin<&#47;a> is homage to the several applications built before it, and was built in a few hours time at most.  It has the distinction of being the pastebin for irc.freenode.net's ##java, ##wicket, and ##swing!<&#47;blockquote></p>
-<blockquote><p><a href="http:&#47;&#47;www.mysticcoders.com&#47;lounge">Mystic Lounge<&#47;a> is a file delivery system!  Ok, its just a form giving you upload capability for larger files that you otherwise wouldn't be able to email.<&#47;blockquote><br />
-We have a lot more projects in the works over here at Mystic, these are just some simple apps that we coded up to learn the internals of <a href="http:&#47;&#47;wicket.sf.net">Wicket<&#47;a>.</p>
+I will be preparing a full tutorial on building a simple but functional application using <a href="http://wicket.sf.net">Wicket</a>.  Here are two applications which were built in a very short amount of time, with the very simple framework.
+
+<blockquote><a href="http://www.papernapkin.org/pastebin">Pastebin</a> is homage to the several applications built before it, and was built in a few hours time at most.  It has the distinction of being the pastebin for irc.freenode.net's ##java, ##wicket, and ##swing!</blockquote>
+
+<blockquote><a href="http://www.mysticcoders.com/lounge">Mystic Lounge</a> is a file delivery system!  Ok, its just a form giving you upload capability for larger files that you otherwise wouldn't be able to email.</blockquote><br />
+We have a lot more projects in the works over here at Mystic, these are just some simple apps that we coded up to learn the internals of <a href="http://wicket.sf.net">Wicket</a>.
+

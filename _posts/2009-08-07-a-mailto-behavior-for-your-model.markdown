@@ -11,8 +11,8 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: A great contribution from <a href="http:&#47;&#47;www.komuso.cz&#47;" target="_blank">Vit
-  Rozkovec<&#47;a> gives us a Wicket Behavior that renders a mailto link for an email
+excerpt: A great contribution from <a href="http://www.komuso.cz/" target="_blank">Vit
+  Rozkovec</a> gives us a Wicket Behavior that renders a mailto link for an email
   address based model.
 wordpress_id: 78
 wordpress_url: http://wicketbyexample.com/?p=78
@@ -23,9 +23,10 @@ categories:
 tags: []
 comments: []
 ---
-<p>A great contribution from <a href="http:&#47;&#47;www.komuso.cz&#47;" target="_blank">Vit Rozkovec<&#47;a> gives us a Wicket Behavior that renders a mailto link for an email address based model.<a id="more"></a><a id="more-78"></a></p>
+A great contribution from <a href="http://www.komuso.cz/" target="_blank">Vit Rozkovec</a> gives us a Wicket Behavior that renders a mailto link for an email address based model.<a id="more"></a><a id="more-78"></a>
+
 <pre lang="java" colla="+">
-&#47;*<br />
+/*<br />
  * Licensed to the Apache Software Foundation (ASF) under one or more<br />
  * contributor license agreements.  See the NOTICE file distributed with<br />
  * this work for additional information regarding copyright ownership.<br />
@@ -33,48 +34,55 @@ comments: []
  * (the "License"); you may not use this file except in compliance with<br />
  * the License.  You may obtain a copy of the License at<br />
  *<br />
- *      http:&#47;&#47;www.apache.org&#47;licenses&#47;LICENSE-2.0<br />
+ *      http://www.apache.org/licenses/LICENSE-2.0<br />
  *<br />
  * Unless required by applicable law or agreed to in writing, software<br />
  * distributed under the License is distributed on an "AS IS" BASIS,<br />
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br />
  * See the License for the specific language governing permissions and<br />
  * limitations under the License.<br />
- *&#47;<br />
-package cz.newforms.wicket.behavior;</p>
-<p>import org.apache.wicket.Component;<br />
-import org.apache.wicket.behavior.AbstractBehavior;</p>
-<p>&#47;**<br />
+ */<br />
+package cz.newforms.wicket.behavior;
+
+import org.apache.wicket.Component;<br />
+import org.apache.wicket.behavior.AbstractBehavior;
+
+/**<br />
  * Behavior that encapsulates model object into mailto: link.<br />
  *<br />
  * @author Vit Rozkovec<br />
- *&#47;<br />
+ */<br />
 public class EmailBehavior extends AbstractBehavior<br />
-{</p>
-<p>	&#47;**<br />
+{
+
+	/**<br />
 	 * Construct.<br />
-	 *&#47;<br />
+	 */<br />
 	public EmailBehavior()<br />
 	{<br />
-	}</p>
-<p>	&#47;**<br />
+	}
+
+	/**<br />
 	 * @see org.apache.wicket.behavior.AbstractBehavior#beforeRender(org.apache.wicket.Component)<br />
-	 *&#47;<br />
+	 */<br />
 	@Override<br />
 	public void beforeRender(Component component)<br />
 	{<br />
 		super.beforeRender(component);<br />
 		component.getResponse().write(<br />
 			"<a href='mailto:" + component.getDefaultModelObjectAsString() + "'>");<br />
-	}</p>
-<p>	&#47;**<br />
+	}
+
+	/**<br />
 	 * @see org.apache.wicket.behavior.AbstractBehavior#onRendered(org.apache.wicket.Component)<br />
-	 *&#47;<br />
+	 */<br />
 	@Override<br />
 	public void onRendered(Component component)<br />
 	{<br />
 		super.onRendered(component);<br />
-		component.getResponse().write("<&#47;a>");<br />
-	}</p>
-<p>}<br />
-<&#47;pre></p>
+		component.getResponse().write("</a>");<br />
+	}
+
+}<br />
+</pre>
+

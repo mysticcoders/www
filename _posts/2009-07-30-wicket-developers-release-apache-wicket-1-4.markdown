@@ -30,12 +30,15 @@ comments:
     you know that they just released Wicket 1.4 which offers some very nice improvements
     and structural changes that make it even more awesome of a [...]"
 ---
-<p>The <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Wicket<&#47;a> folks have released the latest incarnation of the framework in <a href="http:&#47;&#47;wicket.apache.org&#47;apache-wicket-14-takes-type-safety-to-the-next-level.html" target="_blank">Apache Wicket 1.4<&#47;a>.  Notable improvements are:</p>
+The <a href="http://wicket.apache.org" target="_blank">Wicket</a> folks have released the latest incarnation of the framework in <a href="http://wicket.apache.org/apache-wicket-14-takes-type-safety-to-the-next-level.html" target="_blank">Apache Wicket 1.4</a>.  Notable improvements are:
+
 <ul>
-<li>Generified IModel interface and implementations increasing type safety in your Wicket applications<&#47;li>
-<li>Component#getModel() and Component#setModel() have been renamed to getDefaultModel() and setDefaultModel() to better support generified models<&#47;li>
-<li>The Spring modules have been merged (wicket-spring-annot is now obsolete, all you need is wicket-spring)<&#47;li>
-<li>Many API's have been altered to better work with Java 5's idioms<&#47;li>
-<li>Wicket jars are now packaged with metadata that makes them OSGI bundles<&#47;li><br />
-<&#47;ul></p>
-<p>What are you waiting for?  <a href="http:&#47;&#47;www.apache.org&#47;dyn&#47;closer.cgi&#47;wicket&#47;1.4.0" target="_blank">Go get it!<&#47;a></p>
+<li>Generified IModel interface and implementations increasing type safety in your Wicket applications</li>
+<li>Component#getModel() and Component#setModel() have been renamed to getDefaultModel() and setDefaultModel() to better support generified models</li>
+<li>The Spring modules have been merged (wicket-spring-annot is now obsolete, all you need is wicket-spring)</li>
+<li>Many API's have been altered to better work with Java 5's idioms</li>
+<li>Wicket jars are now packaged with metadata that makes them OSGI bundles</li><br />
+</ul>
+
+What are you waiting for?  <a href="http://www.apache.org/dyn/closer.cgi/wicket/1.4.0" target="_blank">Go get it!</a>
+

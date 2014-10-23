@@ -25,7 +25,7 @@ comments:
   author_url: http://steve-on-sakai.blogspot.com
   date: '2010-01-30 18:03:05 +0000'
   date_gmt: '2010-01-31 01:03:05 +0000'
-  content: Nice one, although the links to &#47;examples&#47;xxx redirect to &#47;wicket-examples&#47;xxx
+  content: Nice one, although the links to /examples/xxx redirect to /wicket-examples/xxx
     so return a 404.
 - id: 3495
   author: kinabalu
@@ -34,7 +34,7 @@ comments:
   date: '2010-01-30 18:27:46 +0000'
   date_gmt: '2010-01-31 01:27:46 +0000'
   content: Thanks for the catch, I've modified how the war is showing up on the filesystem
-    so the context will think &#47;examples as well.
+    so the context will think /examples as well.
 - id: 3496
   author: Sam
   author_email: sumit.iway@gmail.com
@@ -56,9 +56,13 @@ comments:
   author_url: http://www.mysticcoders.com
   date: '2010-05-21 14:16:14 +0000'
   date_gmt: '2010-05-21 21:16:14 +0000'
-  content: Of course, it's in wicket's branch for 1.4.6 here - http:&#47;&#47;svn.apache.org&#47;repos&#47;asf&#47;wicket&#47;branches&#47;wicket-1.4.6&#47;wicket-examples&#47;
+  content: Of course, it's in wicket's branch for 1.4.6 here - http://svn.apache.org/repos/asf/wicket/branches/wicket-1.4.6/wicket-examples/
 ---
-<p>After a recent week long training Mystic gave a week ago, one item that came up was the examples as posted on the official Wicket website are a version behind.  Available here: http:&#47;&#47;www.wicketstuff.org&#47;wicket13&#47;.</p>
-<p>In response to throwing up the latest javadoc at a simple to remember URL on this website, the examples seem to be the next logical step to make available.  So point your browser here:</p>
-<p>http:&#47;&#47;wicketbyexample.com&#47;examples</p>
-<p>This is running the latest 1.4.6 release of Apache Wicket.  Enjoy.</p>
+After a recent week long training Mystic gave a week ago, one item that came up was the examples as posted on the official Wicket website are a version behind.  Available here: http://www.wicketstuff.org/wicket13/.
+
+In response to throwing up the latest javadoc at a simple to remember URL on this website, the examples seem to be the next logical step to make available.  So point your browser here:
+
+http://wicketbyexample.com/examples
+
+This is running the latest 1.4.6 release of Apache Wicket.  Enjoy.
+

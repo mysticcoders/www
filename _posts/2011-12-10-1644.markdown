@@ -20,12 +20,16 @@ categories: []
 tags: []
 comments: []
 ---
-<p>About Us<br />
-Contact Us</p>
-<p>DROP US A LINE&acirc;&euro;&brvbar;<br />
-Tell us about your latest project, your functional needs, we&acirc;&euro;&trade;d love to show you how we can make it all better. </p>
-<p>Mailing Address<br />
+About Us<br />
+Contact Us
+
+DROP US A LINE&acirc;&euro;&brvbar;<br />
+Tell us about your latest project, your functional needs, we&acirc;&euro;&trade;d love to show you how we can make it all better. 
+
+Mailing Address<br />
 2321 E 4th St #C-128<br />
-Santa Ana, CA 92705</p>
-<p>Office: 714-352-0298<br />
-Fax: 714-782-6024</p>
+Santa Ana, CA 92705
+
+Office: 714-352-0298<br />
+Fax: 714-782-6024
+

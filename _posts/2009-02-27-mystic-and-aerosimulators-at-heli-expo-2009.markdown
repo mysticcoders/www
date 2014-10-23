@@ -23,5 +23,9 @@ tags:
 - helicopter
 comments: []
 ---
-<p><a title="AeroSimulators" href="http:&#47;&#47;aerosimulators.com" target="_blank">AeroSimulators<&#47;a> had a booth in this years <a title="Heli-Expo 2009 - It Happens Here" href="http:&#47;&#47;www.heliexpo.com&#47;" target="_blank">Heli-Expo 2009<&#47;a> and was showing off the mobile simulator and other simulation products. <a title="mystic coders - to our success!" href="http:&#47;&#47;mysticcoders.com&#47;">Mystic<&#47;a> has been working closely with <a title="AeroSimulators" href="http:&#47;&#47;aerosimulators.com" target="_blank">AeroSimulators<&#47;a> for the past 9 months on some very cool stuff. While we were there, I took the liberty of a few photos of the booth and the giant helicopters in the <a title="Anaheim Convention Center" href="http:&#47;&#47;www.anaheimconventioncenter.com&#47;" target="_blank">Anaheim Convention Center<&#47;a>.<&#47;p></p>
-<p>[imagebrowser id=1]<&#47;p></p>
+<a title="AeroSimulators" href="http://aerosimulators.com" target="_blank">AeroSimulators</a> had a booth in this years <a title="Heli-Expo 2009 - It Happens Here" href="http://www.heliexpo.com/" target="_blank">Heli-Expo 2009</a> and was showing off the mobile simulator and other simulation products. <a title="mystic coders - to our success!" href="http://mysticcoders.com/">Mystic</a> has been working closely with <a title="AeroSimulators" href="http://aerosimulators.com" target="_blank">AeroSimulators</a> for the past 9 months on some very cool stuff. While we were there, I took the liberty of a few photos of the booth and the giant helicopters in the <a title="Anaheim Convention Center" href="http://www.anaheimconventioncenter.com/" target="_blank">Anaheim Convention Center</a>.
+
+
+[imagebrowser id=1]
+
+

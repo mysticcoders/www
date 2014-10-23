@@ -22,7 +22,11 @@ tags:
 - Mystic
 comments: []
 ---
-<p>So on March 20th, I'll be in Vegas, Caesar's Palace to speak to some peeps about <a title="Apache Wicket" href="http:&#47;&#47;wicket.apache.org">Wicket<&#47;a> for <a title="Architecting Applications using Apache Wicket - Andrew Lombardi" href="http:&#47;&#47;javasymposium.techtarget.com&#47;html&#47;frameworks.html#ALombardiWicket">The Server Side Java Symposium<&#47;a>. The official topic is "Architecting Applications using Apache Wicket". I've been busy researching other presentations, and preparing my own, so I can represent <a title="mystic coders - to our success!" href="http:&#47;&#47;mysticcoders.com&#47;">Mystic<&#47;a> well.</p>
-<p>Get your butt over to Vegas in March for the conference, it runs the 18th through the 20th.</p>
-<p>And remember: always bet on <a title="mystic coders - to our success!" href="http:&#47;&#47;mysticcoders.com&#47;">mystic<&#47;a>.</p>
-<div style="text-align: justify;"><a title="Architecting Applications using Apache Wicket - Andrew Lombardi" href="http:&#47;&#47;javasymposium.techtarget.com&#47;html&#47;frameworks.html#ALombardiWicket"><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2009&#47;02&#47;tssjs-imspeaking.gif" alt="TSSJS-imspeaking.gif" width="150" height="150" &#47;><&#47;a><&#47;div></p>
+So on March 20th, I'll be in Vegas, Caesar's Palace to speak to some peeps about <a title="Apache Wicket" href="http://wicket.apache.org">Wicket</a> for <a title="Architecting Applications using Apache Wicket - Andrew Lombardi" href="http://javasymposium.techtarget.com/html/frameworks.html#ALombardiWicket">The Server Side Java Symposium</a>. The official topic is "Architecting Applications using Apache Wicket". I've been busy researching other presentations, and preparing my own, so I can represent <a title="mystic coders - to our success!" href="http://mysticcoders.com/">Mystic</a> well.
+
+Get your butt over to Vegas in March for the conference, it runs the 18th through the 20th.
+
+And remember: always bet on <a title="mystic coders - to our success!" href="http://mysticcoders.com/">mystic</a>.
+
+<div style="text-align: justify;"><a title="Architecting Applications using Apache Wicket - Andrew Lombardi" href="http://javasymposium.techtarget.com/html/frameworks.html#ALombardiWicket"><img src="http://www.mysticcoders.com/wp-content/uploads/2009/02/tssjs-imspeaking.gif" alt="TSSJS-imspeaking.gif" width="150" height="150" /></a></div>
+

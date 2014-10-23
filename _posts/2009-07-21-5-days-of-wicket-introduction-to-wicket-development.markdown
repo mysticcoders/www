@@ -20,4 +20,5 @@ categories:
 tags: []
 comments: []
 ---
-<p>An introduction that was written earlier this year about setting up a project using Maven, Spring, Hibernate, and getting the entire setup done.  Check out <a href="http:&#47;&#47;www.mysticcoders.com&#47;blog&#47;2009&#47;03&#47;09&#47;5-days-of-wicket&#47;">the 5 days of Wicket<&#47;a> for your dose!</p>
+An introduction that was written earlier this year about setting up a project using Maven, Spring, Hibernate, and getting the entire setup done.  Check out <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">the 5 days of Wicket</a> for your dose!
+

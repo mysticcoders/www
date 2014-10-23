@@ -22,4 +22,5 @@ tags:
 - twitter
 comments: []
 ---
-<p>Just kicking the tires on <a href="http:&#47;&#47;alexking.org&#47;projects&#47;wordpress" target="_blank">twitter tools<&#47;a> which was recommended by <a href="http:&#47;&#47;twitter.com&#47;evanchooly" target="_blank">evanchooly<&#47;a> and <a href="http:&#47;&#47;twitter.com&#47;amitsamtani" target="_blank">amitsamtani<&#47;a>.&Acirc;&nbsp; If you see this in twitter, it worked I guess.&Acirc;&nbsp; Still trying to see the benefit of twitter, but willing to continue.&Acirc;&nbsp; I'll have to twitter to find out what locations I should be distributing my rss feeds to.</p>
+Just kicking the tires on <a href="http://alexking.org/projects/wordpress" target="_blank">twitter tools</a> which was recommended by <a href="http://twitter.com/evanchooly" target="_blank">evanchooly</a> and <a href="http://twitter.com/amitsamtani" target="_blank">amitsamtani</a>.&Acirc;&nbsp; If you see this in twitter, it worked I guess.&Acirc;&nbsp; Still trying to see the benefit of twitter, but willing to continue.&Acirc;&nbsp; I'll have to twitter to find out what locations I should be distributing my rss feeds to.
+

@@ -12,7 +12,7 @@ author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
 excerpt: |
-  We've been seeing more and more implementations of <a href="http:&#47;&#47;wicketbyexample.com&#47;api&#47;wicket&#47;1.4.5&#47;org&#47;apache&#47;wicket&#47;protocol&#47;http&#47;SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore<&#47;a> out in the wild for <a href="http:&#47;&#47;wicket.apache.org&#47;" target="_blank">Apache Wicket<&#47;a>.  The interface basically decides how Wicket will store the <a href="http:&#47;&#47;cwiki.apache.org&#47;WICKET&#47;page-maps.html" target="_blank">Pagemap<&#47;a> for your application.  The default that ships with Wicket uses <a href="http:&#47;&#47;wicketbyexample.com&#47;api&#47;wicket&#47;1.4.6&#47;org&#47;apache&#47;wicket&#47;protocol&#47;http&#47;pagestore&#47;DiskPageStore.html" target="_blank">DiskPageStore<&#47;a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http:&#47;&#47;letsgetdugg.com" target="_blank">Letsgetdugg<&#47;a> a few days ago: <a href="http:&#47;&#47;letsgetdugg.com&#47;2010&#47;02&#47;07&#47;clustering-wicket-for-fun-and-profit&#47;" target="_blank">Clustering Wicket for fun and profit!<&#47;a>, I decided to take a look at writing an implementation using <a href="http:&#47;&#47;hazelcast.com" target="_blank">Hazelcast<&#47;a> - an "open source clustering and highly scalable data distribution platform".
+  We've been seeing more and more implementations of <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore</a> out in the wild for <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.  The interface basically decides how Wicket will store the <a href="http://cwiki.apache.org/WICKET/page-maps.html" target="_blank">Pagemap</a> for your application.  The default that ships with Wicket uses <a href="http://wicketbyexample.com/api/wicket/1.4.6/org/apache/wicket/protocol/http/pagestore/DiskPageStore.html" target="_blank">DiskPageStore</a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http://letsgetdugg.com" target="_blank">Letsgetdugg</a> a few days ago: <a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Clustering Wicket for fun and profit!</a>, I decided to take a look at writing an implementation using <a href="http://hazelcast.com" target="_blank">Hazelcast</a> - an "open source clustering and highly scalable data distribution platform".
 wordpress_id: 1726
 wordpress_url: http://wicketbyexample.com/?p=215
 date: '2010-02-10 22:23:35 +0000'
@@ -78,9 +78,9 @@ comments:
     Martin
 
 
-    [1] http:&#47;&#47;code.google.com&#47;p&#47;memcached-session-manager&#47;
-    [2] http:&#47;&#47;code.google.com&#47;p&#47;memcached-session-manager&#47;wiki&#47;SerializationStrategies
-    [3] http:&#47;&#47;code.google.com&#47;p&#47;memcached-session-manager&#47;wiki&#47;Performance
+    [1] http://code.google.com/p/memcached-session-manager/
+    [2] http://code.google.com/p/memcached-session-manager/wiki/SerializationStrategies
+    [3] http://code.google.com/p/memcached-session-manager/wiki/Performance
 - id: 3513
   author: Ondra
   author_email: ondra@dynawest.cz
@@ -95,14 +95,14 @@ comments:
         * If both versionNumber and ajaxVersioNumber are -1, the pagestore must return last touched (saved) page version with given id. """
 
     Here is my untested implementation with Infinispan (JBoss Cache):
-    http:&#47;&#47;ondra.zizka.cz&#47;stranky&#47;programovani&#47;java&#47;web&#47;wicket&#47;wicket-pagestore-jbosscache-infinispan-integration.texy
+    http://ondra.zizka.cz/stranky/programovani/java/web/wicket/wicket-pagestore-jbosscache-infinispan-integration.texy
 - id: 3514
   author: Ondra
   author_email: ondra@dynawest.cz
   author_url: http://www.pohlidame.cz/
   date: '2010-05-06 20:21:44 +0000'
   date_gmt: '2010-05-07 03:21:44 +0000'
-  content: "[1] http:&#47;&#47;wicketbyexample.com&#47;api&#47;wicket&#47;1.4.5&#47;org&#47;apache&#47;wicket&#47;protocol&#47;http&#47;SecondLevelCacheSessionStore.IPageStore.html#storePage%28java.lang.String,%20org.apache.wicket.Page%29"
+  content: "[1] http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/SecondLevelCacheSessionStore.IPageStore.html#storePage%28java.lang.String,%20org.apache.wicket.Page%29"
 - id: 3515
   author: Dmitry
   author_email: nskmda@mailinator.com
@@ -146,72 +146,91 @@ comments:
     New to Wicket so a basic question. Is there a first level ie; L1 cache maintained by Wicket?
     If you are storing only one page per entry in SecondLevelCache, aren't you losing some of session data and hence resulting in not so good user experience? Or, is there a first level cache that will still save the whole page map?
 ---
-<p>We've been seeing more and more implementations of <a href="http:&#47;&#47;wicketbyexample.com&#47;api&#47;wicket&#47;1.4.5&#47;org&#47;apache&#47;wicket&#47;protocol&#47;http&#47;SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore<&#47;a> out in the wild for <a href="http:&#47;&#47;wicket.apache.org&#47;" target="_blank">Apache Wicket<&#47;a>.  The interface basically decides how Wicket will store the <a href="http:&#47;&#47;cwiki.apache.org&#47;WICKET&#47;page-maps.html" target="_blank">Pagemap<&#47;a> for your application.  The default that ships with Wicket uses <a href="http:&#47;&#47;wicketbyexample.com&#47;api&#47;wicket&#47;1.4.6&#47;org&#47;apache&#47;wicket&#47;protocol&#47;http&#47;pagestore&#47;DiskPageStore.html" target="_blank">DiskPageStore<&#47;a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http:&#47;&#47;letsgetdugg.com" target="_blank">Letsgetdugg<&#47;a> a few days ago: <a href="http:&#47;&#47;letsgetdugg.com&#47;2010&#47;02&#47;07&#47;clustering-wicket-for-fun-and-profit&#47;" target="_blank">Clustering Wicket for fun and profit!<&#47;a>, I decided to take a look at writing an implementation using <a href="http:&#47;&#47;hazelcast.com" target="_blank">Hazelcast<&#47;a> - an "open source clustering and highly scalable data distribution platform".<br />
+We've been seeing more and more implementations of <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore</a> out in the wild for <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.  The interface basically decides how Wicket will store the <a href="http://cwiki.apache.org/WICKET/page-maps.html" target="_blank">Pagemap</a> for your application.  The default that ships with Wicket uses <a href="http://wicketbyexample.com/api/wicket/1.4.6/org/apache/wicket/protocol/http/pagestore/DiskPageStore.html" target="_blank">DiskPageStore</a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http://letsgetdugg.com" target="_blank">Letsgetdugg</a> a few days ago: <a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Clustering Wicket for fun and profit!</a>, I decided to take a look at writing an implementation using <a href="http://hazelcast.com" target="_blank">Hazelcast</a> - an "open source clustering and highly scalable data distribution platform".<br />
 <a id="more"></a><a id="more-1726"></a><br />
-The implementation below borrows heavily from <a href="http:&#47;&#47;fabulously40.com&#47;fabulously&#47;victori" target="_blank">Victor<&#47;a>.  It basically creates a HazelcastInstance in the constructor and then overrides all the methods necessary from <a href="http:&#47;&#47;wicketbyexample.com&#47;api&#47;wicket&#47;1.4.5&#47;org&#47;apache&#47;wicket&#47;protocol&#47;http&#47;pagestore&#47;AbstractPageStore.html" target="_blank">AbstractPageStore<&#47;a>.  Here's some quick code to put in your app's Application implementation that will use this new IPageStore:</p>
+The implementation below borrows heavily from <a href="http://fabulously40.com/fabulously/victori" target="_blank">Victor</a>.  It basically creates a HazelcastInstance in the constructor and then overrides all the methods necessary from <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/pagestore/AbstractPageStore.html" target="_blank">AbstractPageStore</a>.  Here's some quick code to put in your app's Application implementation that will use this new IPageStore:
+
 <pre lang="java" colla="+">
     @Override<br />
     protected ISessionStore newSessionStore() {<br />
         return new SecondLevelCacheSessionStore(this,<br />
                 new HazelcastPageStore("default"));<br />
     }<br />
-<&#47;pre></p>
-<p>And here's the code for HazelcastPageStore:</p>
+</pre>
+
+And here's the code for HazelcastPageStore:
+
 <pre lang="java" colla="+">
 public class HazelcastPageStore extends AbstractPageStore<br />
-                                      implements SecondLevelCacheSessionStore.IClusteredPageStore {</p>
-<p>    private Logger logger = LoggerFactory.getLogger(HazelcastPageStore.class);</p>
-<p>    private String mapName;<br />
-    private HazelcastInstance client;</p>
-<p>    public HazelcastPageStore(String mapName) { this(mapName, null); }</p>
-<p>    public HazelcastPageStore(String mapName, Config config) {<br />
+                                      implements SecondLevelCacheSessionStore.IClusteredPageStore {
+
+    private Logger logger = LoggerFactory.getLogger(HazelcastPageStore.class);
+
+    private String mapName;<br />
+    private HazelcastInstance client;
+
+    public HazelcastPageStore(String mapName) { this(mapName, null); }
+
+    public HazelcastPageStore(String mapName, Config config) {<br />
         this.mapName = mapName;<br />
         client = Hazelcast.newHazelcastInstance(config);<br />
-    }</p>
-<p>    public String getKey(final String sessId, final String pageMapName, final int pageId, final int pageVersion) {<br />
+    }
+
+    public String getKey(final String sessId, final String pageMapName, final int pageId, final int pageVersion) {<br />
         return getKey(sessId, pageMapName, pageId, pageVersion, -1);<br />
-    }</p>
-<p>    public String getKey(final String sessId, final String pageMapName, final int pageId, final int pageVersion, final int ajaxVersion) {<br />
+    }
+
+    public String getKey(final String sessId, final String pageMapName, final int pageId, final int pageVersion, final int ajaxVersion) {<br />
         String key = sessId + ":" + pageMapName + ":" + pageId + ":" + pageVersion + ":" + ajaxVersion;<br />
         if (logger.isDebugEnabled()) {<br />
             logger.debug("GetKey: " + key);<br />
         }<br />
         return key;<br />
-    }</p>
-<p>    public String storeKey(final String sessionId, final Page page) {<br />
+    }
+
+    public String storeKey(final String sessionId, final Page page) {<br />
         String key = sessionId + ":" + page.getPageMapName() + ":" + page.getId() + ":" + page.getCurrentVersionNumber() + ":" + (page.getAjaxVersionNumber() - 1);<br />
         if (logger.isDebugEnabled()) {<br />
             logger.debug("StoreKey: " + key);<br />
         }<br />
         return key;<br />
-    }</p>
-<p>    public boolean containsPage(final String sessionId, final String pageMapName, final int pageId, final int pageVersion) {<br />
+    }
+
+    public boolean containsPage(final String sessionId, final String pageMapName, final int pageId, final int pageVersion) {<br />
         return client.getMap(mapName).containsKey(getKey(sessionId, pageMapName, pageId, pageVersion));<br />
-    }</p>
-<p>    public void destroy() {<br />
+    }
+
+    public void destroy() {<br />
         client.shutdown();<br />
-    }</p>
-<p>    public <t> Page getPage(final String sessionId, final String pagemap, final int id, final int versionNumber, final int ajaxVersionNumber) {<br />
-        IMap<string, Page> map = client.getMap(mapName);</p>
-<p>        return map.get(getKey(sessionId, pagemap, id, versionNumber, ajaxVersionNumber));<br />
-    }</p>
-<p>    public void pageAccessed(final String sessionId, final Page page) {<br />
-    }</p>
-<p>    public void removePage(final String sessionId, final String pagemap, final int id) {<br />
+    }
+
+    public <t> Page getPage(final String sessionId, final String pagemap, final int id, final int versionNumber, final int ajaxVersionNumber) {<br />
+        IMap<string, Page> map = client.getMap(mapName);
+
+        return map.get(getKey(sessionId, pagemap, id, versionNumber, ajaxVersionNumber));<br />
+    }
+
+    public void pageAccessed(final String sessionId, final Page page) {<br />
+    }
+
+    public void removePage(final String sessionId, final String pagemap, final int id) {<br />
         String key = getKey(sessionId, pagemap, id, 0);<br />
-        key = key.substring(0, key.lastIndexOf(":"));</p>
-<p>        IMap<string, Page> map = Hazelcast.getMap(mapName);<br />
+        key = key.substring(0, key.lastIndexOf(":"));
+
+        IMap<string, Page> map = Hazelcast.getMap(mapName);<br />
         for (String k : map.keySet()) {<br />
             if (k.startsWith(key)) {<br />
                 map.remove(k);<br />
             }<br />
         }<br />
-    }</p>
-<p>    public void storePage(final String sessionId, final Page page) {<br />
+    }
+
+    public void storePage(final String sessionId, final Page page) {<br />
         IMap<string, Page> map = client.getMap(mapName);<br />
         map.put(storeKey(sessionId, page), page);<br />
-    }</p>
-<p>    public void unbind(final String sessionId) {<br />
+    }
+
+    public void unbind(final String sessionId) {<br />
         IMap<string, Page> map = client.getMap(mapName);<br />
         for (String key : map.keySet()) {<br />
             if (key.startsWith(sessionId)) {<br />
@@ -220,10 +239,14 @@ public class HazelcastPageStore extends AbstractPageStore<br />
         }<br />
     }<br />
 }<br />
-<&#47;pre></p>
-<p>Several other IPageStore implementations available:</p>
+</pre>
+
+Several other IPageStore implementations available:
+
 <ul>
-<li><a href="http:&#47;&#47;letsgetdugg.com&#47;2010&#47;02&#47;07&#47;clustering-wicket-for-fun-and-profit&#47;" target="_blank">Letsgetdugg - memcached implementation<&#47;a><&#47;li>
-<li><a href="http:&#47;&#47;www.mail-archive.com&#47;users@wicket.apache.org&#47;msg46421.html" target="_blank">Google App Engine memcached implementation<&#47;a><&#47;li><br />
-<&#47;ul></p>
-<p>Let us know if you find any others out in the wild so we can add them here.</p>
+<li><a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Letsgetdugg - memcached implementation</a></li>
+<li><a href="http://www.mail-archive.com/users@wicket.apache.org/msg46421.html" target="_blank">Google App Engine memcached implementation</a></li><br />
+</ul>
+
+Let us know if you find any others out in the wild so we can add them here.
+

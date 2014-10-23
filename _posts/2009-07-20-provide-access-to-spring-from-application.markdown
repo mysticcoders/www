@@ -11,8 +11,8 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: When developing with <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Apache
-  Wicket<&#47;a>, there are times when you won't be able to use wicket-spring to access
+excerpt: When developing with <a href="http://wicket.apache.org" target="_blank">Apache
+  Wicket</a>, there are times when you won't be able to use wicket-spring to access
   your bean implementations.  Here is a simple example that you can add to your Wicket
   Application class to make accessing the context easier
 wordpress_id: 1712
@@ -24,17 +24,22 @@ categories:
 tags: []
 comments: []
 ---
-<p>When developing with <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Apache Wicket<&#47;a>, there are times when you won't be able to use wicket-spring to access your bean implementations.  Here is a simple example that you can add to your Wicket Application class to make accessing the context easier<a id="more"></a><a id="more-1712"></a></p>
+When developing with <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>, there are times when you won't be able to use wicket-spring to access your bean implementations.  Here is a simple example that you can add to your Wicket Application class to make accessing the context easier<a id="more"></a><a id="more-1712"></a>
+
 <pre lang="java" colla="+">
-<p>    protected void init() {<br />
+    protected void init() {<br />
         ...<br />
         ServletContext servletContext = super.getServletContext();<br />
         applicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);<br />
         ...<br />
-    }</p>
-<p>    private ApplicationContext applicationContext;</p>
-<p>    public Object getBean(String name) {<br />
-        if (name == null) return null;</p>
-<p>        return applicationContext.getBean(name);<br />
+    }
+
+    private ApplicationContext applicationContext;
+
+    public Object getBean(String name) {<br />
+        if (name == null) return null;
+
+        return applicationContext.getBean(name);<br />
     }<br />
-<&#47;pre></p>
+</pre>
+

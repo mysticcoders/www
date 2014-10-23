@@ -49,15 +49,17 @@ comments:
   content: |-
     Using bookmarkable pages as much as possible is one part of the answer.  But we have other things that can help.  I made some comments on this a while ago here:
 
-    http:&#47;&#47;www.theserverside.com&#47;news&#47;thread.tss?thread_id=35899#182653
+    http://www.theserverside.com/news/thread.tss?thread_id=35899#182653
 
     Some of this is a little out of date.  We now have IPageMapEntry and PageState is gone.  But in general, my comments are on target.  There are also several comments on my blog on this topic, including a sun RFE that we'd like people to vote for to support session scalability via "static anonymous classes".
 
-    http:&#47;&#47;jroller.com&#47;page&#47;JonathanLocke?entry=wicket_refactorings
-    http:&#47;&#47;jroller.com&#47;page&#47;JonathanLocke?entry=vote_for_pedro_or_at
-    http:&#47;&#47;jroller.com&#47;page&#47;JonathanLocke?entry=further_reducing_wicket_state_2
+    http://jroller.com/page/JonathanLocke?entry=wicket_refactorings
+    http://jroller.com/page/JonathanLocke?entry=vote_for_pedro_or_at
+    http://jroller.com/page/JonathanLocke?entry=further_reducing_wicket_state_2
 
     When you're done reading these comments, you might want to ask any lingering questions on the wicket-user mailing list.
 ---
-<p>After using several of the web frameworks that are prevalant in the java world, I do believe I've finally found a virtual nirvana.&Acirc;&nbsp; Here at Mystic, we're doing lots of development with <a title="Wicket" href="http:&#47;&#47;wicket.sf.net">Wicket<&#47;a>,&Acirc;&nbsp;  a java web application framework that <em>"takes simplicity, separation of 				concerns and ease of development to a whole new level."<&#47;em></p>
-<p>So what does that mean to you and I?&Acirc;&nbsp; Web application development without the need for the seemingly unnecessary XML config files that are like plagues in my WEB-INF directories.&Acirc;&nbsp; So if you haven't, download it today .. while the website may not be as fancy as Ruby on Rails, there are some very smart people behind the development of this framework.&Acirc;&nbsp; Another plus, is that there isn't any crazy evangelism happening, similar to what you'd get from DHH or HLS, or .. you ever notice how the most vocal use their 3-letter acronym for name?</p>
+After using several of the web frameworks that are prevalant in the java world, I do believe I've finally found a virtual nirvana.&Acirc;&nbsp; Here at Mystic, we're doing lots of development with <a title="Wicket" href="http://wicket.sf.net">Wicket</a>,&Acirc;&nbsp;  a java web application framework that <em>"takes simplicity, separation of 				concerns and ease of development to a whole new level."</em>
+
+So what does that mean to you and I?&Acirc;&nbsp; Web application development without the need for the seemingly unnecessary XML config files that are like plagues in my WEB-INF directories.&Acirc;&nbsp; So if you haven't, download it today .. while the website may not be as fancy as Ruby on Rails, there are some very smart people behind the development of this framework.&Acirc;&nbsp; Another plus, is that there isn't any crazy evangelism happening, similar to what you'd get from DHH or HLS, or .. you ever notice how the most vocal use their 3-letter acronym for name?
+

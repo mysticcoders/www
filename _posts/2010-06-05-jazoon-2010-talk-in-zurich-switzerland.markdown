@@ -27,8 +27,13 @@ comments:
   date_gmt: '2010-06-06 08:24:06 +0000'
   content: The bottom link is broken.
 ---
-<p>What can I say?  Switzerland treated me awesome for my first visit, and I look forward to returning soon.  The folks running <a href="http:&#47;&#47;jazoon.com" target="_blank">Jazoon<&#47;a> did a bang up job organizing.  First time I ever presented a session inside of a movie theatre!</p>
-<p>In Dublin now, getting ready for epicenter 2010 and enjoying my stay.  If you're coming to this next conference, and want to learn more about how <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Apache Wicket<&#47;a> can transform your next experience with a web framework, attend my talks on Thursday.</p>
-<p>As promised to several folks here is the presentation given at Jazoon:</p>
-<p><a href="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2010&#47;06&#47;Rapid-Application-Development-with-Apache-Wicket-Jazoon-2010.pdf"><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-includes&#47;images&#47;crystal&#47;document.png" border="0" &#47;><&#47;a>&nbsp;-&nbsp; <a href="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2010&#47;06&#47;Rapid-Application-Development-with-Apache-Wicket-Jazoon-2010.pdf">Rapid Application Development with Apache Wicket<&#47;a></p>
-<p>Enjoy!</p>
+What can I say?  Switzerland treated me awesome for my first visit, and I look forward to returning soon.  The folks running <a href="http://jazoon.com" target="_blank">Jazoon</a> did a bang up job organizing.  First time I ever presented a session inside of a movie theatre!
+
+In Dublin now, getting ready for epicenter 2010 and enjoying my stay.  If you're coming to this next conference, and want to learn more about how <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> can transform your next experience with a web framework, attend my talks on Thursday.
+
+As promised to several folks here is the presentation given at Jazoon:
+
+<a href="http://www.mysticcoders.com/wp-content/uploads/2010/06/Rapid-Application-Development-with-Apache-Wicket-Jazoon-2010.pdf"><img src="http://www.mysticcoders.com/wp-includes/images/crystal/document.png" border="0" /></a>&nbsp;-&nbsp; <a href="http://www.mysticcoders.com/wp-content/uploads/2010/06/Rapid-Application-Development-with-Apache-Wicket-Jazoon-2010.pdf">Rapid Application Development with Apache Wicket</a>
+
+Enjoy!
+

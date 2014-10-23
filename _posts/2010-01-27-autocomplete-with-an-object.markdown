@@ -36,7 +36,7 @@ comments:
     Hi Ash,
 
     It looks like its in as a feature request here:
-    http:&#47;&#47;wicketstuff.org&#47;jira&#47;browse&#47;WSO-1
+    http://wicketstuff.org/jira/browse/WSO-1
 
     cheers,
     Steve
@@ -76,7 +76,7 @@ comments:
   content: |-
     ObjectAutoCompleteField component inside a ListView
 
-    http:&#47;&#47;apache-wicket.1842946.n4.nabble.com&#47;Wicket-Stuff-ObjectAutoCompleteField-component-inside-a-ListView-td2197427.html#a2197427
+    http://apache-wicket.1842946.n4.nabble.com/Wicket-Stuff-ObjectAutoCompleteField-component-inside-a-ListView-td2197427.html#a2197427
 - id: 3486
   author: 'Confluence: Development'
   author_email: ''
@@ -84,9 +84,9 @@ comments:
   date: '2011-03-02 10:52:31 +0000'
   date_gmt: '2011-03-02 17:52:31 +0000'
   content: |-
-    <strong>Wicket...<&#47;strong>
+    <strong>Wicket...</strong>
 
-    Description Wicket is a Java web framework. It goes against some common features in other frameworks. Wicket has no XML configuration. Wicket has no code in its HTML. Each page&#47;component is a combination of a Java class and an HTML page or fragment.......
+    Description Wicket is a Java web framework. It goes against some common features in other frameworks. Wicket has no XML configuration. Wicket has no code in its HTML. Each page/component is a combination of a Java class and an HTML page or fragment.......
 - id: 3487
   author: Majid Mehmood
   author_email: mmehmood@init.de
@@ -123,40 +123,55 @@ comments:
     I know it's the solution to my problems.  I'm a little surprised that there isn't
     more documentation out there on this.  It seems like a relatively common thing.
 ---
-<p>The Wicket Extensions package provides a neat component called the AutoCompleteTextField.</p>
-<p>In a nutshell, this allows you to provide a TextField with a List of Strings and when you start typing, the ones that match the input show up. This is a great component, but consider this scenario:</p>
-<p><em>You have a list of contacts, one of which you want to send an email to. Each person has a unique id and a name. You want to search based on their name, but send the message to their id.<&#47;em></p>
+The Wicket Extensions package provides a neat component called the AutoCompleteTextField.
+
+In a nutshell, this allows you to provide a TextField with a List of Strings and when you start typing, the ones that match the input show up. This is a great component, but consider this scenario:
+
+<em>You have a list of contacts, one of which you want to send an email to. Each person has a unique id and a name. You want to search based on their name, but send the message to their id.</em>
+
 <pre>
 class Person {<br />
   long uuid;<br />
   String displayName;<br />
   String email;<br />
   ...<br />
-}<&#47;pre></p>
-<p>This is not possible with the AutoCompleteTextField, as it uses a list of Strings and will submit whatever is entered in the text field.<br />
-What you need is to be able to separate the key from the value.</p>
-<p>Enter the ObjectAutoCompleteTextField. This is a class from <a href="http:&#47;&#47;wicketstuff.org&#47;confluence&#47;display&#47;STUFFWEB&#47;Home">WicketStuff<&#47;a> and allows you to provide a List of Objects and tell the AutoCompleteTextField what value should be the displayed value, and what values should be submitted.</p>
-<p>Firstly, the markup is the same as a normal text field:<br />
-<code><input type="text" wicket:id="toField" &#47;><&#47;code></p>
-<p>Now lets build the parts we need:</p>
-<p><strong>1.<&#47;strong> The list of objects:</p>
+}</pre>
+
+This is not possible with the AutoCompleteTextField, as it uses a list of Strings and will submit whatever is entered in the text field.<br />
+What you need is to be able to separate the key from the value.
+
+Enter the ObjectAutoCompleteTextField. This is a class from <a href="http://wicketstuff.org/confluence/display/STUFFWEB/Home">WicketStuff</a> and allows you to provide a List of Objects and tell the AutoCompleteTextField what value should be the displayed value, and what values should be submitted.
+
+Firstly, the markup is the same as a normal text field:<br />
+<code><input type="text" wicket:id="toField" /></code>
+
+Now lets build the parts we need:
+
+<strong>1.</strong> The list of objects:
+
 <pre>
 final List contacts = dao.getContacts();<br />
-<&#47;pre></p>
-<p><strong>2.<&#47;strong> The AutoCompletionChoicesProvider:</p>
+</pre>
+
+<strong>2.</strong> The AutoCompletionChoicesProvider:
+
 <pre>
 AutoCompletionChoicesProvider provider = new AutoCompletionChoicesProvider() {<br />
-	private static final long serialVersionUID = 1L;</p>
-<p>	public Iterator getChoices(String input) {<br />
+	private static final long serialVersionUID = 1L;
+
+	public Iterator getChoices(String input) {<br />
 		return logic.getMatchingContacts(contacts, input).iterator();<br />
 	}<br />
 };<br />
-<&#47;pre></p>
-<p>This is called whenever the input changes and allows us to get a list of items from our master list that match the input. In this example we already have the list of contacts, so we just need to return an Iterator of the matches for that list. You could use something like this:</p>
+</pre>
+
+This is called whenever the input changes and allows us to get a list of items from our master list that match the input. In this example we already have the list of contacts, so we just need to return an Iterator of the matches for that list. You could use something like this:
+
 <pre>
 public List getMatchingContacts(List contacts, String search) {<br />
-	List subList = new ArrayList();</p>
-<p>	for(Person p : connections){<br />
+	List subList = new ArrayList();
+
+	for(Person p : connections){<br />
 		if(StringUtils.startsWithIgnoreCase(p.getDisplayName(), search)) {<br />
 			if(subList.size() == Constants.MAX_CONNECTIONS_PER_SEARCH) {<br />
 				break;<br />
@@ -166,39 +181,52 @@ public List getMatchingContacts(List contacts, String search) {<br />
 	}<br />
 	return subList;<br />
 }<br />
-<&#47;pre></p>
-<p><strong>3.<&#47;strong> The ObjectAutoCompleteRenderer:</p>
+</pre>
+
+<strong>3.</strong> The ObjectAutoCompleteRenderer:
+
 <pre>
 ObjectAutoCompleteRenderer renderer = new ObjectAutoCompleteRenderer(){<br />
-	private static final long serialVersionUID = 1L;</p>
-<p>	protected String getIdValue(Person p) {<br />
+	private static final long serialVersionUID = 1L;
+
+	protected String getIdValue(Person p) {<br />
 		return p.getUuid();<br />
 	}<br />
 	protected String getTextValue(Person p) {<br />
 		return p.getDisplayName();<br />
 	}<br />
 };<br />
-<&#47;pre></p>
-<p>This separates out the key from the value. From the Person class we want to use the uuid as the submitted value<br />
-and the displayName as the one that shows up in the textfield and we search based on that.</p>
-<p><strong>4.<&#47;strong> Putting it all together is the ObjectAutoCompleteBuilder which takes the provider and sets the renderer.</p>
+</pre>
+
+This separates out the key from the value. From the Person class we want to use the uuid as the submitted value<br />
+and the displayName as the one that shows up in the textfield and we search based on that.
+
+<strong>4.</strong> Putting it all together is the ObjectAutoCompleteBuilder which takes the provider and sets the renderer.
+
 <pre>
 ObjectAutoCompleteBuilder builder = new ObjectAutoCompleteBuilder(provider);<br />
 builder.autoCompleteRenderer(renderer);<br />
-<&#47;pre></p>
-<p><strong>5.<&#47;strong> Finally, we create the ObjectAutoCompleteField from the builder.</p>
+</pre>
+
+<strong>5.</strong> Finally, we create the ObjectAutoCompleteField from the builder.
+
 <pre>
 ObjectAutoCompleteField autocompleteField = builder.build("toField", new PropertyModel(newMessage, "to"));<br />
 final TextField toField = autocompleteField.getSearchTextField();<br />
 toField.setRequired(true);<br />
 form.add(autocompleteField);<br />
-<&#47;pre></p>
-<p>We now have a textfield that allows us to search through a list of items but submit a different value associated with each of those items.<br />
-<img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;autocomplete.png" alt="autocomplete" width="150" height="176" class="alignnone size-full wp-image-161" &#47;></p>
-<p><strong>Advanced tip:<&#47;strong><br />
+</pre>
+
+We now have a textfield that allows us to search through a list of items but submit a different value associated with each of those items.<br />
+<img src="http://www.mysticcoders.com/wp-content/uploads/2010/01/autocomplete.png" alt="autocomplete" width="150" height="176" class="alignnone size-full wp-image-161" />
+
+<strong>Advanced tip:</strong><br />
 Once we have found an item in the list, it is set into the TextField. If we want to clear the selection, by default the link is a textual [x]. We can override this to be whatever we want, different text, or even an Image.<br />
-<img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;autocomplete_search.png" alt="autocomplete_search" width="113" height="36" class="alignnone size-full wp-image-162" &#47;></p>
-<p>To use an icon like in the example above, add something like this to the builder:</p>
+<img src="http://www.mysticcoders.com/wp-content/uploads/2010/01/autocomplete_search.png" alt="autocomplete_search" width="113" height="36" class="alignnone size-full wp-image-162" />
+
+To use an icon like in the example above, add something like this to the builder:
+
 <pre>
-<code>builder.searchLinkImage(new ContextRelativeResource("images&#47;cross.png"));<&#47;code><br />
-<&#47;pre></p>
+<code>builder.searchLinkImage(new ContextRelativeResource("images/cross.png"));</code><br />
+</pre>
+

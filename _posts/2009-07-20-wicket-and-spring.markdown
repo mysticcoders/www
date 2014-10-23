@@ -11,8 +11,8 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: Wicket makes it very easy to integrate directly with the <a href="http:&#47;&#47;springframework.org"
-  target="_blank">Spring Framework<&#47;a>.
+excerpt: Wicket makes it very easy to integrate directly with the <a href="http://springframework.org"
+  target="_blank">Spring Framework</a>.
 wordpress_id: 1711
 wordpress_url: http://wicketbyexample.com/?p=34
 date: '2009-07-20 00:25:43 +0000'
@@ -96,32 +96,42 @@ comments:
 
     wicket-spring-annot is not needed
 ---
-<p>Wicket makes it very easy to integrate directly with the <a href="http:&#47;&#47;springframework.org" target="_blank">Spring Framework<&#47;a>.<a id="more"></a><a id="more-1711"></a></p>
-<p>In any Component (Page, Panel, etc) to include a Spring bean you would do:</p>
+Wicket makes it very easy to integrate directly with the <a href="http://springframework.org" target="_blank">Spring Framework</a>.<a id="more"></a><a id="more-1711"></a>
+
+In any Component (Page, Panel, etc) to include a Spring bean you would do:
+
 <pre lang="java" colla="+">
     @SpringBean<br />
     private MyBean myBean;<br />
-<&#47;pre></p>
-<p>In your application-specific Application class you would do the following:</p>
+</pre>
+
+In your application-specific Application class you would do the following:
+
 <pre lang="java" colla="+">
-import org.apache.wicket.spring.injection.annot.SpringComponentInjector;</p>
-<p>...</p>
-<p>   @Override<br />
+import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
+
+...
+
+   @Override<br />
     protected void init {<br />
         addComponentInstantiationListener(new SpringComponentInjector(this));<br />
         ...<br />
     }<br />
-<&#47;pre></p>
-<p>If you're using <a href="http:&#47;&#47;maven.apache.org" target="_blank">Maven<&#47;a> for your build management, you would pull in these dependencies assuming wicket 1.3:</p>
+</pre>
+
+If you're using <a href="http://maven.apache.org" target="_blank">Maven</a> for your build management, you would pull in these dependencies assuming wicket 1.3:
+
 <pre lang="xml" colla="+">
         <dependency><br />
-            <groupId>org.apache.wicket<&#47;groupId><br />
-            <artifactId>wicket-spring<&#47;artifactId><br />
-            <version>${wicket.version}<&#47;version><br />
-        <&#47;dependency></p>
-<p>        <dependency><br />
-            <groupId>org.apache.wicket<&#47;groupId><br />
-            <artifactId>wicket-spring-annot<&#47;artifactId><br />
-            <version>${wicket.version}<&#47;version><br />
-        <&#47;dependency><br />
-<&#47;pre></p>
+            <groupId>org.apache.wicket</groupId><br />
+            <artifactId>wicket-spring</artifactId><br />
+            <version>${wicket.version}</version><br />
+        </dependency>
+
+        <dependency><br />
+            <groupId>org.apache.wicket</groupId><br />
+            <artifactId>wicket-spring-annot</artifactId><br />
+            <version>${wicket.version}</version><br />
+        </dependency><br />
+</pre>
+

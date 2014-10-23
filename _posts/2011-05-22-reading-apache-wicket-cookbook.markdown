@@ -20,6 +20,9 @@ categories:
 tags: []
 comments: []
 ---
-<p><a href="http:&#47;&#47;www.packtpub.com&#47;apache-wicket-cookbook&#47;book" target="_blank"><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2011&#47;05&#47;Apache-Wicket.png" border="0" &#47;><&#47;a></p>
-<p>I've been reading a copy of <a href="http:&#47;&#47;www.packtpub.com&#47;apache-wicket-cookbook&#47;book">Apache Wicket Cookbook<&#47;a> by Igor Vaynberg and will be posting a review soon.  Igor is one of the fantastic core developers for <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Apache Wicket<&#47;a> and seems to have an amazing ability to crank out awesome code, and answer questions on the very active mailing list.  Apparently, he might be super human, and wrote a book in his "spare time".</p>
-<p>Hats off to Igor, an amazing accomplishment.  Watch this space for a review.</p>
+<a href="http://www.packtpub.com/apache-wicket-cookbook/book" target="_blank"><img src="http://www.mysticcoders.com/wp-content/uploads/2011/05/Apache-Wicket.png" border="0" /></a>
+
+I've been reading a copy of <a href="http://www.packtpub.com/apache-wicket-cookbook/book">Apache Wicket Cookbook</a> by Igor Vaynberg and will be posting a review soon.  Igor is one of the fantastic core developers for <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> and seems to have an amazing ability to crank out awesome code, and answer questions on the very active mailing list.  Apparently, he might be super human, and wrote a book in his "spare time".
+
+Hats off to Igor, an amazing accomplishment.  Watch this space for a review.
+

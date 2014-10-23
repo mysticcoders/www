@@ -40,7 +40,8 @@ comments:
   date_gmt: '2012-05-14 19:52:02 +0000'
   content: This solved my problem as well.  Thank you very much.
 ---
-<p>If you'd like to have your FeedbackPanel update with errors in the event of a problem with your form, just adding the FeedbackPanel won't do you any good.  Just as with any other AJAX-updating component in Wicket, you'll need to add it to the AjaxRequestTarget, only difference is, you'll have to do this while overriding onError like so:<a id="more"></a><a id="more-1714"></a></p>
+If you'd like to have your FeedbackPanel update with errors in the event of a problem with your form, just adding the FeedbackPanel won't do you any good.  Just as with any other AJAX-updating component in Wicket, you'll need to add it to the AjaxRequestTarget, only difference is, you'll have to do this while overriding onError like so:<a id="more"></a><a id="more-1714"></a>
+
 <pre lang="java" colla="+">
 final FeedbackPanel feedbackPanel = new FeedbackPanel("feedbackPanel");<br />
 feedbackPanel.setOutputMarkupId(true);<br />
@@ -51,4 +52,5 @@ form.add(new AjaxButton("submit") {<br />
         target.addComponent(feedbackPanel);<br />
     }<br />
 });<br />
-<&#47;pre></p>
+</pre>
+

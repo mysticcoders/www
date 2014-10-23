@@ -13,9 +13,9 @@ author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
 excerpt: In Java land, we've become very familiar with jarhell, and the associated
   pain of trying to find every jar required for let's say Hibernate.  The pain involved
-  in this process is greatly reduced by the use of something like <a href="http:&#47;&#47;maven.apache.org"
-  target="_blank">Maven<&#47;a>, and while the initial learning curve sucks, you get
-  into a groove with it.  What about <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Wicket<&#47;a>?
+  in this process is greatly reduced by the use of something like <a href="http://maven.apache.org"
+  target="_blank">Maven</a>, and while the initial learning curve sucks, you get
+  into a groove with it.  What about <a href="http://wicket.apache.org" target="_blank">Wicket</a>?
 wordpress_id: 69
 wordpress_url: http://wicketbyexample.com/?p=69
 date: '2009-07-29 09:57:30 +0000'
@@ -25,17 +25,20 @@ categories:
 tags: []
 comments: []
 ---
-<p>In Java land, we've become very familiar with jarhell, and the associated pain of trying to find every jar required for let's say Hibernate.  The pain involved in this process is greatly reduced by the use of something like <a href="http:&#47;&#47;maven.apache.org" target="_blank">Maven<&#47;a>, and while the initial learning curve sucks, you get into a groove with it.  What about <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Wicket<&#47;a>?<a id="more"></a><a id="more-69"></a></p>
-<p>Here's the dependencies you would need to fulfill, all two of them:</p>
+In Java land, we've become very familiar with jarhell, and the associated pain of trying to find every jar required for let's say Hibernate.  The pain involved in this process is greatly reduced by the use of something like <a href="http://maven.apache.org" target="_blank">Maven</a>, and while the initial learning curve sucks, you get into a groove with it.  What about <a href="http://wicket.apache.org" target="_blank">Wicket</a>?<a id="more"></a><a id="more-69"></a>
+
+Here's the dependencies you would need to fulfill, all two of them:
+
 <pre lang="xml" colla="+">
         <dependency><br />
-            <groupId>org.apache.wicket<&#47;groupId><br />
-            <artifactId>wicket<&#47;artifactId><br />
-            <version>1.3.6<&#47;version><br />
-        <&#47;dependency><br />
+            <groupId>org.apache.wicket</groupId><br />
+            <artifactId>wicket</artifactId><br />
+            <version>1.3.6</version><br />
+        </dependency><br />
         <dependency><br />
-            <groupId>org.slf4j<&#47;groupId><br />
-            <artifactId>slf4j-jcl<&#47;artifactId><br />
-            <version>1.4.2<&#47;version><br />
-        <&#47;dependency><br />
-<&#47;pre></p>
+            <groupId>org.slf4j</groupId><br />
+            <artifactId>slf4j-jcl</artifactId><br />
+            <version>1.4.2</version><br />
+        </dependency><br />
+</pre>
+

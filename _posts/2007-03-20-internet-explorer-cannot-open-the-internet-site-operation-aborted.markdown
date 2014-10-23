@@ -85,7 +85,7 @@ comments:
   author_url: http://www.mysticcoders.com
   date: '2009-04-18 09:09:14 +0000'
   date_gmt: '2009-04-18 16:09:14 +0000'
-  content: "<a href=\"#comment-417\" rel=\"nofollow\">@vanni<&#47;a> \r\nvanni, the
+  content: "<a href=\"#comment-417\" rel=\"nofollow\">@vanni</a> \r\nvanni, the
     fix was to modify how we were implementing some of our dynamic code to get loaded
     only when the dom was ready.  That script would be put in between script tags
     like normal"
@@ -104,7 +104,7 @@ comments:
   date: '2009-06-14 18:04:55 +0000'
   date_gmt: '2009-06-15 01:04:55 +0000'
   content: "I've had this error message (and went nuts), but I cracked (not my head)
-    the code, just in time.\r\n\r\n\r\nThis is what I did --> http:&#47;&#47;zeebigtourist.blogspot.com&#47;2009&#47;06&#47;internet-explorer-cannot-open-internet.html\r\n\r\n\r\n\r\nThanks
+    the code, just in time.\r\n\r\n\r\nThis is what I did --> http://zeebigtourist.blogspot.com/2009/06/internet-explorer-cannot-open-internet.html\r\n\r\n\r\n\r\nThanks
     for all the helpful info.\r\n\r\n\r\nZeeBigTourist"
 - id: 512
   author: Kossovsky Alexander
@@ -166,7 +166,7 @@ comments:
   date: '2011-08-01 18:19:24 +0000'
   date_gmt: '2011-08-02 01:19:24 +0000'
   content: "Hi, By opening email Yahoo immediately shown the following: Internet Explorer
-    cannot open the internet site http:&#47;&#47;us.mg4,mail.yahoo.com.Operation aborted\r\n
+    cannot open the internet site http://us.mg4,mail.yahoo.com.Operation aborted\r\n
     \    What shall i do to remove this error? \r\n  Thank you"
 - id: 3430
   author: tariq bhat
@@ -184,16 +184,17 @@ comments:
   date_gmt: '2011-12-03 11:58:26 +0000'
   content: operation aborted in facebook especially in holdem zynga
 ---
-<p>Just got hit with this error:<br />
-<br &#47;><br &#47;><br />
-<a href="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2007&#47;03&#47;Picture%201-1.png"><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2007&#47;03&#47;Picture%201-1-tm.jpg" border="1" alt="Picture 1-1" hspace="4" vspace="4" width="373" height="100" &#47;><&#47;a><br />
-<br &#47;><br &#47;><br />
-And regrettably I spent a lot of time searching through Javascript in <a href="http:&#47;&#47;www.mootools.net">mootools<&#47;a> javascript, and the small 2 lines of javascript <a href="http:&#47;&#47;www.wicketframework.org">Wicket<&#47;a> adds to the page.  Finally, I decided to actually google the error (which I should have done immediately).<br />
-<br &#47;><br &#47;><br />
-Low and behold, because I was inlining some Javascript for the <a href="http:&#47;&#47;www.mootools.net">mootools<&#47;a> Tip plugin, Internet Explorer 6 and 7 were upset because I hadn't given them the chance to render the entire HTML yet.  Easy enough to fix, and actually cleans up the code real nice, was to either add it to the body onload, or use javascript.  In my case I used <a href="http:&#47;&#47;www.mootools.net">mootools<&#47;a> goodness:<br />
-<br &#47;><br &#47;><br />
+Just got hit with this error:<br />
+<br /><br /><br />
+<a href="http://www.mysticcoders.com/wp-content/uploads/2007/03/Picture%201-1.png"><img src="http://www.mysticcoders.com/wp-content/uploads/2007/03/Picture%201-1-tm.jpg" border="1" alt="Picture 1-1" hspace="4" vspace="4" width="373" height="100" /></a><br />
+<br /><br /><br />
+And regrettably I spent a lot of time searching through Javascript in <a href="http://www.mootools.net">mootools</a> javascript, and the small 2 lines of javascript <a href="http://www.wicketframework.org">Wicket</a> adds to the page.  Finally, I decided to actually google the error (which I should have done immediately).<br />
+<br /><br /><br />
+Low and behold, because I was inlining some Javascript for the <a href="http://www.mootools.net">mootools</a> Tip plugin, Internet Explorer 6 and 7 were upset because I hadn't given them the chance to render the entire HTML yet.  Easy enough to fix, and actually cleans up the code real nice, was to either add it to the body onload, or use javascript.  In my case I used <a href="http://www.mootools.net">mootools</a> goodness:<br />
+<br /><br /><br />
 <em>window.addEvent('domready', Site.start);<br />
-<&#47;em><br />
-Gotta love Google.  <strike>You can also <a href="http:&#47;&#47;www.ryangrant.net&#47;archives&#47;internet-explorer-cannot-open-the-internet-site-operation-aborted-google-map-api">check this site<&#47;a> for some tips on avoiding the problem in the future (especially with GMaps).<&#47;strike><br />
-<br &#47;><br &#47;><br />
-<strong>UPDATE<&#47;strong> The site above seems to no longer be around, such is life.  I've posted a quick update for several javascript libraries on how to ensure you are executing javascript <a href="&#47;blog&#47;2009&#47;07&#47;11&#47;loading-javascript-on-your-page-properl&#47;">when the DOM is finished loading<&#47;a>.</p>
+</em><br />
+Gotta love Google.  <strike>You can also <a href="http://www.ryangrant.net/archives/internet-explorer-cannot-open-the-internet-site-operation-aborted-google-map-api">check this site</a> for some tips on avoiding the problem in the future (especially with GMaps).</strike><br />
+<br /><br /><br />
+<strong>UPDATE</strong> The site above seems to no longer be around, such is life.  I've posted a quick update for several javascript libraries on how to ensure you are executing javascript <a href="/blog/2009/07/11/loading-javascript-on-your-page-properl/">when the DOM is finished loading</a>.
+

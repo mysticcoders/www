@@ -35,7 +35,11 @@ comments:
   content: The link doesnt work, but it seems to work when you click on the image
     :)
 ---
-<p>In mid march I attended <a href="http:&#47;&#47;scandevconf.se" target="_blank">SDC2010<&#47;a> in G&ouml;teborg, Sweden.  The event was very well attended with nearly 700 people and was filled with a wealth of great speakers.  Some of the sessions I enjoyed were <a href="http:&#47;&#47;ambientideas.com&#47;" target="_blank">Matthew McCullough<&#47;a>, <a href="http:&#47;&#47;www.stevenlist.com&#47;" target="_blank">Steven "Doc" List<&#47;a>, <a href="http:&#47;&#47;www.augusttechgroup.com&#47;" target="_blank">Tim Berglund<&#47;a>, and of course <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Kent_Beck" target="_blank">Kent Beck<&#47;a> ... too many to count.  There definitely seemed to be an "agile" bend with a lot of the content ... those folks sure do like to talk a lot :).</p>
-<p>I presented on beginning <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Apache Wicket<&#47;a> development, and here's the presentation:</p>
-<p><a href="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2010&#47;05&#47;Rapid-Application-Development-with-Apache-Wicket.pdf"><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-includes&#47;images&#47;crystal&#47;document.png" border="0" &#47;><&#47;a>&nbsp;-&nbsp; <a href="<a href="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2010&#47;05&#47;Rapid-Application-Development-with-Apache-Wicket.pdf">Rapid Application Development with Apache Wicket<&#47;a></p>
-<p>Enjoy!</p>
+In mid march I attended <a href="http://scandevconf.se" target="_blank">SDC2010</a> in G&ouml;teborg, Sweden.  The event was very well attended with nearly 700 people and was filled with a wealth of great speakers.  Some of the sessions I enjoyed were <a href="http://ambientideas.com/" target="_blank">Matthew McCullough</a>, <a href="http://www.stevenlist.com/" target="_blank">Steven "Doc" List</a>, <a href="http://www.augusttechgroup.com/" target="_blank">Tim Berglund</a>, and of course <a href="http://en.wikipedia.org/wiki/Kent_Beck" target="_blank">Kent Beck</a> ... too many to count.  There definitely seemed to be an "agile" bend with a lot of the content ... those folks sure do like to talk a lot :).
+
+I presented on beginning <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> development, and here's the presentation:
+
+<a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Rapid-Application-Development-with-Apache-Wicket.pdf"><img src="http://www.mysticcoders.com/wp-includes/images/crystal/document.png" border="0" /></a>&nbsp;-&nbsp; <a href="<a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Rapid-Application-Development-with-Apache-Wicket.pdf">Rapid Application Development with Apache Wicket</a>
+
+Enjoy!
+

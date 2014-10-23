@@ -20,8 +20,11 @@ categories:
 tags: []
 comments: []
 ---
-<p>With a little help from freenode folks in ##java and #awk .. I've got a one liner which will give you a word count for your resource bundle files:</p>
+With a little help from freenode folks in ##java and #awk .. I've got a one liner which will give you a word count for your resource bundle files:
+
 <pre lang="bash" colla="+">
 grep -vE '^#' YourResourceBundle.properties | cut -d = -f 2 | wc -w<br />
-<&#47;pre></p>
-<p>whew.</p>
+</pre>
+
+whew.
+

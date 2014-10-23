@@ -20,5 +20,7 @@ categories:
 tags: []
 comments: []
 ---
-<p>Scott Price over at <a href="http:&#47;&#47;loadstorm.com" target="_blank">LoadStorm<&#47;a> interviewed Andrew about his experiences in the software development arena.  A lot of really great questions asked, and thoughtful answers on where we're at as an industry today, and what the road ahead might look like.</p>
-<p><a href="http:&#47;&#47;loadstorm.com&#47;2010&#47;interview-head-geek-andrew-lombardi">Check out the interview and enjoy!<&#47;a></p>
+Scott Price over at <a href="http://loadstorm.com" target="_blank">LoadStorm</a> interviewed Andrew about his experiences in the software development arena.  A lot of really great questions asked, and thoughtful answers on where we're at as an industry today, and what the road ahead might look like.
+
+<a href="http://loadstorm.com/2010/interview-head-geek-andrew-lombardi">Check out the interview and enjoy!</a>
+

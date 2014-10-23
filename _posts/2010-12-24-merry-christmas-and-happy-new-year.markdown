@@ -20,6 +20,9 @@ categories:
 tags: []
 comments: []
 ---
-<p><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2010&#47;12&#47;IMG_3744.jpg" border="0" &#47;></p>
-<p>It's the holiday season, and no matter how you celebrate - <strong>enjoy the present.<&#47;strong></p>
-<p>We Wish everyone Happy Holidays and a Safe and Fun New Year!</p>
+<img src="http://www.mysticcoders.com/wp-content/uploads/2010/12/IMG_3744.jpg" border="0" />
+
+It's the holiday season, and no matter how you celebrate - <strong>enjoy the present.</strong>
+
+We Wish everyone Happy Holidays and a Safe and Fun New Year!
+

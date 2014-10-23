@@ -53,10 +53,18 @@ comments:
   date_gmt: '2011-11-18 21:17:32 +0000'
   content: Thanks a lot, it did the trick for me ;)
 ---
-<p>It is probably already well known, if you're doing Ajax, I might not be popping any big secrets here. But I was reading <a href="http:&#47;&#47;www.amazon.com&#47;Wicket-Action-Martijn-Dashorst&#47;dp&#47;1932394982?tag=mycoll-20">Wicket in Action<&#47;a> tonight, and ran across a very helpful tidbit on how to properly hide a component. If you've constructed a component that you'd like to show, upon an action, you need at least a dummy tag in the dom to attach off of. Add this to that component and you can happily .setVisible(false) and unhide it later.<&#47;p></p>
-<p><pre lang="java" colla="+">
+It is probably already well known, if you're doing Ajax, I might not be popping any big secrets here. But I was reading <a href="http://www.amazon.com/Wicket-Action-Martijn-Dashorst/dp/1932394982?tag=mycoll-20">Wicket in Action</a> tonight, and ran across a very helpful tidbit on how to properly hide a component. If you've constructed a component that you'd like to show, upon an action, you need at least a dummy tag in the dom to attach off of. Add this to that component and you can happily .setVisible(false) and unhide it later.
+
+
+<pre lang="java" colla="+">
 setOutputMarkupPlaceholderTag(true);<br />
-<&#47;pre><br />
-<br &#47;><&#47;p></p>
-<p>that's it. <a href="http:&#47;&#47;www.amazon.com&#47;Wicket-Action-Martijn-Dashorst&#47;dp&#47;1932394982?tag=mycoll-20">Wicket in Action<&#47;a> is a great read so far, if you're doing any web development, we here at <a href="http:&#47;&#47;www.mysticcoders.com">Mystic<&#47;a> highly recommend picking up a copy.<&#47;p></p>
-<p>And if you haven't read Craig's review of Wicket, <a href="http:&#47;&#47;www.mysticcoders.com&#47;blog&#47;2008&#47;09&#47;09&#47;book-review-wicket-in-action&#47;">what are you waiting for<&#47;a>?<&#47;p></p>
+</pre><br />
+<br />
+
+
+that's it. <a href="http://www.amazon.com/Wicket-Action-Martijn-Dashorst/dp/1932394982?tag=mycoll-20">Wicket in Action</a> is a great read so far, if you're doing any web development, we here at <a href="http://www.mysticcoders.com">Mystic</a> highly recommend picking up a copy.
+
+
+And if you haven't read Craig's review of Wicket, <a href="http://www.mysticcoders.com/blog/2008/09/09/book-review-wicket-in-action/">what are you waiting for</a>?
+
+

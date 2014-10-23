@@ -66,9 +66,15 @@ comments:
   content: "Can anybody suggest me the implementation of \tBoxed and Collapsible Container.\nThanks
     in advance"
 ---
-<p>There are definitely times, that I wish I had easy access to the javadoc for something in the Wicket internals, without opening the IDE, or keeping my own local versions available.</p>
-<p>I usually resort to a quick Google search and unfortunately 9 &#47; 10 I get a non-recent javadoc version.</p>
-<p>Today I've gone through and downloaded all the core library javadocs for Wicket and as of version 1.4.6 they are all available from the following link:</p>
-<p><a href="http:&#47;&#47;wicketbyexample.com&#47;api">wicketbyexample.com&#47;api<&#47;a></p>
-<p>Click through to the library you'd like and get immediate access.  It follows a simple structure &#47;api&#47;<module name>&#47;<version>&#47;</p>
-<p>That's it.  Hope some of you find it useful.</p>
+There are definitely times, that I wish I had easy access to the javadoc for something in the Wicket internals, without opening the IDE, or keeping my own local versions available.
+
+I usually resort to a quick Google search and unfortunately 9 / 10 I get a non-recent javadoc version.
+
+Today I've gone through and downloaded all the core library javadocs for Wicket and as of version 1.4.6 they are all available from the following link:
+
+<a href="http://wicketbyexample.com/api">wicketbyexample.com/api</a>
+
+Click through to the library you'd like and get immediate access.  It follows a simple structure /api/<module name>/<version>/
+
+That's it.  Hope some of you find it useful.
+

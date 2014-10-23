@@ -29,6 +29,7 @@ comments:
   content: "[...] new refcard is available about Apache Wicket is available now. Download
     it from Mystic&#8217;s blog which has all the goodies waiting for [...]"
 ---
-<p><a href="http:&#47;&#47;dzone.com" target="_blank">DZone<&#47;a> has just published a new Refcard by yours truly on their website.  See the icon and link below for that, please <a href="http:&#47;&#47;dzone.it&#47;yml">download it<&#47;a>, and read the <a href="http:&#47;&#47;bit.ly&#47;a5iwt" target="_blank">author interview<&#47;a>.<br />
-<br &#47;><br &#47;><br />
-<a href="http:&#47;&#47;dzone.it&#47;yml"><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2009&#47;07&#47;11873.png" alt="Getting Started with Apache Wicket" title="Getting Started with Apache Wicket" width="206" height="266" class="alignnone size-full wp-image-1091" &#47;><&#47;a></p>
+<a href="http://dzone.com" target="_blank">DZone</a> has just published a new Refcard by yours truly on their website.  See the icon and link below for that, please <a href="http://dzone.it/yml">download it</a>, and read the <a href="http://bit.ly/a5iwt" target="_blank">author interview</a>.<br />
+<br /><br /><br />
+<a href="http://dzone.it/yml"><img src="http://www.mysticcoders.com/wp-content/uploads/2009/07/11873.png" alt="Getting Started with Apache Wicket" title="Getting Started with Apache Wicket" width="206" height="266" class="alignnone size-full wp-image-1091" /></a>
+

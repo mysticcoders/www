@@ -20,6 +20,9 @@ categories:
 tags: []
 comments: []
 ---
-<p>Thanks again to everyone who made it to Mystic's presentation on Architecting Applications using Apache Wicket.  I enjoyed sharing the information with you, hearing your questions, and offering solutions for them.  If you have follow ups that were thought of later, please contact us.  Here's a link to the presentation for the interested:</p>
-<p><a href="http:&#47;&#47;www.mysticcoders.com&#47;tssjsvegas2009&#47;">Architecting Applications using Apache Wicket<&#47;a></p>
-<p>See ya Vegas!</p>
+Thanks again to everyone who made it to Mystic's presentation on Architecting Applications using Apache Wicket.  I enjoyed sharing the information with you, hearing your questions, and offering solutions for them.  If you have follow ups that were thought of later, please contact us.  Here's a link to the presentation for the interested:
+
+<a href="http://www.mysticcoders.com/tssjsvegas2009/">Architecting Applications using Apache Wicket</a>
+
+See ya Vegas!
+

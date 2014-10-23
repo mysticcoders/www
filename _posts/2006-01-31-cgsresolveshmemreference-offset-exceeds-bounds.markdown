@@ -20,6 +20,9 @@ categories:
 tags: []
 comments: []
 ---
-<p>After working on my machine for quite a bit today, I started getting crashes in certain programs, and I haven't seen this pre-10.4.4.  The following was seen in Console.app:</p>
-<p>CGSResolveShmemReference : offset exceeds bounds</p>
-<p>And it did so for several apps, Firefox, GLterm, iSync (wouldn't even run).  A simple logout and login seems to have fixed it.  Nothing new as far as fixes from Software Update, so we'll just see if this keeps up, grrr.</p>
+After working on my machine for quite a bit today, I started getting crashes in certain programs, and I haven't seen this pre-10.4.4.  The following was seen in Console.app:
+
+CGSResolveShmemReference : offset exceeds bounds
+
+And it did so for several apps, Firefox, GLterm, iSync (wouldn't even run).  A simple logout and login seems to have fixed it.  Nothing new as far as fixes from Software Update, so we'll just see if this keeps up, grrr.
+

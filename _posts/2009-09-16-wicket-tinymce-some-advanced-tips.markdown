@@ -65,29 +65,39 @@ comments:
     component i finally found some smart guy who rebuilt the artifact with newest
     original tinymce js in it. Get 1.4.14-SNAPSHOT or later to accomplish this.
 ---
-<p>Wicket offers a valid integration with the powerful and open source <a href="http:&#47;&#47;tinymce.moxiecode.com&#47;">TinyMCE<&#47;a>, a Javascript HTML WYSIWYG editor. Wicket-contrib-tinymce is part of the wicketstuff-core and is well done and maintained. Then using TinyMCE within wicket is very easy and the <a href="http:&#47;&#47;wicketstuff.org&#47;confluence&#47;display&#47;STUFFWIKI&#47;wicket-contrib-tinymce">instructions on the site<&#47;a> would be enough to make things work and the example project on the subversion repository will do most of the rest.</p>
-<p><a id="more"></a><a id="more-101"></a></p>
-<p>Here I want to tell something I have learned using this nice toy.</p>
-<p><strong>Use with Maven 2<&#47;strong></p>
-<p>To use tinymce in a Maven 2 project, we need to add the wicketstuff maven2 repository:</p>
+Wicket offers a valid integration with the powerful and open source <a href="http://tinymce.moxiecode.com/">TinyMCE</a>, a Javascript HTML WYSIWYG editor. Wicket-contrib-tinymce is part of the wicketstuff-core and is well done and maintained. Then using TinyMCE within wicket is very easy and the <a href="http://wicketstuff.org/confluence/display/STUFFWIKI/wicket-contrib-tinymce">instructions on the site</a> would be enough to make things work and the example project on the subversion repository will do most of the rest.
+
+<a id="more"></a><a id="more-101"></a>
+
+Here I want to tell something I have learned using this nice toy.
+
+<strong>Use with Maven 2</strong>
+
+To use tinymce in a Maven 2 project, we need to add the wicketstuff maven2 repository:
+
 <pre lang="xml" colla="+">
 <repository><br />
-	<id>wicket-stuff<&#47;id><br />
-	<url>http:&#47;&#47;wicketstuff.org&#47;maven&#47;repository<&#47;url><br />
-<&#47;repository><br />
-<&#47;pre></p>
-<p>and, of course, the dependency</p>
+	<id>wicket-stuff</id><br />
+	<url>http://wicketstuff.org/maven/repository</url><br />
+</repository><br />
+</pre>
+
+and, of course, the dependency
+
 <pre lang="xml" colla="+">
 <dependency><br />
-	<groupId>org.wicketstuff<&#47;groupId><br />
-	<artifactId>tinymce<&#47;artifactId><br />
-	<version>1.4-SNAPSHOT<&#47;version><br />
-<&#47;dependency><br />
-<&#47;pre></p>
-<p><strong>Creating a CheckBox that toggle TinyMceBehavior on and off.<&#47;strong></p>
-<p>In my scenario I need the user to enable Rich Text capabilities for a field in a form. Is nothing complicated but we need to take care about when to instantiate objects. In my solution, I use a checkbox to toggle the state. This is the code I have in the constructor of my panel.</p>
+	<groupId>org.wicketstuff</groupId><br />
+	<artifactId>tinymce</artifactId><br />
+	<version>1.4-SNAPSHOT</version><br />
+</dependency><br />
+</pre>
+
+<strong>Creating a CheckBox that toggle TinyMceBehavior on and off.</strong>
+
+In my scenario I need the user to enable Rich Text capabilities for a field in a form. Is nothing complicated but we need to take care about when to instantiate objects. In my solution, I use a checkbox to toggle the state. This is the code I have in the constructor of my panel.
+
 <pre lang="java" colla="+">
-<p>public class CustomPanel extends Panel {<br />
+public class CustomPanel extends Panel {<br />
    private TinyMceBehavior tinyMceBehavior;<br />
    public CustomPanel(String id, IModel model) {<br />
        ...<br />
@@ -96,9 +106,11 @@ comments:
       PropertyModel richProperty = new PropertyModel(model, "rich");<br />
       if (richProperty.getObject()) {<br />
          field.add(tinyMceBehavior);<br />
-      }</p>
-<p>      add(new AjaxCheckBox("switchRte", richProperty) {</p>
-<p>         @Override<br />
+      }
+
+      add(new AjaxCheckBox("switchRte", richProperty) {
+
+         @Override<br />
          protected void onUpdate(AjaxRequestTarget target) {<br />
             if (getModelObject()) {<br />
                field.add(tinyMceBehavior);<br />
@@ -111,18 +123,27 @@ comments:
       });<br />
    }<br />
 }<br />
-<&#47;pre></p>
-<p>The information is saved in a property called "rich" in my domain object so it is persisted and I can remember next time. That object is already wrapped in the variable <em>model<&#47;em> (a wicket IModel) that in this code is wrapped in a simple wicket PropertyModel. In this example I have used Wicket 1.4 support for generics.</p>
-<p><strong>Switching to Rich Text after the page is load<&#47;strong></p>
-<p>One of the problem I had was that my page loaded without any TinyMCEBehavior attached to any component. User can enable the behavior at runtime like in the example before. Well, it did not work because the javascript needs to be load at the time the page is loaded. The solution is that when you have some TinyMCE components in your page, is better that in the constructor of the page you load the Javascript this way:</p>
+</pre>
+
+The information is saved in a property called "rich" in my domain object so it is persisted and I can remember next time. That object is already wrapped in the variable <em>model</em> (a wicket IModel) that in this code is wrapped in a simple wicket PropertyModel. In this example I have used Wicket 1.4 support for generics.
+
+<strong>Switching to Rich Text after the page is load</strong>
+
+One of the problem I had was that my page loaded without any TinyMCEBehavior attached to any component. User can enable the behavior at runtime like in the example before. Well, it did not work because the javascript needs to be load at the time the page is loaded. The solution is that when you have some TinyMCE components in your page, is better that in the constructor of the page you load the Javascript this way:
+
 <pre lang="java" colla="+">      add(new HeaderContributor(new IHeaderContributor() {<br />
          public void renderHead(IHeaderResponse response) {<br />
             response.renderJavascriptReference(TinyMCESettings.javaScriptReference());<br />
          }<br />
-      }));<&#47;pre><br />
-<strong>Subtle trick: submit via Ajax<&#47;strong></p>
-<p>Maybe anyone knew this before. I did not. When you submit a form containing a TinyMCE component and the form submits via ajax, say an AjaxSubmitLink or an AjaxButton in Wicket, you *must* use a trick as someone else <a href="http:&#47;&#47;dwairi.blogspot.com&#47;2006&#47;12&#47;tinymce-ajax.html">already explained<&#47;a>. With wicket-tinymce this becomes adding the <em>TinyMceAjaxSubmitModifier<&#47;em> to the submit component and that's all.</p>
-<p><strong>Conclusion<&#47;strong></p>
-<p>wicket-contrib-tinymce is a well done contribution to the wicketstuff-core and an important library for web developer that uses Wicket. The only small point is that is actually using a one year old version of TinyMCE, dated august 2008. It does the *most* of the stuff and I never felt the need to upgrade. Maybe someone just need some feature or a bug fix present in more recent release. Hope that wicket-tinymce developer will have some time to play with newer TinyMCE.</p>
-<p>This is my first contribution to WicketByExample. I hope you liked the article, I will like any feedback. Cheers.<br />
-<a href="http:&#47;&#47;twitter.com&#47;ildella" target="_blank"><&#47;a></p>
+      }));</pre><br />
+<strong>Subtle trick: submit via Ajax</strong>
+
+Maybe anyone knew this before. I did not. When you submit a form containing a TinyMCE component and the form submits via ajax, say an AjaxSubmitLink or an AjaxButton in Wicket, you *must* use a trick as someone else <a href="http://dwairi.blogspot.com/2006/12/tinymce-ajax.html">already explained</a>. With wicket-tinymce this becomes adding the <em>TinyMceAjaxSubmitModifier</em> to the submit component and that's all.
+
+<strong>Conclusion</strong>
+
+wicket-contrib-tinymce is a well done contribution to the wicketstuff-core and an important library for web developer that uses Wicket. The only small point is that is actually using a one year old version of TinyMCE, dated august 2008. It does the *most* of the stuff and I never felt the need to upgrade. Maybe someone just need some feature or a bug fix present in more recent release. Hope that wicket-tinymce developer will have some time to play with newer TinyMCE.
+
+This is my first contribution to WicketByExample. I hope you liked the article, I will like any feedback. Cheers.<br />
+<a href="http://twitter.com/ildella" target="_blank"></a>
+

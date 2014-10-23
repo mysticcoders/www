@@ -45,18 +45,22 @@ comments:
     Thanks for sample code, it worked perfectly..
     Nice use of IAjazDecorator..
 ---
-<p>A long running process that you'd like to show some indicator of progress or similar, usually means an indicator of some kind.  Here we use an IndicatingAjaxButton to show some progress near the clicked submit button, and we use an IAjaxCallDecorator to disable the submit button so we don't get multiple clicks<a id="more"></a><a id="more-10"></a></p>
+A long running process that you'd like to show some indicator of progress or similar, usually means an indicator of some kind.  Here we use an IndicatingAjaxButton to show some progress near the clicked submit button, and we use an IAjaxCallDecorator to disable the submit button so we don't get multiple clicks<a id="more"></a><a id="more-10"></a>
+
 <pre lang="java" colla="+">
-form.add(new IndicatingAjaxButton("submit", form) {</p>
-<p>    @Override<br />
+form.add(new IndicatingAjaxButton("submit", form) {
+
+    @Override<br />
     protected IAjaxCallDecorator getAjaxCallDecorator() {<br />
         return new AjaxPostprocessingCallDecorator(super.getAjaxCallDecorator()) {<br />
-            private static final long serialVersionUID = 1L;</p>
-<p>            @Override<br />
+            private static final long serialVersionUID = 1L;
+
+            @Override<br />
             public CharSequence postDecorateScript(CharSequence script) {<br />
                 return script + "this.disabled = true;";<br />
             }<br />
         };<br />
     }<br />
 }<br />
-<&#47;pre></p>
+</pre>
+

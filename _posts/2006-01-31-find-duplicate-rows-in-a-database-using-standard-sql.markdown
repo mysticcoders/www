@@ -53,8 +53,11 @@ comments:
     duplicate rows in a database using standard SQL  (mysticcoders.com)    1 points
     posted 2 months, 1 week ago by SixSixSix  tags imported sql   saved [...]"
 ---
-<p>Thanks goes to Xgc in #mysql on freenode for showing me this little one-liner.  We needed to add a unique key to one of our tables, and a duplicate was in our midst.  Enter this handy one-liner:</p>
+Thanks goes to Xgc in #mysql on freenode for showing me this little one-liner.  We needed to add a unique key to one of our tables, and a duplicate was in our midst.  Enter this handy one-liner:
+
 <pre lang="sql" colla="+">
 SELECT field1, count(*) FROM tbl1 GROUP BY field1 HAVING count(*) > 1;<br />
-<&#47;pre></p>
-<p>problem solved, a nice simple list of the duplicated rows in front of you.</p>
+</pre>
+
+problem solved, a nice simple list of the duplicated rows in front of you.
+

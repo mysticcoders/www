@@ -36,7 +36,7 @@ comments:
     mentions \"-P PROD\" where \"PROD\" isn't a filters-PROD.properties file.\r\n\r\nSo,
     are these inconsistencies simply not checked into the repo, or do I have to do
     anything else to get it up and running?\r\n\r\nAlso, there's no sql script to
-    set up the database, so I wonder if it will automagically be created by hibernate?\r\n\r\nCheers,\r\n\r\n&#47;Peter"
+    set up the database, so I wonder if it will automagically be created by hibernate?\r\n\r\nCheers,\r\n\r\n/Peter"
 - id: 510
   author: kinabalu
   author_email: andrew@mysticcoders.com
@@ -69,17 +69,19 @@ comments:
   content: great suggestions.  i'll add them to the wishlist and see when we can get
     some time to add them.  we always take patches if you're so inclined :P
 ---
-<p>With our pastebin <a href="http:&#47;&#47;mysticpaste.com">MysticPaste.com<&#47;a>, one of the biggest roadblocks to a clean-looking UI, is keeping it uncluttered while offering the functionality needed.  Apple and a majority of the software released for their operating system seems to "get it".  Sensible defaults and all that are important in keeping it simple.<br />
-<br &#47;><br &#47;><br />
-At Mystic we've used our little pastebin experiment to teach on building code with <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Apache Wicket<&#47;a>.  We plan to continue this tradition in the near future talking about some of the new items in <a href="http:&#47;&#47;mysticpaste.com">MysticPaste.com<&#47;a>'s feature list:</p>
+With our pastebin <a href="http://mysticpaste.com">MysticPaste.com</a>, one of the biggest roadblocks to a clean-looking UI, is keeping it uncluttered while offering the functionality needed.  Apple and a majority of the software released for their operating system seems to "get it".  Sensible defaults and all that are important in keeping it simple.<br />
+<br /><br /><br />
+At Mystic we've used our little pastebin experiment to teach on building code with <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>.  We plan to continue this tradition in the near future talking about some of the new items in <a href="http://mysticpaste.com">MysticPaste.com</a>'s feature list:
+
 <ul>
-<li>Raw Text (for copy and paste)<&#47;li>
-<li>Using the JavaScript-based <a href="http:&#47;&#47;alexgorbatchev.com&#47;wiki&#47;" target="_blank">SyntaxHighlighter<&#47;a> and tossing JaSHi.  Show me a Java-based syntax highlighter with as clean an interface and respectable highlighting, and I'd prefer it.  Searches returned nothing though.<&#47;li>
-<li>Send to Twitter - follow us <a href="http:&#47;&#47;www.twitter.com&#47;mysticpaste">@mysticpaste<&#47;a> and let more people know about your paste and get solutions<&#47;li>
-<li>Comments - each paste can have any number of comments attached to it.  the owner of a paste could comment on what problem he's encountering, and get multiple comments about solutions.  Email address is never shared anywhere.<&#47;li>
-<li>Line Number Highlighting - if you'd like to highlight certain lines in your paste just add another parameter, comma-separated, with the line numbers (e.g. &#47;view&#47;10&#47;4,5,10 or &#47;view&#47;10&#47;4-10,15-20)<&#47;li>
-<li>Abuse Reporting - it happens all the time, spam fills a pastebin, we've added a few measures to combat this nuisance along with a "Report Abuse" function which takes the paste out of the history<&#47;li>
-<li>Code Refactoring - nothing to do with the UI, but there have been a few changes and enhancements under the hood.<&#47;li><br />
-<&#47;ul><br />
-<br &#47;><br &#47;><br />
-With all of that in mind, we think those are pretty great updates to an already fantastic tool.  What would you like to see in the pastebin next?  image support?  diff support?  durations to keep a post?  something else?</p>
+<li>Raw Text (for copy and paste)</li>
+<li>Using the JavaScript-based <a href="http://alexgorbatchev.com/wiki/" target="_blank">SyntaxHighlighter</a> and tossing JaSHi.  Show me a Java-based syntax highlighter with as clean an interface and respectable highlighting, and I'd prefer it.  Searches returned nothing though.</li>
+<li>Send to Twitter - follow us <a href="http://www.twitter.com/mysticpaste">@mysticpaste</a> and let more people know about your paste and get solutions</li>
+<li>Comments - each paste can have any number of comments attached to it.  the owner of a paste could comment on what problem he's encountering, and get multiple comments about solutions.  Email address is never shared anywhere.</li>
+<li>Line Number Highlighting - if you'd like to highlight certain lines in your paste just add another parameter, comma-separated, with the line numbers (e.g. /view/10/4,5,10 or /view/10/4-10,15-20)</li>
+<li>Abuse Reporting - it happens all the time, spam fills a pastebin, we've added a few measures to combat this nuisance along with a "Report Abuse" function which takes the paste out of the history</li>
+<li>Code Refactoring - nothing to do with the UI, but there have been a few changes and enhancements under the hood.</li><br />
+</ul><br />
+<br /><br /><br />
+With all of that in mind, we think those are pretty great updates to an already fantastic tool.  What would you like to see in the pastebin next?  image support?  diff support?  durations to keep a post?  something else?
+
