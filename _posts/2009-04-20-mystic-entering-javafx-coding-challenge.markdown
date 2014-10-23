@@ -1,0 +1,40 @@
+---
+layout: post
+status: publish
+published: true
+title: Mystic entering JavaFX Coding Challenge
+author:
+  display_name: kinabalu
+  login: kinabalu
+  email: andrew@mysticcoders.com
+  url: http://www.mysticcoders.com
+author_login: kinabalu
+author_email: andrew@mysticcoders.com
+author_url: http://www.mysticcoders.com
+wordpress_id: 793
+wordpress_url: http://www.mysticcoders.com/blog/2009/04/20/mystic-entering-javafx-coding-challenge/
+date: '2009-04-20 09:00:29 +0000'
+date_gmt: '2009-04-20 16:00:29 +0000'
+categories:
+- News
+tags:
+- Java
+- Development
+comments:
+- id: 429
+  author: Simpson
+  author_email: milkygto@gmail.com
+  author_url: ''
+  date: '2009-04-24 11:27:09 +0000'
+  date_gmt: '2009-04-24 18:27:09 +0000'
+  content: '"He has been writing code since he was a 5-year old" ~ WOW'
+---
+<p>Most of our developers got an email weeks ago from Sun about the <a href="http:&#47;&#47;javafx.com&#47;challenge&#47;?intcmp=2668" title="JavaFX Coding Challenge" target="_blank">JavaFX Coding Challenge<&#47;a>. We've got a great idea that we are working on implementing, and this contest just gives us some extra incentive to plow through and get it done in short order. The only caveat with the submission in this contest, is that it must run in 3 places:<&#47;p></p>
+<ul>
+<li>Applet in a web browser<&#47;li>
+<li>Standalone<&#47;li>
+<li>JavaFX capable mobile<&#47;li><br />
+<&#47;ul></p>
+<p>This might hamper a bit, we're investigating any impact ... and we'll release our creation into the world in late May it seems!<&#47;p></p>
+<p>If you'd like to be part of a closed beta team to help us out, please <a href="http:&#47;&#47;www.mysticcoders.com&#47;contact&#47;" title="Mystic Contact Us" target="_top">contact us<&#47;a>!<&#47;p></p>
+<p><em>To our success!<&#47;em><&#47;p></p>

@@ -2,7 +2,11 @@
 layout: post
 title:  "New site design, mind the dust"
 date:   2014-10-20 15:05:42
-author: Andrew Lombardi
+author:
+  display_name: Andrew Lombardi
+  login: kinabalu
+  email: andrew@mysticcoders.com
+  url: http://www.mysticcoders.com
 ---
 
 We've decided to take the plunge and do a quick redesign of the site.  The old one was getting a bit long in the tooth, and we couldn't

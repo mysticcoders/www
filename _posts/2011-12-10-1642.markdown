@@ -1,0 +1,56 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+title: the.events
+author:
+  display_name: kinabalu
+  login: kinabalu
+  email: andrew@mysticcoders.com
+  url: http://www.mysticcoders.com
+author_login: kinabalu
+author_email: andrew@mysticcoders.com
+author_url: http://www.mysticcoders.com
+excerpt: speaking and training
+wordpress_id: 1642
+wordpress_url: http://www.mysticcoders.com/?p=1642
+date: '2011-12-10 14:20:43 +0000'
+date_gmt: '2011-12-10 21:20:43 +0000'
+categories: []
+tags: []
+comments: []
+---
+<p>Mystic strives to give back, and get the word out about technology and issues that are important to us.  We&acirc;&euro;&trade;re available for speaking engagements and training: speaking@mysticcoders.com.</p>
+<p>OCTOBER 18, 2011 (Scandev on Tour)&Acirc;&nbsp;|&Acirc;&nbsp;STOCKHOLM, SWEDEN<br />
+Off to Sweden in April for a talk at the wonderful Scandinavian Developer&acirc;&euro;&trade;s Conference on Tour 2011.  We&acirc;&euro;&trade;ll be giving a talk about Apache Wicket and how to get started.  And we&acirc;&euro;&trade;ll be doing an hour on building iPhone &#47; iPad applications using Javascript!  If you can make it, it should be a very packed and informative intense day.</p>
+<p>NOVEMBER 3 &acirc;&euro;&ldquo; 4, 2011 (Java2Days)&Acirc;&nbsp;|&Acirc;&nbsp;SOFIA, BULGARIA<br />
+For the second part of our European tour, we head to lovely Sofia, Bulgaria.  While there we&acirc;&euro;&trade;ll be giving talks about Apache Wicket and doing an hour on building iPhone &#47; iPad applications using Javascript!  See you there!</p>
+<p>FEBRUARY 29 &acirc;&euro;&ldquo; MARCH 2, 2012 (ConFoo)&Acirc;&nbsp;|&Acirc;&nbsp;MONTREAL, CANADA<br />
+Early in 2012 we&acirc;&euro;&trade;re going to brave the cold again and attend ConFoo in lovely Montreal, Canada.  We&acirc;&euro;&trade;ll try and put a few more daggers in Flash by talking about how to get started with HTML5.  And while we&acirc;&euro;&trade;re at it, if you&acirc;&euro;&trade;ve spent the time to learn some Javascript, we&acirc;&euro;&trade;ll do a session on how to build iOS (iPhone&#47;iPad) applications using the language and avoid the messy learning path of Objective-C.</p>
+<p>Archive Events</p>
+<p>                    MARCH 18 &acirc;&euro;&ldquo; 20, 2009 (TSSJS&#47;LV)&Acirc;&nbsp;|&Acirc;&nbsp;LAS VEGAS, NV<br />
+                    Andrew Lombardi will be speaking at TSSJS&#47;LV 2009 about Apache Wicket and its many benefits for any development teams</p>
+<p>                    JUNE 2 &acirc;&euro;&ldquo; 5, 2009 (JavaOne)&Acirc;&nbsp;|&Acirc;&nbsp;SAN FRANCISCO, CA<br />
+Some folks from Mystic are set to attend and cover 2009 JavaOne Conference this year.</p>
+<p>                    JUNE 11, 2009 (OCJUG)&Acirc;&nbsp;|&Acirc;&nbsp;ORANGE COUNTY, CA<br />
+Andrew will be speaking at the Orange County Java Users Group to talk about application architecture using Apache Wicket as a basis for solid object-oriented webapp development.  We&acirc;&euro;&trade;ll cover the basics of Apache Wicket along with real-world examples to get you started.</p>
+<p>                    SEPTEMBER 28, 2009&Acirc;&nbsp;|&Acirc;&nbsp;PASADENA, CA<br />
+We&acirc;&euro;&trade;ll be giving a talk on Apache Wicket.  Andrew won a Java Rebel license at the last Pasadena JUG and we&acirc;&euro;&trade;ve been kicking the tires so we can show it off along with Apache Wicket.  We&acirc;&euro;&trade;ll be showing off Apache Wicket 1.4, it&acirc;&euro;&trade;s benefits for any development teams.</p>
+<p>OCTOBER 8 &acirc;&euro;&ldquo; 9, 2009 (Java2Days)&Acirc;&nbsp;|&Acirc;&nbsp;SOFIA, BULGARIA<br />
+We&acirc;&euro;&trade;ve been invited and will be speaking at the Expo Center in Sofia about Java for the first conference of it&acirc;&euro;&trade;s kind in the balkans.</p>
+<p>OCTOBER 27 &acirc;&euro;&ldquo; 28, 2009 (TSSJS&#47;EU)&Acirc;&nbsp;|&Acirc;&nbsp;PRAGUE, CZECH REPUBLIC<br />
+We&acirc;&euro;&trade;ve been invited to again share Apache Wicket and the technologies benefits to developers and business people alike.</p>
+<p>MARCH 16 &acirc;&euro;&ldquo; 17, 2010 (Scandev)&Acirc;&nbsp;|&Acirc;&nbsp;G&Atilde;&ndash;TEBORG, SWEDEN<br />
+We&acirc;&euro;&trade;ve been asked to speak at the Scandev Conference SDC2010 event in Sweden in March of 2010.  We&acirc;&euro;&trade;ll be giving two talks during our time at the conference which will cover the basics of Apache Wicket along with a more in depth advanced talk to take full advantage of the power the framework provides.</p>
+<p>JUNE 1 &acirc;&euro;&ldquo; 3, 2010 (Jazoon)&Acirc;&nbsp;|&Acirc;&nbsp;ZURICH, SWITZERLAND<br />
+Andrew will be giving a talk about architecting applications with Apache Wicket for Jazoon &acirc;&euro;&trade;10.  We would love to see you in Switzerland in June, and learn a bit about how much better development can get with Wicket in the toolbelt.</p>
+<p>JUNE 8 &acirc;&euro;&ldquo; 11, 2010 (irishdev)&Acirc;&nbsp;|&Acirc;&nbsp;DUBLIN, IRELAND<br />
+We&acirc;&euro;&trade;ll be giving 2 in-depth talks about Apache Wicket for the Irish Developer Conference in Dublin.  The courses will be a beginner and advanced talk on Wicket so prepare to devour information about how to buildf your next application with Apache Wicket.  Learn to enjoy development again and eschew the broken model that has been promoted for so long in the web world.</p>
+<p>JUNE 14 &acirc;&euro;&ldquo; 17, 2010 (Uberconf)&Acirc;&nbsp;|&Acirc;&nbsp;DENVER, COLORADO<br />
+We&acirc;&euro;&trade;ve been invited to speak at &Atilde;&oelig;berconf in Denver to talk about Apache Wicket.  I&acirc;&euro;&trade;ve always liked the longer sessions at No Fluff Just Stuff, and this seems to take it to the next level.  We&acirc;&euro;&trade;ll be doing a beginner and advanced talk along with a half day of hands on, get up close and personal writing a real Wicket application.  We&acirc;&euro;&trade;re really excited about the prospect of coming out and sharing the information, and looking forward to seeing everyone there.</p>
+<p>OCTOBER 2 &acirc;&euro;&ldquo; 3, 2010 (Java2Days)&Acirc;&nbsp;|&Acirc;&nbsp;SOFIA, BULGARIA<br />
+Ahhh Dobar den!  Here at Mystic, we love the Bulgarian people a whole lot.  Our last trip out there was a whole lot of fun, and packed full of great talks, in-depth on every topic imaginable in the Java realm.  This year we&acirc;&euro;&trade;ll be giving two talks, one on Apache Wicket and another on HTML5.  If you&acirc;&euro;&trade;re in the area, make sure and join us in Sofia and come hang out for a couple of days.</p>
+<p>NOVEMBER 30 &acirc;&euro;&ldquo; DECEMBER 3, 2010 (RWX 2010)&Acirc;&nbsp;|&Acirc;&nbsp;FT LAUDERDALE, FLORIDA<br />
+Get ready for some fun in doors learning about web technology and especially Apache Wicket!  We&acirc;&euro;&trade;re reprising our talks from uberconf so if you missed it in Denver, catch it in Ft Lauderdale.  So fatten up on thanksgiving turkey, eat all the stuffing you can, and then fill your head full of great information down in Florida with the rest of us.  If uberconf is any indication, it promises to be a jam packed source for the latest and greatest on all the tech the web has to offer.</p>
+<p>APRIL 4 &acirc;&euro;&ldquo; 5, 2011 (Scandev)&Acirc;&nbsp;|&Acirc;&nbsp;G&Atilde;&ndash;TEBORG, SWEDEN<br />
+Off to Sweden in April for a talk at the wonderful Scandinavian Developer&acirc;&euro;&trade;s Conference 2011.  While we won&acirc;&euro;&trade;t be giving any talks about Apache Wicket this time, we do plan to evangelize while we are there.  This year we&acirc;&euro;&trade;ll be doing an hour talk about building iPhone&#47;iPad applications using JavaScript!  Should be a lot of fun, and G&Atilde;&para;teborg is beautiful and accommodating as always.</p>

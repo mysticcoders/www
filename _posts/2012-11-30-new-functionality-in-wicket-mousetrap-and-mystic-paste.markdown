@@ -1,0 +1,72 @@
+---
+layout: post
+status: publish
+published: true
+title: New functionality in wicket-mousetrap and Mystic Paste
+author:
+  display_name: kinabalu
+  login: kinabalu
+  email: andrew@mysticcoders.com
+  url: http://www.mysticcoders.com
+author_login: kinabalu
+author_email: andrew@mysticcoders.com
+author_url: http://www.mysticcoders.com
+wordpress_id: 1875
+wordpress_url: http://www.mysticcoders.com/?p=1875
+date: '2012-11-30 16:49:42 +0000'
+date_gmt: '2012-11-30 23:49:42 +0000'
+categories:
+- Apache Wicket
+tags: []
+comments: []
+---
+<p>On the 26th we released a small component to integrate with the <a href="http:&#47;&#47;craig.is&#47;killing&#47;mice">mousetrap.js<&#47;a> library for key shortcuts with Javascript.  Since then, we've integrated the library into <a href="http:&#47;&#47;mysticpaste.com">Mystic Paste<&#47;a> and have several handy shortcuts available now on the new paste, and history pages.</p>
+<h3>New Features<&#47;h3><br />
+Our latest update brings global bindings, default bindings, global default bindings, and the ability to define the key event you'd like to listen to for your shortcut.  These functions have afforded us the ability to bind <strong>Cmd+S<&#47;strong> (Mac) and <strong>Ctrl+S<&#47;strong> (Windows) to "Save a Paste" and ignore the default browser functions, and we can do that while still in the text area.  And we've simplified the reply to paste options, so simply hitting the "Repaste" button, or hitting <strong>"R"<&#47;strong> on the keyboard will take you to a form to reply to the original.</p>
+<h3>New Bindings<&#47;h3><br />
+Global bindings is an <a href="https:&#47;&#47;gist.github.com&#47;3885446">extension to mousetrap.js<&#47;a> that gives you the ability to respond to shortcuts from within form elements on the page.  Making it effectively global no matter where the users focus.  Here's an example of usage:</p>
+<p>[java]<br />
+getMousetrap().addGlobalBind(new KeyBinding()<br />
+    .addKeyCombo("r"),<br />
+    doSomething<br />
+);<br />
+[&#47;java]</p>
+<p>Default bindings is an <a href="https:&#47;&#47;gist.github.com&#47;3885446">extension to mousetrap.js<&#47;a> that overrides the default handling of keyboard shortcuts you define.  It is similar to adding a regular binding in that form fields will ignore the command.  Here's an example of usage:</p>
+<p>[java]<br />
+getMousetrap().addDefaultBind(new KeyBinding()<br />
+    .addKeyCombo(KeyBinding.COMMAND, "s")<br />
+    .addKeyCombo(KeyBinding.CTRL, "s"),<br />
+    doSomething<br />
+);<br />
+[&#47;java]</p>
+<p>The only issue with this, is the form fields are going to ignore the command, even though we're overriding the default browser functionality.  So we add one last binding, the default global bind.</p>
+<p>[java]<br />
+getMousetrap().addDefaultGlobalBind(new KeyBinding()<br />
+    .addKeyCombo(KeyBinding.COMMAND, "s")<br />
+    .addKeyCombo(KeyBinding.CTRL, "s"),<br />
+    doSomething<br />
+);<br />
+[&#47;java]</p>
+<p>Voila!  Exactly what we need.  And very easy to integrate and useful in your <a href="http:&#47;&#47;wicket.apache.org">Wicket<&#47;a> projects.  And another useful tidbit of how to make all of this integration work smoothly is how to call your Wicket code from Javascript in Wicket 6.</p>
+<h3>Calling Wicket 6 from Javascript<&#47;h3><br />
+One of the most important features necessary to make our integration successful, is the ability to call Wicket from Javascript.  Our initial integration utilized the new <em>Wicket.Ajax.get<&#47;em> call in <a href="http:&#47;&#47;wicket.apache.org">Wicket 6<&#47;a> like so:</p>
+<p>[java]<br />
+bindCommand.append("Mousetrap.bind(")<br />
+    .append("'ctrl+n'")<br />
+    .append(", function(e) { Wicket.Ajax.get({'u': '")<br />
+    .append(behavior.getCallbackUrl())<br />
+    .append("'}) });\n");<br />
+[&#47;java]</p>
+<p>And this will give us Javascript code something like the following:</p>
+<p>[javascript]<br />
+    Mousetrap.bind('ctrl+n', function(e) { Wicket.Ajax.get({'u': '&#47;wicket-ajax-url'}); });<br />
+[&#47;javascript]</p>
+<p>This works perfectly, for GET-based requests.  And with the help of <a href="https:&#47;&#47;github.com&#47;martin-g">Martin Grigorov<&#47;a> I soon realized if I wanted to POST, it wouldn't work.  So very early in the morning Martin was instrumental in helping me understand the proper way to call Wicket 6 from Javascript, like so:</p>
+<p>[java]<br />
+bindCommand.append("Mousetrap.bind(")<br />
+    .append('ctrl+n')<br />
+    .append(", function(e) {")<br />
+    .append(behavior.getCallbackScript())<br />
+    .append("});\n");<br />
+[&#47;java]</p>
+<p>As with most things Wicket, it helps to review the code and understand more fully what the method achieves.  And when you call getCallbackScript, it interrogates the object it's attached to (in this case a Form), and builds a proper Wicket.Ajax.X call with the appropriate parameters for everything.  That's it.  It's the kind of magic that made me fall in love with Wicket so many years ago.</p>

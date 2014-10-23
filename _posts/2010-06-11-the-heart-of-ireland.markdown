@@ -1,0 +1,66 @@
+---
+layout: post
+status: publish
+published: true
+title: The Heart of Ireland
+author:
+  display_name: kinabalu
+  login: kinabalu
+  email: andrew@mysticcoders.com
+  url: http://www.mysticcoders.com
+author_login: kinabalu
+author_email: andrew@mysticcoders.com
+author_url: http://www.mysticcoders.com
+wordpress_id: 1428
+wordpress_url: http://www.mysticcoders.com/?p=1428
+date: '2010-06-11 11:51:46 +0000'
+date_gmt: '2010-06-11 18:51:46 +0000'
+categories:
+- Mystic
+tags: []
+comments:
+- id: 3202
+  author: Theresa Lombardi
+  author_email: theresa@mysticcoders.com
+  author_url: http://www.inthedivine.com
+  date: '2010-06-11 18:41:27 +0000'
+  date_gmt: '2010-06-12 01:41:27 +0000'
+  content: What a gorgeous article! You are an amazing writer. I'm glad you had this
+    opportunity.
+- id: 3203
+  author: Sarah O'Farrell
+  author_email: sarahofarrell@yahoo.com
+  author_url: ''
+  date: '2010-06-12 06:37:51 +0000'
+  date_gmt: '2010-06-12 13:37:51 +0000'
+  content: "Thank you for visiting our country...\r\n\r\nI agree with Theresa, you
+    are an amazing writer.   This makes me feel proud to be Irish and I am touched
+    by your comments.\r\n\r\nGreat to meet you Andrew and I hope you will come back
+    soon! :-)"
+- id: 3218
+  author: Mitch Devine
+  author_email: devinelines@me.com
+  author_url: http://lovehateadvertising.wordpress.com/
+  date: '2010-07-08 12:37:58 +0000'
+  date_gmt: '2010-07-08 19:37:58 +0000'
+  content: I can almost taste the tea and smell the smoke. What a wonderful experience.
+    I've been to Northern Ireland briefly (to attend a wedding), so I know what you
+    mean about the people. Cheers, mate!
+- id: 3270
+  author: Andrew Lombardi Photography &raquo; Old Irish Woman
+  author_email: ''
+  author_url: http://andrew-lombardi.com/2010/11/old-irish-woman/
+  date: '2010-12-01 17:09:31 +0000'
+  date_gmt: '2010-12-02 00:09:31 +0000'
+  content: "[...] enchanting old lady of 86 years I wrote about back in June. Such
+    a sweet and special women who brought me out of my quest for the next thing, [...]"
+---
+<p><a href="http:&#47;&#47;www.flickr.com&#47;photos&#47;kinabalu&#47;4690785253&#47;" title="Bridie of Galway by kinabalu, on Flickr" target="_blank"><img src="http:&#47;&#47;farm5.static.flickr.com&#47;4029&#47;4690785253_420f921e10.jpg" width="500" height="333" alt="Bridie of Galway" &#47;><&#47;a></p>
+<p>As many of you know, I've been in Ireland since last Saturday June 5th, 2010.  I was invited here to speak at The Irish Software Show.  Both of my talks were on Thursday about <a href="http:&#47;&#47;wicket.apache.org" target="_blank">Apache Wicket<&#47;a>, and each of them were well received.  Our beginner talk was a big draw, and I feel it was the best presentation I've given.  Our second talk was equally fun, with less in attendance given it was a more advanced talk, and it was competing against the ubiquitous named presentation about <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;HTML5" target="_blank">HTML5<&#47;a>.  The conference was well organized by Barry and his team, and I really enjoyed the day sessions, the evangelist nights, and the speaker's dinner last night.</p>
+<p>This trip to Europe has allowed me to visit two countries I had not yet seen, <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Switzerland" target="_blank">Switzerland<&#47;a> and <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Ireland" target="_blank">Ireland<&#47;a>.  My visit to Zurich for <a href="http:&#47;&#47;jazoon.com" target="_blank">Jazoon<&#47;a> had me taking a slight detour to <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Interlaken" target="_blank">Interlaken<&#47;a> to jump out of an airplane at 11,000 feet.  An amazing experience feeling such freedom while enjoying the view of the Swiss Alps at the same time.  So when I arrived in Ireland I sought destinations and experiences to go a little deeper than the surface.</p>
+<p>Before today I felt that my visit to <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Cork" target="_blank">Cork<&#47;a> and <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Blarney_Castle" target="_blank">Blarney Castle<&#47;a> to visit and kiss the stone would be my most fond memory, experiencing the beautiful grounds, the fern garden, the surreal way it catapulted you back hundreds of years with it's environment.  Boy was I wrong, but definitely in a subtle way, and by a most unforgettable little old lady.</p>
+<p>Today I visited the beautiful <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Galway" target="_blank">Galway County<&#47;a> at several suggestions by many locals who love the town.  After visiting several of the sites, the shops in Galway City, and taking many pictures as I am fond of doing, I decided to venture out and visit a few of the surrounding castles on the way back to Dublin.  My first choice would find me down many really narrow country roads, and finally to a sign pointing the way to the castle.  Only thing is, I never found it.  I circled around the little winding roads surrounded by green everywhere, tried different paths, and the castle continued to evade me.</p>
+<p>Finally I came down the path I started, and happened upon an old woman walking down the path near her corner house.  Since my Irish car had me on the right-hand side of the car, I rolled down the window and we chatted about the castle.  And when she started speaking, there was a little glimmer of special in everything she said.  It was rapid fire English as I've gotten quite used to here on the island, and yet I understood her completely.  Her very essence and vitality brought me out of the car at her mandatory request to sit outside her door and continue our conversation.  It was surreal.  She had a house that looked hundreds of years old from the outside, a beautiful space with an amazing garden (aside from the lawn being mowed she cares for it herself).  And she's a young 86!  Our conversation spanned a wide range of topics about Ireland, the United States, her family, my family, and living a life filled with meaning.  </p>
+<p>The chat was regularly interrupted by the wind blowing smoke our direction from the Irish wedding that was in session (apparently the smoke is some traditional thing?) and random cars honking there horns passing by her quaint little home on the corner.  Her hospitality was astounding, she made me a cup of tea (at her demand), and it was simply divine.  While we talked, I felt like Bridie imbued the spirit of my late grandmother, so fervent in everything she said and who could argue with a woman of 86 years!  It allowed me to completely shut out everything else but those moments, and that experience.  </p>
+<p>I felt like it was the heart of Ireland reaching out, thanking me for the visit, and showing me that her country may have beautiful edifices ancient and grand, but the true spirit of the land is her people.</p>
+<p>Sad to be leaving tomorrow, see you soon Ireland!</p>

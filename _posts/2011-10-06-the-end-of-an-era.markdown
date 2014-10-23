@@ -1,0 +1,49 @@
+---
+layout: post
+status: publish
+published: true
+title: The end of an era
+author:
+  display_name: kinabalu
+  login: kinabalu
+  email: andrew@mysticcoders.com
+  url: http://www.mysticcoders.com
+author_login: kinabalu
+author_email: andrew@mysticcoders.com
+author_url: http://www.mysticcoders.com
+wordpress_id: 1611
+wordpress_url: http://www.mysticcoders.com/?p=1611
+date: '2011-10-06 20:07:22 +0000'
+date_gmt: '2011-10-07 03:07:22 +0000'
+categories:
+- Mystic
+tags: []
+comments:
+- id: 3432
+  author: topriddy
+  author_email: topriddy@gmail.com
+  author_url: http://www.topriddy.wordpress.com
+  date: '2011-10-06 20:19:09 +0000'
+  date_gmt: '2011-10-07 03:19:09 +0000'
+  content: ":("
+- id: 3433
+  author: John Carmack
+  author_email: therealjohncarmack@gmail.com
+  author_url: ''
+  date: '2011-10-07 08:03:16 +0000'
+  date_gmt: '2011-10-07 15:03:16 +0000'
+  content: A well-written tribute my friend.
+---
+<p><img src="http:&#47;&#47;www.mysticcoders.com&#47;wp-content&#47;uploads&#47;2011&#47;10&#47;apple-jobs.png" border="0" &#47;></p>
+<p>The first computer I spent any time on, was an Apple ][.  </p>
+<p>Three decades later, I'm writing this on an iMac.  And many of you will read it on some Apple-designed device whether it be a Mac, iPhone, iPod Touch, or iPad.  The company at the forefront of several revolutionary products, Apple, just lost their Wonka yesterday.  We all feel a sense of loss at his passing, I consider him one of the fathers of modern computing.  No other iconic figure represents the inventions and devices that many of us use every day like Steve Jobs did.</p>
+<p>For the last 14 years, he rebuilt the company he created from the ground up to be one of the strongest in the world.    And how did he resurrect a company that was near death?  Passion and a love for the work.</p>
+<blockquote><p><em>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.  And the only way to do great work is to <strong>love what you do<&#47;strong>.<&#47;em><&#47;blockquote></p>
+<p>Love what you do, and follow your heart.  It's the only true north you can count on, to take you forward in life.  </p>
+<p>So many things he brought into creation have dazzled us, and changed the face of industries thought to be immovable.  The company he cultivated and taught to be insanely great, yet again, is his legacy.  When his resignation came on August 24th, 2011, there was something prophetic in the letters words, and it lingered in the back of my mind:</p>
+<blockquote><p><em><br />
+"I have always said if there ever came a day when I could no longer meet my duties and expectations as Apple's CEO, I would be the first to let you know. Unfortunately, that day has come,"<br />
+<&#47;em><&#47;blockquote></p>
+<p>A little over a month later, unfortunately, that day has come.</p>
+<p>Our condolences to his family for their loss.  Every one of us that he had an impact on, have a bit more illumination and color in our lives thanks to his passion.</p>
+<p><em>"Stay Hungry, Stay Foolish"<&#47;em></p>
