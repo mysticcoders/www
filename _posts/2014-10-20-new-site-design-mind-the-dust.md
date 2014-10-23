@@ -7,6 +7,7 @@ author:
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com
+comments: true
 ---
 
 We've decided to take the plunge and do a quick redesign of the site.  The old one was getting a bit long in the tooth, and we couldn't

@@ -34,7 +34,9 @@ section_id: blog
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'gotmystic'; // required: replace example with your forum shortname
+        {% for config in site.disqus.config %}
+        var {{ config.label }} = '{{ config.value }}';
+        {% endfor %}
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
