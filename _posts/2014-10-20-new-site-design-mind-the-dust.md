@@ -11,9 +11,6 @@ us up on social media and tell us.  We're using [Jekyll][jekyll] to power the si
 keep things super simple.  
 
 Look for the old blog posts to be backfilled in here once we figure out how to work the `jekyll-import` tool
-<!--more-->
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 [github-pages]: https://pages.github.com/
 [jekyll]:    http://jekyllrb.com
