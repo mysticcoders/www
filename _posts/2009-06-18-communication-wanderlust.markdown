@@ -11,16 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: 'The research on this is pretty conclusive. Itâ€™s common knowledge now:
-  humans suck at multitasking.  We canâ€™t do it. Ever try to send an email while
-  talking or listening on the phone?  While youâ€™re writing that gem of an email,
-  youâ€™re ignoring the conversation.  Instead of doing one thing well, you end up
-  doing two things half-assed.'
 wordpress_id: 987
 wordpress_url: http://www.mysticcoders.com/?p=987
 date: '2009-06-18 20:53:43 +0000'
 date_gmt: '2009-06-19 03:53:43 +0000'
 tags: []
+comments: true
 ---
 <p>The research on this is pretty conclusive. Itâ€™s common knowledge now: humans suck at multitasking.  We canâ€™t do it. Ever try to send an email while talking or listening on the phone?  While youâ€™re writing that gem of an email, youâ€™re ignoring the conversation.  Instead of doing one thing well, you end up doing two things half-assed.<a id="more"></a><a id="more-987"></a></p>
 <p>Communication is now seamlessly accessible. Traveling by plane was the one time you could be sure to ignore everything, including the Internet. Now even that security hold has been breached.  There are so many communication technologies, theyâ€™ve become more burden than benefit, but if any one thing should receive the lionâ€™s share of blame, itâ€™s email.</p>

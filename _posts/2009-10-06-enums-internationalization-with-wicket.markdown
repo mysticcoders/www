@@ -15,6 +15,7 @@ wordpress_url: http://wicketbyexample.com/?p=130
 date: '2009-10-06 08:30:07 +0000'
 date_gmt: '2009-10-06 15:30:07 +0000'
 tags: []
+comments: true
 ---
 <p><em>(Editorâ€™s note: <a href="http://yeswicket.com" target="_blank">Olivier Croisier</a> contributed this column from YesWicket.)</em></p>
 <p>Enums are a convenient way to represent finite collections of elements : seasons, week days... As a consequence, they frequently need to be input or displayed in web applications - and it better be in a I18N-aware way.<br />

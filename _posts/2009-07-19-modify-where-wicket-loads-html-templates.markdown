@@ -11,14 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: In <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>,
-  the framework expects the HTML templates to mirror the class-file directory structure.  The
-  example below allows you to define a different path for your HTML files.
 wordpress_id: 27
 wordpress_url: http://wicketbyexample.com/?p=27
 date: '2009-07-19 22:53:28 +0000'
 date_gmt: '2009-07-20 05:53:28 +0000'
 tags: []
+comments: true
 ---
 <p>In <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>, the framework expects the HTML templates to mirror the class-file directory structure.  The example below allows you to define a different path for your HTML files.<a id="more"></a><a id="more-27"></a></p>
 <pre lang="java" colla="+">

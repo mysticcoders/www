@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1611
 date: '2011-10-06 20:07:22 +0000'
 date_gmt: '2011-10-07 03:07:22 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://www.mysticcoders.com/wp-content/uploads/2011/10/apple-jobs.png" border="0" /></p>
 <p>The first computer I spent any time on, was an Apple ][.  </p>

@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1907
 date: '2013-07-09 22:02:29 +0000'
 date_gmt: '2013-07-10 05:02:29 +0000'
 tags: []
+comments: true
 ---
 <p>I've recently reignited and cleaned up my <a href="http://www.omnigroup.com/products/omnifocus/">OmniFocus</a> projects and tasks after reading a brilliant article about utilizing GTD contexts in a different way.  Sven Fechner over at Simplicity Bliss discusses <a href="http://simplicitybliss.com/2011/06/a-fresh-take-on-contexts/">"A Fresh Take on Contexts"</a>.  Go ahead and read it, it makes a whole lotta sense.  Our devices have made many of the contexts from GTD parlance unnecessary, as email and much of the office work can all be done in a caf&eacute;.  </p>
 <p>One of the gems in that blog post, was an AppleScript you could use to find all the projects that didn't have any Next Actions assigned.  Curt Clifton who works for The Omni Group wrote an AppleScript which does just that and with it you can <a href="http://www.curtclifton.net/projects/">Verify Next Actions Exist</a>.</p>

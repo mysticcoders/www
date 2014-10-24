@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1364
 date: '2010-02-18 11:18:43 +0000'
 date_gmt: '2010-02-18 18:18:43 +0000'
 tags: []
+comments: true
 ---
 <p><a href="/about-us/andrew-lombardi">Andrew</a> has just accepted speaking at the first Ãœber Conf 2010 being held in Denver, Colorado.  A quick description of the conference:</p>
 <p><em>Ãœber Conf 2010 will offer over 100 technically focused sessions on Java the Platform including hands on workshops centered around Architecture, Cloud, Security, Enterprise Java, Languages on the JVM, Build/Test, Mobility and Agility. The goal of Ãœber Conf is a simple one: totally blow the minds of our attendees.</em></p>

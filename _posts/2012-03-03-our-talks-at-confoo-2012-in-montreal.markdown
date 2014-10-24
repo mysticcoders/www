@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1817
 date: '2012-03-03 17:08:39 +0000'
 date_gmt: '2012-03-04 00:08:39 +0000'
 tags: []
+comments: true
 ---
 <p><a href="http://confoo.ca/en" lang="en"><img alt="ConFoo Web Techno Conference. February 29th to March 2nd, 2012. Montreal" style="border:0" width="180" height="250" src="http://confoo.ca/images/propaganda/2012/en/250_html5.jpg" /></a></p>
 <p>We were invited up to Montreal, Quebec to present talks on HTML5 and building iOS Applications using Javascript.  The conference was held in quite an amazing city, and the organizers did a fantastic job.  Connected with several new folks, and a few that we go way back with.  </p>

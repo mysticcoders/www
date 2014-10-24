@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1632
 date: '2011-11-10 14:43:14 +0000'
 date_gmt: '2011-11-10 21:43:14 +0000'
 tags: []
+comments: true
 ---
 <p>Recently I gave several talks in Europe at <a href="http://www.scandevtour.se/2011-tour/" target="_blank">Scandev on Tour</a> in Stockholm and <a href="http://java2days.com" target="_blank">Java2Days</a> in Sofia.  Each time I've given a talk, I'm not only teaching up there, but learning from the crowd.  It's an immense and enjoyable experience, and a great passion to impart information and knowledge to those who attend my talks.  So, thank you, I am deeply appreciative and immensely grateful for everyone who has attended my sessions.</p>
 <p>It has just been released that Adobe is no longer going to be developing Flash for mobile devices.  This further solidifies what I discussed in my HTML5 talk in Sofia.  Mobile has decided that HTML5 shall be the next frontier for interactive development.</p>

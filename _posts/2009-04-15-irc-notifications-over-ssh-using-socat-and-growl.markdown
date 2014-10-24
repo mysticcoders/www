@@ -11,19 +11,11 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: "<p>Here at Mystic, we do a lot of remote work using <a href=\"http://en.wikipedia.org/wiki/Internet_Relay_Chat\"
-  target=\"_blank\">IRC</a>. And due to the heavy use of best of breed tools under
-  OSX and Linux, we find ourselves working in a shell a lot of the day, along with
-  our IDE. We like to keep in the Flow state for as much of the time working as possible,
-  so we turn off things like email notifications, twitter popups, and other such annoyances.</p>
-  \r\n"
 wordpress_id: 756
 wordpress_url: http://www.mysticcoders.com/blog/2009/04/15/irc-notifications-over-ssh-using-socat-and-growl/
 date: '2009-04-15 09:30:18 +0000'
 date_gmt: '2009-04-15 16:30:18 +0000'
-tags:
-- Technology
-- Development
+comments: true
 ---
 <p>Here at Mystic, we do a lot of remote work using <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank">IRC</a>. And due to the heavy use of best of breed tools under OSX and Linux, we find ourselves working in a shell a lot of the day, along with our IDE. We like to keep in the Flow state for as much of the time working as possible, so we turn off things like email notifications, twitter popups, and other such annoyances.</p>
 <p><a id="more"></a><a id="more-756"></a></p>

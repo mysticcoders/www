@@ -16,6 +16,7 @@ wordpress_url: http://wicketbyexample.com/?p=76
 date: '2009-07-31 15:15:18 +0000'
 date_gmt: '2009-07-31 22:15:18 +0000'
 tags: []
+comments: true
 ---
 <p>We just finished up a little blog post talking about upgrading the sample app from <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">5 Days of Wicket</a> to Wicket 1.4 which was just released.  Learn about a simple <a href="http://www.mysticcoders.com/blog/2009/07/31/after-the-5-days-of-wicket-upgrading-to-wicket-14/">conversion to 1.4 of MysticPaste.com</a> on <a href="http://www.mysticcoders.com/blog">Mystic's blog</a>.  We review some of our findings:</p>
 <ul>

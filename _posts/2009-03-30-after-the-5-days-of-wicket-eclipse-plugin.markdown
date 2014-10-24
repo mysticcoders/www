@@ -10,30 +10,11 @@ author:
   url: ''
 author_login: Craig Tataryn
 author_email: ctataryn@mysticcoders.com
-excerpt: "Don't get me wrong, <a href=\"http://www.mysticpaste.com/\">Mystic Paste</a>
-  is great!  However if I'm on ##wicket and someone asks a question about some code,
-  and I know I've written that code, I want to be the first to respond.  I don't want
-  some n00b making me look like a n00b by responding first :)  \r\n\r\nSo instead
-  of:\r\n<ol style=\"list-style-type:lower-alpha;\">\r\n\t<li>copying code to the
-  clipboard</li>\r\n        <li>opening up my browser</li>\r\n\t<li>navigating to
-  Mystic Paste</li>\r\n\t<li>pasting my code</li>\r\n\t<li>selecting the syntax highlighting
-  language</li>\r\n\t<li>clicking submit</li>\r\n\t<li>copying the url for the pasted
-  code to my clipboard</li>\r\n\t<li>pasting that to irc</li>\r\n\t<li>bang my head
-  against the wall cause someone else beat me to it...</li>\r\n</ol>\r\n\r\nI can
-  instead:\r\n<ol style=\"list-style-type:lower-alpha;\">\r\n\t<li>right click on
-  the text I have selected in my editor and choose \"Add to Mystic Paste\"</li>\r\n\t<li>paste
-  url to irc</li>\r\n</ol>\r\n\r\nThat's what  the plugin does, it will take that
-  text, figure out which type of editor it resides in and use that information to
-  determine the syntax, post the code to Mystic Paste and copy the url for the code
-  to the clipboard.  Boom, now steps a) through i) become steps a) to b) .\r\n"
 wordpress_id: 572
 wordpress_url: http://www.mysticcoders.com/?p=572
 date: '2009-03-30 07:00:27 +0000'
 date_gmt: '2009-03-30 14:00:27 +0000'
-tags:
-- Apache Wicket
-- eclipse
-- plugin
+comments: true
 ---
 <p>Don't get me wrong, <a href="http://www.mysticpaste.com/">Mystic Paste</a> is great!  However if I'm on ##wicket and someone asks a question about some code, and I know I've written that code, I want to be the first to respond.  I don't want some n00b making me look like a n00b by responding first :)  </p>
 <p>So instead of:</p>

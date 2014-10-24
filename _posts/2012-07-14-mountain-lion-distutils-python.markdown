@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1823
 date: '2012-07-14 23:50:05 +0000'
 date_gmt: '2012-07-15 06:50:05 +0000'
 tags: []
+comments: true
 ---
 <p>Since installing the GM of a new cat, there have been relatively few issues.  Thankfully.</p>
 <p>One that recently came up, was attempting to run nosetests in a virtualenv using Python.  The oddest error showed after running nose, pip, etc</p>

@@ -11,13 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: |
-  We've been seeing more and more implementations of <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore</a> out in the wild for <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.  The interface basically decides how Wicket will store the <a href="http://cwiki.apache.org/WICKET/page-maps.html" target="_blank">Pagemap</a> for your application.  The default that ships with Wicket uses <a href="http://wicketbyexample.com/api/wicket/1.4.6/org/apache/wicket/protocol/http/pagestore/DiskPageStore.html" target="_blank">DiskPageStore</a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http://letsgetdugg.com" target="_blank">Letsgetdugg</a> a few days ago: <a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Clustering Wicket for fun and profit!</a>, I decided to take a look at writing an implementation using <a href="http://hazelcast.com" target="_blank">Hazelcast</a> - an "open source clustering and highly scalable data distribution platform".
 wordpress_id: 1726
 wordpress_url: http://wicketbyexample.com/?p=215
 date: '2010-02-10 22:23:35 +0000'
 date_gmt: '2010-02-11 05:23:35 +0000'
 tags: []
+comments: true
 ---
 <p>We've been seeing more and more implementations of <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore</a> out in the wild for <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.  The interface basically decides how Wicket will store the <a href="http://cwiki.apache.org/WICKET/page-maps.html" target="_blank">Pagemap</a> for your application.  The default that ships with Wicket uses <a href="http://wicketbyexample.com/api/wicket/1.4.6/org/apache/wicket/protocol/http/pagestore/DiskPageStore.html" target="_blank">DiskPageStore</a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http://letsgetdugg.com" target="_blank">Letsgetdugg</a> a few days ago: <a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Clustering Wicket for fun and profit!</a>, I decided to take a look at writing an implementation using <a href="http://hazelcast.com" target="_blank">Hazelcast</a> - an "open source clustering and highly scalable data distribution platform".<br />
 <a id="more"></a><a id="more-1726"></a><br />

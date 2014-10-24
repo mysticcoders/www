@@ -16,6 +16,7 @@ wordpress_url: http://wicketbyexample.com/?p=172
 date: '2010-01-29 22:56:00 +0000'
 date_gmt: '2010-01-30 05:56:00 +0000'
 tags: []
+comments: true
 ---
 <p>There are definitely times, that I wish I had easy access to the javadoc for something in the Wicket internals, without opening the IDE, or keeping my own local versions available.</p>
 <p>I usually resort to a quick Google search and unfortunately 9 / 10 I get a non-recent javadoc version.</p>

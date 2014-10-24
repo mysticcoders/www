@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1413
 date: '2010-05-14 20:45:25 +0000'
 date_gmt: '2010-05-15 03:45:25 +0000'
 tags: []
+comments: true
 ---
 <p>I gave a talk last night at the <a href="http://ocjug.org" target="_blank">Orange County Java User's Group (OCJUG)</a> on Google App Engine development with the Java platform.  This was the same one we gave at the <a href="http://scandevconf.se" target="_blank">Scandinavian Developer Conference</a> in March.  The whole talk stemmed from a good friend <a href="http://www.eugeneciurana.com" target="_blank">Eugene Ciurana</a> being unable to attend, so I adapted his slides and did the talk.  </p>
 <p>One of the aspects I added was a demo showing how to deploy a <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> based web application to the dev server and then ultimately up to Google App Engine's servers.  In addition, the demo rather than show off the easy-to-use Eclipse plugin opts for using the <a href="http://code.google.com/appengine/downloads.html" target="_blank">App Engine SDK</a> along with Maven to build.  And we also use <a href="http://code.google.com/p/simpleds/" target="_blank">simpleds</a> for persistence in the demo just to show an alternative to the JDO / JPA offerings that Google provides on top of Datastore.</p>

@@ -15,8 +15,7 @@ wordpress_id: 554
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/19/tssjs-vegas-2009-google-web-toolkit-an-introduction/
 date: '2009-03-19 10:00:58 +0000'
 date_gmt: '2009-03-19 17:00:58 +0000'
-tags:
-- Java
+comments: true
 ---
 <p>David Geary's talk on <a href="http://code.google.com/webtoolkit/" title="GWT" target="_blank">Google Web Toolkit</a> was one of the highlights of the day. Oddly enough they held it in the <em>polar room</em> and kept it at a brisk 30 below! Aside from feeling like we were stuck in the North Pole, the presentation was informative and engaging, and David's dry humor left us chuckling (the only warmth we could generate in that room). Have I mentioned that the room was cold?</p>
 <p>If you've never heard of GWT, it's yet another framework. This time it's from <a href="http://google.com" title="Google" target="_blank">Google</a> and powers several but definitely not all of their client facing applications. It's basic premise is that "Ajax is hard", and so it does what it must to abstract things away like Javascript and offers awesome productivity boosts by allowing you to code Ajax-based applications almost entirely using Java. And the *really* cool thing is, you can debug your application, by stepping through Java code instead of using something like <a href="http://getfirebug.com/" title="Firebug" target="_blank">Firebug</a> for Javascript. The team has come up with a lot of really innovative new solutions, to old problems. It also allows the programmer that is familiar with idioms like AWT, Swing, and SWT to understand much more rapidly the constructs needed to build a GWT app.</p>

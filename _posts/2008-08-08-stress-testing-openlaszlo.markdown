@@ -10,14 +10,6 @@ author:
   url: ''
 author_login: jedstrom
 author_email: jedstrom@mysticcoders.com
-excerpt: "I was playing with object redrawing in Laszlo (4.0.6).&Acirc;&nbsp;This
-  is what I came up with, &Acirc;&nbsp;it seems I hit flash engine issues above a
-  certain level of attached nodes but it does handle re-draws quite well once rendered.\r\n\r\nHere
-  is the code I was playing with and a screenshot....\r\n\r\n&Acirc;&nbsp;\r\n\r\n[caption
-  id=\"attachment_76\" align=\"aligncenter\" width=\"300\" caption=\"Interconnected
-  nodes\"]<a href=\"http://www.mysticcoders.com/wp-content/uploads/2008/08/graphs.png\"><img
-  class=\"size-medium wp-image-76\" src=\"http://www.mysticcoders.com/wp-content/uploads/2008/08/graphs.png\"
-  alt=\"Interconnected nodes\" width=\"300\" height=\"268\" /></a>[/caption]\r\n\r\n"
 wordpress_id: 75
 wordpress_url: http://www.mysticcoders.com/?p=75
 date: '2008-08-08 13:35:21 +0000'

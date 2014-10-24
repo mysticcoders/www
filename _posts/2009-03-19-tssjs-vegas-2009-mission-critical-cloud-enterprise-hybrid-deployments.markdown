@@ -15,8 +15,7 @@ wordpress_id: 558
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/19/tssjs-vegas-2009-mission-critical-cloud-enterprise-hybrid-deployments/
 date: '2009-03-19 10:30:48 +0000'
 date_gmt: '2009-03-19 17:30:48 +0000'
-tags:
-- Java
+comments: true
 ---
 <p>Eugene Ciurana's talk was on the new hotness, the buzzword du jour Cloud Computing. One of the main goals as a presenter which I learned watching Eugene, is that your role is not just to teach and blather on, but to entertain. Eugene definitely has an air of confidence while he speaks, and it makes the content of his talk much more interesting. He also gave away free books to the 2 individuals with the best and most engaging questions for him during his presentation, sneaky. His talk consisted of the how-to on designing, implementing and rolling out a cloud/enterprise based application based on his experiences in the last several companies he's been employed.</p>
 <p>There are a wealth of technologies involved with Cloud Computing, and Eugene attempted to break down into logical areas where each item applied to the overall architecture. Eugene covered the two types of services offered in the Cloud:</p>

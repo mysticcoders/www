@@ -15,6 +15,7 @@ wordpress_url: http://wicketbyexample.com/?p=203
 date: '2010-02-09 09:58:11 +0000'
 date_gmt: '2010-02-09 16:58:11 +0000'
 tags: []
+comments: true
 ---
 <p>Last week  I was searching  examples while working in integrating OpenID in a Java Web Applications and I found a very recent article (January 27th) on the IBM developerWorks.<br />
 <a href="http://www.ibm.com/developerworks/java/library/j-openid/index.html"></a></p>

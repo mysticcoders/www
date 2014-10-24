@@ -11,17 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: 'A quick howto <small>(via <a href="http://cwiki.apache.org/WICKET/adding-javascript-or-css-using-a-resource.html"
-  target="_blank">wicket wiki</a>)</small> on adding Javascript or CSS to your pages,
-  and having them compressed during the "deployment" cycle automatically by Wicket.
-  So to start with, we need to copy or Javascript or CSS file somewhere in our package
-  hierarchy that we can reference in our Page. For simplicity, we can copy it right
-  next to the HTML file like so:'
 wordpress_id: 38
 wordpress_url: http://wicketbyexample.com/?p=38
 date: '2009-07-20 00:41:26 +0000'
 date_gmt: '2009-07-20 07:41:26 +0000'
 tags: []
+comments: true
 ---
 <p>A quick howto <small>(via <a href="http://cwiki.apache.org/WICKET/adding-javascript-or-css-using-a-resource.html" target="_blank">wicket wiki</a>)</small> on adding Javascript or CSS to your pages, and having them compressed during the "deployment" cycle automatically by Wicket. So to start with, we need to copy or Javascript or CSS file somewhere in our package hierarchy that we can reference in our Page. For simplicity, we can copy it right next to the HTML file like so:<a id="more"></a><a id="more-38"></a></p>
 <pre>

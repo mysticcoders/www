@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1922
 date: '2013-11-26 11:53:10 +0000'
 date_gmt: '2013-11-26 18:53:10 +0000'
 tags: []
+comments: true
 ---
 <p>If we spend any time on the tubes, we know that the internet is a large and wonderful place.  It has allowed us to communicate and shrink the world, and learn whatever we wish to learn along the way.  This could be how to fold a fitted sheet, learn the meaning behind string theory, or watch some stars spoof an already disturbingly odd music video (cheers Kanye).  More and more the useful and useless stuff comes via known suspects: Facebook, Reddit, Twitter, etc.  </p>
 <p>So if you'd like to give yourself a timeout, because you have no self control (I don't, it's cool).  Use <a href="http://selfcontrolapp.com/">SelfControl.app</a> and give yourself freedom from whatever sites are wasting your time while you're trying to get actual work done.  Edit the blacklist, and add the half of the internet that is useless, which usually comes from the above sites first.  After starting, those websites will now refuse to load.</p>

@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1831
 date: '2012-10-30 09:47:57 +0000'
 date_gmt: '2012-10-30 16:47:57 +0000'
 tags: []
+comments: true
 ---
 <p><a href="http://www.flickr.com/photos/kinabalu/sets/72157631889108228/"><img src="http://farm9.staticflickr.com/8464/8138802052_dd2cf9456f_c.jpg" border="0" /></a></p>
 <p>Bulgaria.</p>

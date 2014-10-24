@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/blog/idea-mobile-meditation-app/
 date: '2012-01-26 11:32:18 +0000'
 date_gmt: '2012-01-26 18:32:18 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://farm7.staticflickr.com/6071/6131624592_a86d75325e.jpg" width="500" /></p>
 <p><a href="http://www.mysticcoders.com/idea-lab/"><em>A full list of the ideas currently in the IdeaLab</em></a></p>

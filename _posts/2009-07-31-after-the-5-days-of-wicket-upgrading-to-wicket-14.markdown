@@ -11,18 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: If you follow anything about Wicket, you know that they just released <a
-  href="http://wicketbyexample.com/wicket-developers-release-apache-wicket-1-4/">Wicket
-  1.4</a> which offers some very nice improvements and structural changes that make
-  it even more awesome of a framework to work with.  Back in March of this year we
-  brought you <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">5
-  Days of Wicket</a>, so in today's post we upgrade the sample application which is
-  available online at <a href="http://mysticpaste.com">MysticPaste.com</a> to 1.4.
 wordpress_id: 1094
 wordpress_url: http://www.mysticcoders.com/?p=1094
 date: '2009-07-31 15:06:30 +0000'
 date_gmt: '2009-07-31 22:06:30 +0000'
 tags: []
+comments: true
 ---
 <p>If you follow anything about Wicket, you know that they just released <a href="http://wicketbyexample.com/wicket-developers-release-apache-wicket-1-4/">Wicket 1.4</a> which offers some very nice improvements and structural changes that make it even more awesome of a framework to work with.  Back in March of this year we brought you <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">5 Days of Wicket</a>, so in today's post we upgrade the sample application which is available online at <a href="http://mysticpaste.com">MysticPaste.com</a> to 1.4.<a id="more"></a><a id="more-1094"></a></p>
 <h4>Dependency Changes</h4>

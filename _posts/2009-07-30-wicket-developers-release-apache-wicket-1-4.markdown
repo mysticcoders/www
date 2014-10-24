@@ -16,6 +16,7 @@ wordpress_url: http://wicketbyexample.com/?p=74
 date: '2009-07-30 20:05:51 +0000'
 date_gmt: '2009-07-31 03:05:51 +0000'
 tags: []
+comments: true
 ---
 <p>The <a href="http://wicket.apache.org" target="_blank">Wicket</a> folks have released the latest incarnation of the framework in <a href="http://wicket.apache.org/apache-wicket-14-takes-type-safety-to-the-next-level.html" target="_blank">Apache Wicket 1.4</a>.  Notable improvements are:</p>
 <ul>

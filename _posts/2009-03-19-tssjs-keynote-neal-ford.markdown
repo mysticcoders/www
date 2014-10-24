@@ -15,8 +15,7 @@ wordpress_id: 542
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/19/tssjs-keynote-neal-ford/
 date: '2009-03-19 09:00:16 +0000'
 date_gmt: '2009-03-19 16:00:16 +0000'
-tags:
-- Java
+comments: true
 ---
 <p>The conference was kicked off with a great keynote speech by <a href="http://www.nealford.com/" title="Neal Ford" target="_blank">Neal Ford</a>. The presentation was â€œ<em><a href="http://javasymposium.techtarget.com/html/sessions.html#NFordKeynote" target="_blank">Productive Programmer: On the Lam from the Furniture Police</a></em>â€ and was a subject near and dear to many developers who have ever worked in a cube farm, and wanted to squeeze more productivity out of your day. As â€œknowledge workersâ€ weâ€™re all expected to have enough focus to write useful code to get our projects to completion.</p>
 <p>To that end, Nealâ€™s talk moved through the topicâ€™s range and discussed brain theory, the zone, and creating a healthy workspace.</p>

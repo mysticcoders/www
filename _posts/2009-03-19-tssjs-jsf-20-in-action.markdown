@@ -15,8 +15,7 @@ wordpress_id: 545
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/19/tssjs-jsf-20-in-action/
 date: '2009-03-19 09:30:16 +0000'
 date_gmt: '2009-03-19 16:30:16 +0000'
-tags:
-- Java
+comments: true
 ---
 <p>The next talk I attended was presented by Kito Mann from <a href="http://www.virtua.com/" title="Virtua, Inc." target="_blank">Virtua</a> and went over the new items that are expected in the next major release. JSF2.0 will be part of Java Enterprise Edition 6, and the official <a href="http://jcp.org/aboutJava/communityprocess/edr/jsr314/" title="JSR314" target="_blank">JSR is 314</a>.</p>
 <p>Kito has a professional grasp of all the new aspects of <a href="http://jcp.org/en/jsr/detail?id=314" title="JavaServer Faces 2.0" target="_blank">JavaServer Faces 2.0</a>, and gave a great presentation with lots of detailed information. One of the things the community designing the spec had as their vision was to: Listen, Prioritize, and Implement. While the next major release of JSF won't be final until sometime in June, it does help to silence a lot of the current problems that exist in JavaServer Faces.</p>

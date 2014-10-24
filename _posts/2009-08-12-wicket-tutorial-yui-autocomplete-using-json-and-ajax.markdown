@@ -16,6 +16,7 @@ wordpress_url: http://wicketbyexample.com/?p=80
 date: '2009-08-12 06:51:28 +0000'
 date_gmt: '2009-08-12 13:51:28 +0000'
 tags: []
+comments: true
 ---
 <p>A new step-by-step tutorial on how to integrate a Yahoo! User Interface Library (YUI) <a href="http://developer.yahoo.com/yui/autocomplete/">AutoComplete</a> control with Wicket can be found here:</p>
 <p><a href="http://ptrthomas.wordpress.com/2009/08/12/wicket-tutorial-yui-autocomplete-using-json-and-ajax/">Wicket Tutorial: YUI AutoComplete using JSON and Ajax</a></p>

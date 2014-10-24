@@ -16,6 +16,7 @@ wordpress_url: http://wicketbyexample.com/?p=156
 date: '2010-01-27 19:37:01 +0000'
 date_gmt: '2010-01-28 02:37:01 +0000'
 tags: []
+comments: true
 ---
 <p>The Wicket Extensions package provides a neat component called the AutoCompleteTextField.</p>
 <p>In a nutshell, this allows you to provide a TextField with a List of Strings and when you start typing, the ones that match the input show up. This is a great component, but consider this scenario:</p>

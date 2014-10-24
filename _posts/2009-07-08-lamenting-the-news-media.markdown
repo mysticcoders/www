@@ -11,18 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: "<strong>The news media is dead.</strong><br/>\r\nThe internet is the smoking
-  gun, and the people are the bullets.  Watching the nightly news used to involve
-  talking heads who we believed in and trusted.  The anchors were bringing us news
-  from around the world, straight to that magical television set, information we couldn't
-  get anywhere else, and they did it with class and style.  For a good part of the
-  last century, news was revolutionary, CNN's 24 hour channel was mindblowing and
-  new.  Today, it's nowhere near interesting anymore."
 wordpress_id: 1010
 wordpress_url: http://www.mysticcoders.com/?p=1010
 date: '2009-07-08 08:30:31 +0000'
 date_gmt: '2009-07-08 15:30:31 +0000'
 tags: []
+comments: true
 ---
 <p><strong>The news media is dead.</strong><br/><br />
 The internet is the smoking gun, and the people are the bullets.  Watching the nightly news used to involve talking heads who we believed in and trusted.  The anchors were bringing us news from around the world, straight to that magical television set, information we couldn't get anywhere else, and they did it with class and style.  For a good part of the last century, news was revolutionary, CNN's 24 hour channel was mindblowing and new.  Today, it's nowhere near interesting anymore.<a id="more"></a><a id="more-1010"></a></p>

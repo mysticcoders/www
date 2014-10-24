@@ -11,21 +11,11 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: "<p>In our previous post, we showed you how to use socat, ssh, and some fancy
-  footwork to pipe a UDP-based request coming from <a href=\"http://search.cpan.org/~nmcfarl/Net-Growl-0.99/lib/Net/Growl.pm\"
-  title=\"Net::Growl\" target=\"_blank\">Net::Growl</a>, through a TCP-based reverse-proxy
-  ala SSH, and back to the Mac as a UDP-request straight to <a href=\"http://growl.info\"
-  title=\"Growl\" target=\"_blank\">Growl</a>.</p>\r\n<p>What happens if you've got
-  more than one person wanting to do the same thing from that same shell server? Aside
-  from everyone agreeing on a few ports they'd like to reserve for their Growl activities,
-  here's the skinny.</p>\r\n"
 wordpress_id: 771
 wordpress_url: http://www.mysticcoders.com/blog/2009/04/15/growl-over-ssh-with-multiple-users-without-conflicts/
 date: '2009-04-16 08:30:51 +0000'
 date_gmt: '2009-04-16 15:30:51 +0000'
-tags:
-- Technology
-- Development
+comments: true
 ---
 <p>In our previous post, we showed you how to use socat, ssh, and some fancy footwork to pipe a UDP-based request coming from <a href="http://search.cpan.org/~nmcfarl/Net-Growl-0.99/lib/Net/Growl.pm" title="Net::Growl" target="_blank">Net::Growl</a>, through a TCP-based reverse-proxy ala SSH, and back to the Mac as a UDP-request straight to <a href="http://growl.info" title="Growl" target="_blank">Growl</a>.</p>
 <p>What happens if you've got more than one person wanting to do the same thing from that same shell server? Aside from everyone agreeing on a few ports they'd like to reserve for their Growl activities, here's the skinny.</p>

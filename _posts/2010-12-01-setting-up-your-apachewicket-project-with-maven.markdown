@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1491
 date: '2010-12-01 16:21:48 +0000'
 date_gmt: '2010-12-01 23:21:48 +0000'
 tags: []
+comments: true
 ---
 <p>Here at Mystic, we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> for it's clean separation of mark-up and logic, simple POJO data model and one of the first web frameworks to espouse lack of XML as a benefit.</p>
 <p>1. Download <a href="http://maven.apache.org">Apache Maven</a>.<br />

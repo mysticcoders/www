@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1444
 date: '2010-08-24 16:28:36 +0000'
 date_gmt: '2010-08-24 23:28:36 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://farm3.static.flickr.com/2407/2537877226_5a74c40bcc.jpg" border="0" /></p>
 <p>Looks like another fun filled latter half of the year.  Andrew will be speaking at two more conferences this year and speaking about Web technology more specifically HTML5 and <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>.  I highly recommend both conferences if you're close, or want to take a nice vacation to really awesome spots.</p>

@@ -11,14 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: A great contribution from <a href="http://www.komuso.cz/" target="_blank">Vit
-  Rozkovec</a> gives us a Wicket Behavior that renders a mailto link for an email
-  address based model.
 wordpress_id: 78
 wordpress_url: http://wicketbyexample.com/?p=78
 date: '2009-08-07 17:08:16 +0000'
 date_gmt: '2009-08-08 00:08:16 +0000'
 tags: []
+comments: true
 ---
 <p>A great contribution from <a href="http://www.komuso.cz/" target="_blank">Vit Rozkovec</a> gives us a Wicket Behavior that renders a mailto link for an email address based model.<a id="more"></a><a id="more-78"></a></p>
 <pre lang="java" colla="+">

@@ -10,14 +10,12 @@ author:
   url: ''
 author_login: ildella
 author_email: ildella@gmail.com
-excerpt: 'Some tricks to use TinyMCE wicket integration in a real application: toggle
-  behavior on and off with user interactions, submit a form via ajax with a tinyMCE
-  component inside.'
 wordpress_id: 101
 wordpress_url: http://wicketbyexample.com/?p=101
 date: '2009-09-16 13:04:01 +0000'
 date_gmt: '2009-09-16 20:04:01 +0000'
 tags: []
+comments: true
 ---
 <p>Wicket offers a valid integration with the powerful and open source <a href="http://tinymce.moxiecode.com/">TinyMCE</a>, a Javascript HTML WYSIWYG editor. Wicket-contrib-tinymce is part of the wicketstuff-core and is well done and maintained. Then using TinyMCE within wicket is very easy and the <a href="http://wicketstuff.org/confluence/display/STUFFWIKI/wicket-contrib-tinymce">instructions on the site</a> would be enough to make things work and the example project on the subversion repository will do most of the rest.</p>
 <p><a id="more"></a><a id="more-101"></a></p>

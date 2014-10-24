@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1529
 date: '2011-02-06 22:46:54 +0000'
 date_gmt: '2011-02-07 05:46:54 +0000'
 tags: []
+comments: true
 ---
 <p>Our signature sample is our <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">"5 Days Of Wicket"</a> tutorial app <a href="http://mysticpaste.com">MysticPaste.com</a>.  And recently I decided to migrate the app from being proxied by <a href="http://httpd.apache.org/" target="_blank">Apache</a> to <a href="http://nginx.org">nginx</a>. </p>
 <p>We have always backed the pastebin with <a href="http://jetty.codehaus.org" target="_blank">Jetty</a> and this hasn't changed.  Without further adieu here is our config for nginx:</p>

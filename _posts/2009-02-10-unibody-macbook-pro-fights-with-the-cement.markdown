@@ -11,10 +11,6 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: "I don't know what the cement said to my beloved Macbook Pro to make it
-  so angry, whatever it was it made her very very angry. ... The machine is going
-  in for plastic surgery on Thursday night, and I'm told, I can pick it up on Monday.
-\r\n"
 wordpress_id: 150
 wordpress_url: http://www.mysticcoders.com/blog/2009/02/10/unibody-macbook-pro-fights-with-the-cement/
 date: '2009-02-10 17:20:13 +0000'

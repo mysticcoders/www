@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1591
 date: '2011-07-15 17:13:39 +0000'
 date_gmt: '2011-07-16 00:13:39 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://www.mysticcoders.com/wp-content/uploads/2011/07/spotify.jpg" border="0" /></p>
 <p><strong>EDIT:</strong> <em><a href="http://www.jacktams.net/2011/07/21/spotify-applescripts-0-5-2/">Follow this link</a> for the latest scripts which utilize Spotify's more enhanced Applescript support</em></p>

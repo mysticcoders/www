@@ -11,18 +11,11 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: <p>Our initial plugin for IDEA that talked to <a href="http://www.mysticpaste.com"
-  target="_blank">MysticPaste.com</a> was fairly simple, offered no feedback to the
-  user that anything happened. I spent some time trying to find out a method of achieving
-  unobtrusive notification that the paste was successful. On initial glance at the
-  API, nothing jumped out except for <em>Messages</em>, and <em>StatusBar</em>.</p>
 wordpress_id: 784
 wordpress_url: http://www.mysticcoders.com/blog/2009/04/21/idea-development-adding-notifications/
 date: '2009-04-22 09:30:23 +0000'
 date_gmt: '2009-04-22 16:30:23 +0000'
-tags:
-- Java
-- Development
+comments: true
 ---
 <p>Our initial plugin for IDEA that talked to <a href="http://www.mysticpaste.com" target="_blank">MysticPaste.com</a> was fairly simple, offered no feedback to the user that anything happened. I spent some time trying to find out a method of achieving unobtrusive notification that the paste was successful. On initial glance at the API, nothing jumped out except for <em>Messages</em>, and <em>StatusBar</em>.</p>
 <p><a id="more"></a><a id="more-784"></a>

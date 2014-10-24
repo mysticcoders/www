@@ -15,9 +15,7 @@ wordpress_id: 541
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/16/mystic-attending-tssjs-this-week/
 date: '2009-03-16 01:24:02 +0000'
 date_gmt: '2009-03-16 08:24:02 +0000'
-tags:
-- Java
-- Technology
+comments: true
 ---
 <p><a href="http://mysticcoders.com/" title="mystic coders - to our success!">Mystic</a> will be in attendance in Vegas for <a href="http://javasymposium.techtarget.com/html/frameworks.html#ALombardiWicket" title="The Server Side Java Symposium" target="_blank">The Server Side Java Symposium</a> this year, as we've mentioned. We'll be doing regular updates and reviews of the sessions we attend, and what was learned by the presenters. As we are also giving a talk on Friday, we know how hard each speaker has worked to put together their presentations and applaud them all in advance. If you're coming to the conference, stop by on Friday at 3PM for our talk on <a href="http://wicket.apache.org" title="Apache Wicket" target="_blank">Apache Wicket</a>!</p>
 <p>Reviewing the schedule this year, a theme of main topics seems to have emerged: SOA, Groovy, and tools to ramp up on X framework.</p>

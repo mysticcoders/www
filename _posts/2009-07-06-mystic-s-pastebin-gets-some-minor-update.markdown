@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=999
 date: '2009-07-06 08:30:20 +0000'
 date_gmt: '2009-07-06 15:30:20 +0000'
 tags: []
+comments: true
 ---
 <p>With our pastebin <a href="http://mysticpaste.com">MysticPaste.com</a>, one of the biggest roadblocks to a clean-looking UI, is keeping it uncluttered while offering the functionality needed.  Apple and a majority of the software released for their operating system seems to "get it".  Sensible defaults and all that are important in keeping it simple.</p>
 <p>At Mystic we've used our little pastebin experiment to teach on building code with <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>.  We plan to continue this tradition in the near future talking about some of the new items in <a href="http://mysticpaste.com">MysticPaste.com</a>'s feature list:</p>

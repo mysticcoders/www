@@ -10,10 +10,6 @@ author:
   url: ''
 author_login: Craig Tataryn
 author_email: ctataryn@mysticcoders.com
-excerpt: As the Manning publications book Wicket in Action is soon to hit the shelf
-  of your local book store, I was granted the opportunity of a sneak preview.  Now,
-  I'm not a person with a lot of spare time on my hands these days but I felt an obligation
-  to give this book a serious read
 wordpress_id: 82
 wordpress_url: http://www.mysticcoders.com/?p=82
 date: '2008-09-09 10:35:35 +0000'

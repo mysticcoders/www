@@ -16,6 +16,7 @@ wordpress_url: http://wicketbyexample.com/?p=99
 date: '2009-08-20 16:00:52 +0000'
 date_gmt: '2009-08-20 23:00:52 +0000'
 tags: []
+comments: true
 ---
 <p>The awesome development team at Apache Wicket has just released it's first maintenance release.  Of note is the transparent support for file uploads when AJAX is being used.  Wicket automatically submits the form using a hidden iframe rather than the standard
 <pre>XMLHttpRequest</pre>

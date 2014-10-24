@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1927
 date: '2013-12-03 07:15:11 +0000'
 date_gmt: '2013-12-03 14:15:11 +0000'
 tags: []
+comments: true
 ---
 <p>Our <a href="http://www.java2days.com">Java2Days</a> talks have been completed.  There is still another day left of amazing talks by amazing speakers.  Can't wait to see more talks about WebSockets, <a href="http://ohmdb.com">OhmDB</a>, and more Java technologies.</p>
 <p>Our talks:</p>

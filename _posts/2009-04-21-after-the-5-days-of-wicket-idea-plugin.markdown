@@ -11,20 +11,11 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: <p>From the beginning of building out <a href="http://www.mysticpaste.com"
-  target="_blank">Mystic Paste</a>, the vision was to have multiple interfaces to
-  allow ubiquitous use of the pastebin. With the variety of plugins we've got out
-  now including Eclipse, IDEA, VIM, and NetBeans, that vision is definitely here.
-  If you reached this link looking for the plugin, look no further, the plugin page
-  has <a href="http://www.mysticpaste.com/plugin" target="_blank">downloads for multiple
-  IDE platforms</a>.</p>
 wordpress_id: 782
 wordpress_url: http://www.mysticcoders.com/blog/2009/04/20/after-the-5-days-of-wicket-idea-plugin/
 date: '2009-04-21 09:00:28 +0000'
 date_gmt: '2009-04-21 16:00:28 +0000'
-tags:
-- Java
-- Development
+comments: true
 ---
 <p>From the beginning of building out <a href="http://www.mysticpaste.com" target="_blank">Mystic Paste</a>, the vision was to have multiple interfaces to allow ubiquitous use of the pastebin. With the variety of plugins we've got out now including Eclipse, IDEA, VIM, and NetBeans, that vision is definitely here. If you reached this link looking for the plugin, look no further, the plugin page has <a href="http://www.mysticpaste.com/plugin" target="_blank">downloads for multiple IDE platforms</a>.</p>
 <p><a id="more"></a><a id="more-782"></a>

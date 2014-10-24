@@ -11,13 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: Wicket makes it very easy to integrate directly with the <a href="http://springframework.org"
-  target="_blank">Spring Framework</a>.
 wordpress_id: 1711
 wordpress_url: http://wicketbyexample.com/?p=34
 date: '2009-07-20 00:25:43 +0000'
 date_gmt: '2009-07-20 07:25:43 +0000'
 tags: []
+comments: true
 ---
 <p>Wicket makes it very easy to integrate directly with the <a href="http://springframework.org" target="_blank">Spring Framework</a>.<a id="more"></a><a id="more-1711"></a></p>
 <p>In any Component (Page, Panel, etc) to include a Spring bean you would do:</p>

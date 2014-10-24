@@ -11,10 +11,6 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: After much loss of sleep trying to use DatePicker in wicket-extensions, I've
-  instead opted to create a simple component with date selectable dropdowns of month,
-  day, year.  This little pet project was great, in that it helped me really get a
-  better understanding of how Model's work with Wicket
 wordpress_id: 43
 wordpress_url: http://www.mysticcoders.com/blog/2006/08/21/datechooser-component-for-wicket/
 date: '2006-08-21 00:17:17 +0000'

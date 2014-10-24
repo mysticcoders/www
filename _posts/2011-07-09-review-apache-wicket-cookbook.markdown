@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1551
 date: '2011-07-09 15:24:57 +0000'
 date_gmt: '2011-07-09 22:24:57 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://www.mysticcoders.com/wp-content/uploads/2011/05/Apache-Wicket.png" border="0" /></p>
 <p>Here at Mystic, it would come as no surprise to anyone who has read our blogs or worked with our team that we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>.  I was pleasantly surprised when the team at <a href="http://www.packtpub.com/" target="_blank">Packt Publishing</a> emailed me about reviewing the new <a href="http://www.packtpub.com/apache-wicket-cookbook/book" target="_blank">Apache Wicket Cookbook</a>.  In equal measure I was happy to see that they had snagged <a href="http://www.packtpub.com/authors/profiles/igor-vaynberg" target="_blank">Igor Vaynberg</a> to author this tome.</p>

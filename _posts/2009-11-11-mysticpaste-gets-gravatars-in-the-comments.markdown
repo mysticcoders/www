@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1240
 date: '2009-11-11 09:37:30 +0000'
 date_gmt: '2009-11-11 16:37:30 +0000'
 tags: []
+comments: true
 ---
 <p>Since comments were added many months ago, we've been meaning to make them a little more ... pretty.  So last night one of our guys spent a little time creating a custom component to represent a <a href="http://gravatar.com" target="_blank">Gravatar</a>.  If you have a Gravatar go check out <a href="http://mysticpaste.com" target="_blank">MysticPaste.com</a> and play with the functionality.  It's simple, but fun.</p>
 <p>if you don't have a Gravatar, <a href="http://en.gravatar.com/site/signup" target="_blank">Signup for one here</a>.</p>

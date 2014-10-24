@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1250
 date: '2010-01-04 20:19:03 +0000'
 date_gmt: '2010-01-05 03:19:03 +0000'
 tags: []
+comments: true
 ---
 <p>Being a small business owner, I do a lot of talking on the phone.  It could be on the iPhone, but if I'm at the computer it's usually via <a href="http://www.skype.com" target="_blank">Skype</a>.  I like to limit my usage of the mouse to as little as possible, so <a href="http://www.obdev.at/products/launchbar/index.html" target="_blank">Launchbar</a> is another absolute must.  Enter Skype Applescripts for Launchbar.</p>
 <p>Simply do one of two things:</p>

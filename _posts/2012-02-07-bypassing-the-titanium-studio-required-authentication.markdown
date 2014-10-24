@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1810
 date: '2012-02-07 12:08:21 +0000'
 date_gmt: '2012-02-07 19:08:21 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://www.mysticcoders.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-07-at-10.59.43-AM.png" border="0" /></p>
 <p>A flight is sometimes the perfect time for uninterrupted work.  So as we've been building things with the mobile toolkit <a href="http://www.appcelerator.com" target="_blank">Appcelerator Titanium</a>, I ran it from my trusty key shortcut.  Above is the only thing I saw.  I even warn folks about this when giving talks about how to rapidly develop iOS applications with Titanium.</p>

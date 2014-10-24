@@ -15,9 +15,7 @@ wordpress_id: 793
 wordpress_url: http://www.mysticcoders.com/blog/2009/04/20/mystic-entering-javafx-coding-challenge/
 date: '2009-04-20 09:00:29 +0000'
 date_gmt: '2009-04-20 16:00:29 +0000'
-tags:
-- Java
-- Development
+comments: true
 ---
 <p>Most of our developers got an email weeks ago from Sun about the <a href="http://javafx.com/challenge/?intcmp=2668" title="JavaFX Coding Challenge" target="_blank">JavaFX Coding Challenge</a>. We've got a great idea that we are working on implementing, and this contest just gives us some extra incentive to plow through and get it done in short order. The only caveat with the submission in this contest, is that it must run in 3 places:</p>
 <ul>

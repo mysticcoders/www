@@ -15,10 +15,7 @@ wordpress_id: 559
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/19/tssjs-vegas-2009-navigating-the-soa-minefield/
 date: '2009-03-19 11:00:16 +0000'
 date_gmt: '2009-03-19 18:00:16 +0000'
-tags:
-- Java
-- tsss
-- tssjs2009
+comments: true
 ---
 <p><a href="http://javasymposium.techtarget.com/html/soa.html#HKeslerSOA" title="Heath Kesler - Navigating SOA Minefield" target="_blank">Heath Kesler</a> was the final presentation of the day that I attended, and covered one of the other hot topics these days, <a href="http://en.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture" target="_blank">SOA</a>. Many enterprises have attached to the ideal of a service oriented architecture, but have found issues during implementation that the core team were unable to overcome. Charly^HHeath put together an informative presentation on some of the challenges that present themselves when designing an SOA-based system and/or picking up the pieces of a five alarm fire.</p>
 <p>Navigation is the key here, and Heath talks us through some typical on-site with the client problems that he's been involved with during his professional career. Designing or fixing an existing SOA implementation requires some best practices to be discovered and put into place. The best practices discussed for this session:</p>

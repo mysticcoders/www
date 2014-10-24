@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1782
 date: '2012-01-26 00:07:11 +0000'
 date_gmt: '2012-01-26 07:07:11 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://farm1.staticflickr.com/146/388116980_c7285712a8.jpg" border="0" /></p>
 <p><a href="http://www.mysticcoders.com/idea-lab/"><em>A full list of the ideas currently in the IdeaLab</em></a></p>

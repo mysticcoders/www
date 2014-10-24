@@ -16,6 +16,7 @@ wordpress_url: http://wicketbyexample.com/?p=141
 date: '2009-11-11 08:35:40 +0000'
 date_gmt: '2009-11-11 15:35:40 +0000'
 tags: []
+comments: true
 ---
 <p>The comment system that was added to <a href="http://mysticpaste.com" target="_blank">mysticpaste.com</a> several months ago was pretty bare, boring.  It consisted of capturing name, email, and the comment of which we show name and comment only.  Since we're avid blog posters and readers, the thought of implementing a custom Wicket component for a <a href="http://gravatar.com" target="_blank">Gravatar</a> immediately came to mind.</p>
 <p>First things first, extend our new GravatarImage component from WebComponent.  We don't need the image to hold any nested components, etc:</p>

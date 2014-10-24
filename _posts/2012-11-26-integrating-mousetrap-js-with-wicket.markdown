@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1854
 date: '2012-11-26 12:58:35 +0000'
 date_gmt: '2012-11-26 19:58:35 +0000'
 tags: []
+comments: true
 ---
 <p>Over the weekend, I came across a neat library <a href="http://craig.is/killing/mice">mousetrap.js</a> used to add key commands to your web application.  It can be used in any browser including:</p>
 <ul>

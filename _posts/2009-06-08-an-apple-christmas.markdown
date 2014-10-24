@@ -11,18 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: "<p>The first day of Apple's WWDC has been a momentous occasion for many
-  Apple enthusiasts (read: rabid fanboi).  There is a newness in the air, the night
-  before is a mixture of anticipation and wonder, will we get any work done between
-  10am and noon tomorrow?  Will there be a new X released?  What is the limit on my
-  credit card right now?  The question is hopefully yes to all of these questions,
-  and the man in the horn-rimmed glasses and turtle neck will make us believe that
-  it's going to be great!"
 wordpress_id: 980
 wordpress_url: http://www.mysticcoders.com/?p=980
 date: '2009-06-08 21:45:47 +0000'
 date_gmt: '2009-06-09 04:45:47 +0000'
 tags: []
+comments: true
 ---
 <p>The first day of Apple's WWDC has been a momentous occasion for many Apple enthusiasts (read: rabid fanboi).  There is a newness in the air, the night before is a mixture of anticipation and wonder, will we get any work done between 10am and noon tomorrow?  Will there be a new X released?  What is the limit on my credit card right now?  The question is hopefully yes to all of these questions, and the man in the horn-rimmed glasses and turtle neck will make us believe that it's going to be great!<a id="more"></a><a id="more-980"></a></p>
 <p></p>

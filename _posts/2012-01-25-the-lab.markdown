@@ -17,6 +17,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1776
 date: '2012-01-25 22:36:08 +0000'
 date_gmt: '2012-01-26 05:36:08 +0000'
 tags: []
+comments: true
 ---
 <p>Ideas should be shared.  </p>
 <p>Weâ€™ve got tons of ideas, and we think the best thing to do with them, is share them with the world.  Some of these ideas may be very unfinished, and theyâ€™ll be shared anyway, and revised over time.</p>

@@ -11,26 +11,11 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: <p>Humans love shiny. And there's nothing more shiny to a programmer than
-  a brand new version of a tool used every day. Here at <a href="http://www.mysticcoders.com">Mystic</a>
-  we use IRC as our primary mode of communication and project collaboration, and several
-  of us have chosen <a href="http://weechat.flashtux.org" title="Weechat" target="_blank">Weechat</a>.
-  Recently we wrote about receiving <a href="http://www.mysticcoders.com/blog/2009/04/15/irc-notifications-over-ssh-using-socat-and-growl/"
-  title="IRC Notifications over SSH using socat and growl" target="_top">irc notifications
-  from Weechat over ssh</a>, and the plugin written was for the current stable version
-  of <a href="http://weechat.flashtux.org/download.php" title="Weechat 0.2.6 download"
-  target="_blank">Weechat 0.2.6</a>. The development version of Weechat is a complete
-  rewrite, and breaks plugin compatibility. If we rewrote <a href="http://www.mysticcoders.com/apps/growl-notify/"
-  title="growl-net-notify plugin" target="_blank">growl-net-notify.pl</a> for this
-  new version, the choice was to manage two separate source files, or find some way
-  to make one work for both. I chose the latter method because programmers as I've
-  always said, are smart lazy people, we'll do whatever we can to automate something.</p>
 wordpress_id: 798
 wordpress_url: http://www.mysticcoders.com/blog/2009/04/21/updating-growl-net-notifypl-for-weechat-027/
 date: '2009-04-23 09:00:17 +0000'
 date_gmt: '2009-04-23 16:00:17 +0000'
-tags:
-- Development
+comments: true
 ---
 <p>Humans love shiny. And there's nothing more shiny to a programmer than a brand new version of a tool used every day. Here at <a href="http://www.mysticcoders.com">Mystic</a> we use IRC as our primary mode of communication and project collaboration, and several of us have chosen <a href="http://weechat.flashtux.org" title="Weechat" target="_blank">Weechat</a>. Recently we wrote about receiving <a href="http://www.mysticcoders.com/blog/2009/04/15/irc-notifications-over-ssh-using-socat-and-growl/" title="IRC Notifications over SSH using socat and growl" target="_top">irc notifications from Weechat over ssh</a>, and the plugin written was for the current stable version of <a href="http://weechat.flashtux.org/download.php" title="Weechat 0.2.6 download" target="_blank">Weechat 0.2.6</a>. The development version of Weechat is a complete rewrite, and breaks plugin compatibility. If we rewrote <a href="http://www.mysticcoders.com/apps/growl-notify/" title="growl-net-notify plugin" target="_blank">growl-net-notify.pl</a> for this new version, the choice was to manage two separate source files, or find some way to make one work for both. I chose the latter method because programmers as I've always said, are smart lazy people, we'll do whatever we can to automate something.</p>
 <p><a id="more"></a><a id="more-798"></a></p>

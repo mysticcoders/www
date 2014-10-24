@@ -11,16 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: Developing interactivity in your website pages will require you, to build
-  a portion of it with javascript.  If that javascript needs to perform its actions
-  when the DOM has finished loading, you have several options depending on if you
-  are using a javascript library or not.  If you're going the non-library route, you
-  can do the following
 wordpress_id: 1026
 wordpress_url: http://www.mysticcoders.com/?p=1026
 date: '2009-07-11 21:15:30 +0000'
 date_gmt: '2009-07-12 04:15:30 +0000'
 tags: []
+comments: true
 ---
 <p><img src="http://www.mysticcoders.com/wp-content/uploads/2009/07/3367743012_7a668400b0_b.jpg" alt="Javascript " title="Javascript " width="492" height="327" class="alignnone size-full wp-image-1059" /></p>
 <p>Developing interactivity in your website pages will require you, to build a portion of it with javascript.  If that javascript needs to perform its actions when the DOM has finished loading, you have several options depending on if you are using a javascript library or not.  If you're going the non-library route, you can do the following:<a id="more"></a><a id="more-1026"></a></p>

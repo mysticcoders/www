@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1875
 date: '2012-11-30 16:49:42 +0000'
 date_gmt: '2012-11-30 23:49:42 +0000'
 tags: []
+comments: true
 ---
 <p>On the 26th we released a small component to integrate with the <a href="http://craig.is/killing/mice">mousetrap.js</a> library for key shortcuts with Javascript.  Since then, we've integrated the library into <a href="http://mysticpaste.com">Mystic Paste</a> and have several handy shortcuts available now on the new paste, and history pages.</p>
 <h3>New Features</h3>

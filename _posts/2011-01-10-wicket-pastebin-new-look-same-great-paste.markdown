@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1512
 date: '2011-01-10 11:00:39 +0000'
 date_gmt: '2011-01-10 18:00:39 +0000'
 tags: []
+comments: true
 ---
 <p><a href="http://mysticpaste.com"><img src="http://www.mysticcoders.com/wp-content/uploads/2011/01/mysticpaste2_0.png" border="0" /></a></p>
 <p>So our little <a href="http://mysticpaste.com" target="_blank">pastebin</a> has been growing up lately!  After playing the staring role in <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">5 days of Wicket</a> as an example project, it's been used as a public pastebin for almost two years.  So as with all older stars, it was in dire need of a facelift.</p>

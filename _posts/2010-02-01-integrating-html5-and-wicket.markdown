@@ -11,15 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: |
-  After following some of the debates raging about <a href="http://www.apple.com/ipad/" target="_blank">Apple's new iPad</a> and the future of <a href="http://www.adobe.com/products/flashplayer/" target="_blank">Adobe's Flash</a>, the discussion usually turned to the coming future of <a href="http://dev.w3.org/html5/spec/Overview.html" target="_blank">HTML5</a>.
-
-  Seeing as we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> at <a href="http://www.mysticcoders.com" target="_blank">Mystic</a>, I thought I'd tinker around to see how hard it would be to start adding some support for the new HTML5 tags.  There are quite a few examples out there that show off <code>canvas</code>, <code>geolocation</code>, <code>storage</code>, and of course <code>video</code> and <code>audio</code>.
 wordpress_id: 1723
 wordpress_url: http://wicketbyexample.com/?p=191
 date: '2010-02-01 00:13:34 +0000'
 date_gmt: '2010-02-01 07:13:34 +0000'
 tags: []
+comments: true
 ---
 <p>After following some of the debates raging about <a href="http://www.apple.com/ipad/" target="_blank">Apple's new iPad</a> and the future of <a href="http://www.adobe.com/products/flashplayer/" target="_blank">Adobe's Flash</a>, the discussion usually turned to the coming future of <a href="http://dev.w3.org/html5/spec/Overview.html" target="_blank">HTML5</a>.</p>
 <p>Seeing as we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> at <a href="http://www.mysticcoders.com" target="_blank">Mystic</a>, I thought I'd tinker around to see how hard it would be to start adding some support for the new HTML5 tags.  There are quite a few examples out there that show off <code>canvas</code>, <code>geolocation</code>, <code>storage</code>, and of course <code>video</code> and <code>audio</code>.<br />

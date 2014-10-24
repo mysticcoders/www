@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1221
 date: '2009-11-04 08:30:09 +0000'
 date_gmt: '2009-11-04 15:30:09 +0000'
 tags: []
+comments: true
 ---
 <p>After meeting <a href="http://www.jroller.com/talipozturk/" target="_blank">Talip Ozturk</a> at <a href="http://www.java2days.com" target="_blank">Java2Days</a> in Sofia back in October, I was inspired to take <a href="http://www.hazelcast.com/" target="_blank">Hazelcast</a> out for a test drive.  What better way to do this, than to throw it head first into our little pet project <a href="http://www.mysticpaste.com" target="_blank">pastebin</a>!  After perusing the well put together documentation on the project's website, I set out modifying the codebase to additionally support Hazelcast as a storage mechanism.</p>
 <p>I aim to keep this short and sweet, find the latest code to <a href="http://kenai.com/projects/mystic-apps/sources" target="_blank">download including Hazelcast</a>.  We'll go over:</p>

@@ -16,6 +16,7 @@ wordpress_url: http://www.mysticcoders.com/?p=1268
 date: '2010-02-03 11:14:05 +0000'
 date_gmt: '2010-02-03 18:14:05 +0000'
 tags: []
+comments: true
 ---
 <p>The debate has been raging since the once mythic and fabled <a href="http://www.apple.com/ipad" target="_blank">iPad</a> was finally announced by <a href="http://www.apple.com" target="_blank">Apple</a>.  Why has <a href="http://www.adobe.com/products/flashplayer/" target="_blank">Adobe's Flash</a> been "banned" from these devices?  The posturing over the last few weeks by the Adobe camp has been interesting to watch.  We've seen <a href="http://www.leebrimelow.com/" target="_blank">Lee Brimelow</a> and his now infamous <a href="http://theflashblog.com/?p=1703" target="_blank">grid of blue lego's</a> (which included a porn site originally) but this has been heartily <a href="http://www.flickr.com/photos/kigiphoto/4314276957/" target="_blank">disproven</a>.  Aside from <a href="http://hulu.com" target="_blank">Hulu</a> and <a href="http://www.farmville.com/" target="_blank">Farmville</a> there are already alternatives available on the iPhone today.  And there's already been talk that Farmville for the iPhone/iPad is coming very soon.</p>
 <p>So really, what are the possible reasons why Apple has thus far refused to include Flash on it's mobile devices?</p>
