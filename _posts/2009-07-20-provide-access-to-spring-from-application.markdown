@@ -19,27 +19,24 @@ wordpress_id: 1712
 wordpress_url: http://wicketbyexample.com/?p=43
 date: '2009-07-20 01:33:24 +0000'
 date_gmt: '2009-07-20 08:33:24 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments: []
 ---
-When developing with <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>, there are times when you won't be able to use wicket-spring to access your bean implementations.  Here is a simple example that you can add to your Wicket Application class to make accessing the context easier<a id="more"></a><a id="more-1712"></a>
-
+<p>When developing with <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>, there are times when you won't be able to use wicket-spring to access your bean implementations.  Here is a simple example that you can add to your Wicket Application class to make accessing the context easier<a id="more"></a><a id="more-1712"></a></p>
 <pre lang="java" colla="+">
-    protected void init() {<br />
-        ...<br />
-        ServletContext servletContext = super.getServletContext();<br />
-        applicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);<br />
-        ...<br />
+
+    protected void init() {
+        ...
+        ServletContext servletContext = super.getServletContext();
+        applicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+        ...
     }
 
     private ApplicationContext applicationContext;
 
-    public Object getBean(String name) {<br />
+
+    public Object getBean(String name) {
         if (name == null) return null;
 
-        return applicationContext.getBean(name);<br />
-    }<br />
+        return applicationContext.getBean(name);
+    }
 </pre>
-

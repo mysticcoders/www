@@ -15,10 +15,8 @@ wordpress_id: 34
 wordpress_url: http://www.mysticcoders.com/wordpress/2006/01/31/cgsresolveshmemreference-offset-exceeds-bounds/
 date: '2006-01-31 14:10:29 +0000'
 date_gmt: '2006-01-31 21:10:29 +0000'
-categories:
-- Apple Mac
 tags: []
-comments: []
+comments: true
 ---
 After working on my machine for quite a bit today, I started getting crashes in certain programs, and I haven't seen this pre-10.4.4.  The following was seen in Console.app:
 

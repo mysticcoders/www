@@ -22,29 +22,8 @@ wordpress_id: 75
 wordpress_url: http://www.mysticcoders.com/?p=75
 date: '2008-08-08 13:35:21 +0000'
 date_gmt: '2008-08-08 21:35:21 +0000'
-categories:
-- Web
-tags:
-- Web
-- Open Laszlo
-- tip
-comments:
-- id: 95
-  author: Recent Links Tagged With "openlaszlo" - JabberTags
-  author_email: ''
-  author_url: http://www.jabbertags.com/popular/openlaszlo
-  date: '2008-12-26 16:19:09 +0000'
-  date_gmt: '2008-12-26 22:19:09 +0000'
-  content: "[...] public links >> openlaszlo   Stress testing OpenLaszlo Saved by
-    canhhiep on Fri 12-12-2008   European OpenLaszlo Meeting 2008 Saved by ksoohy
-    on Fri [...]"
-- id: 3140
-  author: sagl&Auml;&plusmn;khaberleri
-  author_email: seni-ariyorumm@hotmail.com
-  author_url: ''
-  date: '2010-03-01 17:29:23 +0000'
-  date_gmt: '2010-03-02 00:29:23 +0000'
-  content: thanks.good good artickle
+tags: []
+comments: true
 ---
 I was playing with object redrawing in Laszlo (4.0.6).&Acirc;&nbsp;This is what I came up with, &Acirc;&nbsp;it seems I hit flash engine issues above a certain level of attached nodes but it does handle re-draws quite well once rendered.
 

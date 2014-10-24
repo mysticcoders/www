@@ -19,10 +19,8 @@ wordpress_id: 150
 wordpress_url: http://www.mysticcoders.com/blog/2009/02/10/unibody-macbook-pro-fights-with-the-cement/
 date: '2009-02-10 17:20:13 +0000'
 date_gmt: '2009-02-11 00:20:13 +0000'
-categories:
-- Apple Mac
 tags: []
-comments: []
+comments: true
 ---
 and it lost this round.
 

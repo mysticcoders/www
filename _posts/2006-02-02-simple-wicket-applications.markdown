@@ -15,10 +15,8 @@ wordpress_id: 35
 wordpress_url: http://www.mysticcoders.com/wordpress/2006/02/02/simple-wicket-applications/
 date: '2006-02-02 21:13:40 +0000'
 date_gmt: '2006-02-03 04:13:40 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments: []
+comments: true
 ---
 I will be preparing a full tutorial on building a simple but functional application using <a href="http://wicket.sf.net">Wicket</a>.  Here are two applications which were built in a very short amount of time, with the very simple framework.
 

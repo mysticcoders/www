@@ -15,12 +15,7 @@ wordpress_id: 49
 wordpress_url: http://www.mysticcoders.com/blog/2006/09/03/apple-simplicity-and-itunes/
 date: '2006-09-03 21:30:14 +0000'
 date_gmt: '2006-09-04 05:30:14 +0000'
-categories:
-- Apple Mac
-tags:
-- tip
-- Apple Mac
-comments: []
+comments: true
 ---
 I'm sure this has already been heavily blogged, but I just noticed a new option in my "speakers" pull down available on the bottom right of iTunes if you have an Airport Express.
 

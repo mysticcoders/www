@@ -15,13 +15,8 @@ wordpress_id: 293
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/04/scalability-high-availability-refcard/
 date: '2009-03-04 10:30:30 +0000'
 date_gmt: '2009-03-04 17:30:30 +0000'
-categories:
-- Technology
-tags:
-- Web
-- Technology
-- Development
-comments: []
+tags: []
+comments: true
 ---
 If you've ever wondered what the architects who designed the system powering that big farm of servers, <a href="http://eugeneciurana.com" title="Eugene Ciurana" target="_blank">Eugene Ciurana</a> has written the guide for you. At just shy of 6 pages, with a wealth of great, easy to understand diagrams, it is a quick but informative read. I must admit however, that I'm a bit biased, as I've worked with Eugene on some of the large systems that he's designed, and have seen the concepts he explains in this refcard, put into action and work. Giving up some vitals to <a href="http://dzone.com" title="DZone" target="_blank">DZone</a> puts this reference in your hands, you will be pleased you did:
 

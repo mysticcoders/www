@@ -19,22 +19,7 @@ wordpress_id: 43
 wordpress_url: http://www.mysticcoders.com/blog/2006/08/21/datechooser-component-for-wicket/
 date: '2006-08-21 00:17:17 +0000'
 date_gmt: '2006-08-21 07:17:17 +0000'
-categories:
-- Apache Wicket
-tags:
-- Apache Wicket
-- Java
-- Development
-comments:
-- id: 583
-  author: Date DropDownChoice Component Apache Wicket &laquo; Aparna Chaudhary Blog
-  author_email: ''
-  author_url: http://aparnachaudhary.net/?p=272
-  date: '2009-08-19 00:40:28 +0000'
-  date_gmt: '2009-08-19 07:40:28 +0000'
-  content: "[...] sigh&#8230;the component was not available. I googled a bit and
-    found the nice implementation by Mystic Coders. A small TODO thing in this piece
-    of code is that the date drop down always show 31 days [...]"
+comments: true
 ---
 After much loss of sleep trying to use DatePicker in wicket-extensions, I've instead opted to create a simple component with date selectable dropdowns of month, day, year.  This little pet project was great, in that it helped me really get a better understanding of how Model's work with Wicket<a id="more"></a><a id="more-43"></a>, and what it takes to make a component.  So instead of the javascript date chooser, we have this:
 

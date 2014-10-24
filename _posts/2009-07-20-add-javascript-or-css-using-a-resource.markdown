@@ -12,50 +12,39 @@ author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
 excerpt: 'A quick howto <small>(via <a href="http://cwiki.apache.org/WICKET/adding-javascript-or-css-using-a-resource.html"
-  target="_blank">wicket wiki</a>)</small> on adding Javascript or CSS to
-  your pages, and having them compressed during the "deployment" cycle automatically
-  by Wicket. So to start with, we need to copy or Javascript or CSS file somewhere
-  in our package hierarchy that we can reference in our Page. For simplicity, we can
-  copy it right next to the HTML file like so:'
+  target="_blank">wicket wiki</a>)</small> on adding Javascript or CSS to your pages,
+  and having them compressed during the "deployment" cycle automatically by Wicket.
+  So to start with, we need to copy or Javascript or CSS file somewhere in our package
+  hierarchy that we can reference in our Page. For simplicity, we can copy it right
+  next to the HTML file like so:'
 wordpress_id: 38
 wordpress_url: http://wicketbyexample.com/?p=38
 date: '2009-07-20 00:41:26 +0000'
 date_gmt: '2009-07-20 07:41:26 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments: []
 ---
-A quick howto <small>(via <a href="http://cwiki.apache.org/WICKET/adding-javascript-or-css-using-a-resource.html" target="_blank">wicket wiki</a>)</small> on adding Javascript or CSS to your pages, and having them compressed during the "deployment" cycle automatically by Wicket. So to start with, we need to copy or Javascript or CSS file somewhere in our package hierarchy that we can reference in our Page. For simplicity, we can copy it right next to the HTML file like so:<a id="more"></a><a id="more-38"></a>
-
+<p>A quick howto <small>(via <a href="http://cwiki.apache.org/WICKET/adding-javascript-or-css-using-a-resource.html" target="_blank">wicket wiki</a>)</small> on adding Javascript or CSS to your pages, and having them compressed during the "deployment" cycle automatically by Wicket. So to start with, we need to copy or Javascript or CSS file somewhere in our package hierarchy that we can reference in our Page. For simplicity, we can copy it right next to the HTML file like so:<a id="more"></a><a id="more-38"></a></p>
 <pre>
-MyPage.java<br />
-MyPage.html<br />
-MyPage.js<br />
-MyPage.css<br />
+MyPage.java
+MyPage.html
+MyPage.js
+MyPage.css
 </pre>
-
-Then in our Page, we need to reference these items based on the path of our Java file, like so:
-
+<p>Then in our Page, we need to reference these items based on the path of our Java file, like so:</p>
 <pre lang="java" colla="+">
 private static final CompressedResourceReference MYPAGE_JS = new CompressedResourceReference(MyPage.class, "MyPage.js");
 
-private static final CompressedResourceReference MYPAGE_CSS = new CompressedResourceReference(MyPage.class, "MyPage.css");<br />
+private static final CompressedResourceReference MYPAGE_CSS = new CompressedResourceReference(MyPage.class, "MyPage.css");
 </pre>
-
-This code gives us a ResourceReference that we can add to our page, most use cases to the HTML head element block. To do that in your page:
-
+<p>This code gives us a ResourceReference that we can add to our page, most use cases to the HTML head element block. To do that in your page:</p>
 <pre lang="java" colla="+">
 add(HeaderContributor.forJavaScript( MYPAGE_JS ));
 
-add(HeaderContributor.forCss( MYPAGE_CSS ));<br />
+add(HeaderContributor.forCss( MYPAGE_CSS ));
 </pre>
-
-In Wicket 1.4 HeaderContributor.forJavaScript() and HeaderContributor.forCss() are deprecated, you can use the code below:
-
+<p>In Wicket 1.4 HeaderContributor.forJavaScript() and HeaderContributor.forCss() are deprecated, you can use the code below:</p>
 <pre lang="java" colla="+">
 add(JavascriptPackageResource.getHeaderContribution(MYPAGE_JS));
 
-add(CSSPackageResource.getHeaderContribution(MYPAGE_CSS));<br />
+add(CSSPackageResource.getHeaderContribution(MYPAGE_CSS));
 </pre>
-

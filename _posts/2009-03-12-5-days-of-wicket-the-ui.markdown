@@ -11,62 +11,12 @@ author:
 author_login: sforsyth
 author_email: sforsyth@mysticcoders.com
 author_url: http://mysticcoders.com
-excerpt: "So... you should now have a fairly good understanding of how to put <a target=\"_blank\"
-  href=\"http://wicket.apache.org/\">Wicket</a> together with <a target=\"_blank\"
-  href=\"http://www.springsource.org/\">Spring</a> and <a target=\"_blank\"
-  href=\"http://www.hibernate.org/\">Hibernate</a>, creating your
-  DAOs and services and putting that code through the test gauntlet. We can see that
-  our foundation is rock solid... but we're missing the eye-candy... so let's hop
-  over to the UI and show you where Wicket really shines.\r\n&nbsp;\r\n"
 wordpress_id: 359
 wordpress_url: http://www.mysticcoders.com/?p=359
 date: '2009-03-12 09:00:15 +0000'
 date_gmt: '2009-03-12 16:00:15 +0000'
-categories:
-- Apache Wicket
-tags:
-- Java
-- apache wicket
-- development
-comments:
-- id: 276
-  author: mystic blog &raquo; 5 Days of Wicket!
-  author_email: ''
-  author_url: http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/
-  date: '2009-03-12 15:17:02 +0000'
-  date_gmt: '2009-03-12 22:17:02 +0000'
-  content: "[...] Day 4 - Designing the Wicket components [...]"
-- id: 282
-  author: mystic blog &raquo; 5 Days of Wicket - Putting it all together
-  author_email: ''
-  author_url: http://www.mysticcoders.com/blog/2009/03/13/5-days-of-wicket-putting-it-all-together/
-  date: '2009-03-13 09:01:40 +0000'
-  date_gmt: '2009-03-13 16:01:40 +0000'
-  content: "[...] On Day 4, we got to the most exciting part of our journey, Apache
-    Wicket. &Acirc;&nbsp;The article walked you through some of the basics of putting
-    a page together using markup inheritance, and amazingly enough, how this simple
-    act removes the need for technology so common in the MVC world to support this.
-    &Acirc;&nbsp;Best of all, because its all in Java, ultimately you can actually
-    use your IDE and refactor or debug as needed. &Acirc;&nbsp;Each of the most basic
-    components with forms, and display, and the wicket-based tags that act as extensions
-    to your HTML pages, were reviewed with links off to the Javadoc for further discovery.
-    &Acirc;&nbsp;One of the many reasons to love Wicket, is the clear separation of
-    functional concerns, no code in your template pages, it&#8217;s just HTML. [...]"
-- id: 284
-  author: Jonathan Locke
-  author_email: jonathan.locke@gmail.com
-  author_url: ''
-  date: '2009-03-13 18:16:22 +0000'
-  date_gmt: '2009-03-14 01:16:22 +0000'
-  content: "Thanks for a great series of articles! \r\n\r\nWicket is RAD indeed and
-    I hope it will be way more RAD when I finally get time to finish Wicket on Wheels..."
-- id: 3367
-  author: Guido Amabili
-  author_email: gambolino@internet.lu
-  author_url: ''
-  date: '2011-05-14 09:11:25 +0000'
-  date_gmt: '2011-05-14 16:11:25 +0000'
-  content: Thx once more for this great tutorial, very nicely done!
+tags: []
+comments: true
 ---
 So... you should now have a fairly good understanding of how to put <a target="_blank" href="http://wicket.apache.org/">Wicket</a> together with <a target="_blank" href="http://www.springsource.org/">Spring</a> and <a target="_blank" href="http://www.hibernate.org/">Hibernate</a>, creating your DAOs and services and putting that code through the test gauntlet. We can see that our foundation is rock solid... but we're missing the eye-candy... so let's hop over to the UI and show you where Wicket really shines.<br />
 &nbsp;<br />

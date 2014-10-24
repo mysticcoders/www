@@ -15,13 +15,7 @@ wordpress_id: 45
 wordpress_url: http://www.mysticcoders.com/blog/2006/08/21/qwicket-easy-boilerplate-code-for-wicket/
 date: '2006-08-21 17:47:47 +0000'
 date_gmt: '2006-08-22 00:47:47 +0000'
-categories:
-- Apache Wicket
-tags:
-- Apache Wicket
-- Java
-- Development
-comments: []
+comments: true
 ---
 <a title="qwicket" href="http://qwicket.sf.net" target="_blank">Qwicket</a> is an easy and fast solution for creating your next project with <a title="Wicket" href="http://wicket.sf.net" target="_blank">Wicket</a>.  Right from the website, you can create an account (if you'd like to save your work as you go), and add beans to your project directly from the UI.
 

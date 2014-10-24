@@ -15,13 +15,8 @@ wordpress_id: 1915
 wordpress_url: http://www.mysticcoders.com/?p=1915
 date: '2013-11-23 17:15:40 +0000'
 date_gmt: '2013-11-24 00:15:40 +0000'
-comments: true
+tags: []
 ---
-The trip to Sofia is underway in a week.  On the docket is a Websockets discussion, and one about our favorite mobile device: iOS.  We'll mix some JavaScript, possibly others into the mix as well.  Check out the details and my [fancy new bio][java2days_fancynewbio] on the [Java2Days website][java2days_web].
-
-Time to find all of our cold-weather gear, grab a bottle of Rakia and Nutella, and warm by the fire before the flight.
-
-See you in Bulgaria!  &ETH;&ETH;&deg; &ETH;&acute;&ETH;&frac34;&ETH;&plusmn;&Ntilde;&Scaron;&Ntilde;&euro; &ETH;&iquest;&Ntilde;&Scaron;&Ntilde;&sbquo;!
-
-[java2days_web]: http://2013.java2days.com/
-[java2days_fancynewbio]: http://2013.java2days.com/?p=408
+<p>The trip to Sofia is underway in a week.  On the docket is a Websockets discussion, and one about our favorite mobile device: iOS.  We'll mix some JavaScript, possibly others into the mix as well.  Check out the details and my <a href="http://2013.java2days.com/?p=408">fancy new bio</a> on the <a href="http://2013.java2days.com/">Java2Days website</a>.</p>
+<p>Time to find all of our cold-weather gear, grab a bottle of Rakia and Nutella, and warm by the fire before the flight.</p>
+<p>See you in Bulgaria!  ÐÐ° Ð´Ð¾Ð±ÑŠÑ€ Ð¿ÑŠÑ‚!</p>

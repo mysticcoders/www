@@ -15,10 +15,6 @@ wordpress_id: 53
 wordpress_url: http://wicketbyexample.com/?p=53
 date: '2009-07-21 13:36:47 +0000'
 date_gmt: '2009-07-21 20:36:47 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments: []
 ---
-An introduction that was written earlier this year about setting up a project using Maven, Spring, Hibernate, and getting the entire setup done.  Check out <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">the 5 days of Wicket</a> for your dose!
-
+<p>An introduction that was written earlier this year about setting up a project using Maven, Spring, Hibernate, and getting the entire setup done.  Check out <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">the 5 days of Wicket</a> for your dose!</p>

@@ -16,23 +16,15 @@ wordpress_id: 1641
 wordpress_url: http://www.mysticcoders.com/?p=1641
 date: '2011-12-10 14:20:43 +0000'
 date_gmt: '2011-12-10 21:20:43 +0000'
-categories: []
 tags: []
-comments: []
 ---
-Contact us to discuss your software project.
-
-Mystic develops custom software for it&acirc;&euro;&trade;s clients around the world.  The work we&acirc;&euro;&trade;ve done in the past decade has touched many industries including: retail, fashion, distribution, medical, government, auto, music, spiritual and real estate.  Our experience spans a wealth of different technologies, and we&acirc;&euro;&trade;ve been giving back to our community by teaching and evangelizing about what we love.  Our team has given talks internationally to conferences larger and small, user groups, and we give regular trainings to companies from the custom software house up to the fortune 200.
-
-If your project needs include the need for any of the following, we need to talk:
-
-  iPhone / iPod touch / iPad application development<br />
+<p>Contact us to discuss your software project.</p>
+<p>Mystic develops custom software for itâ€™s clients around the world.  The work weâ€™ve done in the past decade has touched many industries including: retail, fashion, distribution, medical, government, auto, music, spiritual and real estate.  Our experience spans a wealth of different technologies, and weâ€™ve been giving back to our community by teaching and evangelizing about what we love.  Our team has given talks internationally to conferences larger and small, user groups, and we give regular trainings to companies from the custom software house up to the fortune 200.</p>
+<p>If your project needs include the need for any of the following, we need to talk:</p>
+<p>  iPhone / iPod touch / iPad application development<br />
   Web applications (development, design and deployment<br />
   Service Oriented Architecture (SOA)<br />
-  Codevelopment &acirc;&euro;&ldquo; adjunct to your core team<br />
-  Training in any of the above
-
-Let us work with you on achieving success for your next project.  Contact us today to find out how we can help.
-
-While you&acirc;&euro;&trade;re dialing, meet the team.
-
+  Codevelopment â€“ adjunct to your core team<br />
+  Training in any of the above</p>
+<p>Let us work with you on achieving success for your next project.  Contact us today to find out how we can help.</p>
+<p>While youâ€™re dialing, meet the team.</p>

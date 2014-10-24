@@ -15,39 +15,7 @@ wordpress_id: 72
 wordpress_url: http://www.mysticcoders.com/blog/2008/07/27/macbook-pro-in-the-shop/
 date: '2008-07-27 11:03:18 +0000'
 date_gmt: '2008-07-27 18:03:18 +0000'
-categories:
-- Apple Mac
-tags:
-- Apple Mac
-- Technology
-comments:
-- id: 77
-  author: Macbook Pro in the shop | The Macbook Blog
-  author_email: ''
-  author_url: http://www.themacbookblog.com/macbook-pro-in-the-shop
-  date: '2008-07-27 12:02:56 +0000'
-  date_gmt: '2008-07-27 18:02:56 +0000'
-  content: "[...] &#8230;Read More [...]"
-- id: 78
-  author: Macbook Pro Problems &diams; Apple MacBook and MacBook Pro News
-  author_email: ''
-  author_url: http://macbook-pro-problems.applecoreduo.com/macbook-pro-in-the-shop-macbook-pro-problems-diams-apple-macbook-and-macbook-pro-news
-  date: '2008-07-31 07:12:56 +0000'
-  date_gmt: '2008-07-31 13:12:56 +0000'
-  content: |-
-    <strong>Macbook Pro in the shop - Macbook Pro Problems &diams; Apple MacBook and MacBook Pro News...</strong>
-
-    [...] kinabalu made an excellent post today on their site [...]......
-- id: 79
-  author: Macbook Or Macbook Pro &diams; Apple MacBook and MacBook Pro News
-  author_email: ''
-  author_url: http://macbook-or-macbook-pro.applecoreduo.com/macbook-pro-in-the-shop-macbook-or-macbook-pro-diams-apple-macbook-and-macbook-pro-news
-  date: '2008-07-31 07:14:38 +0000'
-  date_gmt: '2008-07-31 13:14:38 +0000'
-  content: |-
-    <strong>Macbook Pro in the shop - Macbook Or Macbook Pro &diams; Apple MacBook and MacBook Pro News...</strong>
-
-    [...] an interesting post was made today on this site [...]......
+comments: true
 ---
 It was Wednesday morning.  The night before SuperDuper smart updates at it's regularly scheduled time, and Apple update runs.  I haven't updated to 10.5.4 yet.  Check all the boxes, close all open programs, update.
 

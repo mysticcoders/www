@@ -12,109 +12,45 @@ author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
 excerpt: |
-  <em>(Editor&acirc;&euro;&trade;s note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em>
+  <em>(Editorâ€™s note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em>
 
   While developing web application with Wicket I sometimes need to check whether the user really, really does want to do something, for example to delete an entity from the database. The first and easiest choice that comes to my mind is to use JavaScript window.
 wordpress_id: 1725
 wordpress_url: http://wicketbyexample.com/?p=207
 date: '2010-02-10 11:24:56 +0000'
 date_gmt: '2010-02-10 18:24:56 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments:
-- id: 3504
-  author: Fuad Efendi
-  author_email: fuad@efendi.ca
-  author_url: http://www.tokenizer.ca
-  date: '2010-07-30 10:20:43 +0000'
-  date_gmt: '2010-07-30 17:20:43 +0000'
-  content: |-
-    I still DO prefer Client-Side processing (without network client-server roundtrips!):
-    if(!confirm('Do you really want to perform this action?')) return false;"));
-
-    It is faster than AJAX call.
-- id: 3505
-  author: Nowaker
-  author_email: nowaker@geozone.pl
-  author_url: http://www.nowaker.net/
-  date: '2010-08-27 11:50:38 +0000'
-  date_gmt: '2010-08-27 18:50:38 +0000'
-  content: Faster but how ugly. Brrrrr.
-- id: 3506
-  author: Anurag
-  author_email: anurag.tayal.iiit@gmail.com
-  author_url: ''
-  date: '2010-11-01 05:57:24 +0000'
-  date_gmt: '2010-11-01 12:57:24 +0000'
-  content: |-
-    I need the values submitted with the form . Where do i get them from. for example . I need the selected value in dropdownchoice.
-
-    Thanks
-- id: 3507
-  author: Anurag
-  author_email: anurag.tayal.iiit@gmail.com
-  author_url: ''
-  date: '2010-11-02 01:55:41 +0000'
-  date_gmt: '2010-11-02 08:55:41 +0000'
-  content: |-
-    I want the message to be include values submitted by my form . How can i do that . I am talking about message " Do you really want to ... " .. I want to replace it with " You have updated [variable] to [this variable] . I get the variables after i submit the form .
-
-    Thanks.
-- id: 3508
-  author: Paolo
-  author_email: dikeparker@yahoo.com
-  author_url: ''
-  date: '2011-02-02 02:25:36 +0000'
-  date_gmt: '2011-02-02 09:25:36 +0000'
-  content: thanks! pretty neat code. i'll try this.
-- id: 3749
-  author: prompt() in wicket components | PHP Developer Resource
-  author_email: ''
-  author_url: http://www.dkphp.com/questions-2/prompt-in-wicket-components.html
-  date: '2012-05-23 19:24:29 +0000'
-  date_gmt: '2012-05-24 02:24:29 +0000'
-  content: "[...] try to find pattern how to return &#8216;prompt()&#8217; result
-    in java like http://www.mysticcoders.com/blog/wicket-ajax-confirmation-modal-window/
-    (but in this case author using &#8216;confirm&#8217; instead of &#8216;prompt&#8217;
-    and [...]"
 ---
-<em>(Editor&acirc;&euro;&trade;s note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em>
-
-While developing web application with Wicket I sometimes need to check whether the user really, really does want to do something, for example to delete an entity from the database. The first and easiest choice that comes to my mind is to use JavaScript window.<br />
+<p><em>(Editorâ€™s note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em></p>
+<p>While developing web application with Wicket I sometimes need to check whether the user really, really does want to do something, for example to delete an entity from the database. The first and easiest choice that comes to my mind is to use JavaScript window.<br />
 <a id="more"></a><a id="more-1725"></a><br />
-So we have HomePage.html:
-
+So we have HomePage.html:</p>
 <pre lang="html" colla="+">
-<!DOCTYPE html<br />
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"<br />
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br />
-<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" ><br />
-    <head><br />
-        <title>Wicket Ajax 'Are you sure?' Modal Window</title><br />
-    </head><br />
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" >
+    <head>
+        <title>Wicket Ajax 'Are you sure?' Modal Window</title>
+    </head>
     <body>
-
-<div align="center">
+        <div align="center">
             <strong>Wicket Ajax 'Are you sure?' Modal Window</strong>
-
-<form action="" wicket:id="formWithJavaScript">
-                <input type="submit" wicket:id="buttonWithJavaScript" value="Action!"/><br />
-            </form><br />
-        </div><br />
-    </body><br />
-</html><br />
+            <form action="" wicket:id="formWithJavaScript">
+                <input type="submit" wicket:id="buttonWithJavaScript" value="Action!"/>
+            </form>
+        </div>
+    </body>
+</html>
 </pre>
-
-and corresponding Java class:
-
+<p>and corresponding Java class:</p>
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp;
 
 // imports omitted
 
-/**<br />
- * Author: Tomasz Dziurko<br />
+/**
+ * Author: Tomasz Dziurko
  */
 
 public class HomePage extends WebPage {
@@ -127,277 +63,265 @@ public class HomePage extends WebPage {
 
         Button buttonWithJavaScript = new Button("buttonWithJavaScript") {
 
-            @Override<br />
-            public void onSubmit() {<br />
-                System.out.println("Doing my job");<br />
-            }<br />
-        };<br />
-        buttonWithJavaScript.add(new SimpleAttributeModifier(<br />
+            @Override
+            public void onSubmit() {
+                System.out.println("Doing my job");
+            }
+        };
+        buttonWithJavaScript.add(new SimpleAttributeModifier(
                 "onclick", "if(!confirm('Do you really want to perform this action?')) return false;"));
 
-        formWithJavaScript.add(buttonWithJavaScript);<br />
+        formWithJavaScript.add(buttonWithJavaScript);
         add(formWithJavaScript);
 
     }
 
-}<br />
+}
 </pre>
-
-Finally, we can see how it looks:
-
-<img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/javaScriptWindow.PNG.png" alt="" title="javaScriptWindow.PNG" width="400" height="320" class="alignnone size-full wp-image-209" />
-
-It solves our problem but in the era of Web2.0, rounded corners and shiny looks it isn't enough. Why can't we use ajax modal window to ask user for confirmation? It would make our application look good and our css magician could make it look even better.
-
-So let's try with creating reusable 'Are you sure?' ajax modal window with Wicket.
-
-At the beginning we must prepare panel which will be displayed in our modal window. Let's name it YesNoPanel.
-
+<p>Finally, we can see how it looks:</p>
+<p><img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/javaScriptWindow.PNG.png" alt="" title="javaScriptWindow.PNG" width="400" height="320" class="alignnone size-full wp-image-209" /></p>
+<p>It solves our problem but in the era of Web2.0, rounded corners and shiny looks it isn't enough. Why can't we use ajax modal window to ask user for confirmation? It would make our application look good and our css magician could make it look even better.</p>
+<p>So let's try with creating reusable 'Are you sure?' ajax modal window with Wicket.</p>
+<p>At the beginning we must prepare panel which will be displayed in our modal window. Let's name it YesNoPanel.</p>
 <pre lang="html" colla="+">
-<?xml version="1.0" encoding="UTF-8"?><br />
-<!DOCTYPE html<br />
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"<br />
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br />
-<html xmlns:wicket><br />
-    <head><br />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><br />
-        <title></title><br />
-    </head><br />
-    <body><br />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title></title>
+    </head>
+    <body>
         <wicket:panel>
-
-<form wicket:id="yesNoForm" action="">
+            <form wicket:id="yesNoForm" action="">
                 <span wicket:id="message">Are you sure?</span>
-
-<table style="width: 65%;" align="center">
-<tr>
-<td align="left">
-                            <input type="submit" wicket:id="noButton" value="No" /><br />
+                <table style="width: 65%;" align="center">
+                    <tr>
+                        <td align="left">
+                            <input type="submit" wicket:id="noButton" value="No" />
                         </td>
-
-<td align="right">
-                            <input type="submit" wicket:id="yesButton" value="Yes" /><br />
-                        </td><br />
-                    </tr><br />
-                </table><br />
-            </form><br />
-        </wicket:panel><br />
-    </body><br />
-</html><br />
+                        <td align="right">
+                            <input type="submit" wicket:id="yesButton" value="Yes" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </wicket:panel>
+    </body>
+</html>
 </pre>
-
-and Java class:
-
+<p>and Java class:</p>
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp.areyousuremodal;
 
-import org.apache.wicket.ajax.AjaxRequestTarget;<br />
-import org.apache.wicket.ajax.markup.html.form.AjaxButton;<br />
-import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;<br />
-import org.apache.wicket.markup.html.basic.MultiLineLabel;<br />
-import org.apache.wicket.markup.html.form.Form;<br />
-import org.apache.wicket.markup.html.panel.Panel;<br />
+import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.markup.html.form.AjaxButton;
+import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
+import org.apache.wicket.markup.html.basic.MultiLineLabel;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.panel.Panel;
 import pl.tdziurko.ajaxmodalwindowapp.areyousuremodal.AreYouSurePanel.ConfirmationAnswer;
 
 public class YesNoPanel extends Panel {
 
-    public YesNoPanel(String id, String message, final ModalWindow modalWindow, final ConfirmationAnswer answer) {<br />
+    public YesNoPanel(String id, String message, final ModalWindow modalWindow, final ConfirmationAnswer answer) {
         super(id);
 
         Form yesNoForm = new Form("yesNoForm");
 
-        MultiLineLabel messageLabel = new MultiLineLabel("message", message);<br />
-        yesNoForm.add(messageLabel);<br />
-        modalWindow.setTitle("Please confirm");<br />
-        modalWindow.setInitialHeight(200);<br />
+        MultiLineLabel messageLabel = new MultiLineLabel("message", message);
+        yesNoForm.add(messageLabel);
+        modalWindow.setTitle("Please confirm");
+        modalWindow.setInitialHeight(200);
         modalWindow.setInitialWidth(350);
 
         AjaxButton yesButton = new AjaxButton("yesButton", yesNoForm) {
 
-            @Override<br />
-            protected void onSubmit(AjaxRequestTarget target, Form form) {<br />
-                if (target != null) {<br />
-                    answer.setAnswer(true);<br />
-                    modalWindow.close(target);<br />
-                }<br />
-            }<br />
+            @Override
+            protected void onSubmit(AjaxRequestTarget target, Form form) {
+                if (target != null) {
+                    answer.setAnswer(true);
+                    modalWindow.close(target);
+                }
+            }
         };
 
         AjaxButton noButton = new AjaxButton("noButton", yesNoForm) {
 
-            @Override<br />
-            protected void onSubmit(AjaxRequestTarget target, Form form) {<br />
-                if (target != null) {<br />
-                    answer.setAnswer(false);<br />
-                    modalWindow.close(target);<br />
-                }<br />
-            }<br />
+            @Override
+            protected void onSubmit(AjaxRequestTarget target, Form form) {
+                if (target != null) {
+                    answer.setAnswer(false);
+                    modalWindow.close(target);
+                }
+            }
         };
 
-        yesNoForm.add(yesButton);<br />
+        yesNoForm.add(yesButton);
         yesNoForm.add(noButton);
 
-        add(yesNoForm);<br />
+        add(yesNoForm);
     }
 
-}<br />
+}
 </pre>
-
-Everything looks pretty straightforward. We pass to the constructor text which will be displayed as a confirmation question, references to ModalWindow object in which YesNoPanel is placed and to ConfirmationAnswer object.<br />
-ConfirmationAnswer class will be created in the next paragraph and will be used to store information whether user pressed 'Yes' or 'No' button in our panel.
-
-Now it's time to prepare wrapping form to our YesNoPanel. We could simply achieve it by creating panel with form and one button in it. In our example it will be AreYouSurePanel class:
-
+<p>Everything looks pretty straightforward. We pass to the constructor text which will be displayed as a confirmation question, references to ModalWindow object in which YesNoPanel is placed and to ConfirmationAnswer object.<br />
+ConfirmationAnswer class will be created in the next paragraph and will be used to store information whether user pressed 'Yes' or 'No' button in our panel.</p>
+<p>Now it's time to prepare wrapping form to our YesNoPanel. We could simply achieve it by creating panel with form and one button in it. In our example it will be AreYouSurePanel class:</p>
 <pre lang="html" colla="+">
-<?xml version="1.0" encoding="UTF-8"?><br />
-<!DOCTYPE html<br />
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"<br />
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br />
-<html xmlns:wicket><br />
-    <head><br />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><br />
-        <title></title><br />
-    </head><br />
-    <body><br />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title></title>
+    </head>
+    <body>
         <wicket:panel >
-
-<form wicket:id="confirmForm" action="" style="display: inline;">
-                <input type="submit" wicket:id="confirmButton" value="Default name" /><br />
-                <span style="display: none;" wicket:id="modal"></span><br />
-            </form><br />
-        </wicket:panel><br />
-    </body><br />
-</html><br />
+            <form wicket:id="confirmForm" action="" style="display: inline;">
+                <input type="submit" wicket:id="confirmButton" value="Default name" />
+                <span style="display: none;" wicket:id="modal"></span>
+            </form>
+        </wicket:panel>
+    </body>
+</html>
 </pre>
-
-and in Java:
-
+<p>and in Java:</p>
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp.areyousuremodal;
 
-import java.io.Serializable;<br />
-import java.util.Map;<br />
-import org.apache.wicket.ajax.AjaxRequestTarget;<br />
-import org.apache.wicket.ajax.markup.html.form.AjaxButton;<br />
-import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;<br />
-import org.apache.wicket.markup.html.form.Form;<br />
-import org.apache.wicket.markup.html.panel.Panel;<br />
+import java.io.Serializable;
+import java.util.Map;
+import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.markup.html.form.AjaxButton;
+import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.Model;
+
 
 public abstract class AreYouSurePanel extends Panel {
 
-    protected ModalWindow confirmModal;<br />
-    protected ConfirmationAnswer answer;<br />
+    protected ModalWindow confirmModal;
+    protected ConfirmationAnswer answer;
     protected Map<string,string> modifiersToApply;
 
-    public AreYouSurePanel(String id, String buttonName, String modalMessageText) {<br />
-        super(id);<br />
-        answer = new ConfirmationAnswer(false);<br />
-        addElements(id, buttonName, modalMessageText);<br />
+
+    public AreYouSurePanel(String id, String buttonName, String modalMessageText) {
+        super(id);
+        answer = new ConfirmationAnswer(false);
+        addElements(id, buttonName, modalMessageText);
     }
 
     protected void addElements(String id, String buttonName, String modalMessageText) {
 
         confirmModal = createConfirmModal(id, modalMessageText);
 
-        Form form = new Form("confirmForm");<br />
+        Form form = new Form("confirmForm");
         add(form);
 
         AjaxButton confirmButton = new AjaxButton("confirmButton", new Model(buttonName)) {
 
-            @Override<br />
-            protected void onSubmit(AjaxRequestTarget target, Form form) {<br />
-                confirmModal.show(target);<br />
-            }<br />
+            @Override
+            protected void onSubmit(AjaxRequestTarget target, Form form) {
+                confirmModal.show(target);
+            }
         };
 
         form.add(confirmButton);
+
 
         form.add(confirmModal);
 
     }
 
-    protected abstract void onConfirm(AjaxRequestTarget target);<br />
+    protected abstract void onConfirm(AjaxRequestTarget target);
     protected abstract void onCancel(AjaxRequestTarget target);
 
     protected ModalWindow createConfirmModal(String id, String modalMessageText) {
 
-        ModalWindow modalWindow = new ModalWindow("modal");<br />
-        modalWindow.setCookieName(id);<br />
-        modalWindow.setContent(new YesNoPanel(modalWindow.getContentId(), modalMessageText, modalWindow, answer));<br />
+        ModalWindow modalWindow = new ModalWindow("modal");
+        modalWindow.setCookieName(id);
+        modalWindow.setContent(new YesNoPanel(modalWindow.getContentId(), modalMessageText, modalWindow, answer));
         modalWindow.setWindowClosedCallback(new ModalWindow.WindowClosedCallback() {
 
-            @Override<br />
-            public void onClose(AjaxRequestTarget target) {<br />
-                if (answer.isAnswer()) {<br />
-                    onConfirm(target);<br />
-                } else {<br />
-                    onCancel(target);<br />
-                }<br />
-            }<br />
+            @Override
+            public void onClose(AjaxRequestTarget target) {
+                if (answer.isAnswer()) {
+                    onConfirm(target);
+                } else {
+                    onCancel(target);
+                }
+            }
         });
 
-        return modalWindow;<br />
+        return modalWindow;
     }
 
     public class ConfirmationAnswer implements Serializable {
 
         private boolean answer;
 
-        public ConfirmationAnswer(boolean answer) {<br />
-            this.answer = answer;<br />
+        public ConfirmationAnswer(boolean answer) {
+            this.answer = answer;
         }
 
-        public boolean isAnswer() {<br />
-            return answer;<br />
+        public boolean isAnswer() {
+            return answer;
         }
 
-        public void setAnswer(boolean answer) {<br />
-            this.answer = answer;<br />
-        }<br />
+        public void setAnswer(boolean answer) {
+            this.answer = answer;
+        }
     }
 
-}<br />
+}
 </pre>
-
-Here we do following steps:
-
+<p>Here we do following steps:</p>
 <ol>
 <li>Create form with one AjaxButton which shows modalWindow when clicked.</li>
 <li>Create modalWindow with YesNoPanel in it. As mentioned earlier, we pass there references to our modal window and to confirmationAnswer object.</li>
-<li>Add WindowClosedCallback to modalWindow and basing on user choice perform onConfirm or onCancel method. These methods are both abstract to force developer extending AreYouSurePanel to implement them according to his needs.</li><br />
+<li>Add WindowClosedCallback to modalWindow and basing on user choice perform onConfirm or onCancel method. These methods are both abstract to force developer extending AreYouSurePanel to implement them according to his needs.</li>
 </ol>
-
-That's it, we are done. To test how it's working we must change a bit our page class and html file:
-
+<p>That's it, we are done. To test how it's working we must change a bit our page class and html file:</p>
 <pre lang="html" colla="+">
-<!DOCTYPE html<br />
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"<br />
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br />
-<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" ><br />
-    <head><br />
-        <title>Wicket Ajax 'Are you sure?' Modal Window</title><br />
-    </head><br />
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" >
+    <head>
+        <title>Wicket Ajax 'Are you sure?' Modal Window</title>
+    </head>
     <body>
 
-<div align="center">
+
+
+
+        <div align="center">
             <strong>Wicket Ajax 'Are you sure?' Modal Window</strong>
 
-<form action="" wicket:id="formWithJavaScript">
-                <input type="submit" wicket:id="buttonWithJavaScript" value="Action!"/><br />
-            </form><br />
+
+
+
+            <form action="" wicket:id="formWithJavaScript">
+                <input type="submit" wicket:id="buttonWithJavaScript" value="Action!"/>
+            </form>
         </div>
 
-<div align="center">
-            <span wicket:id="yesNoPanel"/><br />
+
+
+        <div align="center">
+            <span wicket:id="yesNoPanel"/>
         </div>
 
-    </body><br />
-</html><br />
+    </body>
+</html>
 </pre>
-
-and
-
+<p>and</p>
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp;
 
@@ -413,36 +337,33 @@ public class HomePage extends WebPage {
 
         Button buttonWithJavaScript = new Button("buttonWithJavaScript") {
 
-            @Override<br />
-            public void onSubmit() {<br />
-                System.out.println("Doing my job");<br />
-            }<br />
-        };<br />
-        buttonWithJavaScript.add(new SimpleAttributeModifier(<br />
+            @Override
+            public void onSubmit() {
+                System.out.println("Doing my job");
+            }
+        };
+        buttonWithJavaScript.add(new SimpleAttributeModifier(
                 "onclick", "if(!confirm('Do you really want to perform this action?')) return false;"));
 
-        formWithJavaScript.add(buttonWithJavaScript);<br />
+        formWithJavaScript.add(buttonWithJavaScript);
         add(formWithJavaScript);
 
         AreYouSurePanel yesNoPanel = new AreYouSurePanel("yesNoPanel", "Ajax Action!", "Do you really want to perform this action?") {
 
-            @Override<br />
-            protected void onConfirm(AjaxRequestTarget target) {<br />
-                System.out.println("Doing my job after ajax modal");<br />
+            @Override
+            protected void onConfirm(AjaxRequestTarget target) {
+                System.out.println("Doing my job after ajax modal");
             }
 
-            @Override<br />
+            @Override
             protected void onCancel(AjaxRequestTarget target) { }
 
         };
 
-        add(yesNoPanel);<br />
+        add(yesNoPanel);
     }
 
-}<br />
+}
 </pre>
-
-And after clicking 'Ajax Action!' we could see that it's working as intended:
-
-<img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/ajaxModalWindow.PNG.png" alt="" title="ajaxModalWindow.PNG" width="399" height="400" class="alignnone size-full wp-image-210" />
-
+<p>And after clicking 'Ajax Action!' we could see that it's working as intended:</p>
+<p><img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/ajaxModalWindow.PNG.png" alt="" title="ajaxModalWindow.PNG" width="399" height="400" class="alignnone size-full wp-image-210" /></p>

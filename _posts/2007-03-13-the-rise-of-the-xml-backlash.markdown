@@ -15,13 +15,7 @@ wordpress_id: 51
 wordpress_url: http://www.mysticcoders.com/blog/2007/03/13/the-rise-of-the-xml-backlash/
 date: '2007-03-13 16:20:38 +0000'
 date_gmt: '2007-03-14 00:20:38 +0000'
-categories:
-- Development
-tags:
-- Web
-- xml
-- development
-comments: []
+comments: true
 ---
 The writing has definitely been on the wall for some time now.  All the "agile" frameworks out there picking on Java and its love affair with XML had an effect.  More and more projects have sprung up that tout one of their prized features, no XML required.
 

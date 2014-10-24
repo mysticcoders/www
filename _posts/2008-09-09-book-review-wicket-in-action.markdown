@@ -18,76 +18,8 @@ wordpress_id: 82
 wordpress_url: http://www.mysticcoders.com/?p=82
 date: '2008-09-09 10:35:35 +0000'
 date_gmt: '2008-09-09 17:35:35 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments:
-- id: 108
-  author: Martijn Dashorst
-  author_email: martijn.dashorst@gmail.com
-  author_url: http://wicketinaction.com
-  date: '2008-09-09 12:55:01 +0000'
-  date_gmt: '2008-09-09 18:55:01 +0000'
-  content: |-
-    I noticed you have reviewed the MEAP version. The final version of the book is a bit different in layout: there are now 4 parts, and the ant/maven chapter has been 'promoted' to a bonus chapter. This means that chapter 8 is now chapter 7 in the final book. You can also link to these chapters on the manning website: http://manning.com/dashorst shows the links for the free sample chapters: chapter 1 Introducing Wicket and chapter 8 creating custom components. Chapter 15, setting up a Wicket application is also a free download.
-
-    Thanks for the review!
-- id: 109
-  author: ctataryn
-  author_email: ctataryn@mysticcoders.com
-  author_url: http://www.mysticcoders.com
-  date: '2008-09-09 13:36:07 +0000'
-  date_gmt: '2008-09-09 19:36:07 +0000'
-  content: I've made the appropriate changes, thanks Martijn.  btw, are you trying
-    to go for the Robert Munsch look? ;)
-- id: 110
-  author: Eelco Hillenius
-  author_email: eelco.hillenius@gmail.com
-  author_url: http://chillenious.wordpress.com
-  date: '2008-09-09 16:29:01 +0000'
-  date_gmt: '2008-09-09 22:29:01 +0000'
-  content: Cheers mate!
-- id: 111
-  author: 'Now on your door mat: Wicket In Action &laquo; Chillenious!'
-  author_email: ''
-  author_url: http://chillenious.wordpress.com/2008/09/12/now-on-your-door-mat-wicket-in-action/
-  date: '2008-09-13 00:07:46 +0000'
-  date_gmt: '2008-09-13 06:07:46 +0000'
-  content: "[...] Manning, get it from Amazon, or maybe even a store near you. I hope
-    it will be useful for people. First reviews have been good. If you like the book,
-    please don&#8217;t be shy rating it on Amazon and other sites [...]"
-- id: 112
-  author: mystic coders &raquo; Blog Archive &raquo; Hide Wicket components and use
-    Ajax to unhide later
-  author_email: ''
-  author_url: http://www.mysticcoders.com/blog/2008/09/14/hide-wicket-components-and-use-ajax-to-unhide-later/
-  date: '2008-09-14 22:55:13 +0000'
-  date_gmt: '2008-09-15 04:55:13 +0000'
-  content: "[...] Post:&laquo; Book Review: Wicket in Action   [...]"
-- id: 115
-  author: Wicket in Action Review | The Basement Coders
-  author_email: ''
-  author_url: http://basementcoders.com/?p=57
-  date: '2009-01-15 13:21:48 +0000'
-  date_gmt: '2009-01-15 19:21:48 +0000'
-  content: "[...] Wrote a review on the most excellent book Wicket in Action for the
-    Mystic Coders. [...]"
-- id: 1949
-  author: Mircea
-  author_email: mircea_262001@yahoo.com
-  author_url: http://javabooks.org
-  date: '2009-09-15 07:33:53 +0000'
-  date_gmt: '2009-09-15 14:33:53 +0000'
-  content: "Hi Craig!\r\nI'm a developer at javabooks.org. We went online yesterday
-    so we need some help with the book reviews. We'd be happy to have your review
-    on our web site.\r\n\r\nThanks,\r\nMircea"
-- id: 2168
-  author: Craig Tataryn
-  author_email: craiger@tataryn.net
-  author_url: ''
-  date: '2009-09-24 14:40:00 +0000'
-  date_gmt: '2009-09-24 21:40:00 +0000'
-  content: "@Mircea, by all means. Just please link back to mysticcoders.com please!"
+comments: true
 ---
 <a href="http://www.mysticcoders.com/wp-content/uploads/2008/09/wicket-in-action-title-page.png"><img class="alignleft size-medium wp-image-85" src="http://www.mysticcoders.com/wp-content/uploads/2008/09/wicket-in-action-title-page.png" alt="" width="249" height="300" /></a>
 

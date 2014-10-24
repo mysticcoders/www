@@ -11,29 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: "I spent some time yesterday working with the new <a href=\"http://caldav.calconnect.org/\"
-  title=\"CalDAV\" target=\"_blank\">CalDAV</a> support in <a href=\"http://calendar.google.com/\"
-  title=\"Google Calendar\" target=\"_blank\">Google Calendar</a>. If you've been
-  under a rock, they announced support for it very recently, and for users of the
-  <a href=\"http://www.apple.com/iphone/\" title=\"Apple iPhone\"
-  target=\"_blank\">iPhone</a>, and users of iCal, it means seamless syncing of
-  their Google Calendar's with all 3 systems. What I found lacking, was a step-by-step
-  tutorial on setting everything up, and the pitfalls and hidden steps along the way.
-  First, a few assumptions to go over:
-\r\n<ol>\r\n  <li>You've got a Gmail
-  account or have a domain with Google Apps</li>\r\n\r\n  <li>You've got a Mac
-  with iCal <em>(only required if you want the iCal sync with Google Calendar)</em></li>\r\n\r\n
-  \ <li>You've got an iPhone <em>(only required if you want to sync your iPhone with
-  Google Calendar)</em></li>\r\n</ol>\r\n"
 wordpress_id: 342
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/08/step-by-step-syncing-google-calendar-ical-and-the-iphone/
 date: '2009-03-08 13:30:23 +0000'
 date_gmt: '2009-03-08 21:30:23 +0000'
-categories:
-- Apple Mac
-tags:
-- Apple Mac
-comments: []
+tags: []
+comments: true
 ---
 I spent some time yesterday working with the new <a href="http://caldav.calconnect.org/" title="CalDAV" target="_blank">CalDAV</a> support in <a href="http://calendar.google.com/" title="Google Calendar" target="_blank">Google Calendar</a>. If you've been under a rock, they announced support for it very recently, and for users of the <a href="http://www.apple.com/iphone/" title="Apple iPhone" target="_blank">iPhone</a>, and users of iCal, it means seamless syncing of their Google Calendar's with all 3 systems. What I found lacking, was a step-by-step tutorial on setting everything up, and the pitfalls and hidden steps along the way. First, a few assumptions to go over:
 

@@ -15,19 +15,12 @@ wordpress_id: 1927
 wordpress_url: http://www.mysticcoders.com/?p=1927
 date: '2013-12-03 07:15:11 +0000'
 date_gmt: '2013-12-03 14:15:11 +0000'
-comments: true
+tags: []
 ---
-Our [Java2Days][java2days] talks have been completed.  There is still another day left of amazing talks by amazing speakers.  Can't wait to see more talks about WebSockets, [OhmDB][ohmdb], and more Java technologies.
-<!--more-->
-Our talks:
-
-* [Building iOS Applications with JavaScript][building-ios-js]
-* [Real Time with Websockets][realtime-with-websockets]
-
-Both talks are using [reveal.js][revealjs] for display purposes.  Thank you again for everyone who attended and participated with questions in the talk.
-
-[java2days]: http://www.java2days.com/
-[building-ios-js]: https://github.com/kinabalu/titaniumprez/tree/java2days_2013
-[ohmdb]: http://ohmdb.com
-[realtime-with-websockets]: https://github.com/kinabalu/real_time_with_websockets/
-[revealjs]: http://lab.hakim.se/reveal-js/
+<p>Our <a href="http://www.java2days.com">Java2Days</a> talks have been completed.  There is still another day left of amazing talks by amazing speakers.  Can't wait to see more talks about WebSockets, <a href="http://ohmdb.com">OhmDB</a>, and more Java technologies.</p>
+<p>Our talks:</p>
+<ul>
+<li><a href="https://github.com/kinabalu/titaniumprez/tree/java2days_2013">Building iOS Applications with JavaScript</a></li>
+<li><a href="https://github.com/kinabalu/real_time_with_websockets/">Real Time with Websockets</a></li>
+</ul>
+<p>Both talks are using <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> for display purposes.  Thank you again for everyone who attended and participated with questions in the talk.</p>

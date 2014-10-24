@@ -15,46 +15,14 @@ wordpress_id: 1810
 wordpress_url: http://www.mysticcoders.com/?p=1810
 date: '2012-02-07 12:08:21 +0000'
 date_gmt: '2012-02-07 19:08:21 +0000'
-categories:
-- iPhone
 tags: []
-comments:
-- id: 3755
-  author: bilal
-  author_email: bilalmix@gmail.com
-  author_url: ''
-  date: '2012-07-23 07:07:43 +0000'
-  date_gmt: '2012-07-23 14:07:43 +0000'
-  content: it's working  &Oslash;&not;&Oslash;&sup2;&Oslash;&sect;&Ugrave;&fnof; &Oslash;&sect;&Ugrave;&bdquo;&Ugrave;&bdquo;&Ugrave;&Dagger;
-    &Oslash;&reg;&Ugrave;&Scaron;&Oslash;&plusmn;&Oslash;&sect;
-- id: 3762
-  author: Gabriel
-  author_email: grlm@montevideo.com.uy
-  author_url: ''
-  date: '2012-09-13 14:06:35 +0000'
-  date_gmt: '2012-09-13 21:06:35 +0000'
-  content: thank you! ... works fine!...
-- id: 3769
-  author: lins
-  author_email: 123linslouis@gmail.com
-  author_url: ''
-  date: '2013-03-06 08:31:00 +0000'
-  date_gmt: '2013-03-06 15:31:00 +0000'
-  content: wooooooof...You helped me alot...thank you so  much...
 ---
-<img src="http://www.mysticcoders.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-07-at-10.59.43-AM.png" border="0" />
-
-A flight is sometimes the perfect time for uninterrupted work.  So as we've been building things with the mobile toolkit <a href="http://www.appcelerator.com" target="_blank">Appcelerator Titanium</a>, I ran it from my trusty key shortcut.  Above is the only thing I saw.  I even warn folks about this when giving talks about how to rapidly develop iOS applications with Titanium.
-
-How do we bypass this?  <em>Please note, that doing this will disable debugging capability within the Titanium Studio, and possibly won't work past the latest versions</em>.
-
-Follow the instructions for your platform to "<a href="https://wiki.appcelerator.org/display/tis/Modifying+Your+Configuration">Find the TitaniumStudio.ini file</a>"
-
-<strong>Add the following at the end of the file</strong>
-
+<p><img src="http://www.mysticcoders.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-07-at-10.59.43-AM.png" border="0" /></p>
+<p>A flight is sometimes the perfect time for uninterrupted work.  So as we've been building things with the mobile toolkit <a href="http://www.appcelerator.com" target="_blank">Appcelerator Titanium</a>, I ran it from my trusty key shortcut.  Above is the only thing I saw.  I even warn folks about this when giving talks about how to rapidly develop iOS applications with Titanium.</p>
+<p>How do we bypass this?  <em>Please note, that doing this will disable debugging capability within the Titanium Studio, and possibly won't work past the latest versions</em>.</p>
+<p>Follow the instructions for your platform to "<a href="https://wiki.appcelerator.org/display/tis/Modifying+Your+Configuration">Find the TitaniumStudio.ini file</a>"</p>
+<p><strong>Add the following at the end of the file</strong></p>
 <pre>
--Dtitanium.bypassAuthentication=true<br />
+-Dtitanium.bypassAuthentication=true
 </pre>
-
-That's it.  When you run it without an internet connection, development bliss.  Peace and quiet.
-
+<p>That's it.  When you run it without an internet connection, development bliss.  Peace and quiet.</p>

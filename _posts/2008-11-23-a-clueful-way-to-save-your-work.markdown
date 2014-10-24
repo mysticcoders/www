@@ -15,12 +15,7 @@ wordpress_id: 116
 wordpress_url: http://www.mysticcoders.com/blog/2008/11/23/a-clueful-way-to-save-your-work/
 date: '2008-11-23 03:07:11 +0000'
 date_gmt: '2008-11-23 10:07:11 +0000'
-categories:
-- Apple Mac
-tags:
-- tip
-- unix
-comments: []
+comments: true
 ---
 So, last night in haste I wrote a pensive rm -rf command which, if my previous find statement was correct, should have worked fine.
 

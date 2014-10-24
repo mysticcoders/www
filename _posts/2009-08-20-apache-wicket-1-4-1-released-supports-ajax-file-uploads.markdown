@@ -15,13 +15,9 @@ wordpress_id: 99
 wordpress_url: http://wicketbyexample.com/?p=99
 date: '2009-08-20 16:00:52 +0000'
 date_gmt: '2009-08-20 23:00:52 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments: []
 ---
-The awesome development team at Apache Wicket has just released it's first maintenance release.  Of note is the transparent support for file uploads when AJAX is being used.  Wicket automatically submits the form using a hidden iframe rather than the standard
-<pre>XMLHttpRequest</pre> method.
-
-<a href="http://wicketinaction.com/2009/08/wicket-1-4-1-supports-ajax-file-uploads/" target="_blank">Read more about this release</a>
-
+<p>The awesome development team at Apache Wicket has just released it's first maintenance release.  Of note is the transparent support for file uploads when AJAX is being used.  Wicket automatically submits the form using a hidden iframe rather than the standard
+<pre>XMLHttpRequest</pre>
+<p> method.</p>
+<p><a href="http://wicketinaction.com/2009/08/wicket-1-4-1-supports-ajax-file-uploads/" target="_blank">Read more about this release</a></p>

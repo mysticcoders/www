@@ -11,20 +11,12 @@ author:
 author_login: kinabalu
 author_email: andrew@mysticcoders.com
 author_url: http://www.mysticcoders.com
-excerpt: |
-  I realize this post is over 2 1/2 months past the actual event, but it was such an awesome time with the <a href="http://mysticcoders.com/" title="mystic coders - to our success!">Mystic</a> crew, I thought I'd share a bit of the day.
-
-  First off, several flew in the night before, and enjoyed a bit of <a href="http://vegas.com/" title="Vegas baby" target="_blank">Vegas</a> before the official festivities. Two of the folks in our team had never been to <a href="http://vegas.com/" title="Vegas baby" target="_blank">Vegas</a> before, so it was an especially interesting experience. Mystic put everyone up for the night at the <a href="http://www.mandalaybay.com/" title="Mandalay Bay" target="_blank">Mandalay Bay</a>, a fantastic hotel and one of the few I'd recommend staying in <a href="http://vegas.com/" title="Vegas baby" target="_blank">Vegas</a>.
-
 wordpress_id: 290
 wordpress_url: http://www.mysticcoders.com/blog/2009/03/03/mystics-december-company-offsite/
 date: '2009-03-03 13:30:51 +0000'
 date_gmt: '2009-03-03 20:30:51 +0000'
-categories:
-- Mystic
-tags:
-- Mystic
-comments: []
+tags: []
+comments: true
 ---
 I realize this post is over 2 1/2 months past the actual event, but it was such an awesome time with the <a href="http://mysticcoders.com/" title="mystic coders - to our success!">Mystic</a> crew, I thought I'd share a bit of the day.
 

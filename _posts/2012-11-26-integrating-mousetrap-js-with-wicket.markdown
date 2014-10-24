@@ -16,31 +16,26 @@ wordpress_url: http://www.mysticcoders.com/?p=1854
 date: '2012-11-26 12:58:35 +0000'
 date_gmt: '2012-11-26 19:58:35 +0000'
 tags: []
-comments: true
 ---
-Over the weekend, I came across a neat library <a href="http://craig.is/killing/mice">mousetrap.js</a> used to add key commands to your web application.  It can be used in any browser including:
-
-
-* Internet Explorer 6+ (wow)
-* Chrome
-* Safari
-* Firefox
-* Opera (yay <a href="http://www.theatlantic.com/technology/archive/2012/11/why-is-belarus-the-only-country-where-opera-is-the-most-popular-browser/265406/" target="_blank" rel="nofollow">Belarus!</a>)</li><br />
-
-Basically the way it works, is 
-
-
-1. add the Javascript library to the page
-2. start binding commands
-
-[javascript]<br />
+<p>Over the weekend, I came across a neat library <a href="http://craig.is/killing/mice">mousetrap.js</a> used to add key commands to your web application.  It can be used in any browser including:</p>
+<ul>
+<li>Internet Explorer 6+ (wow)</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Firefox</li>
+<li>Opera (yay <a href="http://www.theatlantic.com/technology/archive/2012/11/why-is-belarus-the-only-country-where-opera-is-the-most-popular-browser/265406/" target="_blank" rel="nofollow">Belarus!</a>)</li>
+</ul>
+<p>Basically the way it works, is </p>
+<ol>
+<li>add the Javascript library to the page</li>
+<li>start binding commands</li>
+</ol>
+<p>[javascript]<br />
 Mousetrap.bind('command+k', function(e) {<br />
   _someFunctionality();<br />
 });<br />
-[/javascript]
-
-Here's an example of usage in the <a href="http://mysticpaste.com">Mystic Paste</a> code.  We're adding an <a href="http://ci.apache.org/projects/wicket/apidocs/6.0.x/org/apache/wicket/ajax/AbstractDefaultAjaxBehavior.html">AbstractDefaultAjaxBehavior</a> that we're passing to <a href="https://github.com/kinabalu/wicket-mousetrap/blob/master/src/main/java/com/mysticcoders/wicket/mousetrap/Mousetrap.java">Mousetrap</a> and binding the key combination of pressing an 'n' to move the user to the New Paste page.  Within the pastebin, we have the following key commands right now:
-
+[/javascript]</p>
+<p>Here's an example of usage in the <a href="http://mysticpaste.com">Mystic Paste</a> code.  We're adding an <a href="http://ci.apache.org/projects/wicket/apidocs/6.0.x/org/apache/wicket/ajax/AbstractDefaultAjaxBehavior.html">AbstractDefaultAjaxBehavior</a> that we're passing to <a href="https://github.com/kinabalu/wicket-mousetrap/blob/master/src/main/java/com/mysticcoders/wicket/mousetrap/Mousetrap.java">Mousetrap</a> and binding the key combination of pressing an 'n' to move the user to the New Paste page.  Within the pastebin, we have the following key commands right now:</p>
 <ul>
 <li>n - new paste</li>
 <li>h - history page
@@ -48,39 +43,33 @@ Here's an example of usage in the <a href="http://mysticpaste.com">Mystic Paste<
 <li>left arrow - previous page</li>
 <li>right arrow - next page</li>
 <li>shift+left arrow - first page</li>
-<li>shift+right arrow - last page</li><br />
-   </ul><br />
-</li><br />
+<li>shift+right arrow - last page</li>
 </ul>
-
-And here's a snippet of usage:<br />
-```
-final AbstractDefaultAjaxBehavior historyNav = new AbstractDefaultAjaxBehavior() {
-    @Override
-    protected void respond(AjaxRequestTarget target) {
-        throw new RestartResponseException(HistoryPage.class);
-    }
-};
-add(historyNav);
-
-mousetrap.addBind(new KeyBinding().addKeyCombo("h"), historyNav);
-```
-
-We've also done the work of setting up a Maven repository for the library to easily add it to your Wicket code:
-
-[xml]<br />
-    <repository><br />
-        <id>mystic-mvn-repo</id><br />
-        <name>Mystic Github Maven Repository</name><br />
-        <url>https://raw.github.com/kinabalu/mystic-mvn-repo/master/snapshots</url><br />
-    </repository><br />
+</li>
+</ul>
+<p>And here's a snippet of usage:<br />
+[java]<br />
+final AbstractDefaultAjaxBehavior historyNav = new AbstractDefaultAjaxBehavior() {<br />
+    @Override<br />
+    protected void respond(AjaxRequestTarget target) {<br />
+        throw new RestartResponseException(HistoryPage.class);<br />
+    }<br />
+};<br />
+add(historyNav);</p>
+<p>mousetrap.addBind(new KeyBinding().addKeyCombo(&quot;h&quot;), historyNav);<br />
+[/java]</p>
+<p>We've also done the work of setting up a Maven repository for the library to easily add it to your Wicket code:</p>
+<p>[xml]<br />
+    &lt;repository&gt;<br />
+        &lt;id&gt;mystic-mvn-repo&lt;/id&gt;<br />
+        &lt;name&gt;Mystic Github Maven Repository&lt;/name&gt;<br />
+        &lt;url&gt;https://raw.github.com/kinabalu/mystic-mvn-repo/master/snapshots&lt;/url&gt;<br />
+    &lt;/repository&gt;<br />
     ...<br />
-    <dependency><br />
-        <groupId>com.mysticcoders</groupId><br />
-        <artifactId>wicket-mousetrap</artifactId><br />
-        <version>0.1-SNAPSHOT</version><br />
-    </dependency><br />
-[/xml]
-
-If you'd like to grab it manually to integrate with your code, or just peruse the source you can find it on <a href="https://github.com/kinabalu/wicket-mousetrap">Github wicket-mousetrap</a>.
-
+    &lt;dependency&gt;<br />
+        &lt;groupId&gt;com.mysticcoders&lt;/groupId&gt;<br />
+        &lt;artifactId&gt;wicket-mousetrap&lt;/artifactId&gt;<br />
+        &lt;version&gt;0.1-SNAPSHOT&lt;/version&gt;<br />
+    &lt;/dependency&gt;<br />
+[/xml]</p>
+<p>If you'd like to grab it manually to integrate with your code, or just peruse the source you can find it on <a href="https://github.com/kinabalu/wicket-mousetrap">Github wicket-mousetrap</a>.</p>

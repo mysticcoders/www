@@ -15,68 +15,47 @@ wordpress_id: 1719
 wordpress_url: http://wicketbyexample.com/?p=141
 date: '2009-11-11 08:35:40 +0000'
 date_gmt: '2009-11-11 15:35:40 +0000'
-categories:
-- Apache Wicket
 tags: []
-comments:
-- id: 3479
-  author: MysticPaste.com Gravatar support via the GravatarImage component from WicketByExample.com
-  author_email: ''
-  author_url: http://www.mysticcoders.com/blog/2009/11/11/mysticpaste-gets-gravatars-in-the-comments/
-  date: '2009-11-11 09:37:34 +0000'
-  date_gmt: '2009-11-11 16:37:34 +0000'
-  content: "[...] you&#8217;d like to see the Wicket code that supports this, check
-    it out on WicketByExample.com.   Share [...]"
 ---
-The comment system that was added to <a href="http://mysticpaste.com" target="_blank">mysticpaste.com</a> several months ago was pretty bare, boring.  It consisted of capturing name, email, and the comment of which we show name and comment only.  Since we're avid blog posters and readers, the thought of implementing a custom Wicket component for a <a href="http://gravatar.com" target="_blank">Gravatar</a> immediately came to mind.
-
-First things first, extend our new GravatarImage component from WebComponent.  We don't need the image to hold any nested components, etc:
-
+<p>The comment system that was added to <a href="http://mysticpaste.com" target="_blank">mysticpaste.com</a> several months ago was pretty bare, boring.  It consisted of capturing name, email, and the comment of which we show name and comment only.  Since we're avid blog posters and readers, the thought of implementing a custom Wicket component for a <a href="http://gravatar.com" target="_blank">Gravatar</a> immediately came to mind.</p>
+<p>First things first, extend our new GravatarImage component from WebComponent.  We don't need the image to hold any nested components, etc:</p>
 <pre lang="java" colla="+">
-public class GravatarImage extends WebComponent {<br />
+public class GravatarImage extends WebComponent {
 </pre>
-
-We also override onComponentTag so we can populate the "src" attribute for our image with the Gravatar generated URL:
-
+<p>We also override onComponentTag so we can populate the "src" attribute for our image with the Gravatar generated URL:</p>
 <pre lang="java" colla="+">
-    protected void onComponentTag(ComponentTag tag) {<br />
-        super.onComponentTag(tag);<br />
-        checkComponentTag(tag, "img");<br />
-        tag.put("src", getDefaultModelObjectAsString());<br />
-    }<br />
+    protected void onComponentTag(ComponentTag tag) {
+        super.onComponentTag(tag);
+        checkComponentTag(tag, "img");
+        tag.put("src", getDefaultModelObjectAsString());
+    }
 </pre>
-
-Next we provide our own Model implementation which performs the MD5 magic on our email address to give its special Gravatar URL pointing to our image.
-
+<p>Next we provide our own Model implementation which performs the MD5 magic on our email address to give its special Gravatar URL pointing to our image.</p>
 <pre lang="java" colla="+">
-    private class GravatarModel extends AbstractReadOnlyModel<string> {<br />
+    private class GravatarModel extends AbstractReadOnlyModel<string> {
         private static final String GRAVATAR_URL = "http://www.gravatar.com/avatar/";
 
-        String email;<br />
-        String gravatarKey;<br />
+        String email;
+        String gravatarKey;
         int hsize;
 
-        public GravatarModel(IModel<string> model, int hsize) {<br />
-            email = model.getObject();<br />
-            gravatarKey = MD5Util.md5Hex(email);<br />
-            this.hsize = hsize;<br />
+        public GravatarModel(IModel<string> model, int hsize) {
+            email = model.getObject();
+            gravatarKey = MD5Util.md5Hex(email);
+            this.hsize = hsize;
         }
 
-        public String getObject() {<br />
-            StringBuilder sb = new StringBuilder();<br />
-            sb.append(GRAVATAR_URL);<br />
-            sb.append(gravatarKey);<br />
-            sb.append("?s=");<br />
-            sb.append(hsize);<br />
-            return sb.toString();<br />
-        }<br />
-    }<br />
+        public String getObject() {
+            StringBuilder sb = new StringBuilder();
+            sb.append(GRAVATAR_URL);
+            sb.append(gravatarKey);
+            sb.append("?s=");
+            sb.append(hsize);
+            return sb.toString();
+        }
+    }
 </pre>
-
-And that's it!  Just follow the example given in the javadoc and voila!  You should have Gravatar pictures for the entered email address.  To take a look at the full implementation: <a href="http://kenai.com/projects/mystic-apps/sources/mystic-apps/content/mysticpaste/src/main/java/com/mysticcoders/mysticpaste/web/components/GravatarImage.java?rev=89" target="_blank">Download GravatarImage.java</a>.
-
-<h3>Next steps</h3><br />
-A couple of items can be added to this component to make it more "full-featured" to the Gravatar API.  Gravatar supports a default Gravatar image which may be passed, along with a number of flags one of which is implemented "s" or size.
-
-Hope you enjoyed this, and use this in your next project!
-
+<p>And that's it!  Just follow the example given in the javadoc and voila!  You should have Gravatar pictures for the entered email address.  To take a look at the full implementation: <a href="http://kenai.com/projects/mystic-apps/sources/mystic-apps/content/mysticpaste/src/main/java/com/mysticcoders/mysticpaste/web/components/GravatarImage.java?rev=89" target="_blank">Download GravatarImage.java</a>.</p>
+<h3>Next steps</h3>
+<p>A couple of items can be added to this component to make it more "full-featured" to the Gravatar API.  Gravatar supports a default Gravatar image which may be passed, along with a number of flags one of which is implemented "s" or size.</p>
+<p>Hope you enjoyed this, and use this in your next project!</p>
