@@ -22,6 +22,6 @@ I will be preparing a full tutorial on building a simple but functional applicat
 
 <blockquote><a href="http://www.papernapkin.org/pastebin">Pastebin</a> is homage to the several applications built before it, and was built in a few hours time at most.  It has the distinction of being the pastebin for irc.freenode.net's ##java, ##wicket, and ##swing!</blockquote>
 
-<blockquote><a href="http://www.mysticcoders.com/lounge">Mystic Lounge</a> is a file delivery system!  Ok, its just a form giving you upload capability for larger files that you otherwise wouldn't be able to email.</blockquote><br />
+<blockquote><a href="http://www.mysticcoders.com/lounge">Mystic Lounge</a> is a file delivery system!  Ok, its just a form giving you upload capability for larger files that you otherwise wouldn't be able to email.</blockquote>
 We have a lot more projects in the works over here at Mystic, these are just some simple apps that we coded up to learn the internals of <a href="http://wicket.sf.net">Wicket</a>.
 

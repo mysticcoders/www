@@ -22,7 +22,7 @@ I realize this post is over 2 1/2 months past the actual event, but it was such 
 
 
 First off, several flew in the night before, and enjoyed a bit of <a href="http://vegas.com" title="Vegas baby" target="_blank">Vegas</a> before the official festivities. Two of the folks in our team had never been to <a href="http://vegas.com" title="Vegas baby" target="_blank">Vegas</a> before, so it was an especially interesting experience. Mystic put everyone up for the night at the <a href="http://www.mandalaybay.com/" title="Mandalay Bay" target="_blank">Mandalay Bay</a>, a fantastic hotel and one of the few I'd recommend staying in <a href="http://vegas.com" title="Vegas baby" target="_blank">Vegas</a>.
-<img src="http://www.mysticcoders.com/wp-content/uploads/2009/03/mandalaynew2.jpg" width="250" height="188" alt="mandalaynew2.jpg.jpeg" /><br />
+<img src="http://www.mysticcoders.com/wp-content/uploads/2009/03/mandalaynew2.jpg" width="250" height="188" alt="mandalaynew2.jpg.jpeg" />
 
 We started on Saturday at around noon, had some lunch brought up to my suite, and started rapping with my good friend John Catalina. John is an amazing energy that I hired on with <a href="http://mysticcoders.com/" title="mystic coders - to our success!">Mystic</a> several years ago and helped to catapult us to heights we had not yet imagined. After a short break, we got down to business talk, my vision for the company, and how we can continue to get there. Lots of great ideas came out of this session, about 4 hours in total, and we've been integrating the ideas for the last few months and starting to see our master plan in action.
 
@@ -30,14 +30,14 @@ We started on Saturday at around noon, had some lunch brought up to my suite, an
 Hyped from some great work earlier in the day, <a href="http://mysticcoders.com/" title="mystic coders - to our success!">Mystic</a> treated everyone to dinner at <a href="http://www.mandalaybay.com/dining/redsquare.aspx" title="Red Square - Las Vegas" target="_blank">Red Square</a>. It's an obvious Russian themed bar / restaurant, so any drink had must have some vodka in it, so we chose Chernobyl, which had 4+ shots of various Vodka's in a cranberry juice on the rocks.
 
 
-<br /><br />
+
 <img src="http://www.mysticcoders.com/wp-content/uploads/2009/03/redsquare2.jpg" width="480" height="162" alt="Redsquare2.jpg.jpeg" />
 
 
 Nice and full from the evening dinner, we headed off to the entertainment, <a href="http://www.pennandteller.com/" title="Penn &amp; Teller" target="_blank">Penn &amp; Teller</a>, who put on a fabulous show at the Rio.
 
 
-<br /><br />
+
 <img src="http://www.mysticcoders.com/wp-content/uploads/2009/03/picture-1.png" width="480" height="99" alt="Picture 1.png" />
 
 

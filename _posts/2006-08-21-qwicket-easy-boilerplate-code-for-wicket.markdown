@@ -23,8 +23,8 @@ comments: true
 
 <ul>
 <li>Download the wicket dependencies and write all your own boilerplate code</li>
-<li>Use the <a title="qwicket" href="http://qwicket.sf.net" target="_blank">Qwicket</a> website, create your domain model and download the boilerplate code.</li><br />
-</ul><br />
+<li>Use the <a title="qwicket" href="http://qwicket.sf.net" target="_blank">Qwicket</a> website, create your domain model and download the boilerplate code.</li>
+</ul>
 Now with the <a title="jetty" href="http://jetty.mortbay.org/jetty/index.html" target="_blank">Jetty</a> and <a title="hsqldb" href="http://www.hsqldb.org/" target="_blank">HSQLDB</a> additions, all the dependencies needed are handled by the Ant Maven plugin, so you can get to whats important, writing the next web 2.0 app.
 
 Items that are planned for the future: multiple persistence framework selection (<a title="Java Persistence API" href="http://java.sun.com/javaee/overview/faq/persistence.jsp" target="_blank">JPA</a>, <a title="iBatis" href="http://ibatis.apache.org/" target="_blank">iBatis</a>), portlet support, scaffolding, and maybe someone to help with the UI :)

@@ -18,13 +18,13 @@ date_gmt: '2009-07-20 07:25:43 +0000'
 tags: []
 comments: true
 ---
-<p>Wicket makes it very easy to integrate directly with the <a href="http://springframework.org" target="_blank">Spring Framework</a>.<a id="more"></a><a id="more-1711"></a></p>
-<p>In any Component (Page, Panel, etc) to include a Spring bean you would do:</p>
+Wicket makes it very easy to integrate directly with the <a href="http://springframework.org" target="_blank">Spring Framework</a>.<a id="more"></a><a id="more-1711"></a>\n
+In any Component (Page, Panel, etc) to include a Spring bean you would do:\n
 <pre lang="java" colla="+">
     @SpringBean
     private MyBean myBean;
 </pre>
-<p>In your application-specific Application class you would do the following:</p>
+In your application-specific Application class you would do the following:\n
 <pre lang="java" colla="+">
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 
@@ -36,7 +36,7 @@ import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
         ...
     }
 </pre>
-<p>If you're using <a href="http://maven.apache.org" target="_blank">Maven</a> for your build management, you would pull in these dependencies assuming wicket 1.3:</p>
+If you're using <a href="http://maven.apache.org" target="_blank">Maven</a> for your build management, you would pull in these dependencies assuming wicket 1.3:\n
 <pre lang="xml" colla="+">
         <dependency>
             <groupId>org.apache.wicket</groupId>

@@ -18,8 +18,8 @@ date_gmt: '2009-07-20 14:50:16 +0000'
 tags: []
 comments: true
 ---
-<p>When writing AJAX-specific code for Wicket, in order to make any updates to a component, it needs to be added to the AjaxTarget.  If you've got a particularly large form, this can get tedious, so use an IVisitor instead!<br />
-<a id="more"></a><a id="more-1713"></a></p>
+When writing AJAX-specific code for Wicket, in order to make any updates to a component, it needs to be added to the AjaxTarget.  If you've got a particularly large form, this can get tedious, so use an IVisitor instead!
+<a id="more"></a><a id="more-1713"></a>\n
 <pre lang="java" colla="+">
 @Override
 protected void onSubmit(final AjaxRequestTarget target, Form form) {
@@ -33,7 +33,7 @@ protected void onSubmit(final AjaxRequestTarget target, Form form) {
     });
     ...
 </pre>
-<p>And as always, for each component you access via AJAX, you'll need to:</p>
+And as always, for each component you access via AJAX, you'll need to:\n
 <pre lang="java" colla="+">
    component.setOutputMarkupId(true);
 </pre>

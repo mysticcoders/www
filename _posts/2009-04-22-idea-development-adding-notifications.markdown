@@ -17,20 +17,20 @@ date: '2009-04-22 09:30:23 +0000'
 date_gmt: '2009-04-22 16:30:23 +0000'
 comments: true
 ---
-<p>Our initial plugin for IDEA that talked to <a href="http://www.mysticpaste.com" target="_blank">MysticPaste.com</a> was fairly simple, offered no feedback to the user that anything happened. I spent some time trying to find out a method of achieving unobtrusive notification that the paste was successful. On initial glance at the API, nothing jumped out except for <em>Messages</em>, and <em>StatusBar</em>.</p>
-<p><a id="more"></a><a id="more-784"></a>
-<p>First crack was using <em>Messages</em>:</p>
+Our initial plugin for IDEA that talked to <a href="http://www.mysticpaste.com" target="_blank">MysticPaste.com</a> was fairly simple, offered no feedback to the user that anything happened. I spent some time trying to find out a method of achieving unobtrusive notification that the paste was successful. On initial glance at the API, nothing jumped out except for <em>Messages</em>, and <em>StatusBar</em>.\n
+<a id="more"></a><a id="more-784"></a>
+First crack was using <em>Messages</em>:\n
 <pre lang="java" colla="+">
     Messages.showInfoMessage("Paste successful!","URL automatically copied to your clipboard");
 </pre>
-<p>It meets the standard of showing feedback to the end-user, but its definitely obtrusive. The user is forced to click on the OK button, its less of a status and more of a confirmation.</p>
-<p>Second crack was using StatusBar. Only thing found in Google is for version 5.0 of the plugin API, and it only has one method, setInfo(String s). Doesn't look very promising. Introspection though, proves that nothing is as it seems. Through some sleuth googling, downloading some plugins that showed the notifications we like, and googling more, a solution was found.</p>
+It meets the standard of showing feedback to the end-user, but its definitely obtrusive. The user is forced to click on the OK button, its less of a status and more of a confirmation.\n
+Second crack was using StatusBar. Only thing found in Google is for version 5.0 of the plugin API, and it only has one method, setInfo(String s). Doesn't look very promising. Introspection though, proves that nothing is as it seems. Through some sleuth googling, downloading some plugins that showed the notifications we like, and googling more, a solution was found.\n
 <h2>Adding a Project Component</h2>
-<p>There's only one way to get at a <em>StatusBar</em> instance, and that's through the <em>WindowManager</em>. And there isn't a global <em>StatusBar</em>, there's one per Project. So where we got by without a <em>ProjectComponent</em> previously, we need one now. The following snippet gives us a <em>StatusBar</em> object:</p>
+There's only one way to get at a <em>StatusBar</em> instance, and that's through the <em>WindowManager</em>. And there isn't a global <em>StatusBar</em>, there's one per Project. So where we got by without a <em>ProjectComponent</em> previously, we need one now. The following snippet gives us a <em>StatusBar</em> object:\n
 <pre lang="java" colla="+">
     StatusBar statusBar = WindowManager.getInstance().getStatusBar(project);
 </pre>
-<p>And from that, we can call fireNotificationPopup with the proper parameters, to show our message. If you happen to find the JavaDoc, congratulations, initial searches came up empty on this method, but it works great. Here's the entire method for the notification, which we add to the event thread so Swing can fire and show it whenever it makes sense:</p>
+And from that, we can call fireNotificationPopup with the proper parameters, to show our message. If you happen to find the JavaDoc, congratulations, initial searches came up empty on this method, but it works great. Here's the entire method for the notification, which we add to the event thread so Swing can fire and show it whenever it makes sense:\n
 <pre lang="java" colla="+">
     private Project project;
 
@@ -67,10 +67,10 @@ comments: true
 
     }
 </pre>
-<p>And now all we need is to call this after the paste was successful. So similar to how we grabbed the <em>Editor</em>, we'll again pull out our <em>DataContext</em> object bag of tricks, and find our <em>ProjectComponent</em> instance, and fire off our status update as you can see here:</p>
+And now all we need is to call this after the paste was successful. So similar to how we grabbed the <em>Editor</em>, we'll again pull out our <em>DataContext</em> object bag of tricks, and find our <em>ProjectComponent</em> instance, and fire off our status update as you can see here:\n
 <pre lang="java" colla="+">
     Project project = DataKeys.PROJECT.getData(context);
     MysticPasteIndicationComponent mpiComponent = project.getComponent(MysticPasteIndicationComponent.class);
     mpiComponent.updateWithStatus("Paste successful!nnURL automatically copied to your clipboard");
 </pre>
-<p>That's it. And we promise, no animals were hurt during this exercise. And DO try this at home.</p>
+That's it. And we promise, no animals were hurt during this exercise. And DO try this at home.\n

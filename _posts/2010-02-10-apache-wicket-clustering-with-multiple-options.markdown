@@ -18,9 +18,9 @@ date_gmt: '2010-02-11 05:23:35 +0000'
 tags: []
 comments: true
 ---
-<p>We've been seeing more and more implementations of <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore</a> out in the wild for <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.  The interface basically decides how Wicket will store the <a href="http://cwiki.apache.org/WICKET/page-maps.html" target="_blank">Pagemap</a> for your application.  The default that ships with Wicket uses <a href="http://wicketbyexample.com/api/wicket/1.4.6/org/apache/wicket/protocol/http/pagestore/DiskPageStore.html" target="_blank">DiskPageStore</a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http://letsgetdugg.com" target="_blank">Letsgetdugg</a> a few days ago: <a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Clustering Wicket for fun and profit!</a>, I decided to take a look at writing an implementation using <a href="http://hazelcast.com" target="_blank">Hazelcast</a> - an "open source clustering and highly scalable data distribution platform".<br />
-<a id="more"></a><a id="more-1726"></a><br />
-The implementation below borrows heavily from <a href="http://fabulously40.com/fabulously/victori" target="_blank">Victor</a>.  It basically creates a HazelcastInstance in the constructor and then overrides all the methods necessary from <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/pagestore/AbstractPageStore.html" target="_blank">AbstractPageStore</a>.  Here's some quick code to put in your app's Application implementation that will use this new IPageStore:</p>
+We've been seeing more and more implementations of <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/SecondLevelCacheSessionStore.IPageStore.html" target="_blank">IPageStore</a> out in the wild for <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.  The interface basically decides how Wicket will store the <a href="http://cwiki.apache.org/WICKET/page-maps.html" target="_blank">Pagemap</a> for your application.  The default that ships with Wicket uses <a href="http://wicketbyexample.com/api/wicket/1.4.6/org/apache/wicket/protocol/http/pagestore/DiskPageStore.html" target="_blank">DiskPageStore</a> which is an implementation that stores the serialized pages grouped in a single file per pagemap. After reading a wonderful blog post on <a href="http://letsgetdugg.com" target="_blank">Letsgetdugg</a> a few days ago: <a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Clustering Wicket for fun and profit!</a>, I decided to take a look at writing an implementation using <a href="http://hazelcast.com" target="_blank">Hazelcast</a> - an "open source clustering and highly scalable data distribution platform".
+<a id="more"></a><a id="more-1726"></a>
+The implementation below borrows heavily from <a href="http://fabulously40.com/fabulously/victori" target="_blank">Victor</a>.  It basically creates a HazelcastInstance in the constructor and then overrides all the methods necessary from <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/pagestore/AbstractPageStore.html" target="_blank">AbstractPageStore</a>.  Here's some quick code to put in your app's Application implementation that will use this new IPageStore:\n
 <pre lang="java" colla="+">
     @Override
     protected ISessionStore newSessionStore() {
@@ -28,7 +28,7 @@ The implementation below borrows heavily from <a href="http://fabulously40.com/f
                 new HazelcastPageStore("default"));
     }
 </pre>
-<p>And here's the code for HazelcastPageStore:</p>
+And here's the code for HazelcastPageStore:\n
 <pre lang="java" colla="+">
 public class HazelcastPageStore extends AbstractPageStore
                                       implements SecondLevelCacheSessionStore.IClusteredPageStore {
@@ -109,9 +109,9 @@ public class HazelcastPageStore extends AbstractPageStore
     }
 }
 </pre>
-<p>Several other IPageStore implementations available:</p>
+Several other IPageStore implementations available:\n
 <ul>
 <li><a href="http://letsgetdugg.com/2010/02/07/clustering-wicket-for-fun-and-profit/" target="_blank">Letsgetdugg - memcached implementation</a></li>
 <li><a href="http://www.mail-archive.com/users@wicket.apache.org/msg46421.html" target="_blank">Google App Engine memcached implementation</a></li>
 </ul>
-<p>Let us know if you find any others out in the wild so we can add them here.</p>
+Let us know if you find any others out in the wild so we can add them here.\n

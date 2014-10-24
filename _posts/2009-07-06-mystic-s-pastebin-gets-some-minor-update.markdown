@@ -18,8 +18,8 @@ date_gmt: '2009-07-06 15:30:20 +0000'
 tags: []
 comments: true
 ---
-<p>With our pastebin <a href="http://mysticpaste.com">MysticPaste.com</a>, one of the biggest roadblocks to a clean-looking UI, is keeping it uncluttered while offering the functionality needed.  Apple and a majority of the software released for their operating system seems to "get it".  Sensible defaults and all that are important in keeping it simple.</p>
-<p>At Mystic we've used our little pastebin experiment to teach on building code with <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>.  We plan to continue this tradition in the near future talking about some of the new items in <a href="http://mysticpaste.com">MysticPaste.com</a>'s feature list:</p>
+With our pastebin <a href="http://mysticpaste.com">MysticPaste.com</a>, one of the biggest roadblocks to a clean-looking UI, is keeping it uncluttered while offering the functionality needed.  Apple and a majority of the software released for their operating system seems to "get it".  Sensible defaults and all that are important in keeping it simple.\n
+At Mystic we've used our little pastebin experiment to teach on building code with <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>.  We plan to continue this tradition in the near future talking about some of the new items in <a href="http://mysticpaste.com">MysticPaste.com</a>'s feature list:\n
 <ul>
 <li>Raw Text (for copy and paste)</li>
 <li>Using the JavaScript-based <a href="http://alexgorbatchev.com/wiki/" target="_blank">SyntaxHighlighter</a> and tossing JaSHi.  Show me a Java-based syntax highlighter with as clean an interface and respectable highlighting, and I'd prefer it.  Searches returned nothing though.</li>
@@ -29,4 +29,4 @@ comments: true
 <li>Abuse Reporting - it happens all the time, spam fills a pastebin, we've added a few measures to combat this nuisance along with a "Report Abuse" function which takes the paste out of the history</li>
 <li>Code Refactoring - nothing to do with the UI, but there have been a few changes and enhancements under the hood.</li>
 </ul>
-<p>With all of that in mind, we think those are pretty great updates to an already fantastic tool.  What would you like to see in the pastebin next?  image support?  diff support?  durations to keep a post?  something else?</p>
+With all of that in mind, we think those are pretty great updates to an already fantastic tool.  What would you like to see in the pastebin next?  image support?  diff support?  durations to keep a post?  something else?\n

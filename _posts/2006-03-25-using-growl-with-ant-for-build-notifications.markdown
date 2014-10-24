@@ -22,11 +22,11 @@ Something that just struck me as handy, was <a href="http://growl.info">Growl</a
 
 Here's the little snippet of ant code:
 
-<pre lang="XML" colla="+">
-<exec executable="/usr/local/bin/growlnotify" os="Mac OS X" logError="true"><br />
-<arg line="-m 'Build has been completed'"/><br />
-</exec><br />
-</pre>
+{% highlight xml %}
+<exec executable="/usr/local/bin/growlnotify" os="Mac OS X" logError="true">
+<arg line="-m 'Build has been completed'"/>
+</exec>
+{% endhighlight %}
 
 There seems to be a similar framework out there taking its inspiration from <a href="http://growl.info">Growl</a>, called <a href="http://www.k23productions.com/haiku/snarl.html">Snarl</a>.
 

@@ -18,12 +18,12 @@ date_gmt: '2012-02-07 19:08:21 +0000'
 tags: []
 comments: true
 ---
-<p><img src="http://www.mysticcoders.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-07-at-10.59.43-AM.png" border="0" /></p>
-<p>A flight is sometimes the perfect time for uninterrupted work.  So as we've been building things with the mobile toolkit <a href="http://www.appcelerator.com" target="_blank">Appcelerator Titanium</a>, I ran it from my trusty key shortcut.  Above is the only thing I saw.  I even warn folks about this when giving talks about how to rapidly develop iOS applications with Titanium.</p>
-<p>How do we bypass this?  <em>Please note, that doing this will disable debugging capability within the Titanium Studio, and possibly won't work past the latest versions</em>.</p>
-<p>Follow the instructions for your platform to "<a href="https://wiki.appcelerator.org/display/tis/Modifying+Your+Configuration">Find the TitaniumStudio.ini file</a>"</p>
-<p><strong>Add the following at the end of the file</strong></p>
+<img src="http://www.mysticcoders.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-07-at-10.59.43-AM.png" border="0" />\n
+A flight is sometimes the perfect time for uninterrupted work.  So as we've been building things with the mobile toolkit <a href="http://www.appcelerator.com" target="_blank">Appcelerator Titanium</a>, I ran it from my trusty key shortcut.  Above is the only thing I saw.  I even warn folks about this when giving talks about how to rapidly develop iOS applications with Titanium.\n
+How do we bypass this?  <em>Please note, that doing this will disable debugging capability within the Titanium Studio, and possibly won't work past the latest versions</em>.\n
+Follow the instructions for your platform to "<a href="https://wiki.appcelerator.org/display/tis/Modifying+Your+Configuration">Find the TitaniumStudio.ini file</a>"\n
+<strong>Add the following at the end of the file</strong>\n
 <pre>
 -Dtitanium.bypassAuthentication=true
 </pre>
-<p>That's it.  When you run it without an internet connection, development bliss.  Peace and quiet.</p>
+That's it.  When you run it without an internet connection, development bliss.  Peace and quiet.\n

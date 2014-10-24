@@ -20,9 +20,9 @@ comments: true
 ---
 Thanks goes to Xgc in #mysql on freenode for showing me this little one-liner.  We needed to add a unique key to one of our tables, and a duplicate was in our midst.  Enter this handy one-liner:
 
-<pre lang="sql" colla="+">
-SELECT field1, count(*) FROM tbl1 GROUP BY field1 HAVING count(*) > 1;<br />
-</pre>
+```
+SELECT field1, count(*) FROM tbl1 GROUP BY field1 HAVING count(*) > 1;
+```
 
 problem solved, a nice simple list of the duplicated rows in front of you.
 

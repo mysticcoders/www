@@ -18,6 +18,6 @@ date_gmt: '2009-11-11 16:37:30 +0000'
 tags: []
 comments: true
 ---
-<p>Since comments were added many months ago, we've been meaning to make them a little more ... pretty.  So last night one of our guys spent a little time creating a custom component to represent a <a href="http://gravatar.com" target="_blank">Gravatar</a>.  If you have a Gravatar go check out <a href="http://mysticpaste.com" target="_blank">MysticPaste.com</a> and play with the functionality.  It's simple, but fun.</p>
-<p>if you don't have a Gravatar, <a href="http://en.gravatar.com/site/signup" target="_blank">Signup for one here</a>.</p>
-<p>If you'd like to see the <a href="http://wicket.apache.org" target="_blank">Wicket</a> code that supports this, check it out on <a href="http://wicketbyexample.com/a-gravatar-image-component-for-wicket/">WicketByExample.com</a>.</p>
+Since comments were added many months ago, we've been meaning to make them a little more ... pretty.  So last night one of our guys spent a little time creating a custom component to represent a <a href="http://gravatar.com" target="_blank">Gravatar</a>.  If you have a Gravatar go check out <a href="http://mysticpaste.com" target="_blank">MysticPaste.com</a> and play with the functionality.  It's simple, but fun.\n
+if you don't have a Gravatar, <a href="http://en.gravatar.com/site/signup" target="_blank">Signup for one here</a>.\n
+If you'd like to see the <a href="http://wicket.apache.org" target="_blank">Wicket</a> code that supports this, check it out on <a href="http://wicketbyexample.com/a-gravatar-image-component-for-wicket/">WicketByExample.com</a>.\n

@@ -28,24 +28,24 @@ Here is the code I was playing with and a screenshot....
 <a id="more"></a><a id="more-75"></a>
 
 <pre lang="xml" line="1" colla="+">
-<?xml version=&acirc;&euro;1.0&acirc;&euro;&sup3; encoding=&acirc;&euro;UTF-8&acirc;&euro;&sup3;?><br />
+<?xml version=&acirc;&euro;1.0&acirc;&euro;&sup3; encoding=&acirc;&euro;UTF-8&acirc;&euro;&sup3;?>
 <!DOCTYPE canvas SYSTEM &acirc;&euro;&oelig;http://www.openlaszlo.org/lps4/tools/lzx.xsd&acirc;&euro;>
 
 <canvas width=&acirc;&euro;100%&acirc;&euro; height=&acirc;&euro;100%&acirc;&euro;>
 
-<attribute name=&acirc;&euro;allNodes&acirc;&euro; value=&acirc;&euro;${new Array()}&acirc;&euro;/><br />
+<attribute name=&acirc;&euro;allNodes&acirc;&euro; value=&acirc;&euro;${new Array()}&acirc;&euro;/>
 <attribute name=&acirc;&euro;nodeGroups&acirc;&euro; value=&acirc;&euro;${new Array()}&acirc;&euro;/>
 
-<resource name=&acirc;&euro;node1&acirc;&euro;&sup3;><br />
-   <frame src=&acirc;&euro;CS2-Standard-48&Atilde;&mdash;48.png&acirc;&euro;/><br />
+<resource name=&acirc;&euro;node1&acirc;&euro;&sup3;>
+   <frame src=&acirc;&euro;CS2-Standard-48&Atilde;&mdash;48.png&acirc;&euro;/>
 </resource>
 
-<resource name=&acirc;&euro;node2&acirc;&euro;&sup3;><br />
-    <frame src=&acirc;&euro;InDesign-48&Atilde;&mdash;48.png&acirc;&euro;/><br />
+<resource name=&acirc;&euro;node2&acirc;&euro;&sup3;>
+    <frame src=&acirc;&euro;InDesign-48&Atilde;&mdash;48.png&acirc;&euro;/>
 </resource>
 
-<resource name=&acirc;&euro;node3&acirc;&euro;&sup3;><br />
-    <frame src=&acirc;&euro;CS2-Premium-48&Atilde;&mdash;48.png&acirc;&euro;/><br />
+<resource name=&acirc;&euro;node3&acirc;&euro;&sup3;>
+    <frame src=&acirc;&euro;CS2-Premium-48&Atilde;&mdash;48.png&acirc;&euro;/>
 </resource>
 
 <resource name=&acirc;&euro;group&acirc;&euro;>
@@ -60,7 +60,7 @@ Here is the code I was playing with and a screenshot....
 
 <class name=&acirc;&euro;linkedLine&acirc;&euro;>
 
-    <attribute name=&acirc;&euro;style&acirc;&euro; value=&acirc;&euro;0&Atilde;&mdash;00ff00&acirc;&euro;&sup3;/><br />
+    <attribute name=&acirc;&euro;style&acirc;&euro; value=&acirc;&euro;0&Atilde;&mdash;00ff00&acirc;&euro;&sup3;/>
         <attribute name=&acirc;&euro;myWidth&acirc;&euro; value=&acirc;&euro;2&acirc;&euro;&sup3;/>
 
             <attribute name=&acirc;&euro;mc&acirc;&euro;/>
@@ -91,19 +91,19 @@ Here is the code I was playing with and a screenshot....
 
                 </method>
 
-                <method name=&acirc;&euro;alarm&acirc;&euro;><br />
-                    // Alarm behaviour.<br />
+                <method name=&acirc;&euro;alarm&acirc;&euro;>
+                    // Alarm behaviour.
                 </method>
 
 </class>
 
-<class name=&acirc;&euro;subMap&acirc;&euro; extends=&acirc;&euro;view&acirc;&euro;><br />
+<class name=&acirc;&euro;subMap&acirc;&euro; extends=&acirc;&euro;view&acirc;&euro;>
 </class>
 
 <class name=&acirc;&euro;nodeLabel&acirc;&euro; extends=&acirc;&euro;text&acirc;&euro;>
 
-    <method name=&acirc;&euro;setLabel&acirc;&euro; args=&acirc;&euro;labelText&acirc;&euro;><br />
-        this.setText(labelText);<br />
+    <method name=&acirc;&euro;setLabel&acirc;&euro; args=&acirc;&euro;labelText&acirc;&euro;>
+        this.setText(labelText);
     </method>
 
 </class>
@@ -122,7 +122,7 @@ Here is the code I was playing with and a screenshot....
 
         </handler>
 
-        <method name=&acirc;&euro;alarm&acirc;&euro;><br />
+        <method name=&acirc;&euro;alarm&acirc;&euro;>
         </method>
 
         <handler name=&acirc;&euro;onmouseout&acirc;&euro;>
@@ -167,8 +167,8 @@ Here is the code I was playing with and a screenshot....
 
             this.setY(nodes[nodes.length-1].y - this.height/2);
 
-            for (n in nodes) {<br />
-                nodes[n].hide();<br />
+            for (n in nodes) {
+                nodes[n].hide();
             }
 
             this.setVisible(true);
@@ -595,28 +595,28 @@ Here is the code I was playing with and a screenshot....
 
         for (i = 0; i < this.length; i++) {
 
-            if (typeof(searchStr) == &acirc;&euro;&tilde;<br />
-            function&acirc;&euro;&trade;)<br />
+            if (typeof(searchStr) == &acirc;&euro;&tilde;
+            function&acirc;&euro;&trade;)
         {
 
             if (searchStr.test(this[i])) {
 
-                if (!returnArray) {<br />
-                    returnArray = []<br />
+                if (!returnArray) {
+                    returnArray = []
                 }
 
                 returnArray.push(i);
 
             }
 
-        }<br />
-        else<br />
+        }
+        else
         {
 
             if (this[i] === searchStr) {
 
-                if (!returnArray) {<br />
-                    returnArray = []<br />
+                if (!returnArray) {
+                    returnArray = []
                 }
 
                 returnArray.push(i);
@@ -639,8 +639,8 @@ Here is the code I was playing with and a screenshot....
 
         for (i = 0; i < l; i++) {
 
-            if (a.indexOf(this[i], 0, b) < 0) {<br />
-                a.push(this[i]);<br />
+            if (a.indexOf(this[i], 0, b) < 0) {
+                a.push(this[i]);
             }
 
         }
@@ -655,8 +655,8 @@ Here is the code I was playing with and a screenshot....
 
         for (var i = +b || 0, l = this.length; i < l; i++) {
 
-            if (this[i] === v || s && this[i] == v) {<br />
-                return i;<br />
+            if (this[i] === v || s && this[i] == v) {
+                return i;
             }
 
         }
@@ -667,7 +667,7 @@ Here is the code I was playing with and a screenshot....
 
     ]]>
 
-</script><br />
+</script>
 </canvas>
 
 </pre>

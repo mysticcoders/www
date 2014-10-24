@@ -18,10 +18,13 @@ date_gmt: '2013-12-03 14:15:11 +0000'
 tags: []
 comments: true
 ---
-<p>Our <a href="http://www.java2days.com">Java2Days</a> talks have been completed.  There is still another day left of amazing talks by amazing speakers.  Can't wait to see more talks about WebSockets, <a href="http://ohmdb.com">OhmDB</a>, and more Java technologies.</p>
-<p>Our talks:</p>
+Our <a href="http://www.java2days.com">Java2Days</a> talks have been completed.  There is still another day left of amazing talks by amazing speakers.  Can't wait to see more talks about WebSockets, <a href="http://ohmdb.com">OhmDB</a>, and more Java technologies.
+
+Our talks:
+
 <ul>
 <li><a href="https://github.com/kinabalu/titaniumprez/tree/java2days_2013">Building iOS Applications with JavaScript</a></li>
 <li><a href="https://github.com/kinabalu/real_time_with_websockets/">Real Time with Websockets</a></li>
 </ul>
-<p>Both talks are using <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> for display purposes.  Thank you again for everyone who attended and participated with questions in the talk.</p>
+Both talks are using <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> for display purposes.  Thank you again for everyone who attended and participated with questions in the talk.
+

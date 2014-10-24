@@ -29,7 +29,7 @@ Our first feature: 5 days of Wicket!
 <li><a href="http://www.mysticcoders.com/blog/2009/03/10/5-days-of-wicket-writing-the-tests/" title="Day 2 - Writing the tests" target="_top">Day 2 - Writing the Tests</a></li>
 <li><a href="http://www.mysticcoders.com/blog/2009/03/11/5-days-of-wicket-day-designing-the-backend/" title="Day 3 - Designing the backend" target="_top">Day 3 - Designing the backend</a></li>
 <li><a href="http://www.mysticcoders.com/blog/2009/03/12/5-days-of-wicket-the-ui/" title="Day 4 - Designing the Wicket components" target="_top">Day 4 - Designing the Wicket components</a></li>
-<li><a href="http://www.mysticcoders.com/blog/2009/03/13/5-days-of-wicket-putting-it-all-together/" title="Day 5 - Putting it all together" target="_top">Day 5 - Putting it all together</a></li><br />
+<li><a href="http://www.mysticcoders.com/blog/2009/03/13/5-days-of-wicket-putting-it-all-together/" title="Day 5 - Putting it all together" target="_top">Day 5 - Putting it all together</a></li>
 </ul>
 
 Each day this week will feature a new blog article with an in-depth look at the creation process behind setting up a Java project and implementing the frontend with <a href="http://wicket.apache.org" title="Apache Wicket" target="_blank">Apache Wicket</a>. Enjoy.

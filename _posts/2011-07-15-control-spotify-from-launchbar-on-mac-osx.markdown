@@ -18,10 +18,10 @@ date_gmt: '2011-07-16 00:13:39 +0000'
 tags: []
 comments: true
 ---
-<p><img src="http://www.mysticcoders.com/wp-content/uploads/2011/07/spotify.jpg" border="0" /></p>
-<p><strong>EDIT:</strong> <em><a href="http://www.jacktams.net/2011/07/21/spotify-applescripts-0-5-2/">Follow this link</a> for the latest scripts which utilize Spotify's more enhanced Applescript support</em></p>
-<p>If you've been following the latest invite craze, the latest one has to be for the European import <a href="http://www.spotify.com">Spotify</a>.  Basically millions of tracks you can play instantly on your computer for free + ads, and for a fee they'll remove the ads, and an additional fee they'll let you stream their catalog from your mobile phone (iPhone or Android).  I don't have any more invites, but I know a lot of folks have had success putting their email in for <a href="https://www.spotify.com/us/amanda/">@amanda</a>.  And of course, <a href="https://www.spotify.com/us/download/mac/">visit here to download the Spotify client</a>.</p>
-<p>If you're a user of <a href="http://www.obdev.at/products/launchbar/index.html">Launchbar</a> or Quicksilver, these Applescripts (for Launchbar) placed in <code>~/Library/Application Support/LaunchBar/Actions/Spotify</code> should help in controlling your music playing without having to constantly open Spotify.   For updates and the original author of these scripts <a href="http://www.jacktams.co.uk/2010/04/28/spotify-applescripts-version-0-4-3/">visit this blog article</a>.  After adding these applescripts activate Launchbar and select the Index menu > Update Index > All Rules.  Or just activate Launchbar and press Cmd-0.</p>
+<img src="http://www.mysticcoders.com/wp-content/uploads/2011/07/spotify.jpg" border="0" />\n
+<strong>EDIT:</strong> <em><a href="http://www.jacktams.net/2011/07/21/spotify-applescripts-0-5-2/">Follow this link</a> for the latest scripts which utilize Spotify's more enhanced Applescript support</em>\n
+If you've been following the latest invite craze, the latest one has to be for the European import <a href="http://www.spotify.com">Spotify</a>.  Basically millions of tracks you can play instantly on your computer for free + ads, and for a fee they'll remove the ads, and an additional fee they'll let you stream their catalog from your mobile phone (iPhone or Android).  I don't have any more invites, but I know a lot of folks have had success putting their email in for <a href="https://www.spotify.com/us/amanda/">@amanda</a>.  And of course, <a href="https://www.spotify.com/us/download/mac/">visit here to download the Spotify client</a>.\n
+If you're a user of <a href="http://www.obdev.at/products/launchbar/index.html">Launchbar</a> or Quicksilver, these Applescripts (for Launchbar) placed in <code>~/Library/Application Support/LaunchBar/Actions/Spotify</code> should help in controlling your music playing without having to constantly open Spotify.   For updates and the original author of these scripts <a href="http://www.jacktams.co.uk/2010/04/28/spotify-applescripts-version-0-4-3/">visit this blog article</a>.  After adding these applescripts activate Launchbar and select the Index menu > Update Index > All Rules.  Or just activate Launchbar and press Cmd-0.\n
 <h2>Spotify - Next Song</h2>
 <pre lang="applescript" colla="+">
 tell application "System Events"
@@ -89,7 +89,7 @@ if (MyList contains "Spotify") is true then
 end if
 </pre>
 <h2>Searching in Spotify</h2>
-<p>Searching is vital to using this new tool for us folks over here in the United States, and our European brethren have been busy with helpers like <a href="http://blindrocket.blogspot.com/2009/09/searching-spotify-with-quicksilver.html">searching Spotify with Quicksilver</a>.  I liked this so much, I've adapted the instructions for Launchbar:</p>
+Searching is vital to using this new tool for us folks over here in the United States, and our European brethren have been busy with helpers like <a href="http://blindrocket.blogspot.com/2009/09/searching-spotify-with-quicksilver.html">searching Spotify with Quicksilver</a>.  I liked this so much, I've adapted the instructions for Launchbar:\n
 <ol>
 <li>Activate Launchbar and select Index > Show Index or Option+Cmd+I</li>
 <li>Browse to Search Templates (UTF-8) and click Add</li>
@@ -103,6 +103,6 @@ end if
 <li>Update Index for Search Templates (UTF-8) or All</li>
 </ol>
 <h2>If using Spaces</h2>
-<p>Some folks have reported that when using Spaces in OSX the Applescripts have switched to that Space.  Simplest thing to do is set the preferences for Spaces so that Spotify shows up on "Every Space".</p>
-<p>Enjoy the music!</p>
-<p><strong>EDIT:</strong> <em><a href="http://www.jacktams.net/2011/07/21/spotify-applescripts-0-5-2/">Follow this link</a> for the latest scripts which utilize Spotify's more enhanced Applescript support</em></p>
+Some folks have reported that when using Spaces in OSX the Applescripts have switched to that Space.  Simplest thing to do is set the preferences for Spaces so that Spotify shows up on "Every Space".\n
+Enjoy the music!\n
+<strong>EDIT:</strong> <em><a href="http://www.jacktams.net/2011/07/21/spotify-applescripts-0-5-2/">Follow this link</a> for the latest scripts which utilize Spotify's more enhanced Applescript support</em>\n

@@ -18,10 +18,10 @@ date_gmt: '2010-02-01 07:13:34 +0000'
 tags: []
 comments: true
 ---
-<p>After following some of the debates raging about <a href="http://www.apple.com/ipad/" target="_blank">Apple's new iPad</a> and the future of <a href="http://www.adobe.com/products/flashplayer/" target="_blank">Adobe's Flash</a>, the discussion usually turned to the coming future of <a href="http://dev.w3.org/html5/spec/Overview.html" target="_blank">HTML5</a>.</p>
-<p>Seeing as we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> at <a href="http://www.mysticcoders.com" target="_blank">Mystic</a>, I thought I'd tinker around to see how hard it would be to start adding some support for the new HTML5 tags.  There are quite a few examples out there that show off <code>canvas</code>, <code>geolocation</code>, <code>storage</code>, and of course <code>video</code> and <code>audio</code>.<br />
-<a id="more"></a><a id="more-1723"></a></p>
-<p>First thing I set about doing, was to define the <code>video</code> tag.  It takes an optional <code>src</code> attribute among others, or multiple <code>source</code> tags for offering up different video streams for the browser to choose from.  Firefox uses Ogg Vorbis, and Safari uses H.264, so of course, the browser vendors still don't agree.  Here's some code to use what I'd want to see from a <code>video</code> component:</p>
+After following some of the debates raging about <a href="http://www.apple.com/ipad/" target="_blank">Apple's new iPad</a> and the future of <a href="http://www.adobe.com/products/flashplayer/" target="_blank">Adobe's Flash</a>, the discussion usually turned to the coming future of <a href="http://dev.w3.org/html5/spec/Overview.html" target="_blank">HTML5</a>.\n
+Seeing as we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> at <a href="http://www.mysticcoders.com" target="_blank">Mystic</a>, I thought I'd tinker around to see how hard it would be to start adding some support for the new HTML5 tags.  There are quite a few examples out there that show off <code>canvas</code>, <code>geolocation</code>, <code>storage</code>, and of course <code>video</code> and <code>audio</code>.
+<a id="more"></a><a id="more-1723"></a>\n
+First thing I set about doing, was to define the <code>video</code> tag.  It takes an optional <code>src</code> attribute among others, or multiple <code>source</code> tags for offering up different video streams for the browser to choose from.  Firefox uses Ogg Vorbis, and Safari uses H.264, so of course, the browser vendors still don't agree.  Here's some code to use what I'd want to see from a <code>video</code> component:\n
 <pre lang="java" colla="+">
         final List<mediaSource> mm = new ArrayList<mediaSource>();
         mm.add(new MediaSource("/dizzy.mp4", "video/mp4"));
@@ -46,7 +46,7 @@ comments: true
             }
         });
 </pre>
-<p>We've defined a custom Object for use with our new <code>Html5Video</code> component, and it will hold the appropriate attributes we would need to output either a <code>src</code> attribute or a <code>source</code> tag.  You can also see from this example that we've got a few booleans we're overriding by default, and more available in the actual implementation.  Let's take a look at the <code>Html5Video</code> component:</p>
+We've defined a custom Object for use with our new <code>Html5Video</code> component, and it will hold the appropriate attributes we would need to output either a <code>src</code> attribute or a <code>source</code> tag.  You can also see from this example that we've got a few booleans we're overriding by default, and more available in the actual implementation.  Let's take a look at the <code>Html5Video</code> component:\n
 <pre lang="java" colla="+">
 public class Html5Video extends Html5Media {
 
@@ -76,8 +76,8 @@ public class Html5Video extends Html5Media {
     }
 }
 </pre>
-<p>So you can see we've abstracted this out even further into an <code>Html5Media</code> object which we'll look at shortly.  For now, we have <code>width</code> and <code>height</code> which are specific to just the <code>video</code> tag.  And we're also overriding <code>onComponentTag</code> to throw those attributes into the <code>video</code> tag if they aren't zero.  We also steal from some ideas in wicket core, and implement a method in <code>Html5Media</code> to checkComponentTag based on the results of a method that can be overridden <code>getTagName</code>.</p>
-<p>Let's take a look at <code>Html5Media</code> which is where we'll find most of the meat:</p>
+So you can see we've abstracted this out even further into an <code>Html5Media</code> object which we'll look at shortly.  For now, we have <code>width</code> and <code>height</code> which are specific to just the <code>video</code> tag.  And we're also overriding <code>onComponentTag</code> to throw those attributes into the <code>video</code> tag if they aren't zero.  We also steal from some ideas in wicket core, and implement a method in <code>Html5Media</code> to checkComponentTag based on the results of a method that can be overridden <code>getTagName</code>.\n
+Let's take a look at <code>Html5Media</code> which is where we'll find most of the meat:\n
 <pre lang="java" colla="+">
 public class Html5Media extends WebMarkupContainer {
 
@@ -89,7 +89,7 @@ public class Html5Media extends WebMarkupContainer {
         add(new Html5UtilsBehavior());
     }
 </pre>
-<p>First thing we see, is we're extending <code>WebMarkupContainer</code>, basically because our component can have body text (useful for fallback support).  Next you'll see that we're adding a behavior <code>Html5UtilsBehavior</code>.  The basic purpose is to header contribute a useful javascript file when working with browsers that don't yet support HTML5 (Internet Explorer I'm looking at you!).  Some more code:</p>
+First thing we see, is we're extending <code>WebMarkupContainer</code>, basically because our component can have body text (useful for fallback support).  Next you'll see that we're adding a behavior <code>Html5UtilsBehavior</code>.  The basic purpose is to header contribute a useful javascript file when working with browsers that don't yet support HTML5 (Internet Explorer I'm looking at you!).  Some more code:\n
 <pre lang="java" colla="+">
     @Override
     protected void onComponentTag(final ComponentTag tag) {
@@ -129,8 +129,8 @@ public class Html5Media extends WebMarkupContainer {
         return null;
     }
 </pre>
-<p>Here we check the component tag to ensure it is the acceptable name.  Then if we only have a single source, we add this to the <code>video</code> tag instead of separate elements in the body.  The next bunch of statements pull from methods and add boolean attributes to the tag if they are true.  And we provide an implementation of <code>getTagName</code> that returns null as a sensible default.</p>
-<p><code>onComponentTagBody</code> is where we optionally will define <code>source</code> tags and the optional attributes that go along with it:</p>
+Here we check the component tag to ensure it is the acceptable name.  Then if we only have a single source, we add this to the <code>video</code> tag instead of separate elements in the body.  The next bunch of statements pull from methods and add boolean attributes to the tag if they are true.  And we provide an implementation of <code>getTagName</code> that returns null as a sensible default.\n
+<code>onComponentTagBody</code> is where we optionally will define <code>source</code> tags and the optional attributes that go along with it:\n
 <pre lang="java" colla="+">
     @Override
     protected void onComponentTagBody(final MarkupStream markupStream, final ComponentTag openTag) {
@@ -167,10 +167,10 @@ public class Html5Media extends WebMarkupContainer {
         super.onComponentTagBody(markupStream, openTag);
     }
 </pre>
-<p>Here we're ensuring things aren't empty, and then if we have more than one source element (often the case for compatibility between Firefox and Safari), we'll output each <code>source</code> tag.</p>
-<p>We've also gone through the trouble of adding an implementation of <code>Html5Audio</code> which consisted of overriding the <code>getTagName</code> method and returning <code>audio</code>.  Pretty simple stuff.</p>
-<p>When we put our example into place, we get a video with controls like so:</p>
-<p><a href="http://www.mysticcoders.com/wp-content/uploads/2010/02/Screen-shot-2010-01-31-at-10.59.53-PM.png"><img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/Screen-shot-2010-01-31-at-10.59.53-PM.png" alt="" title="Screen shot 2010-01-31 at 10.59.53 PM" width="496" height="425" class="alignnone size-full wp-image-198" /></a></p>
-<p>So what's next?  If you download the project available and linked below, it also contains an example of using the <code>audio</code> component.  The <code>Html5UtilsBehavior</code> gives us the ability to CSS style the new HTML5 tags even with Internet Explorer, so our code can be more semantic instead of littering it with div's for lack of an alternative.  There are a ton more interactions and behaviors that can be added to support video and audio, support for canvas, postMessage,  storage, Web Database. Web Workers, geolocation, Content Editable, etc.  I have no reason to think any of these would be impossible to integrate into a sensible component with Wicket.</p>
-<p>If you'd like to download the example and run it locally, or take a look at the components written, I've started a project over at Google Code called <a href="https://code.google.com/p/wicket-html5/" target="_blank">wicket-html5</a>.  Contact me if you'd like to contribute and start hacking away at some of these components.</p>
-<p>To infinity, and beyond!</p>
+Here we're ensuring things aren't empty, and then if we have more than one source element (often the case for compatibility between Firefox and Safari), we'll output each <code>source</code> tag.\n
+We've also gone through the trouble of adding an implementation of <code>Html5Audio</code> which consisted of overriding the <code>getTagName</code> method and returning <code>audio</code>.  Pretty simple stuff.\n
+When we put our example into place, we get a video with controls like so:\n
+<a href="http://www.mysticcoders.com/wp-content/uploads/2010/02/Screen-shot-2010-01-31-at-10.59.53-PM.png"><img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/Screen-shot-2010-01-31-at-10.59.53-PM.png" alt="" title="Screen shot 2010-01-31 at 10.59.53 PM" width="496" height="425" class="alignnone size-full wp-image-198" /></a>\n
+So what's next?  If you download the project available and linked below, it also contains an example of using the <code>audio</code> component.  The <code>Html5UtilsBehavior</code> gives us the ability to CSS style the new HTML5 tags even with Internet Explorer, so our code can be more semantic instead of littering it with div's for lack of an alternative.  There are a ton more interactions and behaviors that can be added to support video and audio, support for canvas, postMessage,  storage, Web Database. Web Workers, geolocation, Content Editable, etc.  I have no reason to think any of these would be impossible to integrate into a sensible component with Wicket.\n
+If you'd like to download the example and run it locally, or take a look at the components written, I've started a project over at Google Code called <a href="https://code.google.com/p/wicket-html5/" target="_blank">wicket-html5</a>.  Contact me if you'd like to contribute and start hacking away at some of these components.\n
+To infinity, and beyond!\n

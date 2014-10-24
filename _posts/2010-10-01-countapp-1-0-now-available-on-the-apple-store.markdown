@@ -18,6 +18,6 @@ date_gmt: '2010-10-01 15:30:37 +0000'
 tags: []
 comments: true
 ---
-<p><a href="http://itunes.apple.com/us/app/countapp/id394215620?mt=8#" target="_blank"><img src="http://www.mysticcoders.com/wp-content/uploads/2010/09/as_available_appstore_icon_20091006.png" border="0" /></a></p>
-<p>It took just over a week for apple to approve it, but we're in.  I decided to learn a little Objective-C in my spare time and built this simple app, it's a counter which you tap to increment.  You can save multiple counters, name them, date them, and it saves your place in between stops and starts, and even power cycles.</p>
-<p>Special thanks go to my brother <a href="http://www.daniellombardi.com">Daniel</a> for designing the logo, my illustrious beta testing crew which includes my wonderful parents, and all of you who will download the app ... give it great reviews, 5 stars, and send me your ideas for updates.</p>
+<a href="http://itunes.apple.com/us/app/countapp/id394215620?mt=8#" target="_blank"><img src="http://www.mysticcoders.com/wp-content/uploads/2010/09/as_available_appstore_icon_20091006.png" border="0" /></a>\n
+It took just over a week for apple to approve it, but we're in.  I decided to learn a little Objective-C in my spare time and built this simple app, it's a counter which you tap to increment.  You can save multiple counters, name them, date them, and it saves your place in between stops and starts, and even power cycles.\n
+Special thanks go to my brother <a href="http://www.daniellombardi.com">Daniel</a> for designing the logo, my illustrious beta testing crew which includes my wonderful parents, and all of you who will download the app ... give it great reviews, 5 stars, and send me your ideas for updates.\n

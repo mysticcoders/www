@@ -18,7 +18,7 @@ date_gmt: '2009-07-20 05:53:28 +0000'
 tags: []
 comments: true
 ---
-<p>In <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>, the framework expects the HTML templates to mirror the class-file directory structure.  The example below allows you to define a different path for your HTML files.<a id="more"></a><a id="more-27"></a></p>
+In <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a>, the framework expects the HTML templates to mirror the class-file directory structure.  The example below allows you to define a different path for your HTML files.<a id="more"></a><a id="more-27"></a>\n
 <pre lang="java" colla="+">
 public class PathStripperLocator extends ResourceStreamLocator {
 
@@ -48,4 +48,4 @@ public class MyApplication extends AuthDataApplication {
         resourceSettings.setResourceStreamLocator(new PathStripperLocator());
     }
 </pre>
-<p><small>(via <a href="http://cwiki.apache.org/WICKET/control-where-html-files-are-loaded-from.html">wicket wiki</a>)</small></p>
+<small>(via <a href="http://cwiki.apache.org/WICKET/control-where-html-files-are-loaded-from.html">wicket wiki</a>)</small>\n

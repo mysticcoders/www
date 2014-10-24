@@ -18,8 +18,8 @@ date_gmt: '2009-07-29 16:27:01 +0000'
 tags: []
 comments: true
 ---
-<p>Does your new <a href="http://wicket.apache.org" target="_blank">Wicket</a> app scream for needing a Google Suggest type component?  <a href="http://grepcode.com/file/repo1.maven.org$maven2@org.apache.wicket$wicket-extensions@1.3.6@org$apache$wicket$extensions$ajax$markup$html$autocomplete$AutoCompleteTextField.java#AutoCompleteTextField" target="_blank">AutoCompleteTextField</a> in the wicket-extensions package is what you need to fill that void!<a id="more"></a><a id="more-64"></a></p>
-<p>Simply add this field to your form, give it a model, and override the <a href="http://grepcode.com/file/repo1.maven.org$maven2@org.apache.wicket$wicket-extensions@1.3.6@org$apache$wicket$extensions$ajax$markup$html$autocomplete$AutoCompleteTextField.java#AutoCompleteTextField.getChoices(java.lang.String)" target="_blank">getChoices</a> method with your own implementation thas passes back an iterator of results.</p>
+Does your new <a href="http://wicket.apache.org" target="_blank">Wicket</a> app scream for needing a Google Suggest type component?  <a href="http://grepcode.com/file/repo1.maven.org$maven2@org.apache.wicket$wicket-extensions@1.3.6@org$apache$wicket$extensions$ajax$markup$html$autocomplete$AutoCompleteTextField.java#AutoCompleteTextField" target="_blank">AutoCompleteTextField</a> in the wicket-extensions package is what you need to fill that void!<a id="more"></a><a id="more-64"></a>\n
+Simply add this field to your form, give it a model, and override the <a href="http://grepcode.com/file/repo1.maven.org$maven2@org.apache.wicket$wicket-extensions@1.3.6@org$apache$wicket$extensions$ajax$markup$html$autocomplete$AutoCompleteTextField.java#AutoCompleteTextField.getChoices(java.lang.String)" target="_blank">getChoices</a> method with your own implementation thas passes back an iterator of results.\n
 <pre lang="java" colla="+">
             final AutoCompleteTextField field = new AutoCompleteTextField("searchField", mySearchModel) {
                 @Override

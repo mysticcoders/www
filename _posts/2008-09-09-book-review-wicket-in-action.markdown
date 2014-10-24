@@ -35,7 +35,7 @@ Another great thing the authors did was make code fragments extremely easy to in
 
 <div class="mceTemp">
 <dl>
-<dt><a href="http://www.mysticcoders.com/wp-content/uploads/2008/09/wicket-in-action-annotations.png"><img class="size-medium wp-image-84" src="http://www.mysticcoders.com/wp-content/uploads/2008/09/wicket-in-action-annotations.png" alt="Annotated Code Samples" width="300" height="100" /></a></dt> </dl></div><br />
+<dt><a href="http://www.mysticcoders.com/wp-content/uploads/2008/09/wicket-in-action-annotations.png"><img class="size-medium wp-image-84" src="http://www.mysticcoders.com/wp-content/uploads/2008/09/wicket-in-action-annotations.png" alt="Annotated Code Samples" width="300" height="100" /></a></dt> </dl></div>
 At a glace you know where to look in the paragraph below the code fragment for an explanation of the part you are interested in.
 
 The authors did a great thing in that there is not an API chapter or appendix.&Acirc;&nbsp; So many a time have I bought a book only to find out that 1/3rd of its size was reserved for a verbatim dump of the framework's javadoc.&Acirc;&nbsp; A waste of trees if you ask me.
@@ -46,8 +46,8 @@ Now obviously I'm a fan of Wicket and I'm a fan of this book, however if I had t
 
 <ol>
 <li>Wicket solves the disconnect between designer and developer that plauges most projects</li>
-<li>How does Wicket scale?</li><br />
-</ol><br />
+<li>How does Wicket scale?</li>
+</ol>
 To get a better sense of what I mean, let me explain:
 
 1. I've been on projects where we have a great design team, they know Dreamweaver and Photoshop inside and out. They hand us html/css templates and we butcher them to death with jsp.&Acirc;&nbsp; If they ever want to change their design, they can't do it to the existing templates we now control because they don't understand jsp and jsp doesn't render truly in Dreamweaver.&Acirc;&nbsp; Wicket -- albeit not without basic training and convention use for both designers and developers -- offers the ability to get out of this hellish situation where designers and developers can't collaborate properly.
