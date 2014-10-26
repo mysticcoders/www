@@ -18,9 +18,12 @@ date_gmt: '2010-05-15 03:45:25 +0000'
 tags: []
 comments: true
 ---
-I gave a talk last night at the <a href="http://ocjug.org" target="_blank">Orange County Java User's Group (OCJUG)</a> on Google App Engine development with the Java platform.  This was the same one we gave at the <a href="http://scandevconf.se" target="_blank">Scandinavian Developer Conference</a> in March.  The whole talk stemmed from a good friend <a href="http://www.eugeneciurana.com" target="_blank">Eugene Ciurana</a> being unable to attend, so I adapted his slides and did the talk.  \n
-One of the aspects I added was a demo showing how to deploy a <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> based web application to the dev server and then ultimately up to Google App Engine's servers.  In addition, the demo rather than show off the easy-to-use Eclipse plugin opts for using the <a href="http://code.google.com/appengine/downloads.html" target="_blank">App Engine SDK</a> along with Maven to build.  And we also use <a href="http://code.google.com/p/simpleds/" target="_blank">simpleds</a> for persistence in the demo just to show an alternative to the JDO / JPA offerings that Google provides on top of Datastore.\n
-With that, here is a snippet of the Maven pom.xml to grab all the required dependencies:\n
+I gave a talk last night at the <a href="http://ocjug.org" target="_blank">Orange County Java User's Group (OCJUG)</a> on Google App Engine development with the Java platform.  This was the same one we gave at the <a href="http://scandevconf.se" target="_blank">Scandinavian Developer Conference</a> in March.  The whole talk stemmed from a good friend <a href="http://www.eugeneciurana.com" target="_blank">Eugene Ciurana</a> being unable to attend, so I adapted his slides and did the talk.  
+
+One of the aspects I added was a demo showing how to deploy a <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> based web application to the dev server and then ultimately up to Google App Engine's servers.  In addition, the demo rather than show off the easy-to-use Eclipse plugin opts for using the <a href="http://code.google.com/appengine/downloads.html" target="_blank">App Engine SDK</a> along with Maven to build.  And we also use <a href="http://code.google.com/p/simpleds/" target="_blank">simpleds</a> for persistence in the demo just to show an alternative to the JDO / JPA offerings that Google provides on top of Datastore.
+
+With that, here is a snippet of the Maven pom.xml to grab all the required dependencies:
+
 <pre lang="xml" colla="+">
 
                 <dependency>
@@ -83,7 +86,11 @@ With that, here is a snippet of the Maven pom.xml to grab all the required depen
                     <version>1.0.5</version>
                 </dependency>
 </pre>
-Your mileage certainly may vary on versions, but as of this writing, slamming that into your pom.xml should get you cracking with simpleds for Google App Engine.\n
-And in case you're interested, here's the presentation from last night and March's talk at Scandev.\n
-<a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Google-App-Engine-Java-HOWTO.pdf"><img src="http://www.mysticcoders.com/wp-includes/images/crystal/document.png" border="0" /></a>&nbsp;-&nbsp;<a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Google-App-Engine-Java-HOWTO.pdf">Google App Engine for Java</a>\n
-Enjoy!\n
+Your mileage certainly may vary on versions, but as of this writing, slamming that into your pom.xml should get you cracking with simpleds for Google App Engine.
+
+And in case you're interested, here's the presentation from last night and March's talk at Scandev.
+
+<a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Google-App-Engine-Java-HOWTO.pdf"><img src="http://www.mysticcoders.com/wp-includes/images/crystal/document.png" border="0" /></a>&nbsp;-&nbsp;<a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Google-App-Engine-Java-HOWTO.pdf">Google App Engine for Java</a>
+
+Enjoy!
+

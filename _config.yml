@@ -1,5 +1,5 @@
 name: mystic 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 excerpt_separator: <!--more-->
 paginate: 3

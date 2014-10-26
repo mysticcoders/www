@@ -20,5 +20,7 @@ comments: true
 ---
 The awesome development team at Apache Wicket has just released it's first maintenance release.  Of note is the transparent support for file uploads when AJAX is being used.  Wicket automatically submits the form using a hidden iframe rather than the standard
 <pre>XMLHttpRequest</pre>
- method.\n
-<a href="http://wicketinaction.com/2009/08/wicket-1-4-1-supports-ajax-file-uploads/" target="_blank">Read more about this release</a>\n
+ method.
+
+<a href="http://wicketinaction.com/2009/08/wicket-1-4-1-supports-ajax-file-uploads/" target="_blank">Read more about this release</a>
+

@@ -18,9 +18,15 @@ date_gmt: '2010-01-30 05:56:00 +0000'
 tags: []
 comments: true
 ---
-There are definitely times, that I wish I had easy access to the javadoc for something in the Wicket internals, without opening the IDE, or keeping my own local versions available.\n
-I usually resort to a quick Google search and unfortunately 9 / 10 I get a non-recent javadoc version.\n
-Today I've gone through and downloaded all the core library javadocs for Wicket and as of version 1.4.6 they are all available from the following link:\n
-<a href="http://wicketbyexample.com/api">wicketbyexample.com/api</a>\n
-Click through to the library you'd like and get immediate access.  It follows a simple structure /api/&lt;module name&gt;/&lt;version&gt;/\n
-That's it.  Hope some of you find it useful.\n
+There are definitely times, that I wish I had easy access to the javadoc for something in the Wicket internals, without opening the IDE, or keeping my own local versions available.
+
+I usually resort to a quick Google search and unfortunately 9 / 10 I get a non-recent javadoc version.
+
+Today I've gone through and downloaded all the core library javadocs for Wicket and as of version 1.4.6 they are all available from the following link:
+
+<a href="http://wicketbyexample.com/api">wicketbyexample.com/api</a>
+
+Click through to the library you'd like and get immediate access.  It follows a simple structure /api/&lt;module name&gt;/&lt;version&gt;/
+
+That's it.  Hope some of you find it useful.
+

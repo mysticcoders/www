@@ -18,7 +18,8 @@ date_gmt: '2009-08-08 00:08:16 +0000'
 tags: []
 comments: true
 ---
-A great contribution from <a href="http://www.komuso.cz/" target="_blank">Vit Rozkovec</a> gives us a Wicket Behavior that renders a mailto link for an email address based model.<a id="more"></a><a id="more-78"></a>\n
+A great contribution from <a href="http://www.komuso.cz/" target="_blank">Vit Rozkovec</a> gives us a Wicket Behavior that renders a mailto link for an email address based model.<a id="more"></a><a id="more-78"></a>
+
 <pre lang="java" colla="+">
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more

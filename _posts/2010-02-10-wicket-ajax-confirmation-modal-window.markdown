@@ -18,10 +18,12 @@ date_gmt: '2010-02-10 18:24:56 +0000'
 tags: []
 comments: true
 ---
-<em>(Editorâ€™s note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em>\n
+<em>(Editorâ€™s note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em>
+
 While developing web application with Wicket I sometimes need to check whether the user really, really does want to do something, for example to delete an entity from the database. The first and easiest choice that comes to my mind is to use JavaScript window.
 <a id="more"></a><a id="more-1725"></a>
-So we have HomePage.html:\n
+So we have HomePage.html:
+
 <pre lang="html" colla="+">
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -40,7 +42,8 @@ So we have HomePage.html:\n
     </body>
 </html>
 </pre>
-and corresponding Java class:\n
+and corresponding Java class:
+
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp;
 
@@ -75,11 +78,16 @@ public class HomePage extends WebPage {
 
 }
 </pre>
-Finally, we can see how it looks:\n
-<img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/javaScriptWindow.PNG.png" alt="" title="javaScriptWindow.PNG" width="400" height="320" class="alignnone size-full wp-image-209" />\n
-It solves our problem but in the era of Web2.0, rounded corners and shiny looks it isn't enough. Why can't we use ajax modal window to ask user for confirmation? It would make our application look good and our css magician could make it look even better.\n
-So let's try with creating reusable 'Are you sure?' ajax modal window with Wicket.\n
-At the beginning we must prepare panel which will be displayed in our modal window. Let's name it YesNoPanel.\n
+Finally, we can see how it looks:
+
+<img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/javaScriptWindow.PNG.png" alt="" title="javaScriptWindow.PNG" width="400" height="320" class="alignnone size-full wp-image-209" />
+
+It solves our problem but in the era of Web2.0, rounded corners and shiny looks it isn't enough. Why can't we use ajax modal window to ask user for confirmation? It would make our application look good and our css magician could make it look even better.
+
+So let's try with creating reusable 'Are you sure?' ajax modal window with Wicket.
+
+At the beginning we must prepare panel which will be displayed in our modal window. Let's name it YesNoPanel.
+
 <pre lang="html" colla="+">
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
@@ -109,7 +117,8 @@ At the beginning we must prepare panel which will be displayed in our modal wind
     </body>
 </html>
 </pre>
-and Java class:\n
+and Java class:
+
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp.areyousuremodal;
 
@@ -165,8 +174,10 @@ public class YesNoPanel extends Panel {
 }
 </pre>
 Everything looks pretty straightforward. We pass to the constructor text which will be displayed as a confirmation question, references to ModalWindow object in which YesNoPanel is placed and to ConfirmationAnswer object.
-ConfirmationAnswer class will be created in the next paragraph and will be used to store information whether user pressed 'Yes' or 'No' button in our panel.\n
-Now it's time to prepare wrapping form to our YesNoPanel. We could simply achieve it by creating panel with form and one button in it. In our example it will be AreYouSurePanel class:\n
+ConfirmationAnswer class will be created in the next paragraph and will be used to store information whether user pressed 'Yes' or 'No' button in our panel.
+
+Now it's time to prepare wrapping form to our YesNoPanel. We could simply achieve it by creating panel with form and one button in it. In our example it will be AreYouSurePanel class:
+
 <pre lang="html" colla="+">
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
@@ -187,7 +198,8 @@ Now it's time to prepare wrapping form to our YesNoPanel. We could simply achiev
     </body>
 </html>
 </pre>
-and in Java:\n
+and in Java:
+
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp.areyousuremodal;
 
@@ -278,13 +290,15 @@ public abstract class AreYouSurePanel extends Panel {
 
 }
 </pre>
-Here we do following steps:\n
+Here we do following steps:
+
 <ol>
 <li>Create form with one AjaxButton which shows modalWindow when clicked.</li>
 <li>Create modalWindow with YesNoPanel in it. As mentioned earlier, we pass there references to our modal window and to confirmationAnswer object.</li>
 <li>Add WindowClosedCallback to modalWindow and basing on user choice perform onConfirm or onCancel method. These methods are both abstract to force developer extending AreYouSurePanel to implement them according to his needs.</li>
 </ol>
-That's it, we are done. To test how it's working we must change a bit our page class and html file:\n
+That's it, we are done. To test how it's working we must change a bit our page class and html file:
+
 <pre lang="html" colla="+">
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -318,7 +332,8 @@ That's it, we are done. To test how it's working we must change a bit our page c
     </body>
 </html>
 </pre>
-and\n
+and
+
 <pre lang="java" colla="+">
 package pl.tdziurko.ajaxmodalwindowapp;
 
@@ -362,5 +377,7 @@ public class HomePage extends WebPage {
 
 }
 </pre>
-And after clicking 'Ajax Action!' we could see that it's working as intended:\n
-<img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/ajaxModalWindow.PNG.png" alt="" title="ajaxModalWindow.PNG" width="399" height="400" class="alignnone size-full wp-image-210" />\n
+And after clicking 'Ajax Action!' we could see that it's working as intended:
+
+<img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/ajaxModalWindow.PNG.png" alt="" title="ajaxModalWindow.PNG" width="399" height="400" class="alignnone size-full wp-image-210" />
+

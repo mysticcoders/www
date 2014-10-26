@@ -18,7 +18,11 @@ date_gmt: '2010-01-30 22:27:55 +0000'
 tags: []
 comments: true
 ---
-After a recent week long training Mystic gave a week ago, one item that came up was the examples as posted on the official Wicket website are a version behind.  Available here: http://www.wicketstuff.org/wicket13/.\n
-In response to throwing up the latest javadoc at a simple to remember URL on this website, the examples seem to be the next logical step to make available.  So point your browser here:\n
-http://wicketbyexample.com/examples\n
-This is running the latest 1.4.6 release of Apache Wicket.  Enjoy.\n
+After a recent week long training Mystic gave a week ago, one item that came up was the examples as posted on the official Wicket website are a version behind.  Available here: http://www.wicketstuff.org/wicket13/.
+
+In response to throwing up the latest javadoc at a simple to remember URL on this website, the examples seem to be the next logical step to make available.  So point your browser here:
+
+http://wicketbyexample.com/examples
+
+This is running the latest 1.4.6 release of Apache Wicket.  Enjoy.
+

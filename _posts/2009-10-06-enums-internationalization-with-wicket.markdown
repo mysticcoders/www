@@ -17,31 +17,39 @@ date_gmt: '2009-10-06 15:30:07 +0000'
 tags: []
 comments: true
 ---
-<em>(Editorâ€™s note: <a href="http://yeswicket.com" target="_blank">Olivier Croisier</a> contributed this column from YesWicket.)</em>\n
+<em>(Editorâ€™s note: <a href="http://yeswicket.com" target="_blank">Olivier Croisier</a> contributed this column from YesWicket.)</em>
+
 Enums are a convenient way to represent finite collections of elements : seasons, week days... As a consequence, they frequently need to be input or displayed in web applications - and it better be in a I18N-aware way.
-Let's see how easily Wicket can handle this.\n
+Let's see how easily Wicket can handle this.
+
 <h2>Enums internationalization</h2>
-Throughout this article, we'll use the Seasons Enum as an example :\n
+Throughout this article, we'll use the Seasons Enum as an example :
+
 <pre lang="java" colla="+">
 public enum Season {
     SPRING, SUMMER, AUTUMN, WINTER;
 }
 </pre>
 Wicket has a powerful hierarchical I18N system : given a logical I18N key (a string), the corresponding translation is first searched for at the current component level, then up its hierarchy - all the way up to the Application root if required.
-To benefit from it, the developer only has to call the getString() method on any Wicket component :\n
+To benefit from it, the developer only has to call the getString() method on any Wicket component :
+
 <pre lang="java" colla="+">
 String translation = anyComponent.getString(key);
 </pre>
-The first thing we need to do is therefore to devise a way to generate a unique I18N key for each Enum constant. The most obvious solution is to use their Fully Qualified Names as a key (eg. "com.yeswicket.wickettips.model.WINTER") ; this should prevent fortuitous name clashes.\n
-The following code snippet demonstrates how to get an Enum's FQN :\n
+The first thing we need to do is therefore to devise a way to generate a unique I18N key for each Enum constant. The most obvious solution is to use their Fully Qualified Names as a key (eg. "com.yeswicket.wickettips.model.WINTER") ; this should prevent fortuitous name clashes.
+
+The following code snippet demonstrates how to get an Enum's FQN :
+
 <pre lang="java" colla="+">
 Season enumValue = Season.WINTER;
 String messageKey = enumValue.getDeclaringClass().getCanonicalName() + "." + enumValue.name();
 </pre>
 In order to avoid copy/pasting this code all around the application, and to be able to easily replace it with another algorithm should the need arise, we'll use the Strategy pattern, where every algorithm is encapsulated in its own class.
-This might seem easy to implement, but keep in mind that every class accessible from a Wicket component will be serialized along with it in the session store... and that's something you will definetely want to avoid.\n
+This might seem easy to implement, but keep in mind that every class accessible from a Wicket component will be serialized along with it in the session store... and that's something you will definetely want to avoid.
+
 Static methods to the rescue !
-The following class, inspired from java.util.Locale, has a static-only API for its consumers (thus solving the serialization concern) and still allows the underlying algorithm to be changed at will :\n
+The following class, inspired from java.util.Locale, has a static-only API for its consumers (thus solving the serialization concern) and still allows the underlying algorithm to be changed at will :
+
 <pre lang="java" colla="+">
 public abstract class EnumMessageKeyProvider {
 	private static EnumMessageKeyProvider provider = new DefaultEnumResourceKeyProvider();
@@ -67,12 +75,14 @@ public class DefaultEnumResourceKeyProvider extends EnumMessageKeyProvider {
 	}
 }
 </pre>
-Getting an I18N key for an Enum is now as easy as :\n
+Getting an I18N key for an Enum is now as easy as :
+
 <pre lang="java" colla="+">
 Season enumValue = Season.WINTER;
 String key = EnumMessageKeyProvider.getMessageKey(enumValue);
 </pre>
-To use another key generation algorithm, just write a new strategy...\n
+To use another key generation algorithm, just write a new strategy...
+
 <pre lang="java" colla="+">
 public class SimpleNameEnumResourceKeyProvider extends EnumMessageKeyProvider {
 	@Override
@@ -81,7 +91,8 @@ public class SimpleNameEnumResourceKeyProvider extends EnumMessageKeyProvider {
 	}
 }
 </pre>
-...and register it with the EnumMessageKeyProvider ; a good place for that is the Application's init() method :\n
+...and register it with the EnumMessageKeyProvider ; a good place for that is the Application's init() method :
+
 <pre lang="java" colla="+">
 public class WicketTipsApplication extends WebApplication {
 	@Override
@@ -93,9 +104,11 @@ public class WicketTipsApplication extends WebApplication {
 </pre>
 <h2>Displaying internationalized enums</h2>
 Wicket's Label is a very basic component that simply displays the text provided by its Model.
-To display Enums, we can develop a new kind of Model that automatically performs internationalization and hands over the resulting text to the component it is attached to.\n
+To display Enums, we can develop a new kind of Model that automatically performs internationalization and hands over the resulting text to the component it is attached to.
+
 As an example, we'll extend the very convenient PropertyModel.
-Please note that our Model provides a String but operates on an Enum : EnumPropertyModel<t extends Enum<t>> extends PropertyModel<string>. Also, in addition to the PropertyModel's existing constructor parameters (the target object and the name of the property to retrieve), our class needs a Component to call the getString() method on.\n
+Please note that our Model provides a String but operates on an Enum : EnumPropertyModel<t extends Enum<t>> extends PropertyModel<string>. Also, in addition to the PropertyModel's existing constructor parameters (the target object and the name of the property to retrieve), our class needs a Component to call the getString() method on.
+
 <pre lang="java" colla="+">
 public class EnumPropertyModel<t extends Enum<t>> extends PropertyModel<string> {
 
@@ -119,7 +132,8 @@ public class EnumPropertyModel<t extends Enum<t>> extends PropertyModel<string> 
 	}
 }
 </pre>
-This custom Model can now be used with a Label (and many other components) to easily display any Enum :\n
+This custom Model can now be used with a Label (and many other components) to easily display any Enum :
+
 <pre lang="java" colla="+">
 public class HomePage extends WebPage {
 	private Season season = Season.SPRING;
@@ -129,15 +143,18 @@ public class HomePage extends WebPage {
 }
 </pre>
 <h2>Selecting an enum with a DropDownChoice</h2>
-Now that we can display an Enum, let's see how to let the user choose one from a dropdown list.\n
-The DropDownChoice component follows the MVC pattern :\n
+Now that we can display an Enum, let's see how to let the user choose one from a dropdown list.
+
+The DropDownChoice component follows the MVC pattern :
+
 <ul>
 <li>The DropDownChoice itself is the Controller</li>
 <li>The Model it takes as a parameter is, obviously, the Model</li>
 <li>The View is rendered by a ChoiceRenderer that is responsible for the HTML
 <option> tags generation.</li>
 </ul>
-Usually, the DropDownChoice relies on the Model to define the set of selectable values. With Enums, those values are determined by the Enum's type itself, so we can bypass the Model and override the DropDownChoice's "getChoices()" method :\n
+Usually, the DropDownChoice relies on the Model to define the set of selectable values. With Enums, those values are determined by the Enum's type itself, so we can bypass the Model and override the DropDownChoice's "getChoices()" method :
+
 <pre lang="java" colla="+">
 public class EnumDropDownChoice<t extends Enum<t>> extends DropDownChoice<t> {
 
@@ -160,7 +177,8 @@ public class EnumDropDownChoice<t extends Enum<t>> extends DropDownChoice<t> {
 }
 </pre>
 The related ChoiceRenderer will generate the
-<option> tags using the Enum's name as an identifier, and its internationalized value as a label :\n
+<option> tags using the Enum's name as an identifier, and its internationalized value as a label :
+
 <pre lang="java" colla="+">
 public class EnumChoiceRenderer<t extends Enum<t>> implements IChoiceRenderer<t> {
 
@@ -184,7 +202,8 @@ public class EnumChoiceRenderer<t extends Enum<t>> implements IChoiceRenderer<t>
 	}
 }
 </pre>
-Finally, here is an example of how our components can be used to select and display an Enum in a standart Form :\n
+Finally, here is an example of how our components can be used to select and display an Enum in a standart Form :
+
 <pre lang="java" colla="+">
 public class HomePage extends WebPage {
 	private Season season = Season.SPRING;
@@ -198,13 +217,17 @@ public class HomePage extends WebPage {
 </pre>
 <h2>In action</h2>
 The complete source code is available at the bottom of this article.
-Feel free to play with it to see all those custom components in live action. The example form comes with two additional links, to switch between the French and English locales and see the internationalization magic happen.\n
-Last note : a Gradle build script is provided to help you get started in seconds. Just run the following command in the application's directory. Gradle will automatically compile the classes, copy the required resources, and start a Jetty server.\n
+Feel free to play with it to see all those custom components in live action. The example form comes with two additional links, to switch between the French and English locales and see the internationalization magic happen.
+
+Last note : a Gradle build script is provided to help you get started in seconds. Just run the following command in the application's directory. Gradle will automatically compile the classes, copy the required resources, and start a Jetty server.
+
 <pre lang="java" colla="+">
 gradle jettyRun
 </pre>
-Then, open a browser at :\n
+Then, open a browser at :
+
 <pre lang="java" colla="+">
 http://localhost:8080/Wicket-tips/
 </pre>
-Have fun !\n
+Have fun !
+

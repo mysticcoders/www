@@ -18,14 +18,17 @@ date_gmt: '2010-12-01 23:21:48 +0000'
 tags: []
 comments: true
 ---
-Here at Mystic, we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> for it's clean separation of mark-up and logic, simple POJO data model and one of the first web frameworks to espouse lack of XML as a benefit.\n
+Here at Mystic, we love <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> for it's clean separation of mark-up and logic, simple POJO data model and one of the first web frameworks to espouse lack of XML as a benefit.
+
 1. Download <a href="http://maven.apache.org">Apache Maven</a>.
 2. Install it and ensure that the mvn executable is in your path.
-3. Run the following command to download and execute the mvn archetype for Wicket:\n
+3. Run the following command to download and execute the mvn archetype for Wicket:
+
 <pre>mvn archetype:create \
 -DarchetypeGroupId=org.apache.wicket \
 -DarchetypeArtifactId=wicket-archetype-quickstart \
 -DarchetypeVersion=1.4.14 \
 -DgroupId=com.mycompany \
 -DartifactId=myproject</pre>
-That's it.  This creates the Maven directory structure with the appropriate pom.xml setup and the dependencies in your ~/.m2 directory.  After this you should be ready to rock your next <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> application.\n
+That's it.  This creates the Maven directory structure with the appropriate pom.xml setup and the dependencies in your ~/.m2 directory.  After this you should be ready to rock your next <a href="http://wicket.apache.org" target="_blank">Apache Wicket</a> application.
+

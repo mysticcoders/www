@@ -18,7 +18,8 @@ date_gmt: '2009-07-20 03:17:01 +0000'
 tags: []
 comments: true
 ---
-If you have an AJAX button in your form, a nice way of adding javascript is to use an IAjaxCallDecorator<a id="more"></a><a id="more-3"></a>\n
+If you have an AJAX button in your form, a nice way of adding javascript is to use an IAjaxCallDecorator<a id="more"></a><a id="more-3"></a>
+
 <pre lang="java" colla="+">
 form.add(new AjaxButton("removeButton") {
 

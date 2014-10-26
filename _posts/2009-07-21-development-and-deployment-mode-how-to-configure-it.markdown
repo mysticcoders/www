@@ -18,15 +18,18 @@ date_gmt: '2009-07-21 20:52:39 +0000'
 tags: []
 comments: true
 ---
-There are four supplied methods in the <a href="http://wicket.apache.org" target="_blank">Wicket</a> framework for changing your configuration from development to deployment and vice-versa.  The two possible values for this configuration parameter is "development" or "deployment".<a id="more"></a><a id="more-55"></a>\n
-Method one, context-param in web.xml:\n
+There are four supplied methods in the <a href="http://wicket.apache.org" target="_blank">Wicket</a> framework for changing your configuration from development to deployment and vice-versa.  The two possible values for this configuration parameter is "development" or "deployment".<a id="more"></a><a id="more-55"></a>
+
+Method one, context-param in web.xml:
+
 <pre lang="xml" colla="+">
     <context-param>
         <param-name>configuration</param-name>
         <param-value>development</param-value>
     </context-param>
 </pre>
-An init-param in the WicketFilter in your web.xml:\n
+An init-param in the WicketFilter in your web.xml:
+
 <pre lang="xml" colla="+">
     <filter>
         <filter-name>wicketFilter</filter-name>
@@ -37,15 +40,18 @@ An init-param in the WicketFilter in your web.xml:\n
         </init-param>
         ...
 </pre>
-A command-line parameter wicket.configuration:\n
+A command-line parameter wicket.configuration:
+
 <pre lang="bash" colla="+">
     java ... -Dwicket.configuration=development
 </pre>
-Overriding Application.getConfigurationType() in your Application class:\n
+Overriding Application.getConfigurationType() in your Application class:
+
 <pre lang="java" colla="+">
     @Override
     public String getConfigurationType() {
         return Application.DEVELOPMENT;
     }
 </pre>
-In our environments, to reduce headache, we have the configuration in web.xml point to "deployment", and in our Jetty Start class, we pass the command-line parameter locally to make it run in "development" mode.\n
+In our environments, to reduce headache, we have the configuration in web.xml point to "deployment", and in our Jetty Start class, we pass the command-line parameter locally to make it run in "development" mode.
+
