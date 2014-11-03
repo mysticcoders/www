@@ -10,9 +10,7 @@ author:
 comments: true
 ---
 
-Every so often, when there is a need to usher in a new paradigm for the sake of bringing 
-
-In a few years it may be possible to get a degree in writing headlines for websites looking to suck in readers.  BuzzFeed and the like have mostly mastered the art of misdirection, pulling you in with a shocking or tantalizing headline only to be let down by the relative ho hum of the payoff.  Videos that we've seen several times, the tear jerkers, the shocking, the unlikely hero who doesn't hold our idea of beauty but can really sing.
+In a few years it may be possible to get a degree in writing headlines for websites looking to suck in readers.  BuzzFeed, Gawker and similar have mostly mastered the art of misdirection, pulling you in with a shocking or tantalizing headline only to be let down by the relative ho hum of the payoff.  Videos that we've seen several times, the tear jerkers, the shocking, the unlikely hero who doesn't hold our idea of beauty but can really sing.
 <!--more-->
 A colleague of mine sent an article about ["The End Of Apps As We Know Them"](http://blog.intercom.io/the-end-of-apps-as-we-know-them/).  Given that here at Mystic we're in the app development space, this is of particular interest.
 
