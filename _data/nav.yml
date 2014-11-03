@@ -4,7 +4,11 @@
 - name: Services
   path: services.html
   section_id: services
-  title: Whatever bro
+  title: Services
+- name: Events
+  path: events.html
+  section_id: events
+  title: Events
 - name: About
   path: about.html
   section_id: about
