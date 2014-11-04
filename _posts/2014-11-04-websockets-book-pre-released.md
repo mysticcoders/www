@@ -34,3 +34,4 @@ Thank you to everyone involved, and please [buy the pre-release][websocket-oreil
 
 [websocket-oreilly]: http://shop.oreilly.com/product/0636920030485.do
 [oreilly]: http://www.oreilly.com
+[stephan_spencer]: http://www.stephanspencer.com
