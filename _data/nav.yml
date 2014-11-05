@@ -9,6 +9,10 @@
   path: events.html
   section_id: events
   title: Events
+- name: Talent
+  path: talent.html
+  section_id: talent
+  title: Talent
 - name: About
   path: about.html
   section_id: about
