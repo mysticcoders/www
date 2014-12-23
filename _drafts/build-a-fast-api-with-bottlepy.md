@@ -12,7 +12,7 @@ comments: true
 
 There are times when you need to plan out a giant undertaking, get several engineers on board, and develop a carefully crafted API.  When you're staring down an existing python app that you need to provide access to via REST calls, there's [bottle][bottle].
 
-Our intention here will be a simple one, how to build an API with the python microframework [bottle][bottle].
+Our intention here will be a simple one, how to build an API with the python microframework [bottle][bottle].  We'll build an app that 
 
 Outline:
 - Installation and initial configuration
@@ -21,6 +21,7 @@ Outline:
 - configuring for CORS
 - configuring for proxies and firewalls that block all but HEAD, GET, and POST
 - configuring for middleware
+- adding oauth to the mix (this actually requires that we write a bottle-based impl)
 - link off to the docker and python article
 
 Ciao!
