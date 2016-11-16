@@ -18,7 +18,7 @@ date_gmt: '2009-03-11 16:00:05 +0000'
 tags: []
 comments: true
 ---
-As mentioned in <a href="http://www.mysticcoders.com/blog/2009/03/10/5-days-of-wicket-writing-the-tests/">day 2</a> of our series, we have a main service interface that came from an initial discussion of what we think a pastebin should do.&Acirc;&nbsp;What can be easier than creating an entity model for a pastebin application, right? It's just a big text area that holds a piece of text (content) that someone wants to share with the rest of the world, or at least with someone else who might be interested in looking at it. However, there are some specific things that we wanted to accomplish in our application that came from a series of ideas by the different team members. Of course, although not really a requirement, we wanted to build this application using <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.
+As mentioned in <a href="/blog/5-days-of-wicket-writing-the-tests">day 2</a> of our series, we have a main service interface that came from an initial discussion of what we think a pastebin should do.&Acirc;&nbsp;What can be easier than creating an entity model for a pastebin application, right? It's just a big text area that holds a piece of text (content) that someone wants to share with the rest of the world, or at least with someone else who might be interested in looking at it. However, there are some specific things that we wanted to accomplish in our application that came from a series of ideas by the different team members. Of course, although not really a requirement, we wanted to build this application using <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a>.
 <a id="more"></a><a id="more-182"></a>
 
 <h1>Requirements</h1>
@@ -433,11 +433,10 @@ Once we have the service and the persistence layer, we need a way to put everyth
 <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 </beans></pre>
-The Service is configured as a bean, with a reference to the Dao implementation and to a variable that will be replaced by maven when building for the appropriate platform, as mentioned in <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket-day-1/">day 1</a>. The Dao is configured with a reference to Hibernate's <em>sessionFactory</em> bean, and the rest is the configuration for Hibernate (the data source, the transaction manager, etc.).
-Since we're using annotations, we need to set the property <em>annotatedClasses</em> with a list of the Hibernate (or JPA) configured entity classes, in this case the PasteItem class. In order for the @Transactional annotation to work we need to tell Spring that our transaction is driven by those annotations with the <strong><tx:annotation-driven/></strong> tag. I've been involved in previous projects where the other developers think they are doing transactions because they used the annotation, but forgot to add this piece to the configuration, thus resulting in database inconsistencies. 
+The Service is configured as a bean, with a reference to the Dao implementation and to a variable that will be replaced by maven when building for the appropriate platform, as mentioned in <a href="/blog/5-days-of-wicket-day-1">day 1</a>. The Dao is configured with a reference to Hibernate's <em>sessionFactory</em> bean, and the rest is the configuration for Hibernate (the data source, the transaction manager, etc.).
+Since we're using annotations, we need to set the property <em>annotatedClasses</em> with a list of the Hibernate (or JPA) configured entity classes, in this case the PasteItem class. In order for the @Transactional annotation to work we need to tell Spring that our transaction is driven by those annotations with the <strong><tx:annotation-driven/></strong> tag. I've been involved in previous projects where the other developers think they are doing transactions because they used the annotation, but forgot to add this piece to the configuration, thus resulting in database inconsistencies.
 
 <h1>Conclusion</h1>
 Designing the backend involves very little Wicket (or nothing at all as we saw here), but it's very important to separate our different layers to make the application easier to maintain. Using Spring and Hibernate is win-win situation because we leave many configuration options to Spring, and we are able to provide an easy to use and easy to understand implementation of our service and persistence layer.
 
 <strong>EDIT:</strong> Added the wicketApplication bean to the Spring configuration file.
-
