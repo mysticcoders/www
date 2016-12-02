@@ -29,6 +29,4 @@ setOutputMarkupPlaceholderTag(true);
 that's it. <a href="http://www.amazon.com/Wicket-Action-Martijn-Dashorst/dp/1932394982?tag=mycoll-20">Wicket in Action</a> is a great read so far, if you're doing any web development, we here at <a href="http://www.mysticcoders.com">Mystic</a> highly recommend picking up a copy.
 
 
-And if you haven't read Craig's review of Wicket, <a href="http://www.mysticcoders.com/blog/2008/09/09/book-review-wicket-in-action/">what are you waiting for</a>?
-
-
+And if you haven't read Craig's review of Wicket, <a href="/blog/book-review-wicket-in-action">what are you waiting for</a>?

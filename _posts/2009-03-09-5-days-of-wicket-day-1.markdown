@@ -27,7 +27,7 @@ The basic workflow involved in creating and maintaining html rendered by Wicket 
 <img class="alignnone size-full wp-image-155" src="http://www.mysticcoders.com/wp-content/uploads/2009/02/wicket-sequence-diagram.png" alt="wicket-sequence-diagram" width="457" height="207" />
 
 <ol>
-<li>The Designer creates the html for the website and fleshes it out with &acirc;&euro;&oelig;mock&acirc;&euro; sections.&Acirc;&nbsp; For instance in the application we intend to create during our <a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">Five Days of Wicket</a> will be a <i><a href="http://en.wikipedia.org/wiki/Pastebin" target="_blank">pastebin</a></i> application called "Mystic Paste".  In our application we'll have an &acirc;&euro;&oelig;Add Code to Mystic Paste&acirc;&euro; page, mock data might include some user created content in the textarea of the page.&Acirc;&nbsp; All css/images, etc... are setup such that if they were to be put on a webserver, everything would work.</li>
+<li>The Designer creates the html for the website and fleshes it out with &acirc;&euro;&oelig;mock&acirc;&euro; sections.&Acirc;&nbsp; For instance in the application we intend to create during our <a href="/blog/5-days-of-wicket">Five Days of Wicket</a> will be a <i><a href="http://en.wikipedia.org/wiki/Pastebin" target="_blank">pastebin</a></i> application called "Mystic Paste".  In our application we'll have an &acirc;&euro;&oelig;Add Code to Mystic Paste&acirc;&euro; page, mock data might include some user created content in the textarea of the page.&Acirc;&nbsp; All css/images, etc... are setup such that if they were to be put on a webserver, everything would work.</li>
 <li>The Developer needs to flesh out the dynamic areas of the webpage, that is, he needs to instruct Wicket where it will need to show information from the server.&Acirc;&nbsp; The developer does this by decorating the designer's html page with special Wicket tags and attributes.&Acirc;&nbsp; Because these tags and attributes are just considered part of another namespace separate from xhtml's, editors like Dreamweaver and browsers will simply ignore them
 - It is important to note: The developer will still keep the &acirc;&euro;&oelig;mocked&acirc;&euro; sections of the page intact, this is so the page renders and looks fleshed out on its own.&Acirc;&nbsp; The mocked sections will be replaced by real data when rendered by Wicket.</li>
 
@@ -60,7 +60,7 @@ Here is an example of a Wicket page.&Acirc;&nbsp; This example was taken from Ma
 
                <span <strong>wicket:id</strong>="price">$1.99</span>
                <a <strong>wicket:id</strong>="add" href="#">add to cart</a>
-            
+
 
          </div>
          <strong><wicket:remove></strong>
@@ -75,7 +75,7 @@ Emmental is a Swiss che...
 
                   <span>$2.99</span>
                   <a href="#">add to cart</a>
-               
+
 
             </div>
          <strong></wicket:remove></strong>
@@ -504,5 +504,4 @@ Although it's quite easy to get started with the Maven QuickStart project it is 
 
 I hope our Day 1 tutorial leaves you with a good sense of how a Wicket project is setup, now we can move onto coding the app!
 
-<strong><a href="http://www.mysticcoders.com/blog/2009/03/09/5-days-of-wicket/">Article Index...</a></strong>
-
+<strong><a href="/blog/5-days-of-wicket">Article Index...</a></strong>
