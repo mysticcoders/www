@@ -26,15 +26,14 @@ Perfect.
 
 Curiosity though, always gets the better of me.  And while their <a href="https://github.com/slambert/selfcontrol/wiki/FAQ">FAQ</a> states that once SelfControl starts, it can't be stopped for the duration ... that's simply not true.  Since we're on a Mac, and we've got a BSD backend, there had to be a firewall involved.  So if you'd like to see a list of all the IP addresses (the blacklist sites) that SelfControl is blocking:
 
-{% highlight bash %}
+``` bash
 % sudo ipfw list
-{% endhighlight %}
+```
 
 Take a look at the line that says `"count ip from any to any // BEGIN SELFCONTROL BLOCK"` and ends with `"count ip from any to any // END SELFCONTROL BLOCK"`.  All of these IP addresses are what you have asked to block and with a flick of the wrist, this can all be undone.  For each IP address within the block, there is a 5-digit identifier number, e.g. 01518.  Armed with this simply type:
 
-{% highlight bash %}
+``` shell
 % sudo ipfw delete /insert number here/
-{% endhighlight %}
+```
 
 Browse what you want yet again.  Waste all the time in the world.  I apologize in advance.
-

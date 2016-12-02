@@ -25,49 +25,49 @@ And the only thing you pass it, is a Date in a Model, and it does the rest of th
 
 First things first, initialization:
 
-{% highlight java %}
+``` java
 public class DateChooser extends FormComponent {
-{% endhighlight %}
+```
 
 as this is going to be a component, it should extend FormComponent, if we were adding extra functionality onto an existing form element, rather than a collection of them, we could just extend that class, easy.
 
-{% highlight java %}
+``` java
 public DateChooser(final MarkupContainer parent, final String id, IModel model) {
 super(parent, id);
-{% endhighlight %}
+```
 
 This is the constructor from DateChooser, as you can see, its not a 1.x constructor, but written against the new changes in 2.0.  It would be fairly simple to convert this to a 1.2 implementation.
 
-{% highlight java %}
+``` java
 new DropDownChoice(this, "month", new DateModel(model, Calendar.MONTH), getMonths(), new IChoiceRenderer() { ... }
 new DropDownChoice(this, "day", new DateModel(model, Calendar.DAY_OF_MONTH), getDays());
 new DropDownChoice(this, "year", new DateModel(model, Calendar.YEAR), getYears());
-{% endhighlight %}
+```
 
 And here are the dropdowns, as you can see from the first dropdown, there is an added IChoiceRenderer, which in the implementation basically grabs the numeric value passed in for the choices Collection, and using SimpleDateFormat, gives the text for that month.
 
-{% highlight java %}
+``` java
 private class DateModel extends AbstractModel {
-{% endhighlight %}
+```
 
 ...on to the implementation of the model, making some simple use of generics here.
 
-{% highlight java %}
+``` java
 public DateModel(IModel dateModel, int calendarField) {
-{% endhighlight %}
+```
 
 we create a DateModel instance, and pass it the model that is being passed to this component, and in addition we pass the calendarField value, so we know what to modify in our setObject() method.
 
-{% highlight java %}
+``` java
 if (dateModel.getObject() == null) return null;
 Calendar cal = Calendar.getInstance();
 cal.setTime((Date) dateModel.getObject());
 return cal.get(calendarField);
-{% endhighlight %}
+```
 
 Here we implement the getObject() method, returning the numeric value for the supplied calendarField.
 
-{% highlight java %}
+``` java
 Date date = (Date)dateModel.getObject();
 if(date==null) {
     date = new Date();
@@ -77,7 +77,7 @@ Calendar cal = Calendar.getInstance();
 cal.setTime(date);
 cal.set(calendarField, object.intValue());
 dateModel.setObject(cal.getTime());
-{% endhighlight %}
+```
 
 and here's the setObject() method, where during the submission of the form, if a Date hasn't been added to the model yet, for us to start setting field values on, it gets created, and then using the value passed in for Object, we set each calendarField in turn as the FormComponent get processed.
 
@@ -90,4 +90,3 @@ There are a few different things that can be done to enhance this:
 Would love comments on how to improve this, code attached.
 
 <a id="p44" title="DateChooser Component" href="http://www.mysticcoders.com/wp-content/uploads/2006/08/datechoosercomponent.zip">DateChooser Component</a>
-
