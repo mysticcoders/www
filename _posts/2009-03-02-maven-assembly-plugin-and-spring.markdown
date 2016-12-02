@@ -22,7 +22,7 @@ Here at <a title="mystic coders - to our success!" href="http://mysticcoders.com
 
 Since this would be a command line app running via cron most likely, we pulled <a title="Apache Maven" href="http://maven.apache.org" target="_blank">Maven</a> and the <a title="Apache Maven assembly plugin" href="http://maven.apache.org/plugins/maven-assembly-plugin/" target="_blank">assembly plugin</a> from our bag-of-tricks. Simply adding something like so:
 
-<pre lang="xml" colla="+">
+``` xml
 <plugin>
               <artifactId>maven-assembly-plugin</artifactId>
               <configuration>
@@ -36,7 +36,7 @@ Since this would be a command line app running via cron most likely, we pulled <
                   </archive>
               </configuration>
             </plugin>
-</pre>
+```
 
 All was right with the world, until we ran it from the dependency included jar on the server, and BAM!
 
@@ -44,11 +44,10 @@ All was right with the world, until we ran it from the dependency included jar o
 
 <span style="font-family: Arial;">Ouch, how frustrating, this worked in the IDE "Works on my machine &acirc;&bdquo;&cent;". After a bit of googling I realized, we were using separate dependencies for the Spring jars that we needed, and the contents of META-INF/ were getting overwritten (only a single JAR remember?). So the solution was to swap out all the separate Spring dependencies in <a title="Apache Maven" href="http://maven.apache.org" target="_blank">Maven</a>, and use the all-in-one like so:</span>
 
-<pre lang="XML" colla="+">
+``` xml
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring</artifactId>
             <version>${spring.version}</version>
         </dependency>
-</pre>
-
+```
