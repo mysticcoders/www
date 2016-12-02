@@ -22,16 +22,17 @@ We've been seeing more and more implementations of <a href="http://wicketbyexamp
 <a id="more"></a><a id="more-1726"></a>
 The implementation below borrows heavily from <a href="http://fabulously40.com/fabulously/victori" target="_blank">Victor</a>.  It basically creates a HazelcastInstance in the constructor and then overrides all the methods necessary from <a href="http://wicketbyexample.com/api/wicket/1.4.5/org/apache/wicket/protocol/http/pagestore/AbstractPageStore.html" target="_blank">AbstractPageStore</a>.  Here's some quick code to put in your app's Application implementation that will use this new IPageStore:
 
-<pre lang="java" colla="+">
+``` java
     @Override
     protected ISessionStore newSessionStore() {
         return new SecondLevelCacheSessionStore(this,
                 new HazelcastPageStore("default"));
     }
-</pre>
+```
+
 And here's the code for HazelcastPageStore:
 
-<pre lang="java" colla="+">
+``` java
 public class HazelcastPageStore extends AbstractPageStore
                                       implements SecondLevelCacheSessionStore.IClusteredPageStore {
 
@@ -110,7 +111,8 @@ public class HazelcastPageStore extends AbstractPageStore
         }
     }
 }
-</pre>
+```
+
 Several other IPageStore implementations available:
 
 <ul>
@@ -118,4 +120,3 @@ Several other IPageStore implementations available:
 <li><a href="http://www.mail-archive.com/users@wicket.apache.org/msg46421.html" target="_blank">Google App Engine memcached implementation</a></li>
 </ul>
 Let us know if you find any others out in the wild so we can add them here.
-

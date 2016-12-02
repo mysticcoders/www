@@ -22,15 +22,16 @@ There are four supplied methods in the <a href="http://wicket.apache.org" target
 
 Method one, context-param in web.xml:
 
-<pre lang="xml" colla="+">
+``` xml
     <context-param>
         <param-name>configuration</param-name>
         <param-value>development</param-value>
     </context-param>
-</pre>
+```
+
 An init-param in the WicketFilter in your web.xml:
 
-<pre lang="xml" colla="+">
+``` xml
     <filter>
         <filter-name>wicketFilter</filter-name>
         <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
@@ -39,19 +40,21 @@ An init-param in the WicketFilter in your web.xml:
             <param-value>development</param-value>
         </init-param>
         ...
-</pre>
+```
+
 A command-line parameter wicket.configuration:
 
-<pre lang="bash" colla="+">
+``` shell
     java ... -Dwicket.configuration=development
-</pre>
+```
+
 Overriding Application.getConfigurationType() in your Application class:
 
-<pre lang="java" colla="+">
+``` java
     @Override
     public String getConfigurationType() {
         return Application.DEVELOPMENT;
     }
-</pre>
-In our environments, to reduce headache, we have the configuration in web.xml point to "deployment", and in our Jetty Start class, we pass the command-line parameter locally to make it run in "development" mode.
+```
 
+In our environments, to reduce headache, we have the configuration in web.xml point to "deployment", and in our Jetty Start class, we pass the command-line parameter locally to make it run in "development" mode.

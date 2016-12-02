@@ -31,17 +31,19 @@ I aim to keep this short and sweet, find the latest code to <a href="http://kena
 <h2>A map of your very own</h2>
 Our super clustered highly scalable data distribution platform has a lot of really cool features, and for now ... we just need a Map.  The nice thing about Hazelcast is getting a cluster together is a fairly short bit of Java code, and away we go.  The hazelcast core jar comes with a great command line tool for testing things and can be run like this:
 
-<pre lang="bash" colla="+">
+``` shell
 java -Djava.net.preferIPv4Stack=true -cp hazelcast-1.7.1.jar com.hazelcast.examples.TestApp
-</pre>
+```
+
 Hazelcast uses namespaces to differentiate datasets, for our purposes we just need one namespace and we're calling it "default".  Here's the code that grabs a Map from the Hazelcast cluster:
 
-<pre lang="java" colla="+">
+``` java
         IMap map = Hazelcast.getMap(namespace);
-</pre>
+```
+
 When we save a paste, if its public we save only the long id, and if its private we also save the unique key which points back to the paste id for lookup purposes:
 
-<pre lang="java" colla="+">
+``` java
         IMap map = Hazelcast.getMap(namespace);
 
         item.setId(((MysticPasteHazelcastApplication) Application.get()).nextId());
@@ -54,10 +56,11 @@ When we save a paste, if its public we save only the long id, and if its private
             List<Long> indexList = ((MysticPasteHazelcastApplication) Application.get()).getIndexList();
             indexList.add(item.getId());
         }
-</pre>
+```
+
 Grabbing a history of pastes utilizes our generated indexList which is a CopyOnWriteArrayList so special fun is taken to sort and reverse the list, and splice it for the return to our DataProvider:
 
-<pre lang="java" colla="+">
+``` java
         List<Long> list = ((MysticPasteHazelcastApplication) Application.get()).getIndexList();
 
         if(list == null) return Collections.EMPTY_LIST;
@@ -73,7 +76,8 @@ Grabbing a history of pastes utilizes our generated indexList which is a CopyOnW
         for (Long pasteItemId : pageIds) {
             pagedList.add((PasteItem) map.get(pasteItemId));
         }
-</pre>
+```
+
 So you can see, we're dealing with very simple conventions to save our data, denormalized to work with the key/value storage mechanism.  Fun, right?  
 
 <h2>Yes, ma there's an xml config file</h2>
@@ -82,7 +86,7 @@ While I don't love configuration done in XML, this one is simple enough.  You ca
 <h2>Is anyone listening to this?</h2>
 In order to provide the paged history functionality available in the pastebin, we have to keep all id's in an application scoped list.  And Hazelcast doesn't disappoint in allowing you a really clean and simple method of achieving this with it's <a href="http://code.google.com/docreader/#p=hazelcast&s=hazelcast&t=Events" target="_blank">Distributed Events</a>.  Here's how we achieve what we want with the pastebin:
 
-<pre lang="java" colla="+">
+``` java
         IMap map = Hazelcast.getMap(namespace);
 
         map.addEntryListener(new EntryListener() {
@@ -101,13 +105,13 @@ In order to provide the paged history functionality available in the pastebin, w
             public void entryUpdated(EntryEvent entryEvent) {}
             public void entryEvicted(EntryEvent entryEvent) {}
         }, true);
-</pre>
+```
 As you can see, we are notified whenever an entry gets added, and we proceed to add it to our growing application scoped list if it's a public paste.  We put this block of code in a constructor or init() block of our extended WicketApplication.
 
 <h2>We can rebuild it, we have the technology</h2>
 So now we have a nice cluster setup, we've got pastes being saved and our list being populated so the history page works.  What if the container dies?  We still have our cluster in place, so the paste data is "backed up" and can get reattached, but our application scoped list of paste id's, will be empty.  We solve this by iterating over the existing Map, and rebuilding our list upon the start of the Application:
 
-<pre lang="java" colla="+">
+``` java
         List<Long> initialIndexList = new ArrayList<Long>();
 
         if (lastIdentifier.longValue() == 0L && indexList.size() == 0) {
@@ -129,9 +133,9 @@ So now we have a nice cluster setup, we've got pastes being saved and our list b
             Collections.sort(initialIndexList);
             indexList = new CopyOnWriteArrayList<Long>(initialIndexList);
         }
-</pre>
+```
+
 <h2>Next steps</h2>
 The rest of the code <a href="http://kenai.com/projects/mystic-apps/sources" target="_blank">can be reviewed</a>, and of course run using the Maven build tool.  One thing that would probably make it into a production version that hasn't been discussed here is persistence upon cluster failing - if the whole thing dies, we need to store this in a more permanent location.  See the <a href="http://code.google.com/docreader/#p=hazelcast&s=hazelcast&t=MapPersistence" target="_blank">Persistence page on the Hazelcast wiki</a>.
 
 Here at Mystic we certainly like seeing new tools that can make our jobs easier, and it certainly looks like <a href="http://www.hazelcast.com">Hazelcast</a> fits that nicely.
-

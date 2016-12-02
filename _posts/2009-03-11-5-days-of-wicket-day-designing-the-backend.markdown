@@ -42,7 +42,8 @@ This looks like a very simple entity model, but it fits with what we want to acc
 
 So now that we have a base, let's get to do some actual coding. As mentioned before, we decided on using <a href="http://www.hibernate.org/" target="_blank">Hibernate</a> as our ORM mapping. This is how we define the PasteItem class (the getters and setters have been omitted from the class to make it easier to read):
 
-<pre lang="java">import javax.persistence.Basic;
+``` java
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import static javax.persistence.EnumType.STRING;
@@ -112,7 +113,9 @@ public class PasteItem implements Serializable {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
     protected List<PasteItem> children;
     ...
-}</pre>
+}
+```
+
 We are using annotations to define our entity model. The interesting part here is that we didn't use any <a href="http://www.hibernate.org/397.html" target="_blank">Hibernate-specific annotations</a>, and instead relied on the standard ones from the <a href="http://java.sun.com/developer/technicalArticles/J2EE/jpa/" target="_blank">JPA API</a>. Hibernate understands these annotations so it seems logical to use them because then we can make the application more portable, as we could replace Hibernate for any JPA-enabled library. Also, another great feature of JPA is that we can define a set of named queries that our Dao implementations can use. This allows you to define almost anything that's related to the persistence layer under one class, like the entity, its properties and the different ways to access the entity via queries under one place, which then becomes your main reference class.
 
 <h1>Service layer</h1>
@@ -121,7 +124,8 @@ We defined a primary service interface that the Wicket front-end will use to int
 <blockquote><strong>Business rule</strong> is a statement that defines or constrains some aspect of the business. It is intended to assert business structure or to control or influence the behavior of the business. Individual business rules that describe the same facet of an enterprise are usually arranged into&Acirc;&nbsp;<strong>business rulesets</strong>. Business rules describe the operations, definitions and constraints that apply to an organization in achieving its goals.</blockquote>
 In layman's terms, a business rule is anything that affects the way we act on our data. This is how our service implementation looks like:
 
-<pre lang="java">import com.mysticcoders.mysticpaste.model.LanguageType;
+``` java
+import com.mysticcoders.mysticpaste.model.LanguageType;
 import com.mysticcoders.mysticpaste.model.PasteItem;
 import com.mysticcoders.mysticpaste.persistence.PasteItemDao;
 import com.mysticcoders.mysticpaste.utils.TokenGenerator;
@@ -226,7 +230,9 @@ public class PasteServiceImpl implements PasteService {
     public void setTokenLength(int tokenLength) {
         this.tokenLength = tokenLength;
     }
-}</pre>
+}
+```
+
 The business rules for the pastebin are very light in nature. One of the business rule we have from the requirements is to generate a random string token to use as the private paste identifier, so that instead of having a sequential id (which can be guessed), it is identified by this string and a special url.
 
 We're using <a href="http://www.slf4j.org/" target="_blank">slf4j</a> as our logging mechanism. This allows us to statically map our logging to one of log4j, jdk, etc., and it also allows us to have very simple logging messages that will help us 'debug' the application in a sense. Nowadays it is considered bad practice to use <em>System.out.println()</em> messages as we don't have control over them (i.e. they will always appear). Having a logging mechanism with separate message levels allows us to control what we want to show.
@@ -236,7 +242,8 @@ It is also interesting to note that in order to support a transactional set of m
 <h1>Persistence layer</h1>
 Since we are using Hibernate, our persistence layer becomes a really easy, thin layer. Here's our Dao implementation:
 
-<pre lang="java">import com.mysticcoders.mysticpaste.model.LanguageType;
+``` java
+import com.mysticcoders.mysticpaste.model.LanguageType;
 import com.mysticcoders.mysticpaste.model.PasteItem;
 import com.mysticcoders.mysticpaste.persistence.PasteItemDao;
 
@@ -298,12 +305,15 @@ public class PasteItemDaoImpl extends AbstractDaoHibernate<PasteItem> implements
                 .setMaxResults(1).uniqueResult();
         return null == count ? 0 : count;
     }
-}</pre>
+}
+```
+
 We have taken advantage of JPA's <a href="http://java.sun.com/javaee/5/docs/api/javax/persistence/NamedQuery.html" target="_blank">@NamedQuery</a> annotation to greatly simplify the code in our Dao implementation. Since all the queries for accessing a PasteItem were already defined inside the entity (in our case, the PasteItem class), we only need to refer to those queries here, set the named parameters and get the results.
 
 We also defined an abstract class to "generify" (term borrowed from IDEA's inspection) Hibernate's access:
 
-<pre lang="java">import org.hibernate.Session;
+``` java
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
@@ -349,13 +359,15 @@ public class AbstractDaoHibernate<T> extends HibernateDaoSupport {
     public void delete(Long id) {
         delete(loadChecked(id));
     }
-}</pre>
+}
+```
+
 This class takes advantage of Java 5 generics in order to implement the common persistence methods that we have. It also extends Spring's <a href="http://static.springsource.org/spring/docs/2.5.x/api/org/springframework/orm/hibernate3/support/HibernateDaoSupport.html" target="_blank">HibernateDaoSupport</a> to make it easier to integrate with Spring.
 
 <h1>Wiring everything together</h1>
 Once we have the service and the persistence layer, we need a way to put everything together in order for our application to work. Since we are using Spring, we only need to define our beans in the applicationContext.xml:
 
-<pre lang="xml">
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -432,7 +444,9 @@ Once we have the service and the persistence layer, we need a way to put everyth
 
 <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
-</beans></pre>
+</beans>
+```
+
 The Service is configured as a bean, with a reference to the Dao implementation and to a variable that will be replaced by maven when building for the appropriate platform, as mentioned in <a href="/blog/5-days-of-wicket-day-1">day 1</a>. The Dao is configured with a reference to Hibernate's <em>sessionFactory</em> bean, and the rest is the configuration for Hibernate (the data source, the transaction manager, etc.).
 Since we're using annotations, we need to set the property <em>annotatedClasses</em> with a list of the Hibernate (or JPA) configured entity classes, in this case the PasteItem class. In order for the @Transactional annotation to work we need to tell Spring that our transaction is driven by those annotations with the <strong><tx:annotation-driven/></strong> tag. I've been involved in previous projects where the other developers think they are doing transactions because they used the annotation, but forgot to add this piece to the configuration, thus resulting in database inconsistencies.
 

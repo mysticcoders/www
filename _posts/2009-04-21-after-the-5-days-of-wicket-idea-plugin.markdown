@@ -32,7 +32,7 @@ Just as with any project, give it a good name, and for type, select "Plugin Modu
 <h4>Plugin configuration</h4>
 There is a simple plugin.xml file that governs how IDEA will interact with your masterpiece. The use case for this simple plugin is to capture text selected in an editor and provide an action hook for the right-click menu. I've included the entire plugin.xml file for the mystic paste idea plugin
 
-<pre lang="XML" colla="+">
+``` xml
 
 <idea-plugin version="2">
     <name>MysticPastePlugin</name>
@@ -47,11 +47,11 @@ There is a simple plugin.xml file that governs how IDEA will interact with your 
 
     <change-notes>
         <![CDATA[
-        
+
             <ul>
                 <li> Added the notification on the bottom right alerting the user that the paste action was successful</li>
             </ul>
-        
+
 
         ]]>
     </change-notes>
@@ -73,7 +73,8 @@ There is a simple plugin.xml file that governs how IDEA will interact with your 
 
 </idea-plugin>
 
-</pre>
+```
+
 The top portion of this file is all identification information for the plugin, version info, vendor, which idea minimum IDEA version it will work with, changelog details. The next 3 elements define:
 
 <ul>
@@ -104,7 +105,7 @@ Check out <a href="http://www.jetbrains.com/idea/plugins/plugin_structure.html" 
 <h2>Implementation</h2>
 Our plugin is really simple, we need to take the current editor selection, open an HTTP connection with MysticPaste.com's plugin servlet, POST the selection text and place the URL in the clipboard. Let's start with getting the editor selection!
 
-<pre lang="JAVA", colla="+">
+``` java
         DataContext context = event.getDataContext();
         Editor editor = DataKeys.EDITOR.getData(context);
 
@@ -116,20 +117,22 @@ Our plugin is really simple, we need to take the current editor selection, open 
                 selectedText = selection.getSelectedText();
             }
         }
-</pre>
+```
+
 As you can see from the code snippet, we grab an instance of the Editor using the DataContext which can be retrieved from the AnActionEvent instance passed to every action. From there we get the Editor's SelectionModel, find out if there is indeed a selection, and fill selectedText with the contents.
 
-<pre lang="JAVA" colla="+">
+``` java
     Document doc = editor.getDocument();
     VirtualFile virtualFile = FileDocumentManager.getInstance().getFile(doc);
     String extension = null;
     if (virtualFile.getName().lastIndexOf(".") != -1) {
         extension = virtualFile.getName().substring(virtualFile.getName().lastIndexOf(".") + 1, virtualFile.getName().length());
     }
-</pre>
+```
+
 Next up, we want the file extension of the document we've grabbed our selected text. We get an instance of VirtualFile through the Document, substring it to grab what should be the extension, and pass it to the sendPaste method along with the selectedText.
 
-<pre lang="java" colla="+">
+``` java
     private String sendPaste(String text, String extension) {
 
         String pasteNumber = null;
@@ -165,12 +168,14 @@ Next up, we want the file extension of the document we've grabbed our selected t
 
         return (pasteNumber != null ? "http://www.mysticpaste.com/view/" + pasteNumber : null);
     }
-</pre>
+```
+
 If you're looking to integrate another platform with MysticPaste.com, the code above should provide you all you need. We very simply encode the data for HTTP POST, and use the standard java.net classes to achieve our pasting. The result of this class is a URL in which this paste can be found.
 
-<pre lang="java" colla="+">
+``` java
     CopyPasteManager.getInstance().setContents(new StringSelection(text));
-</pre>
+```
+
 After a quick null check, we use IDEA's supplied CopyPasteManager to set the contents to our paste URL.
 
 You can test your app by running it like you would anything else, IDEA provides a target in the Run/Debug configurations to achieve this.
@@ -192,4 +197,3 @@ If you're happy with your debugging efforts, and the functionality works for you
 <li>Linux/Unix: $HOME/.IntelliJIdea80/config/plugins</li>
 </ul>
 That's it. Overall the process isn't too bad once you find all the documentation, grab a few code samples, possibly reverse engineer a few to see how they did it. Have fun, and if you have any questions, or want us to develop a custom IDEA plugin for your organization, <a href="http://www.mysticcoders.com/contact/" title="Mystic Contact Us" target="_top">contact us</a>.
-

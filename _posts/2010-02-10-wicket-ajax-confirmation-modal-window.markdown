@@ -18,13 +18,13 @@ date_gmt: '2010-02-10 18:24:56 +0000'
 tags: []
 comments: true
 ---
-<em>(Editorâ€™s note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em>
+<em>(Editor's note: Tomasz Dziurko contributed this column from <a href="http://codehardgopro.blogspot.com/2010/02/wicket-ajax-modal-are-you-sure-window.html" target="_blank">Code Hard Go Pro</a>.)</em>
 
 While developing web application with Wicket I sometimes need to check whether the user really, really does want to do something, for example to delete an entity from the database. The first and easiest choice that comes to my mind is to use JavaScript window.
 <a id="more"></a><a id="more-1725"></a>
 So we have HomePage.html:
 
-<pre lang="html" colla="+">
+``` html
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -41,10 +41,11 @@ So we have HomePage.html:
         </div>
     </body>
 </html>
-</pre>
+```
+
 and corresponding Java class:
 
-<pre lang="java" colla="+">
+``` java
 package pl.tdziurko.ajaxmodalwindowapp;
 
 // imports omitted
@@ -77,7 +78,8 @@ public class HomePage extends WebPage {
     }
 
 }
-</pre>
+```
+
 Finally, we can see how it looks:
 
 <img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/javaScriptWindow.PNG.png" alt="" title="javaScriptWindow.PNG" width="400" height="320" class="alignnone size-full wp-image-209" />
@@ -88,7 +90,7 @@ So let's try with creating reusable 'Are you sure?' ajax modal window with Wicke
 
 At the beginning we must prepare panel which will be displayed in our modal window. Let's name it YesNoPanel.
 
-<pre lang="html" colla="+">
+``` html
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -116,10 +118,11 @@ At the beginning we must prepare panel which will be displayed in our modal wind
         </wicket:panel>
     </body>
 </html>
-</pre>
+```
+
 and Java class:
 
-<pre lang="java" colla="+">
+``` java
 package pl.tdziurko.ajaxmodalwindowapp.areyousuremodal;
 
 import org.apache.wicket.ajax.AjaxRequestTarget;
@@ -172,13 +175,14 @@ public class YesNoPanel extends Panel {
     }
 
 }
-</pre>
+```
+
 Everything looks pretty straightforward. We pass to the constructor text which will be displayed as a confirmation question, references to ModalWindow object in which YesNoPanel is placed and to ConfirmationAnswer object.
 ConfirmationAnswer class will be created in the next paragraph and will be used to store information whether user pressed 'Yes' or 'No' button in our panel.
 
 Now it's time to prepare wrapping form to our YesNoPanel. We could simply achieve it by creating panel with form and one button in it. In our example it will be AreYouSurePanel class:
 
-<pre lang="html" colla="+">
+``` html
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -197,10 +201,11 @@ Now it's time to prepare wrapping form to our YesNoPanel. We could simply achiev
         </wicket:panel>
     </body>
 </html>
-</pre>
+```
+
 and in Java:
 
-<pre lang="java" colla="+">
+``` java
 package pl.tdziurko.ajaxmodalwindowapp.areyousuremodal;
 
 import java.io.Serializable;
@@ -289,7 +294,8 @@ public abstract class AreYouSurePanel extends Panel {
     }
 
 }
-</pre>
+```
+
 Here we do following steps:
 
 <ol>
@@ -299,7 +305,7 @@ Here we do following steps:
 </ol>
 That's it, we are done. To test how it's working we must change a bit our page class and html file:
 
-<pre lang="html" colla="+">
+``` html
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -331,10 +337,11 @@ That's it, we are done. To test how it's working we must change a bit our page c
 
     </body>
 </html>
-</pre>
+```
+
 and
 
-<pre lang="java" colla="+">
+``` java
 package pl.tdziurko.ajaxmodalwindowapp;
 
 // imports omitted
@@ -376,8 +383,8 @@ public class HomePage extends WebPage {
     }
 
 }
-</pre>
+```
+
 And after clicking 'Ajax Action!' we could see that it's working as intended:
 
 <img src="http://www.mysticcoders.com/wp-content/uploads/2010/02/ajaxModalWindow.PNG.png" alt="" title="ajaxModalWindow.PNG" width="399" height="400" class="alignnone size-full wp-image-210" />
-

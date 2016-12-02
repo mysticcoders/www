@@ -67,7 +67,7 @@ However, remember above I was mentioning that the project template we picked was
 
 So, instead of our plugin.xml file looking like this:
 
-<pre lang="xml" colla="+">
+``` xml
    <extension
          point="org.eclipse.ui.popupMenus">
       <objectContribution
@@ -90,10 +90,11 @@ So, instead of our plugin.xml file looking like this:
          </action>
       </objectContribution>
    </extension>
-</pre>
+```
+
 We want to instead change the "objectContribution" tag to a "viewerContribution" tag and all together remove the "menu" tag like so:
 
-<pre lang="xml" colla="+">
+``` xml
    <extension
          point="org.eclipse.ui.popupMenus">
 		<viewerContribution
@@ -107,30 +108,33 @@ We want to instead change the "objectContribution" tag to a "viewerContribution"
 				id="com.mysticcoders.mysticpaste.popup.actions.MysticPasteAction.JAVA5" />
 		</viewerContribution>
    </extension>
-</pre>
+```
+
 Now what I am showing you above is the actual finished product, and if you are not familiar with Eclipse plugins it probably doesn't amount to a whole lot.  Here's a dissection of the elements:
 
-<pre lang="xml" colla="+">
+``` xml
    <extension
          point="org.eclipse.ui.popupMenus">
-</pre>
+```
 Extension points are places in Eclipse which can be "Extended".  Basically, they are just the IDs of plugins in Eclipse that allow themselves to be extended.  The ID for context menus is "org.eclipse.ui.popupMenus".
 
-<pre lang="xml" colla="+">
+``` xml
 <viewerContribution
 	targetID="#CompilationUnitEditorContext"
 	id="com.mysticcoders.mysticpaste.actions.compilationuniteditor">
-</pre>
+```
+
 Viewer contributions (as opposed to object contributions) determine which type of "thing" in Eclipse will be contributed to.  In our case, we want a viewer contribution because Editors are a type of viewer.  The <strong>targetID</strong> might seem a little weird, but it's actually a predefined constant used by Eclipse to indicate "any editor that has code which can be compiled".  To us, this means a "Java editor", so our contribution to the popup menu extension is for Java Editors.  The <strong>id</strong>, is a unique id which our contribution is known to Eclipse by, it doesn't have to correspond to a package in your project or anything, it just needs to be unique across plugins.
 
-<pre lang="xml" colla="+">
+``` xml
 <action
 	label="%Add_to_MysticPaste.name"
 	icon="$nl$/icons/mystic16.png"
 	class="com.mysticcoders.mysticpaste.popup.actions.MysticPasteAction"
 	menubarPath="group.add"
 	id="com.mysticcoders.mysticpaste.popup.actions.MysticPasteAction.JAVA5" />
-</pre>
+```
+
 An "Action" is going to be the class which is loaded by Eclipse when someone clicks on the menu item we have added.  You can see that the class "executed" is determined by the fully qualified class you enter as the value for the class attribute.  It must extend <code>IEditorActionDelegate</code>, this is not the same class that the plug-in project wizard setup for you, so you'll have to change it.
 
 menubarPath is a pre-canned designation setup for an area of the context menu which holds the "Add to Snippets" menu item, I figured Add to Mystic Paste did a very similar job, so decided to have the menu item live there.
@@ -149,7 +153,7 @@ The only thing special which needs to be done, is to add the dependencies for <a
 
 The actual code itself is pretty straight forward especially since the author actually documented the code!
 
-<pre lang="java" colla="-">
+``` java
 package com.mysticcoders.mysticpaste.popup.actions;
 
 /**
@@ -157,7 +161,7 @@ package com.mysticcoders.mysticpaste.popup.actions;
  * <br/>
  * The delegate posts the selected text to the Mystic Paste webapplication, then places the url for the page
  * where the user can view their paste onto the clipboard.  A "Balloon Tip" is shown after a successful paste.
- * 
+ *
  * @author Craig Tataryn
  *
  */
@@ -167,12 +171,12 @@ public class MysticPasteAction implements IEditorActionDelegate {
 	private int selectionStart = 0;
 	private Shell shell;
 	ResourceBundle bundle = null;
-	
+
 	public MysticPasteAction() {
 		super();
-		bundle = ResourceBundle.getBundle("plugin");	
+		bundle = ResourceBundle.getBundle("plugin");
 	}
-	
+
 	public void setActiveEditor(IAction action, IEditorPart editorPart) {
 		shell = editorPart.getSite().getShell();
 	}
@@ -199,7 +203,7 @@ public class MysticPasteAction implements IEditorActionDelegate {
 	 * Decides whether or not to enable the mystic paste menu item in the context menu
 	 * depending on whether there is selected text.  Unfortunately, because of how eclipse
 	 * lazy loads things, this method isn't fired until the menu item is clicked for the
-	 * first time, so you can never grey out the item before it is clicked. 
+	 * first time, so you can never grey out the item before it is clicked.
 	 */
 	public void selectionChanged(IAction action, ISelection selection) {
 		System.out.println("selectionChanged called");
@@ -214,7 +218,7 @@ public class MysticPasteAction implements IEditorActionDelegate {
 				this.selectionText = txtSelection.getText();
 				this.selectionStart = txtSelection.getStartLine();
 			}
-			
+
 		}
 
 	}
@@ -236,7 +240,7 @@ public class MysticPasteAction implements IEditorActionDelegate {
 		String contentParam = bundle.getString("mysticpaste.content.param");
 		String langParam = bundle.getString("mysticpaste.language.param");
 		String retString = null;
-		
+
 		HttpClient httpClient = new DefaultHttpClient();
 		HttpPost post = new HttpPost(url + newPasteContext);
 		List <NameValuePair> nvps = new ArrayList <NameValuePair>();
@@ -263,7 +267,7 @@ public class MysticPasteAction implements IEditorActionDelegate {
 					"MysticPaste Plug-in",
 					"Sorry, we couldn't contact Mystic Paste");
 		}
-		
+
 		return retString;
 	}
 
@@ -278,11 +282,12 @@ public class MysticPasteAction implements IEditorActionDelegate {
 		tip.setMessage("The Url is on your clipboard");
 		tip.setLocation(bounds.width, bounds.height);
 		tip.setVisible(true);
-		
+
 	}
 }
 
-</pre>
+```
+
 <h2>Building a Plugin Jar</h2>
 Building the plugin jar is pretty simple.  Just go File->Export->Deployable plug-ins and fragments and follow the wizard
 
@@ -293,4 +298,3 @@ Locate where on your file system Eclipse is installed.  Under this directory the
 
 <h2>Conclusion</h2>
 Hopefully this gives you a good idea of how the Mystic Paste Eclipse plugin was built.  It probably took more time explaining than it did actually coding the darn thing.  That being said, programming for Eclipse is not for the faint of heart.  I pretty much "code by debugger" when I have to create Eclipse plugins, a lot of the API is shrouded by interfaces with one method on them, you really never know what the real object is you are dealing with until you inspect it at runtime.
-

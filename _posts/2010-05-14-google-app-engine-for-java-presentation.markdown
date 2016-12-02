@@ -24,68 +24,68 @@ One of the aspects I added was a demo showing how to deploy a <a href="http://wi
 
 With that, here is a snippet of the Maven pom.xml to grab all the required dependencies:
 
-<pre lang="xml" colla="+">
+``` xml
+<dependency>
+    <groupId>org.extrema-sistemas</groupId>
+    <artifactId>simpleds</artifactId>
+    <version>0.9</version>
+</dependency>
 
-                <dependency>
-                    <groupId>org.extrema-sistemas</groupId>
-                    <artifactId>simpleds</artifactId>
-                    <version>0.9</version>
-                </dependency>
+<dependency>
+    <groupId>com.google.appengine</groupId>
+    <artifactId>appengine-api-1.0-sdk</artifactId>
+    <version>1.3.1</version>
+</dependency>
 
-                <dependency>
-                    <groupId>com.google.appengine</groupId>
-                    <artifactId>appengine-api-1.0-sdk</artifactId>
-                    <version>1.3.1</version>
-                </dependency>
+<dependency>
+    <groupId>asm</groupId>
+    <artifactId>asm</artifactId>
+    <version>3.1</version>
+</dependency>
 
-                <dependency>
-                    <groupId>asm</groupId>
-                    <artifactId>asm</artifactId>
-                    <version>3.1</version>
-                </dependency>
+<dependency>
+    <groupId>org.apache.geronimo.specs</groupId>
+    <artifactId>geronimo-jta_1.1_spec</artifactId>
+    <version>1.1.1</version>
+</dependency>
 
-                <dependency>
-                    <groupId>org.apache.geronimo.specs</groupId>
-                    <artifactId>geronimo-jta_1.1_spec</artifactId>
-                    <version>1.1.1</version>
-                </dependency>
+<dependency>
+    <groupId>javax.jdo</groupId>
+    <artifactId>jdo2-api</artifactId>
+    <version>2.3-eb</version>
+</dependency>
 
-                <dependency>
-                    <groupId>javax.jdo</groupId>
-                    <artifactId>jdo2-api</artifactId>
-                    <version>2.3-eb</version>
-                </dependency>
+<dependency>
+    <groupId>org.apache.geronimo.specs</groupId>
+    <artifactId>geronimo-jpa_3.0_spec</artifactId>
+    <version>1.1.1</version>
+</dependency>
 
-                <dependency>
-                    <groupId>org.apache.geronimo.specs</groupId>
-                    <artifactId>geronimo-jpa_3.0_spec</artifactId>
-                    <version>1.1.1</version>
-                </dependency>
+<dependency>
+    <groupId>org.datanucleus</groupId>
+    <artifactId>datanucleus-jpa</artifactId>
+    <version>1.1.5</version>
+</dependency>
 
-                <dependency>
-                    <groupId>org.datanucleus</groupId>
-                    <artifactId>datanucleus-jpa</artifactId>
-                    <version>1.1.5</version>
-                </dependency>
+<dependency>
+    <groupId>org.datanucleus</groupId>
+    <artifactId>datanucleus-enhancer</artifactId>
+    <version>1.1.4</version>
+</dependency>
 
-                <dependency>
-                    <groupId>org.datanucleus</groupId>
-                    <artifactId>datanucleus-enhancer</artifactId>
-                    <version>1.1.4</version>
-                </dependency>
+<dependency>
+    <groupId>org.datanucleus</groupId>
+    <artifactId>datanucleus-core</artifactId>
+    <version>1.1.5</version>
+</dependency>
 
-                <dependency>
-                    <groupId>org.datanucleus</groupId>
-                    <artifactId>datanucleus-core</artifactId>
-                    <version>1.1.5</version>
-                </dependency>
+<dependency>
+    <groupId>com.google.appengine.orm</groupId>
+    <artifactId>datanucleus-appengine</artifactId>
+    <version>1.0.5</version>
+</dependency>
+```
 
-                <dependency>
-                    <groupId>com.google.appengine.orm</groupId>
-                    <artifactId>datanucleus-appengine</artifactId>
-                    <version>1.0.5</version>
-                </dependency>
-</pre>
 Your mileage certainly may vary on versions, but as of this writing, slamming that into your pom.xml should get you cracking with simpleds for Google App Engine.
 
 And in case you're interested, here's the presentation from last night and March's talk at Scandev.
@@ -93,4 +93,3 @@ And in case you're interested, here's the presentation from last night and March
 <a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Google-App-Engine-Java-HOWTO.pdf"><img src="http://www.mysticcoders.com/wp-includes/images/crystal/document.png" border="0" /></a>&nbsp;-&nbsp;<a href="http://www.mysticcoders.com/wp-content/uploads/2010/05/Google-App-Engine-Java-HOWTO.pdf">Google App Engine for Java</a>
 
 Enjoy!
-

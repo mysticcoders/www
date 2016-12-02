@@ -22,13 +22,14 @@ Wicket makes it very easy to integrate directly with the <a href="http://springf
 
 In any Component (Page, Panel, etc) to include a Spring bean you would do:
 
-<pre lang="java" colla="+">
+``` java
     @SpringBean
     private MyBean myBean;
-</pre>
+```
+
 In your application-specific Application class you would do the following:
 
-<pre lang="java" colla="+">
+``` java
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 
 ...
@@ -38,10 +39,11 @@ import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
         addComponentInstantiationListener(new SpringComponentInjector(this));
         ...
     }
-</pre>
+```
+
 If you're using <a href="http://maven.apache.org" target="_blank">Maven</a> for your build management, you would pull in these dependencies assuming wicket 1.3:
 
-<pre lang="xml" colla="+">
+``` xml
         <dependency>
             <groupId>org.apache.wicket</groupId>
             <artifactId>wicket-spring</artifactId>
@@ -53,4 +55,4 @@ If you're using <a href="http://maven.apache.org" target="_blank">Maven</a> for 
             <artifactId>wicket-spring-annot</artifactId>
             <version>${wicket.version}</version>
         </dependency>
-</pre>
+```

@@ -22,7 +22,7 @@ Does your new <a href="http://wicket.apache.org" target="_blank">Wicket</a> app 
 
 Simply add this field to your form, give it a model, and override the <a href="http://grepcode.com/file/repo1.maven.org$maven2@org.apache.wicket$wicket-extensions@1.3.6@org$apache$wicket$extensions$ajax$markup$html$autocomplete$AutoCompleteTextField.java#AutoCompleteTextField.getChoices(java.lang.String)" target="_blank">getChoices</a> method with your own implementation thas passes back an iterator of results.
 
-<pre lang="java" colla="+">
+``` java
             final AutoCompleteTextField field = new AutoCompleteTextField("searchField", mySearchModel) {
                 @Override
                 protected Iterator<string> getChoices(String input) {
@@ -36,4 +36,4 @@ Simply add this field to your form, give it a model, and override the <a href="h
                     return myService.searchMatches(keyMatches).iterator();
                 }
             };
-</pre>
+```

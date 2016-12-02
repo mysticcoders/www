@@ -38,7 +38,8 @@ We have a few interfaces now, which came of initial discussion about how we imag
 
 Here is the primary service interface:
 
-<pre lang="java">public interface PasteService {
+``` java
+public interface PasteService {
 	List getLatestItems(String clientToken, int count, boolean threaded) throws InvalidClientException;
 
 	PasteItem getItem(String clientToken, long id) throws InvalidClientException;
@@ -54,27 +55,35 @@ Here is the primary service interface:
 	List getItemsForUser(String clientToken, String userToken) throws InvalidClientException;
 
 	PasteStats getStats(String clientToken) throws InvalidClientException;
-}</pre>
+}
+```
+
 This is the first step in the design, we now have something describing the desired functionality, so we will start by mocking these interfaces.
 
 EasyMock is a handy tool for this, so we simply add the necessary bits and pieces to our pom file and reload the project to get the correct dependencies:
 
-<pre><dependency>
+``` xml
+<dependency>
  <groupId>org.easymock</groupId>
  <artifactId>easymock</artifactId>
  <version>2.4</version>
- </dependency></pre>
+</dependency>
+```
 
-<pre><dependency>
+``` xml
+<dependency>
  <groupId>org.easymock</groupId>
  <artifactId>easymockclassextension</artifactId>
  <version>2.4</version>
- </dependency></pre>
+</dependency>
+```
+
 We've also made some changes to the initial POM that we created to pull in JUnit version 4.5.  Newer versions of JUnit are backwards compatible and add enhancements to your testing such as annotations.
 
 For our first mocks, we start off with extending JUnit's default <em>TestCase</em>.  We add in some convenience methods to help us return a mock Dao and a mock Service.
 
-<pre lang="java">	private PasteItemDao dao;
+``` java
+private PasteItemDao dao;
 	private PasteService svc;
 
 	@Test
@@ -94,7 +103,9 @@ For our first mocks, we start off with extending JUnit's default <em>TestCase</e
 		List returnedList = svc.getLatestItems("CLIENT", 10, false);
 		verify(svc);
 		assertEquals(10, returnedList.size());
-	}</pre>
+	}
+```
+
 What we are doing here is essentially describing the calls we expect, we replay and call the mocked service and finally we verify and assert that the results are as expected.
 
 While this may seem quite obvious, this will help us in comparing what an implementation will have to return, that the code has coverage and the mocks of these classes actually behave as expected. Once we have full mock coverage we can start implementing the code, and keep looping back to our tests to verify that things work as expected.
@@ -108,7 +119,7 @@ We hunt down our applications Spring configuration file "applicationContext.xml"
 
 applicationContext-test.xml
 
-<pre lang="xml" line="n">
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -120,10 +131,12 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
    <bean id="dataSource" class="org.unitils.database.UnitilsDataSourceFactoryBean"/>
 
 </beans>
-</pre>
+```
+
 We then add a file "unitils.properties" where we define how unitils is supposed to behave.
 
-<pre># Properties for the PropertiesDataSourceFactory
+``` java
+# Properties for the PropertiesDataSourceFactory
 database.driverClassName=org.hsqldb.jdbcDriver
 
 database.url=jdbc:hsqldb:mem:mysticpaste-test
@@ -140,10 +153,13 @@ database.dialect=hsqldb
 database.schemaName=mysticpaste
 dbMaintainer.generateDTD.enabled=TRUE
 # DbUnit database DTD file path
-dtdGenerator.dtd.filename=src/resources/test.dtd</pre>
+dtdGenerator.dtd.filename=src/resources/test.dtd
+```
+
 This file will now allow us to move on to an implementation we start with an AbstractBaseTest where we extend a Unitils class called UnitilsJUnit4.
 
-<pre lang="java">public class AbstractIntegrationTest extends UnitilsJUnit4 {
+``` java
+public class AbstractIntegrationTest extends UnitilsJUnit4 {
 
 &Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp; @SpringApplicationContext({"applicationContext.xml", "applicationContext-test.xml"})
 &Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp; private ApplicationContext applicationContext;
@@ -157,7 +173,9 @@ This file will now allow us to move on to an implementation we start with an Abs
 &Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp; //Nothing
 &Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp; }
 
-}</pre>
+}
+```
+
 If you run the test, you will see in the logging output a complete invocation of the spring context, database setup and verification of mapped entities, pretty nifty for an empty test!
 
 We can now move on to testing the actual implementations provided with a full cycle environment.
@@ -166,7 +184,8 @@ As we are using Unitils and its Spring utilities we also have handy annotations 
 
 Our final test-class that will completely test our environment looks as follows:
 
-<pre lang="java">public class PasteServiceIntegrationTest extends AbstractIntegrationTest {
+``` java
+public class PasteServiceIntegrationTest extends AbstractIntegrationTest {
     @SpringBeanByType
     private PasteService svc;
     @SpringBeanByType
@@ -200,6 +219,7 @@ Our final test-class that will completely test our environment looks as follows:
         PasteItem item2 = svc.getItem("CLIENT", id);
         assertEquals(item2.getClientToken(), paste.getClientToken());
     }
-}</pre>
-Voila! We have a complete life cycle test.&Acirc;&nbsp; These tests of course run somewhat slower than mocks. As tools and aids to rapid development they are quite valuable and will help find elusive bugs and problematic issues.
+}
+```
 
+Voila! We have a complete life cycle test.&Acirc;&nbsp; These tests of course run somewhat slower than mocks. As tools and aids to rapid development they are quite valuable and will help find elusive bugs and problematic issues.

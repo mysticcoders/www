@@ -22,7 +22,7 @@ In Java land, we've become very familiar with jarhell, and the associated pain o
 
 Here's the dependencies you would need to fulfill, all two of them:
 
-<pre lang="xml" colla="+">
+``` xml
         <dependency>
             <groupId>org.apache.wicket</groupId>
             <artifactId>wicket</artifactId>
@@ -33,4 +33,4 @@ Here's the dependencies you would need to fulfill, all two of them:
             <artifactId>slf4j-jcl</artifactId>
             <version>1.4.2</version>
         </dependency>
-</pre>
+```

@@ -27,7 +27,8 @@ If you've been following the latest invite craze, the latest one has to be for t
 If you're a user of <a href="http://www.obdev.at/products/launchbar/index.html">Launchbar</a> or Quicksilver, these Applescripts (for Launchbar) placed in <code>~/Library/Application Support/LaunchBar/Actions/Spotify</code> should help in controlling your music playing without having to constantly open Spotify.   For updates and the original author of these scripts <a href="http://www.jacktams.co.uk/2010/04/28/spotify-applescripts-version-0-4-3/">visit this blog article</a>.  After adding these applescripts activate Launchbar and select the Index menu > Update Index > All Rules.  Or just activate Launchbar and press Cmd-0.
 
 <h2>Spotify - Next Song</h2>
-<pre lang="applescript" colla="+">
+
+``` applescript
 tell application "System Events"
 	set MyList to (name of every process)
 end tell
@@ -47,9 +48,11 @@ if (MyList contains "Spotify") is true then
 		set visible of process "Spotify" to false
 	end tell
 end if
-</pre>
+```
+
 <h2>Spotify - Previous Song</h2>
-<pre lang="applescript" colla="+">
+
+``` applescript
 tell application "System Events"
 	set MyList to (name of every process)
 end tell
@@ -69,9 +72,10 @@ if (MyList contains "Spotify") is true then
 		set visible of process "Spotify" to false
 	end tell
 end if
-</pre>
+```
+
 <h2>Spotify - Play/Pause</h2>
-<pre lang="applescript" colla="+">
+``` applescript
 tell application "System Events"
 	set MyList to (name of every process)
 end tell
@@ -91,7 +95,8 @@ if (MyList contains "Spotify") is true then
 		set visible of process "Spotify" to false
 	end tell
 end if
-</pre>
+```
+
 <h2>Searching in Spotify</h2>
 Searching is vital to using this new tool for us folks over here in the United States, and our European brethren have been busy with helpers like <a href="http://blindrocket.blogspot.com/2009/09/searching-spotify-with-quicksilver.html">searching Spotify with Quicksilver</a>.  I liked this so much, I've adapted the instructions for Launchbar:
 
@@ -113,4 +118,3 @@ Some folks have reported that when using Spaces in OSX the Applescripts have swi
 Enjoy the music!
 
 <strong>EDIT:</strong> <em><a href="http://www.jacktams.net/2011/07/21/spotify-applescripts-0-5-2/">Follow this link</a> for the latest scripts which utilize Spotify's more enhanced Applescript support</em>
-

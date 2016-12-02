@@ -21,7 +21,7 @@ comments: true
 When writing AJAX-specific code for Wicket, in order to make any updates to a component, it needs to be added to the AjaxTarget.  If you've got a particularly large form, this can get tedious, so use an IVisitor instead!
 <a id="more"></a><a id="more-1713"></a>
 
-<pre lang="java" colla="+">
+``` java
 @Override
 protected void onSubmit(final AjaxRequestTarget target, Form form) {
     form.visitFormComponents(new FormComponent.IVisitor() {
@@ -33,9 +33,10 @@ protected void onSubmit(final AjaxRequestTarget target, Form form) {
         }
     });
     ...
-</pre>
+```
+
 And as always, for each component you access via AJAX, you'll need to:
 
-<pre lang="java" colla="+">
+``` java
    component.setOutputMarkupId(true);
-</pre>
+```
