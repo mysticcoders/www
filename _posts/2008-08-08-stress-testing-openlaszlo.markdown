@@ -27,7 +27,7 @@ Here is the code I was playing with and a screenshot....
 
 <a id="more"></a><a id="more-75"></a>
 
-<pre lang="xml" line="1" colla="+">
+``` xml
 <?xml version=&acirc;&euro;1.0&acirc;&euro;&sup3; encoding=&acirc;&euro;UTF-8&acirc;&euro;&sup3;?>
 <!DOCTYPE canvas SYSTEM &acirc;&euro;&oelig;http://www.openlaszlo.org/lps4/tools/lzx.xsd&acirc;&euro;>
 
@@ -670,5 +670,4 @@ Here is the code I was playing with and a screenshot....
 </script>
 </canvas>
 
-</pre>
-
+```
