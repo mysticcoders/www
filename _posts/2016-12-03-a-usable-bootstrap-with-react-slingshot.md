@@ -144,3 +144,5 @@ Remember, we added `react-router-redux` to our index module, so as our first red
 ## Fin
 
 With that, browse to http://localhost:3000 and see the familiar "Hello, World!". There is so much more to be done, we can dip into the `redux` portion and start defining actions, action creators, reducers, and use `redux-thunk` for the inevitable need for asyncronous calls in our action creators. This is a first step, stay tuned and we'll dig even deeper into the React / Redux stack.
+
+And if you weren't in Sofia, Bulgaria for [CodeMonsters](http://codemonsters.pro/)/[Java2Days](http://2016.java2days.com) this year, my presentation on [React and Redux](http://www.slideshare.net/kinabalu/react-and-redux) is available on slideshare. Thanks to everyone who was in attendance, 
