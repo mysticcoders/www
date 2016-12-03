@@ -21,7 +21,7 @@ comments: true
 Getting started with [React](https://facebook.github.io/react/) can be a bit daunting, and as with using things like AngularJS I've found that using a bootstrap is a great way to start. With that in mind, I've chosen the wonderful [react-slingshot](https://github.com/coryhouse/react-slingshot) from [@housecor](https://twitter.com/housecor). It contains a demo which can be removed with an `npm script` and from which we'll extract what I feel is most useful including: integration with redux, react-router, and redux-thunk.
 
 Most [React](https://facebook.github.io/react/) repositories seem to dispense with build tools and instead use a mixture of npm scripts and webpack to achieve what it needs to achieve. Just recently a new package manager came out to unseat the stalwart in `npm`, we're using [yarn](https://yarnpkg.com), please follow the install instructions for your particular environment.
-
+<!--more-->
 Clone the `react-slingshot` repository using the following `git` command:
 
 ```shell
