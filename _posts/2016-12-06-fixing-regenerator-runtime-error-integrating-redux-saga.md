@@ -18,7 +18,7 @@ comments: true
   </g>
 </svg>
 
-While integrating [redux-saga](http://yelouafi.github.io/redux-saga/) a annoying little error may pop up in the console.
+While integrating [redux-saga](http://yelouafi.github.io/redux-saga/) an annoying little error may pop up in the console.
 
 ```
 Uncaught ReferenceError: regeneratorRuntime is not defined
