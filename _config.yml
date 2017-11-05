@@ -30,4 +30,4 @@ disqus:
       value: 'gotmystic'
 googleanalytics:
   account: UA-254925-1
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
