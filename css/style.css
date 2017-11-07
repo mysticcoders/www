@@ -464,6 +464,10 @@ textarea {
   }
 }
 
+.honeypot {
+  display: none;
+}
+
 .testimonials .orbit-container .orbit-bullets-container {
   position: static;
 }
