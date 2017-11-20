@@ -1,76 +1,29 @@
 ---
 layout: default
-title: About
+title: Mystic &gt; about
 section_id: about
 bars:
-  - title: Web design
-    percent: 84
-  - title: Web development
+  - title: Web Development
     percent: 95
-  - title: Site management
-    percent: 70
-  - title: Branding
-    percent: 61
+  - title: Mobile Development
+    percent: 82
+  - title: Training
+    percent: 75
 members:
-  - image: member-1.png
-    name: Shirley Adkins
-    position: Founder &amp; Designer
+  - image: member-1.jpg
+    name: Andrew Lombardi
+    position: Founder &amp; Architect
     desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+      Andrew Lombardi is a veteran entrepreneur and software developer. His parents taught him to code while barely able to read on an Apple // he still wishes he had. He invented the Internet and Nutella (suck it Al Gore) while drinking bulletproof coffee and staring off into space. He’s been running the consulting firm Mystic Coders for 14 years, coding, speaking internationally and offering technical guidance to companies as large as Walmart and companies with problems as interesting as helicopter simulation. He firmly believes that the best thing he’s done so far, is being a great dad.
     socials:
       - name: twitter
-        link: #
+        link: http://twitter.com/kinabalu
         color: yellow
       - name: facebook
-        link: #
+        link: http://facebook.com/mysticcoders
         color: yellow
-      - name: vimeo
-        link: #
-        color: yellow
-      - name: mail
-        link: #
-        color: yellow
-  - image: member-2.png
-    name: Uriel Garrett
-    position: Director &amp; Project Manager
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
-  - image: member-3.png
-    name: Dulce Welch
-    position: Designer &amp; Art Director
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
-      - name: mail
-        link: #
-        color: yellow
-  - image: member-4.png
-    name: Stephanie Morse
-    position: Developer
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: vimeo
-        link: #
-        color: yellow
-      - name: mail
-        link: #
+      - name: github
+        link: http://github.com/kinabalu
         color: yellow
 ---
 
@@ -79,7 +32,7 @@ members:
     <div class='special-title centered-text'>
       <i class='icon-users'></i>
       <h2>Who we are</h2>
-      <p>We are happy to know you are happy</p>
+      <p>Learn a bit more about who we are</p>
       <p class='shortline'></p>
     </div>
     <div class='spacing'></div>
@@ -88,10 +41,11 @@ members:
   <div class='row'>
     <div class='medium-6 large-6 columns'>
       <p>
-        <span class='drop-letters'>We</span>
-        are est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae.
-      </p>
-      <p>Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Nihil quia et omnis blanditiis eius suscipit quos.</p>
+        <span class='drop-letters'>O</span>
+        ur team is a dedicated group of technologists and business-minded folks who have a passion for solving business needs with tech-based solutions.  Headed by our geek in charge Andrew Lombardi, the group has created solutions for companies as large as Walmart and Motorola, to the yoga teacher just looking for a some help with her website.  Over the last 6 years our team has also spoken at venues around the world, teaching developers how to better use their tools, and imparting wisdom about best practices for using them.</p>
+
+        <p>We're excited to work with our clients, as we feel it is a partnership that we grow together.  We look forward to talking about your needs, and seeing if we can build something great together.
+        </p>
     </div>
     <div class='medium-6 large-6 columns'>
       <ul class='bars'>
@@ -140,34 +94,6 @@ members:
       {% endfor %}
     </div>
 
-    <div class='three spacing'></div>
-
-    <div class='row'>
-      {% for member in page.members %}
-        {% if forloop.first %}
-          {% assign active_class = "active" %}
-        {% else %}
-          {% assign active_class = "" %}
-        {% endif %}
-        <div class='medium-3 large-3 columns'>
-          <div class='member centered-text {{active_class}}'>
-            <img src='{{site.url}}/images/{{member.image}}'>
-            <h3>{{member.name}}</h3>
-            <p class='position'>{{member.position}}</p>
-            <p>
-              {{member.desc}}
-            </p>
-            <div class='socials'>
-              {% for social in member.socials %}
-                <a href='{{social.link}}'>
-                  <i class='icon-{{social.name}} {{social.color}}'></i>
-                </a>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
 
     <div class='three spacing'></div>
     <div class='three spacing'></div>

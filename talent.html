@@ -1,0 +1,109 @@
+---
+layout: default
+title: Mystic &gt; talent
+section_id: talent
+technology:
+  -
+    - title: Python
+      icon: tools
+      desc:
+        At Mystic we love lots of languages, and Python is one of our favorites.  Easily build something out quickly?  or build out a full-blown website with API and ready to scale.  Python can do that.  If you grok it, we'd love to talk.
+    - title: Java
+      icon: briefcase
+      desc:
+        It's hard to argue how important Java has been to Mystic and to the web.  We've been hard at work since the beginning writing code in Java and loving it.  Yes, even the verbosity is something we don't mind.  We &lt;3 Java
+    - title: HTML5 and JavaScript
+      icon: flow-branch
+      desc:
+        HTML5 and JavaScript power the web, and we love and talk quite often about the amazing things you can build online.  If you speak HTML5 and JavaScript as one of your first languages, we definitely have a need for your skillset.
+    - title: Linux
+      icon: cog
+      desc:
+        It's hard to estimate how much Linux has played a role in our deployment strategy for more than a decade.  We heavily advise using it for deploying to servers, and you'll usually find a Unix variant on our desks.
+    - title: Docker
+      icon: search
+      desc:
+        Docker may be the new kid on the block, but it's based on solid foundations of awesome.  We use it or Vagrant in most of our codebases to ensure our development boxes are as close to production as possible.
+    - title: Cloud
+      icon: cloud
+      desc:
+        The cloud has become quite a cliche at this point.  It's important to understand how to work in the environments from Amazon, Red Hat, Rackspace, etc. and how to deploy effectively.
+        <p>&nbsp;</p>
+#    - title: User Experience Design
+#      icon: layout
+#      desc:
+#        How it looks isn't always as important as how it works, and how a customer feels after using it.  Both are key, and at Mystic we understand that there is a difference, and folks who can design effective user experiences are awesome.
+#    - title: Graphic Design
+#      icon: brush
+#      desc:
+#        Color
+#        html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 
+#    - title: QA Testing
+#      icon: target
+#      desc:
+#        html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 html5 
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-keyboard'></i>
+      <h2>Talent</h2>
+      <p>
+      We're always looking for new talent to add to the team.  Being at the cutting edge brings about challenges and the pace can be quite fast.  Below are just some of the tech that we use on a daily basis.  Centered around web, mobile, and backend development.
+      </p>
+      <p class='shortline'></p>
+    </div>
+    <div class='two spacing'></div>
+  </div>
+
+  {% for row in page.technology %}
+    <div class="row">
+      {% for tech in row %}
+        <div class='medium-4 large-4 columns icon-text'>
+          <i class='icon-{{tech.icon}}'></i>
+          <h3>{{tech.title}}</h3>
+          <p>{{tech.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-10 small-centered columns'>
+      <div class='special-title centered-text'>
+        <i class='icon-mail'></i>
+        <h2>Apply with us</h2>
+        <p>
+        If you've got technology coarsing through your veins, and can pick up on new technology in a flash, we'd like to talk to you.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='full yellow'>
+  <div class='form'>
+  <form method="POST" action="//forms.brace.io/jobs@mysticcoders.com">
+    <div class='row'>
+      <div class='medium-6 large-6 columns'>
+        <input placeholder='NAME' type='text' name="name">
+        <input placeholder='EMAIL' type='email' name="_replyto">
+        <input placeholder='SUBJECT' type='text' name="subject">
+      </div>
+      <div class='medium-6 large-6 columns'>
+        <textarea placeholder='MESSAGE' name="message"></textarea>
+        <input class='button white' type='submit'>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+
+
+</div>
