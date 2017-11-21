@@ -48,6 +48,7 @@ export default function* rootSaga() {
     ]);
 }
 ```
+
 As you can see a set of imports and then an array of functions added to the generator function used in my store module. This works fine, but I often find that swapping between a specific sagas file and the rootSagas file to be an unnecessary step prone to error. 
 
 <!--more-->
