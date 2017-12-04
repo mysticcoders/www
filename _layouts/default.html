@@ -147,19 +147,7 @@
   ga('send', 'pageview');
 
 </script>
-<script>
-{% for config in site.disqus.config %}
-var {{ config.label }} = '{{ config.value }}';
-{% endfor %}
 
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
 <script type="text/javascript">
 /* <![CDATA[ */
 var google_conversion_id = 1054116853;
@@ -174,5 +162,6 @@ var google_remarketing_only = true;
 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1054116853/?guid=ON&amp;script=0"/>
 </div>
 </noscript>
+    <script id="dsq-count-scr" src="//gotmystic.disqus.com/count.js" async></script>
     </body>
 </html>
