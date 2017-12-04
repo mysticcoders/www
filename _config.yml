@@ -1,4 +1,5 @@
 name: mystic
+site.url: https://mysticcoders.com
 markdown: kramdown
 highlighter: rouge
 # More › http://kramdown.gettalong.org/quickref.html
