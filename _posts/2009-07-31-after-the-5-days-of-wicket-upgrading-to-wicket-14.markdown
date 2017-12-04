@@ -5,6 +5,7 @@ published: true
 title: 'After the 5 Days of Wicket: Upgrading to Wicket 1.4'
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

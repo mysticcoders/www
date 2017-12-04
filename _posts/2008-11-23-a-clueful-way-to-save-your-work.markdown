@@ -5,6 +5,7 @@ published: true
 title: A clueful way to save your work
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

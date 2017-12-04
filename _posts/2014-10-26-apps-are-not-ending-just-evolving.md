@@ -4,6 +4,7 @@ title:  "Apps are not ending, just evolving"
 date:   2014-10-26 07:10:00
 author:
   display_name: Andrew Lombardi
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

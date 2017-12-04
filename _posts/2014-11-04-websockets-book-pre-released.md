@@ -4,6 +4,7 @@ title:  "WebSocket book pre-release"
 date:   2014-11-04 11:15:00
 author:
   display_name: Andrew Lombardi
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

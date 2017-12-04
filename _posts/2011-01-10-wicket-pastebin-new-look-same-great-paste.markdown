@@ -5,6 +5,7 @@ published: true
 title: Wicket Pastebin - New Look, Same Great Paste
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

@@ -5,6 +5,7 @@ published: true
 title: Internet Explorer cannot open the Internet site. Operation aborted.
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

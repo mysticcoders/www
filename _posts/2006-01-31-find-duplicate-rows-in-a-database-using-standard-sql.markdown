@@ -5,6 +5,7 @@ published: true
 title: Find duplicate rows in a database using standard SQL
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com
@@ -25,4 +26,3 @@ SELECT field1, count(*) FROM tbl1 GROUP BY field1 HAVING count(*) > 1;
 ```
 
 problem solved, a nice simple list of the duplicated rows in front of you.
-

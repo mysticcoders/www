@@ -5,6 +5,7 @@ published: true
 title: Redirecting to your Google+ profile from Wordpress
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

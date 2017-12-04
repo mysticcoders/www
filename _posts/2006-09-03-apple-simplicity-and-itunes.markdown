@@ -5,6 +5,7 @@ published: true
 title: Apple simplicity and iTunes
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com
@@ -26,4 +27,3 @@ So effectively, probably according to bandwidth restrictions, you can have the s
 <img id="image48" src="http://www.mysticcoders.com/wp-content/uploads/2006/09/picture-2.png" alt="iTunes Multiple Speaker Popup" width="128" height="42" />
 
 If more software / hardware companies thought through these seemingly insignificant additions, we'd have a life with better built software.&Acirc;&nbsp; Simple is definitely harder, but better in the end.
-

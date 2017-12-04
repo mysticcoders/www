@@ -5,6 +5,7 @@ published: true
 title: Unibody Macbook Pro fights with the cement
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

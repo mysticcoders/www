@@ -5,6 +5,7 @@ published: true
 title: TSSJS Vegas 2009 - Mission-Critical Cloud / Enterprise Hybrid Deployments
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

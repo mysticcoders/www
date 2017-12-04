@@ -5,6 +5,7 @@ published: true
 title: Integrating mousetrap.js with Wicket
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

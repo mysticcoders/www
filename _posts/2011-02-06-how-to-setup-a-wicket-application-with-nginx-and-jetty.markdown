@@ -5,6 +5,7 @@ published: true
 title: How to setup a Wicket application with nginx and Jetty
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

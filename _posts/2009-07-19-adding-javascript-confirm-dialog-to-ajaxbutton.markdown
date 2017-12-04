@@ -5,6 +5,7 @@ published: true
 title: Adding Javascript confirm dialog to AjaxButton
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

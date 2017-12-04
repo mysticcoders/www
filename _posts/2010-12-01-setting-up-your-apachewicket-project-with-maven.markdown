@@ -5,6 +5,7 @@ published: true
 title: Setting up your Apache Wicket project with Maven
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

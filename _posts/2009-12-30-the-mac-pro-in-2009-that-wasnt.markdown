@@ -5,6 +5,7 @@ published: true
 title: The Mac Pro in 2009 that wasn't
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

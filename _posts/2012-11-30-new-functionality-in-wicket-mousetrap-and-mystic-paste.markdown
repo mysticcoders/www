@@ -5,6 +5,7 @@ published: true
 title: New functionality in wicket-mousetrap and Mystic Paste
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

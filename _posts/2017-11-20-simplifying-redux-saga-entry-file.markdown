@@ -4,6 +4,7 @@ title:  "Simplifying the Redux Saga entry file"
 date:   2017-11-20 06:00:00
 author:
   display_name: Andrew Lombardi
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

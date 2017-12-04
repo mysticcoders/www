@@ -5,6 +5,7 @@ published: true
 title: "Ãœber Conf 2010 and Apache Wicket talks"
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

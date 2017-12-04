@@ -4,6 +4,7 @@ title:  "Fixing regeneratorRuntime error integrating redux-saga"
 date:   2016-12-06 11:11:00
 author:
   display_name: Andrew Lombardi
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

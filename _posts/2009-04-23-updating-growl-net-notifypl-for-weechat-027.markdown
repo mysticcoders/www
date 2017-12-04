@@ -5,6 +5,7 @@ published: true
 title: Updating growl-net-notify.pl for Weechat 0.2.7
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

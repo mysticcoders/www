@@ -5,6 +5,7 @@ published: true
 title: DZone Refcard - Getting Started with Apache Wicket
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

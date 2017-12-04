@@ -4,6 +4,7 @@ title:  "A Usable Bootstrap With React Slingshot"
 date:   2016-12-03 11:11:00
 author:
   display_name: Andrew Lombardi
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

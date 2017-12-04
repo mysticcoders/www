@@ -5,6 +5,7 @@ published: true
 title: CountApp 1.0 Now Available on the Apple Store
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

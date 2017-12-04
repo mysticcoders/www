@@ -5,6 +5,7 @@ published: true
 title: Jazoon 2010 Talk in Zurich Switzerland
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

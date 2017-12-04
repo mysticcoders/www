@@ -5,6 +5,7 @@ published: true
 title: Review of Revenue Boot Camp 2009
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

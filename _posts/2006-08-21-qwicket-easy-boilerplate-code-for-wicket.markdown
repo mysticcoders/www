@@ -5,6 +5,7 @@ published: true
 title: Qwicket - easy boilerplate code for Wicket
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com
@@ -28,4 +29,3 @@ comments: true
 Now with the <a title="jetty" href="http://jetty.mortbay.org/jetty/index.html" target="_blank">Jetty</a> and <a title="hsqldb" href="http://www.hsqldb.org/" target="_blank">HSQLDB</a> additions, all the dependencies needed are handled by the Ant Maven plugin, so you can get to whats important, writing the next web 2.0 app.
 
 Items that are planned for the future: multiple persistence framework selection (<a title="Java Persistence API" href="http://java.sun.com/javaee/overview/faq/persistence.jsp" target="_blank">JPA</a>, <a title="iBatis" href="http://ibatis.apache.org/" target="_blank">iBatis</a>), portlet support, scaffolding, and maybe someone to help with the UI :)
-

@@ -5,6 +5,7 @@ published: true
 title: Apache Wicket 1.4.1 released - supports Ajax file uploads
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

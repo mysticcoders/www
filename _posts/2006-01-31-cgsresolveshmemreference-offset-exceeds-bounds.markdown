@@ -5,6 +5,7 @@ published: true
 title: 'CGSResolveShmemReference : offset exceeds bounds'
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com
@@ -23,4 +24,3 @@ After working on my machine for quite a bit today, I started getting crashes in 
 CGSResolveShmemReference : offset exceeds bounds
 
 And it did so for several apps, Firefox, GLterm, iSync (wouldn't even run).  A simple logout and login seems to have fixed it.  Nothing new as far as fixes from Software Update, so we'll just see if this keeps up, grrr.
-

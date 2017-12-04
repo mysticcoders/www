@@ -5,6 +5,7 @@ published: true
 title: Java2Days 2009 Conference in Bulgaria
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

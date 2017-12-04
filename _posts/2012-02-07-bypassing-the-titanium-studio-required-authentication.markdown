@@ -5,6 +5,7 @@ published: true
 title: Bypassing the Titanium Studio required authentication
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

@@ -5,6 +5,7 @@ published: true
 title: Mystic and AeroSimulators at Heli-Expo 2009
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

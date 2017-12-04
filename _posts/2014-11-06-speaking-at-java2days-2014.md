@@ -4,6 +4,7 @@ title:  "Speaking At Java2Days 2014"
 date:   2014-11-06 16:13:00
 author:
   display_name: Andrew Lombardi
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

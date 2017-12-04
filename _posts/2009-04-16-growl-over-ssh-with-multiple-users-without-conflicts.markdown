@@ -5,6 +5,7 @@ published: true
 title: Growl over SSH with multiple users without conflicts
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

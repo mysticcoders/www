@@ -5,6 +5,7 @@ published: true
 title: TSSJS Vegas 2009 - Navigating the SOA Minefield
 author:
   display_name: kinabalu
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com

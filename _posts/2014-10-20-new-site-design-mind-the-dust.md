@@ -4,6 +4,7 @@ title:  "New site design, mind the dust"
 date:   2014-10-20 15:05:42
 author:
   display_name: Andrew Lombardi
+  twitter: kinabalu
   login: kinabalu
   email: andrew@mysticcoders.com
   url: http://www.mysticcoders.com
