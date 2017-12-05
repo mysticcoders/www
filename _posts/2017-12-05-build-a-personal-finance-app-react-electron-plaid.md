@@ -98,7 +98,7 @@ To dig into the code, simply navigate into the app/ folder.
 The main page of this boilerplate is stored in `containers/HomePage.js`. However, that page simply renders the `Home` component, stored in `components/Home.js`, which you should open to make the changes.
 
 Navigating to the `render` method of the component we, see:
-```jsx
+```html
 <div>
   <div className={styles.container}>
     <h2>Home</h2>
@@ -108,7 +108,7 @@ Navigating to the `render` method of the component we, see:
 ```
 
 We can simply change this to:
-```jsx
+```html
 <div>
   <div className={styles.container}>
     <h2>Balance</h2>
@@ -322,7 +322,7 @@ Our first changes will take place in the `render` method. As a reminder, this is
 render() {
   return (
     <div>
-      <div className={styles.container} data-tid="container">
+      <div className={styles.container}>
         <h2>Balance</h2>
         <h3>$10,000.55</h3>
       </div>
