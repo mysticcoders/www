@@ -80,7 +80,7 @@ https://github.com/chentsulin/electron-react-boilerplate
 
 The instructions are in the repository, but all you need to do is:
 
-```
+```bash
 git clone --depth=1 https://github.com/chentsulin/electron-react-boilerplate.git spend-tracker
 cd $_
 npm install
@@ -98,9 +98,9 @@ To dig into the code, simply navigate into the app/ folder.
 The main page of this boilerplate is stored in `containers/HomePage.js`. However, that page simply renders the `Home` component, stored in `components/Home.js`, which you should open to make the changes.
 
 Navigating to the `render` method of the component we, see:
-```
+```jsx
 <div>
-  <div className={styles.container} data-tid="container">
+  <div className={styles.container}>
     <h2>Home</h2>
     <Link to="/counter">to Counter</Link>
   </div>
@@ -108,9 +108,9 @@ Navigating to the `render` method of the component we, see:
 ```
 
 We can simply change this to:
-```
+```jsx
 <div>
-  <div className={styles.container} data-tid="container">
+  <div className={styles.container}>
     <h2>Balance</h2>
     <h3>$10,000.55</h3>
   </div>
@@ -181,7 +181,7 @@ The second, `react-plaid-link`, allows us to easily integrate Plaid Link into ou
 
 So, let's install them:
 
-```
+```bash
 npm install plaid react-plaid-link
 ```
 
@@ -191,13 +191,13 @@ As mentioned above, this is not how you would do it for a production-ready app.
 First, we'll open up `components/Home.js`.
 
 At the top of the file, let's import the two libraries we just installed:
-```
+```javascript
 import plaid from 'plaid';
 import PlaidLink from 'react-plaid-link';
 ```
 
 Next, let's place our credentials into the app as constants:
-```
+```javascript
 const CLIENT_ID = 'your-client-id';
 const SECRET = 'your-secret';
 const PUBLIC_KEY = 'your-public-key';
@@ -205,7 +205,7 @@ const PUBLIC_KEY = 'your-public-key';
 
 After that, we'll create a new constructor for the component to initialize the Plaid client and setup our initial state:
 
-```
+```javascript
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -235,18 +235,18 @@ For this first post, we're only going to calculate the balance from one institut
 Since we're literally working in a webpage, we'll make use of `localStorage` for the purpose of tracking what institutions the user has linked.
 
 Here's the structure we'll use to track institutions in `localStorage`:
-```
+```javascript
 {
   items: {
-    "byId": {
-      "ins_9": {
-        "id": "ins_9",
-        "name": "Capital One",
-        "publicToken": "public-token",
-        "accessToken": "access-token"
+    byId: {
+      ins_9: {
+        id: "ins_9",
+        name: "Capital One",
+        publicToken: "public-token",
+        accessToken: "access-token"
       }
     },
-    "allIds": [
+    allIds: [
       "ins_9"
     ]
   }
@@ -258,14 +258,14 @@ In the above structure, we maintain an array of all IDs, and an object with the 
 `localStorage` only stores strings, so we'll be serializing and deserializing our objects to work with them. As such, it makes sense to define a few helper methods.
 
 First, in `localStorage`, we'll refer to our data through a key, `items`. As a good practice, let's create a `const` to represent that key.
-```
+```javascript
 const KEY_ITEMS = 'items';
 ```
 
 
 Next, let's define the method that will retrieve our items from `localStorage`. Additionally, the method initializes the object in `localStorage` if it's not already set.
 
-```
+```javascript
 const getItems = () => {
   let items = JSON.parse(localStorage.getItem(KEY_ITEMS));
   if (!items) {
@@ -281,14 +281,14 @@ const getItems = () => {
 ```
 
 Then, we'll make a method, `setItems`, which simply updates the object:
-```
+```javascript
 const setItems = items => {
   localStorage.setItem(KEY_ITEMS, JSON.stringify(items));
 };
 ```
 
 Finally, we'll make a method `addItem` which makes use of both previous methods to add a new item to the object:
-```
+```javascript
 const addItem = item => {
   const oldItems = getItems();
   if (oldItems.byId[item.id]) {
@@ -318,7 +318,7 @@ The `react-plaid-link` component renders in our app as a button that the user ca
 
 Our first changes will take place in the `render` method. As a reminder, this is what the method currently looks like:
 
-```
+```jsx
 render() {
   return (
     <div>
@@ -335,7 +335,7 @@ Now let's update it to reflect the component's state and any institutions stored
 
 First, in the beginning of the `render` method, we'll retrieve any state relevant to the UI, and also retrieve the `items` from `localStorage`:
 
-```
+```javascript
 const { balance, loading, error } = this.state;
 const items = getItems();
 ```
@@ -343,7 +343,7 @@ const items = getItems();
 Next, we know we want to display different messages in place of the balance depending on the state, so let's write those conditions:
 
 
-```
+```javascript
 let value;
 if (loading) {
   value = 'Loading...';
@@ -356,10 +356,10 @@ We create a variable, `value`, which has a value of `'Loading...'` if the compon
 
 Now, let's make some tweaks to how elements actually get rendered, and include the `PlaidLink` component. We'll look at the whole chunk and then break it up:
 
-```
+```jsx
 return (
   <div>
-    <div className={styles.container} data-tid="container">
+    <div className={styles.container}>
       {!error && (
         <div>
           <h1>Balance</h1>
@@ -387,7 +387,7 @@ return (
 ```
 
 First, we only display the balance if there's no error (i.e. error is *falsy*). If there is an error, we display the error message instead.
-```
+```jsx
 {!error && (
   <div>
     <h1>Balance</h1>
@@ -398,7 +398,7 @@ First, we only display the balance if there's no error (i.e. error is *falsy*). 
 ```
 
 And then, we only want to render the `PlaidLink` component if the user hasn't linked any accounts yet:
-```
+```jsx
 {items.allIds.length < 1 && (
   <div>
     <h3>Link to your bank to view your account balance.</h3>
@@ -424,7 +424,7 @@ The parameters to PlaidLink are documented on the repository. Here's what's impo
 Before we can successfully run the app, we have to define how our app responds once the user has linked an account.
 
 As mentioned above, the first thing we need to do is define our `onSuccess` method, which will be named `onItemLinked`:
-```
+```javascript
 onItemLinked(publicToken, metadata) {
   const { institution_id: id, name } = metadata.institution;
 
@@ -463,7 +463,7 @@ It's at this point that we invoke our storage helper method, `addItem`. This syn
 Finally, we invoke another method, `fetchBalance`, which makes use of the `accessToken` to retrieve the total balance.
 
 
-```
+```javascript
 fetchBalance() {
   const items = getItems();
 
@@ -489,7 +489,7 @@ fetchBalance() {
 ```
 
 This method also needs to be invoked from `componentWillMount`:
-```
+```javascript
 componentWillMount() {
   this.fetchBalance();
 }
