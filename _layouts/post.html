@@ -39,19 +39,29 @@ section_id: blog
 <a id='comments'></a>
 <div class='comments-wrapper'>
 
+  <!-- An element a visitor can click if they <3 comments! -->
+    <button class="show-comments">Load Disqus comments</button>
+
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        {% for config in site.disqus.config %}
-        var {{ config.label }} = '{{ config.value }}';
-        {% endfor %}
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+      // Requires jQuery of course.
+      $(document).ready(function() {
+          $('.show-comments').on('click', function(){
+                var disqus_shortname = 'gotmystic'; // Replace this value with *your* username.
+
+                // ajax request to load the disqus javascript
+                $.ajax({
+                        type: "GET",
+                        url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                        dataType: "script",
+                        cache: true
+                });
+                // hide the button once comments load
+                $(this).fadeOut();
+          });
+      });
+
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
