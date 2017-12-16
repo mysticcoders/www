@@ -40,7 +40,7 @@ members:
     socials:
       - name: github
         link: https://github.com/rrx
-  - image: hoodie_profile_photo.jpg
+  - image: ryan_baer_profile.jpg
     name: Ryan Baer
     position: Full-Stack Engineer
     desc:
@@ -48,6 +48,14 @@ members:
     socials:
       - name: github
         link: https://github.com/ryanbaer
+  - image: john_catalina_profile.jpg
+    name: John Catalina
+    position: Business Advisor
+    desc:
+      John Catalina has worked in such a wide ranging list of industries and experiences that to write them would equate
+      to a big fish story hardly to be believed. As a trusted advisor to Mystic for nearly 10 years, he has helped shape
+      the values that we strive for with our customers, and has grounded a sense of purpose into the mission and values
+      of the company.
 ---
 
 <div class='full'>
@@ -116,6 +124,12 @@ members:
             </div>
           </div>
         </div>
+        {% assign loop_by_3 = forloop.index | modulo:3 %}
+        {% if loop_by_3 == 0 %}
+        </div>
+        <div class='three spacing'></div>
+        <div class='row'>
+        {% endif %}
       {% endfor %}
     </div>
 
