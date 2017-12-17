@@ -221,6 +221,12 @@ archive_events:
           <p class="small" style="font-family: 'droid serif', georgia; font-style: italic; font-size: 14px;">{{event.location}}<br />{{event.dates}}</p>
           <p>{{event.desc}}</p>
         </div>
+        {% assign loop_by_3 = forloop.index | modulo:3 %}
+        {% if loop_by_3 == 0 %}
+        </div>
+        <div class='three spacing'></div>
+        <div class='row'>
+        {% endif %}        
       {% endfor %}
     </div>
     {% unless forloop.last %}
