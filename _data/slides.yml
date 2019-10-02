@@ -1,9 +1,9 @@
-- image: slide-1.jpg
-  desc_location: left
+- image: slide-3.jpg
+  desc_location: right
   desc:
-    <h2>We solve for cloud so you don't have to</h2>
-    <p>Let us translate your business need to implemented tech-based solutions</p>
-    <button onClick="location.href='#contactus'">Contact us today</button>
+    <h2>New book Beginning Spring 5!</h2>
+    <h3>Our second book, and we think you'll love it!</h3>
+    <button onClick="location.href='https://beginningspring5.com'">Buy It Today</button>
 - image: slide-2.jpg
   desc_location: left
   desc:
