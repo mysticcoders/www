@@ -1,0 +1,53 @@
+---
+layout: default
+title: Events, Speaking, Training | Mystic
+section_id: trainings
+trainings:
+  -
+    - title: 3 Days of React
+      location: Your Company
+      icon: book
+      desc:
+        Is your team looking to get a head start on using React? Do you have engineers who are stuck coding in Angular and longing for the simplicity afforded by this relative newcomer? Contact us today and we can talk about your needs and cater a training specifically for your team.
+    - title: Beginning Spring 5
+      location: Your Company
+      icon: book
+      desc:
+        Learn from one of the writers of the book Beginning Spring 5 and go in depth on what the new version of this popular framework has in store. This is more than just about the new version though, and covers the utility and expansive universe of modular functions available to you with the Spring Framework.
+
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-map'></i>
+      <h2>Trainings</h2>
+      <p>
+        Here at Mystic we've provided trainings in various technologies and currently updating our list. For now, please inquire about our 3 day training in React.
+      </p>
+      <p>Use the form below to get in touch.</p>
+      <p class='shortline'></p>
+    </div>
+    <div class='two spacing'></div>
+  </div>
+
+  {% for row in page.trainings %}
+    <div class="row">
+      {% for training in row %}
+        <div class='medium-4 large-4 columns icon-text'>
+          <i class='icon-{{training.icon}}'></i>
+          <h3>{{training.title}}</h3>
+          <p class="small" style="font-family: 'droid serif', georgia; font-style: italic; font-size: 14px;">{{training.location}}</p>
+          <p>{{training.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+
+<a name="contactus"></a>
+{% include get-in-touch.html %}
+
+</div>
