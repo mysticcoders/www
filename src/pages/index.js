@@ -6,12 +6,16 @@ import SEO from "../components/seo"
 
 import Image from 'gatsby-image'
 
+import BackgroundImage from 'gatsby-background-image'
+
 import { Level, Title, Section } from 'rbx'
 
 import { FaDatabase } from "react-icons/fa"
 import { IoIosMail } from 'react-icons/io'
 
 import "rbx/index.css"
+
+import { Button, Column } from 'rbx'
 
 export const IndexPage = ({location}) => {
 
@@ -27,10 +31,22 @@ export const IndexPage = ({location}) => {
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
 
-      <Image
+      <div style={{ width: '100%', backgroundSize: 'cover'}}>
+      <BackgroundImage
+        Tag="section"        
         fluid={data.sliders.childImageSharp.fluid}
-        alt="Slider"
-      />
+        alt="slider"
+      >
+
+        <div style={{padding: '3rem'}}>
+
+            <Title>NEW BOOK BEGINNING SPRING 5!</Title>
+            <Title size={5}>OUR SECOND BOOK, AND WE THINK YOU'LL LOVE IT!</Title>
+
+            <Button>Buy It Today</Button>
+        </div>
+      </BackgroundImage>
+      </div>
 
       <Section>
 
@@ -52,15 +68,21 @@ export const IndexPage = ({location}) => {
         alt="bg"
       />
 
-      <Image
-        fixed={data.budapestLion.childImageSharp.fixed}
-        alt="Budapest Lion"
-      />
 
-      <Image
+      <BackgroundImage
+        Tag="section"        
         fluid={data.whoWeAreBg.childImageSharp.fluid}
+        backgroundColor={`#040e18`}
         alt="who we are"
-      />
+      >
+
+        <div style={{padding: '3rem'}}>
+          <Image
+          fixed={data.budapestLion.childImageSharp.fixed}
+          alt="Budapest Lion"
+          />
+        </div>
+      </BackgroundImage>
 
       <Level>
         <Level.Item>
