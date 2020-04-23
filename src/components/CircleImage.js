@@ -2,11 +2,11 @@ import React from 'react'
 
 import Image from 'gatsby-image'
 
-export const CircleImage = ({fluid, alt}) => {
+export const CircleImage = ({fixed, alt}) => {
 
     return (
         <Image
-            fluid={fluid}
+            fixed={fixed}
             style={{
                 marginBottom: 0,
                 minWidth: 75,

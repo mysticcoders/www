@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
 
 import { Title, Level, Container, Box} from 'rbx'
 import { IoIosDocument } from 'react-icons/io' 
@@ -18,12 +16,12 @@ export const Blog = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       
-      <Level>
+      <Level style={{marginTop: '5rem'}}>
         <Level.Item>
             <IoIosDocument size="5rem" />
         </Level.Item>
       </Level>
-      <Level>
+      <Level style={{ marginBottom: '0.5em'}}>
         <Level.Item>
             <Title>Mystic Blog</Title>
         </Level.Item>

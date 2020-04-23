@@ -41,13 +41,7 @@ export const Layout = ({children}) => {
                 Services
               </Navbar.Item>
               <Navbar.Item onClick={() => navigate('/events')}>
-                Events
-              </Navbar.Item>
-              <Navbar.Item onClick={() => navigate('/trainings')}>
-                Trainings
-              </Navbar.Item>
-              <Navbar.Item onClick={() => navigate('/talent')}>
-                Talent
+                Events &amp; Trainings
               </Navbar.Item>
               <Navbar.Item onClick={() => navigate('/about')}>
                 About
@@ -55,7 +49,7 @@ export const Layout = ({children}) => {
               <Navbar.Item onClick={() => navigate('/blog')}>
                 Blog
               </Navbar.Item>
-              <Navbar.Item>                
+              <Navbar.Item as="div">                
                 <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://facebook.com/${social.facebook}`}>
                     <FaFacebook />
                 </a>
@@ -82,22 +76,24 @@ export const Layout = ({children}) => {
     return (
       <>
         {header}
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
 
         <Footer>
           <Level>
             <Level.Item>
                 <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://facebook.com/`}>
-                    <FaFacebook size="2rem" />
+                    <FaFacebook size="2em" />
                 </a>
                 <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://github.com/`}>
-                    <FaGithub size="2rem" />
+                    <FaGithub size="2em" />
                 </a>
                 <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://twitter.com/`}>
-                    <FaTwitter size="2rem" />
+                    <FaTwitter size="2em" />
                 </a>
                 <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://linkedin.com/`}>
-                    <FaLinkedin size="2rem" />
+                    <FaLinkedin size="2em" />
                 </a>
 
             </Level.Item>

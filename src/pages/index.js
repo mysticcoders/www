@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, useStaticQuery } from "gatsby"
+import { useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
+
 import Image from 'gatsby-image'
 
 import { Level, Title, Section } from 'rbx'
