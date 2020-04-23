@@ -1,3 +1,6 @@
 _site
 .jekyll-metadata
 .idea
+.cache
+public
+node_modules
