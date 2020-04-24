@@ -1,19 +1,15 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import { useNavigate } from "@reach/router"
-
-import BackgroundImage from 'gatsby-background-image'
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Title, Container, Column, Tab } from 'rbx'
+import { Title, Container } from 'rbx'
 import HeaderWithTabs from "../components/HeaderWithTabs"
 
 export const About = ({ data, location }) => {
 
   const siteTitle = data.site.siteMetadata.title
-  const navigate = useNavigate()
 
   return (
     <Layout location={location} title={siteTitle}>

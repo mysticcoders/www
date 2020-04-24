@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 import { useNavigate } from "@reach/router"
+import ReactGA from 'react-ga'
 
 import { Navbar, Level, Footer } from "rbx"
 
@@ -17,6 +17,10 @@ export const Layout = ({children}) => {
     // const blogPath = `${__PATH_PREFIX__}/blog/`
     
     const navigate = useNavigate()
+
+    useEffect(() => {
+      ReactGA.pageview(window.location.pathname + window.location.search)  
+    }, [])
 
     let header = (
       <StaticQuery

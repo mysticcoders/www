@@ -1,15 +1,12 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
-
-import CircleImage from '../components/CircleImage'
+import { graphql } from "gatsby"
 
 import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Title, Level, Container, Content, Column } from 'rbx'
-import { IoIosPeople } from 'react-icons/io'
+import { Title, Container, Content, Column } from 'rbx'
 
 export const Contact = ({ data, location }) => {
 

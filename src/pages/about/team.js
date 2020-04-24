@@ -1,9 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import CircleImage from '../../components/CircleImage'
-
-import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"

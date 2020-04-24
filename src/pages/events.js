@@ -1,12 +1,11 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Title, Level, Container, Column, Box } from 'rbx'
-import { IoIosPeople } from 'react-icons/io'
-import { FaCalendarAlt, FaMap } from 'react-icons/fa'
+import { Title, Level, Container, Box } from 'rbx'
+import { FaCalendarAlt } from 'react-icons/fa'
 import { FiMap } from "react-icons/fi";
 
 const events = require('../../content/data/events.json')
@@ -14,8 +13,6 @@ const events = require('../../content/data/events.json')
 export const Events = ({ data, location }) => {
 
   const siteTitle = data.site.siteMetadata.title
-
-  const queryData = useStaticQuery(pageQuery)
 
   return (
     <Layout location={location} title={siteTitle}>

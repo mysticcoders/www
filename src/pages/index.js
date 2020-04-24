@@ -1,4 +1,5 @@
 import React from "react"
+import { useNavigate } from "@reach/router"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,22 +9,29 @@ import Image from 'gatsby-image'
 
 import BackgroundImage from 'gatsby-background-image'
 
-import { Level, Title, Section } from 'rbx'
+import { Column, Content, Level, Title, Section, Button } from 'rbx'
 
-import { FaDatabase } from "react-icons/fa"
+import { FaDatabase, FaQuoteRight } from "react-icons/fa"
 import { IoIosMail } from 'react-icons/io'
 
 import "rbx/index.css"
 
 import "./styles.scss"
 
-import { Button, Column, Content } from 'rbx'
+import ReactGA from 'react-ga'
+import {
+  GOOGLE_ANALYTICS_KEY,
+} from '../constants'
+
+ReactGA.initialize(GOOGLE_ANALYTICS_KEY)
 
 export const IndexPage = ({data, location}) => {
 
   const siteTitle = "Andrew Lombardi"
+  const navigate = useNavigate()
 
-  console.dir(data)
+  console.dir(navigate)
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -31,24 +39,32 @@ export const IndexPage = ({data, location}) => {
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
 
-      <div style={{ width: '100%', backgroundSize: 'cover'}}>
-      <BackgroundImage
-        Tag="section"
-        style={{ minHeight: '480px'}}
-        fluid={data.sliders.childImageSharp.fluid}
-        alt="slider"
-      >
+      <div style={{ width: '100%', backgroundColor: 'rgba(251, 188, 9, 0.5)', minHeight: '400px'}}>
 
-        <Column.Group style={{ padding: '3rem'}}>
-          <Column offset={7}>
-              <Title>NEW BOOK BEGINNING SPRING 5!</Title>
-              <Title size={5}>OUR SECOND BOOK, AND WE THINK YOU'LL LOVE IT!</Title>
+        <div style={{padding: '6rem'}}>
+            <Level>
+              <Level.Item>
+                  <Title>We are a boutique development shop specializing in delivering your project</Title>
+              </Level.Item>
+            </Level>
+            
+            <Level>
+              <Level.Item>
+                  <Title size={5}>Any technology, we're ready.</Title>
+              </Level.Item>
+            </Level>
+            
+            <Level>
+              <Level.Item>
 
-              <Button onClick={() => { window.open('https://beginningspring5.com')}}>Buy It Today</Button>
-          </Column>
-        </Column.Group>
+                <Button 
+                    size="medium" 
+                    onClick={() => { console.log('navigating to contact'); navigate(`/contact`) }}
+                    style={{ backgroundColor: 'rgba(117, 208, 213, 1)'}}>Contact Us Today</Button>
 
-      </BackgroundImage>
+              </Level.Item>
+            </Level>
+        </div>
       </div>
 
       <Section>
@@ -66,11 +82,51 @@ export const IndexPage = ({data, location}) => {
 
       </Section>
 
-      <Image
+      <div style={{ width: '100%', minHeight: '250px'}}>
+
+      <BackgroundImage
+        Tag="section"
         fluid={data.bg.childImageSharp.fluid}
         alt="bg"
-      />
+      >
 
+        <div style={{padding: '5rem'}}>
+
+
+          <Level>
+            <Level.Item>            
+                <FaQuoteRight className='earthElement' size='3em' />
+            </Level.Item>
+          </Level>
+
+          <Level>
+            <Level.Item>            
+                <Title style={{color: 'white'}}>WHAT OUR CLIENTS SAY</Title>
+            </Level.Item>
+          </Level>
+
+
+          <Column.Group centered>
+              <Column size={6}>
+                  <Section style={{ color: 'white', border: '1px solid white', padding: '2rem'}}>
+                  <em style={{ color: 'white' }}>
+                      "We utilized Mystic to provide us with several web applications to enhance the content and 
+                      functionality of our website. They worked with our team to understand our needs and requirements 
+                      that resulted from redesigning our website. The solutions they provided were designed well and 
+                      delivered on time and within budgetary requirements. These applications are some of the most popular 
+                      locations on our site."
+                  </em>
+                  </Section>
+
+                  <p style={{ marginTop: '2rem', color: 'white'}}>
+                    - Brian Harris, Executive Director Web Operations at Loma Linda University Medical Center
+                  </p>
+              </Column>
+          </Column.Group>
+
+        </div>
+      </BackgroundImage>
+      </div>
 
       <BackgroundImage
         Tag="section"        
@@ -106,6 +162,7 @@ export const IndexPage = ({data, location}) => {
         </Column.Group>
       </BackgroundImage>
 
+
       <div className="greyBg" >
         <ClientLogos />
       </div>
@@ -115,7 +172,41 @@ export const IndexPage = ({data, location}) => {
             <IoIosMail size="3rem" />
         </Level.Item>
       </Level>
+      <Level>
+        <Level.Item>
+            <Title>GET IN TOUCH</Title>
+        </Level.Item>
+      </Level>
+      <Level>
+        <Level.Item>
+            <Content>
+              <p>
+                We would love to chat with you about your new project, send us a message with the form below.
+              </p>
+            </Content>
+        </Level.Item>
+      </Level>
+      <Level style={{ marginBottom: '3rem'}}>
+        <Level.Item>
 
+          <Button 
+              size="medium" 
+              onClick={() => { console.log('navigating to contact'); navigate(`/contact`) }}
+              style={{ backgroundColor: 'rgba(117, 208, 213, 1)'}}>Contact Us Today</Button>
+
+        </Level.Item>
+      </Level>
+
+      {/* <Level>
+        <Level.Item>
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="bot-field" />
+            <Input size="medium" type="email" name="email" placeholder="Your Email" />
+            <Textarea size="medium" placeholder="How can we help you with your project?" />
+            <Button size="medium">Send</Button>
+        </form>
+        </Level.Item>
+      </Level> */}
     </Layout>
   )
 }

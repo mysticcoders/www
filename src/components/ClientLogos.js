@@ -1,5 +1,4 @@
 import React from "react"
-import { useNavigate } from "@reach/router"
 import { useStaticQuery } from "gatsby"
 
 import Image from 'gatsby-image'
@@ -39,14 +38,14 @@ export const ClientLogos = () => {
             </Column>
             <Column>
                 <Image
-                    fixed={data.client5.childImageSharp.fixed}
-                    alt="Client 5"
+                    fixed={data.client7.childImageSharp.fixed}
+                    alt="Client 7"
                 />
             </Column>
             <Column>
                 <Image
-                    fixed={data.client6.childImageSharp.fixed}
-                    alt="Client 6"
+                    fixed={data.client8.childImageSharp.fixed}
+                    alt="Client 8"
                 />
             </Column>
       </Column.Group>
@@ -88,16 +87,16 @@ export const clientLogosQuery = graphql`
             }
         }
     }
-    client5: file(relativePath: { eq: "clients/client-5.png" }) {
+    client7: file(relativePath: { eq: "clients/client-7.png" }) {
         childImageSharp {
-            fixed(width: 180, height: 85) {
+            fixed(height: 85) {
                 ...GatsbyImageSharpFixed
             }
         }
     }
-    client6: file(relativePath: { eq: "clients/client-6.png" }) {
+    client8: file(relativePath: { eq: "clients/client-8.png" }) {
         childImageSharp {
-            fixed(width: 180, height: 85) {
+            fixed(height: 85) {
                 ...GatsbyImageSharpFixed
             }
         }

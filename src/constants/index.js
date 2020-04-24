@@ -1,0 +1,1 @@
+export const GOOGLE_ANALYTICS_KEY='UA-254925-1'
