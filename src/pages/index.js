@@ -1,8 +1,8 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ClientLogos from '../components/ClientLogos'
 
 import Image from 'gatsby-image'
 
@@ -17,13 +17,11 @@ import "rbx/index.css"
 
 import "./styles.scss"
 
-import { Button, Column } from 'rbx'
+import { Button, Column, Content } from 'rbx'
 
-export const IndexPage = ({location}) => {
+export const IndexPage = ({data, location}) => {
 
   const siteTitle = "Andrew Lombardi"
-
-  const data = useStaticQuery(pageQuery)
 
   console.dir(data)
   return (
@@ -84,7 +82,7 @@ export const IndexPage = ({location}) => {
         <Column.Group>
           <Column style={{padding: '3rem'}}>
               <Image
-                fixed={data.budapestLion.childImageSharp.fixed}
+                fluid={data.whoWeAre.childImageSharp.fluid}
                 alt="Budapest Lion"
               />
 
@@ -92,22 +90,27 @@ export const IndexPage = ({location}) => {
         
           <Column style={{padding: '3rem', paddingLeft: '0rem'}}>
               <Title className="whiteText">Who We Are</Title>
-              <p className="whiteText">Our team is a dedicated group of technologists and business-minded folks who have a passion for solving 
+              <Content className="whiteText">
+                <p>Our team is a dedicated group of technologists and business-minded folks who have a passion for solving 
                 business needs with tech-based solutions. Headed by our geek in charge Andrew Lombardi, the group has created 
                 solutions for companies as large as Walmart and Motorola, to the yoga teacher just looking for a some help with 
                 her website. Over the last 10 years our team has also spoken at venues around the world, teaching developers 
-                how to better use their tools, and imparting wisdom about best practices for using them. We're excited to work 
-                with our clients, as we feel it is a partnership that we grow together. We look forward to talking about your 
-                needs, and seeing if we can build something great together.          
-              </p>
+                how to better use their tools, and imparting wisdom about best practices for using them. 
+                </p>
+                <p>
+                We're excited to work with our clients, as we feel it is a partnership that we grow together. We look forward to 
+                talking about your needs, and seeing if we can build something great together.
+                </p>
+              </Content>
           </Column>
         </Column.Group>
       </BackgroundImage>
 
-      <div className="greyBg" style={{minHeight: '75px'}}>
-        hi there
+      <div className="greyBg" >
+        <ClientLogos />
       </div>
-      <Level>
+
+      <Level style={{marginTop: '1rem'}}>
         <Level.Item>
             <IoIosMail size="3rem" />
         </Level.Item>
@@ -143,10 +146,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    budapestLion: file(relativePath: { eq: "budapest-lion.jpg" }) {
+    whoWeAre: file(relativePath: { eq: "about/photo-of-people-doing-handshakes-3183197.jpg" }) {
       childImageSharp {
-        fixed(width: 511, height: 341) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 640, maxHeight: 500) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

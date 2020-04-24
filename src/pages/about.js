@@ -1,45 +1,41 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { useNavigate } from "@reach/router"
 
 import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Title, Container, Column } from 'rbx'
+import { Title, Container, Column, Tab } from 'rbx'
+import HeaderWithTabs from "../components/HeaderWithTabs"
 
 export const About = ({ data, location }) => {
 
   const siteTitle = data.site.siteMetadata.title
+  const navigate = useNavigate()
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About The Team at Mystic" />
 
-
-      <BackgroundImage
-        Tag="section"
-        style={{ minHeight: '250px'}}
-        fluid={data.header.childImageSharp.fluid}
-        alt="slider"
-      >
-        <Column.Group style={{ padding: '3rem'}} align="center">
-            <Column>
-                <Title className="logo-color">Who We Are</Title>
-                <Title subtitle size={5}>Our team is dedicated to making your project successful</Title>
-            </Column>
-        </Column.Group>
-
-      </BackgroundImage>
-
-      <hr />
+      <HeaderWithTabs 
+          heroImage={data.header.childImageSharp.fluid}
+          title="Who We Are"
+          subtitle="Our team is dedicated to making your project successful"
+          selectedTab="Overview"
+          tabs={[
+            { name: 'Overview', location: '/about'},
+            { name: 'Team', location: '/about/team'},
+            { name: 'Philosophy', location: '/about/tos'},
+            { name: 'Careers', location: '/about/careers'},
+            { name: 'Process', location: '/about/process'},
+          ]}
+      />
 
       <Container>
 
-        <Link to={`/about/team`}>Team</Link>
-        <Link to={`/about/tos`}>To Our Success</Link>
-        <Link to={`/about/process`}>Our Process</Link>
-        Hey there
+        <Title>Yeah.</Title>
       </Container>
     </Layout>
   )
@@ -81,20 +77,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-          }
-        }
       }
     }
   }

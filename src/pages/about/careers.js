@@ -7,19 +7,19 @@ import HeaderWithTabs from '../../components/HeaderWithTabs'
 
 import { Title, Container } from 'rbx'
 
-export const Philosophy = ({ data, location }) => {
+export const Careers = ({ data, location }) => {
 
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Our Guiding Philosophy at Mystic" />
+      <SEO title="Careers at Mystic" />
 
       <HeaderWithTabs 
           heroImage={data.header.childImageSharp.fluid}
-          title="Philosophy"
+          title="Careers"
           subtitle="..."
-          selectedTab="Philosophy"
+          selectedTab="Careers"
           tabs={[
             { name: 'Overview', location: '/about'},
             { name: 'Team', location: '/about/team'},
@@ -30,9 +30,9 @@ export const Philosophy = ({ data, location }) => {
       />
 
       <Container>
-          <Title>To Our Success!</Title>
+          <Title>Careers</Title>
           <p>
-            The Mystic team follows a five-step process for our engagements with clients. This ensures that we’ve accurately completed every stage necessary to bring about a successful project. And we’re mystics, so our process takes on the basic elements of the magical universe.
+            Careers at Mystic
           </p>
 
       </Container>
@@ -40,7 +40,7 @@ export const Philosophy = ({ data, location }) => {
   )
 }
 
-export default Philosophy
+export default Careers
 
 export const squareImageFluid = graphql`
   fragment squareImageFluid on File {
@@ -54,7 +54,7 @@ export const squareImageFluid = graphql`
 
 export const pageQuery = graphql`
   query {
-    header: file(relativePath: { eq: "about/photo-of-people-holding-each-other-s-hands-3184434.jpg" }) {
+    header: file(relativePath: { eq: "about/group-of-people-watching-on-laptop-1595385.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 640, maxHeight: 500, fit: CONTAIN, duotone: { highlight: "#ffffff", shadow: "#ffffff", opacity: 50}) {
           ...GatsbyImageSharpFluid

@@ -1,44 +1,36 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Image from 'gatsby-image'
+import HeaderWithTabs from '../../components/HeaderWithTabs'
+import HeaderWithParagraph from '../../components/HeaderWithParagraph'
 
-import { Title, Level, Container, Column } from 'rbx'
-import { IoIosPeople } from 'react-icons/io'
+import { Container, Column } from 'rbx'
 
 export const Process = ({ data, location }) => {
-
-    const HeaderWithParagraph = ({title, subtitle, text}) => (
-        <>
-            <Title size={4} style={{marginBottom: '0'}}>{title}</Title>
-            <em>{subtitle}</em>
-            <p style={{marginTop: '1rem'}}>
-                {text}
-            </p>
-        </>
-    )
-
-    console.dir(data)
     
-    const siteTitle = data.site.siteMetadata.title
-    const queryData = useStaticQuery(pageQuery)
+  const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About Our Process at Mystic" />
 
-      <Level style={{marginTop: '5rem'}}>
-        <Level.Item>
-            <IoIosPeople size="5rem" />
-        </Level.Item>
-      </Level>
-      <Level style={{ marginBottom: '0.5em'}}>
-        <Level.Item>
-            <Title>Our Process</Title>
-        </Level.Item>
-      </Level>
+      <HeaderWithTabs 
+          heroImage={data.header.childImageSharp.fluid}
+          title="Our Process"
+          subtitle="Our team is dedicated to making your project successful"
+          selectedTab="Process"
+          tabs={[
+            { name: 'Overview', location: '/about'},
+            { name: 'Team', location: '/about/team'},
+            { name: 'Philosophy', location: '/about/tos'},
+            { name: 'Careers', location: '/about/careers'},
+            { name: 'Process', location: '/about/process'},
+          ]}
+      />
+
       <Container>
           <p>
             The Mystic team follows a five-step process for our engagements with clients. This ensures that we’ve accurately completed every stage necessary to bring about a successful project. And we’re mystics, so our process takes on the basic elements of the magical universe.
@@ -47,7 +39,7 @@ export const Process = ({ data, location }) => {
           <Column.Group style={{marginTop: '2rem'}}>
             <Column>            
                 <Image
-                    fluid={queryData.air.childImageSharp.fluid}
+                    fluid={data.air.childImageSharp.fluid}
                     alt={"Air Image"}
                 />
             </Column>                
@@ -68,7 +60,7 @@ export const Process = ({ data, location }) => {
           <Column.Group>
             <Column>
                 <Image
-                    fluid={queryData.fire.childImageSharp.fluid}
+                    fluid={data.fire.childImageSharp.fluid}
                     alt={"Fire Image"}
                 />            
             </Column>                
@@ -89,7 +81,7 @@ export const Process = ({ data, location }) => {
           <Column.Group>
             <Column>
                 <Image
-                    fluid={queryData.water.childImageSharp.fluid}
+                    fluid={data.water.childImageSharp.fluid}
                     alt={"Water Image"}
                 />            
             </Column>                
@@ -113,7 +105,7 @@ export const Process = ({ data, location }) => {
           <Column.Group>
             <Column>
                 <Image
-                    fluid={queryData.earth.childImageSharp.fluid}
+                    fluid={data.earth.childImageSharp.fluid}
                     alt={"Earth Image"}
                 />            
             </Column>                
@@ -136,7 +128,7 @@ export const Process = ({ data, location }) => {
           <Column.Group style={{marginBottom: '3rem'}}>
             <Column>
                 <Image
-                    fluid={queryData.spirit.childImageSharp.fluid}
+                    fluid={data.spirit.childImageSharp.fluid}
                     alt={"Spirit Image"}
                 />                        
             </Column>                
@@ -171,6 +163,13 @@ export const squareImageFluid = graphql`
 
 export const pageQuery = graphql`
   query {
+    header: file(relativePath: { eq: "about/group-of-people-watching-on-laptop-1595385.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640, maxHeight: 500, fit: CONTAIN, duotone: { highlight: "#ffffff", shadow: "#ffffff", opacity: 50}) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     air: file(relativePath: { eq: "process/air.jpg" }) {
         ...squareImageFluid
     }

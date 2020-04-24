@@ -7,6 +7,7 @@ import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import HeaderWithTabs from '../../components/HeaderWithTabs'
 
 import { Title, Container, Content, Column } from 'rbx'
 
@@ -19,22 +20,19 @@ export const Team = ({ data, location }) => {
       <SEO title="About The Team at Mystic" />
 
 
-      <BackgroundImage
-        Tag="section"
-        style={{ minHeight: '250px'}}
-        fluid={data.header.childImageSharp.fluid}
-        alt="slider"
-      >
-        <Column.Group style={{ padding: '3rem'}} align="center">
-            <Column>
-                <Title className="logo-color">Meet the Team</Title>
-                <Title size={5}>Our team is dedicated to making your project successful</Title>
-            </Column>
-        </Column.Group>
-
-      </BackgroundImage>
-
-      <hr />
+      <HeaderWithTabs 
+          heroImage={data.header.childImageSharp.fluid}
+          title="Who We Are"
+          subtitle="Our team is dedicated to making your project successful"
+          selectedTab="Team"
+          tabs={[
+            { name: 'Overview', location: '/about'},
+            { name: 'Team', location: '/about/team'},
+            { name: 'Philosophy', location: '/about/tos'},
+            { name: 'Careers', location: '/about/careers'},
+            { name: 'Process', location: '/about/process'},
+          ]}
+      />
 
       <Container>
           <Content>
@@ -47,9 +45,6 @@ export const Team = ({ data, location }) => {
               We're excited to work with our clients, as we feel it is a partnership that we grow together. We look forward to talking about your needs, and seeing if we can build something great together.      
             </p>
 
-            <p>
-              Check out our <Link to={`/process`}>process</Link> we follow for development projects.
-            </p>
           </Content>          
           <hr />
           <Column.Group>
@@ -203,20 +198,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-          }
-        }
       }
     }
   }
