@@ -83,16 +83,16 @@ export const Layout = ({children}) => {
         <Footer>
           <Level>
             <Level.Item>
-                <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://facebook.com/`}>
+                <a rel="noopener noreferrer" style={{ color: 'rgba(53, 79, 140, 1)', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://facebook.com/`}>
                     <FaFacebook size="2em" />
                 </a>
                 <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://github.com/`}>
                     <FaGithub size="2em" />
                 </a>
-                <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://twitter.com/`}>
+                <a rel="noopener noreferrer" style={{ color: 'rgba(116, 181, 236, 1)', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://twitter.com/`}>
                     <FaTwitter size="2em" />
                 </a>
-                <a rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://linkedin.com/`}>
+                <a rel="noopener noreferrer" style={{ color: 'rgba(0, 115, 177, 1)', textDecoration: 'none', padding: '0.5rem'}} target="_blank" href={`https://linkedin.com/`}>
                     <FaLinkedin size="2em" />
                 </a>
 
