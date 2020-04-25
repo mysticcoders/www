@@ -33,18 +33,6 @@ export const Team = ({ data, location }) => {
       />
 
       <Container>
-          <Content>
-            <p>
-              Our team is a dedicated group of technologists and business-minded folks who have a passion for solving business needs with tech-based solutions. Headed by our geek in charge Andrew Lombardi, 
-              the group has created solutions for companies as large as Walmart and Motorola, to the yoga teacher just looking for a some help with her website. Over the last 6 years our team has also 
-              spoken at venues around the world, teaching developers how to better use their tools, and imparting wisdom about best practices for using them.
-            </p>
-            <p>
-              We're excited to work with our clients, as we feel it is a partnership that we grow together. We look forward to talking about your needs, and seeing if we can build something great together.      
-            </p>
-
-          </Content>          
-          <hr />
           <Column.Group>
               <Column>
                 <CircleImage
@@ -130,6 +118,31 @@ export const Team = ({ data, location }) => {
           <Column.Group>
               <Column>
                   <CircleImage
+                      fixed={data.LucasMarohn.childImageSharp.fixed}
+                      alt="Lucas Marohn Profile"
+                  />
+              </Column>
+              <Column>
+                  <Title>
+                    Lucas Marohn
+                  </Title>
+                  <p>
+                      <em>
+                        Full-Stack Designer
+                      </em>
+                  </p>
+                  <p>
+                    Lucas is a talented designer and out-of-the-box thinker who has worked with Mystic on 
+                    several of our key projects. He is one of the rare people who can nicely straddle the 
+                    line between development, design and an ability to discern what a client needs. A strong 
+                    member of the team he has been instrumental in infusing a bit more of the pretty into the 
+                    elements that Mystic delivers to our clients, and to the world.
+                  </p>
+              </Column>
+          </Column.Group>          <hr />
+          <Column.Group>
+              <Column>
+                  <CircleImage
                       fixed={data.RyanSadler.childImageSharp.fixed}
                       alt="Ryan Sadler Profile"
                   />
@@ -181,6 +194,9 @@ export const pageQuery = graphql`
       ...squareImage
     }
     JakeMasters: file(relativePath: { eq: "about/jake_masters.jpg" }) {
+      ...squareImage
+    }
+    LucasMarohn: file(relativePath: { eq: "about/lucas_marohn.jpg" }) {
       ...squareImage
     }
     RyanSadler: file(relativePath: { eq: "about/ryan_sadler.jpg" }) {

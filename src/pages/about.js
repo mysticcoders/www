@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Title, Container } from 'rbx'
+import { Content, Container } from 'rbx'
 import HeaderWithTabs from "../components/HeaderWithTabs"
 
 export const About = ({ data, location }) => {
@@ -31,7 +31,19 @@ export const About = ({ data, location }) => {
 
       <Container>
 
-        <Title>Yeah.</Title>
+          <Content>
+            <p>
+              Our team is a dedicated group of technologists and business-minded folks who have a passion for solving business needs with tech-based solutions. Headed by our geek in charge Andrew Lombardi, 
+              the group has created solutions for companies as large as Walmart and Motorola, to the yoga teacher just looking for a some help with her website. Over the last 6 years our team has also 
+              spoken at venues around the world, teaching developers how to better use their tools, and imparting wisdom about best practices for using them.
+            </p>
+            <p>
+              We're excited to work with our clients, as we feel it is a partnership that we grow together. We look forward to talking about your needs, and seeing if we can build something great together.      
+            </p>
+
+          </Content>          
+          <hr />
+
       </Container>
     </Layout>
   )

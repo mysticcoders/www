@@ -157,6 +157,12 @@ export const IndexPage = ({data, location}) => {
                 We're excited to work with our clients, as we feel it is a partnership that we grow together. We look forward to 
                 talking about your needs, and seeing if we can build something great together.
                 </p>
+
+                <Button 
+                    size="medium" 
+                    onClick={() => { console.log('navigating to contact'); navigate(`/about/team`) }}
+                    style={{ backgroundColor: 'rgba(117, 208, 213, 1)'}}>Learn More About Team</Button>
+
               </Content>
           </Column>
         </Column.Group>
@@ -167,7 +173,8 @@ export const IndexPage = ({data, location}) => {
         <ClientLogos />
       </div>
 
-      <Level style={{marginTop: '1rem'}}>
+      <div style={{ margin: '3rem'}}>
+      <Level>
         <Level.Item>
             <IoIosMail size="3rem" />
         </Level.Item>
@@ -181,12 +188,12 @@ export const IndexPage = ({data, location}) => {
         <Level.Item>
             <Content>
               <p>
-                We would love to chat with you about your new project, send us a message with the form below.
+                We would love to chat with you about your new project
               </p>
             </Content>
         </Level.Item>
       </Level>
-      <Level style={{ marginBottom: '3rem'}}>
+      <Level>
         <Level.Item>
 
           <Button 
@@ -196,6 +203,7 @@ export const IndexPage = ({data, location}) => {
 
         </Level.Item>
       </Level>
+      </div>
 
       {/* <Level>
         <Level.Item>

@@ -15,37 +15,37 @@ export const ClientLogos = () => {
             <Column>
                 <Image
                     fixed={data.client1.childImageSharp.fixed}
-                    alt="Client 1"
+                    alt="Nuance Communications"
                 />
             </Column>
             <Column>
                 <Image
                     fixed={data.client2.childImageSharp.fixed}
-                    alt="Client 2"
+                    alt="LeapFrog"
                 />
             </Column>
             <Column>
                 <Image
                     fixed={data.client3.childImageSharp.fixed}
-                    alt="Client 3"
+                    alt="Redaptive"
                 />
             </Column>
             <Column>
                 <Image
                     fixed={data.client4.childImageSharp.fixed}
-                    alt="Client 4"
+                    alt="h2 wellness"
                 />
             </Column>
             <Column>
                 <Image
                     fixed={data.client7.childImageSharp.fixed}
-                    alt="Client 7"
+                    alt="Kelley Blue Book"
                 />
             </Column>
             <Column>
                 <Image
                     fixed={data.client8.childImageSharp.fixed}
-                    alt="Client 8"
+                    alt="motorola"
                 />
             </Column>
       </Column.Group>
