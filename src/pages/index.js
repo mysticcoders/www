@@ -18,6 +18,8 @@ import "rbx/index.css"
 
 import "./styles.scss"
 
+import { RandomTestimonial } from '../components/RandomTestimonial'
+
 import ReactGA from 'react-ga'
 import {
   GOOGLE_ANALYTICS_KEY,
@@ -29,8 +31,6 @@ export const IndexPage = ({data, location}) => {
 
   const siteTitle = "Andrew Lombardi"
   const navigate = useNavigate()
-
-  console.dir(navigate)
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -106,23 +106,7 @@ export const IndexPage = ({data, location}) => {
           </Level>
 
 
-          <Column.Group centered>
-              <Column size={6}>
-                  <Section style={{ color: 'white', border: '1px solid white', padding: '2rem'}}>
-                  <em style={{ color: 'white' }}>
-                      "We utilized Mystic to provide us with several web applications to enhance the content and 
-                      functionality of our website. They worked with our team to understand our needs and requirements 
-                      that resulted from redesigning our website. The solutions they provided were designed well and 
-                      delivered on time and within budgetary requirements. These applications are some of the most popular 
-                      locations on our site."
-                  </em>
-                  </Section>
-
-                  <p style={{ marginTop: '2rem', color: 'white'}}>
-                    - Brian Harris, Executive Director Web Operations at Loma Linda University Medical Center
-                  </p>
-              </Column>
-          </Column.Group>
+          <RandomTestimonial />
 
         </div>
       </BackgroundImage>
@@ -205,16 +189,6 @@ export const IndexPage = ({data, location}) => {
       </Level>
       </div>
 
-      {/* <Level>
-        <Level.Item>
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true">
-            <input type="hidden" name="bot-field" />
-            <Input size="medium" type="email" name="email" placeholder="Your Email" />
-            <Textarea size="medium" placeholder="How can we help you with your project?" />
-            <Button size="medium">Send</Button>
-        </form>
-        </Level.Item>
-      </Level> */}
     </Layout>
   )
 }
