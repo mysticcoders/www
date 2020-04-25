@@ -6,6 +6,9 @@ import SEO from "../components/seo"
 
 import { Content, Container } from 'rbx'
 import HeaderWithTabs from "../components/HeaderWithTabs"
+import GetInTouchBlock from '../components/GetInTouchBlock'
+
+import AboutMenus from '../constants/about_menus.json'
 
 export const About = ({ data, location }) => {
 
@@ -20,13 +23,7 @@ export const About = ({ data, location }) => {
           title="Who We Are"
           subtitle="Our team is dedicated to making your project successful"
           selectedTab="Overview"
-          tabs={[
-            { name: 'Overview', location: '/about'},
-            { name: 'Team', location: '/about/team'},
-            { name: 'Philosophy', location: '/about/tos'},
-            { name: 'Careers', location: '/about/careers'},
-            { name: 'Process', location: '/about/process'},
-          ]}
+          tabs={AboutMenus}
       />
 
       <Container>
@@ -43,6 +40,8 @@ export const About = ({ data, location }) => {
 
           </Content>          
           <hr />
+
+          <GetInTouchBlock />
 
       </Container>
     </Layout>

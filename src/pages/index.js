@@ -9,16 +9,16 @@ import Image from 'gatsby-image'
 
 import BackgroundImage from 'gatsby-background-image'
 
-import { Column, Content, Level, Title, Section, Button } from 'rbx'
+import { Column, Content, Level, Title, Section, Button, Container } from 'rbx'
 
 import { FaDatabase, FaQuoteRight } from "react-icons/fa"
-import { IoIosMail } from 'react-icons/io'
 
 import "rbx/index.css"
 
 import "./styles.scss"
 
 import { RandomTestimonial } from '../components/RandomTestimonial'
+import { GetInTouchBlock } from '../components/GetInTouchBlock'
 
 import ReactGA from 'react-ga'
 import {
@@ -67,21 +67,64 @@ export const IndexPage = ({data, location}) => {
         </div>
       </div>
 
+      <Container>
       <Section>
 
       <Level>
         <Level.Item>
-            <FaDatabase size="3rem" />
+            <FaDatabase size="3em" />
         </Level.Item>
       </Level>
       <Level>
         <Level.Item>
-            <Title>Why Choose Us</Title>
+            <Title style={{marginBottom: '0'}}>Why Choose Us</Title>
         </Level.Item>
       </Level>
+      <Level>
+        <Level.Item>
+            <em>Some of the things we rock at</em>
+        </Level.Item>
+      </Level>
+      </Section>
+      <Section>
+      <Column.Group>
+          <Column>
+              <Title>BUSINESS VALUE</Title>
+          </Column>
+          <Column>
+              Kicking butt and taking names with tech? Yea, we do that. We also strive to reach your business goals and bring a solution that fits with the needs you have today.          
+          </Column>      
+      </Column.Group>      
+
+      <Column.Group>
+          <Column>
+              <Title>AGILE APPROACH</Title>
+          </Column>
+          <Column>
+          Our team is an extension of yours, just with more geek. The solution is our focus, and working in an agile way gets us there.
+          </Column>      
+      </Column.Group>      
+
+      <Column.Group>
+          <Column>
+              <Title>CUSTOM SOLUTIONS</Title>
+          </Column>
+          <Column>
+          There isn't a language or technology we haven't heard of. We'll bring that wealth of knowledge onto your project, and integrate the right technology.
+          </Column>      
+      </Column.Group>      
+
+      <Column.Group>
+          <Column>
+              <Title>LEGENDARY SUPPORT</Title>
+          </Column>
+          <Column>
+          Our engagements don't end when the project is complete. Maintaining communication is paramount in our process.
+          </Column>      
+      </Column.Group>
 
       </Section>
-
+      </Container>
       <div style={{ width: '100%', minHeight: '250px'}}>
 
       <BackgroundImage
@@ -152,43 +195,30 @@ export const IndexPage = ({data, location}) => {
         </Column.Group>
       </BackgroundImage>
 
+      <Section>
+      <Column.Group>
+          <Column>
+              <Title>WEB DEVELOPMENT</Title>
+              Any language, any Unix-based platform and we've got you covered. Our main focus is catering to your business need, and getting it deployed.
+          </Column>      
+          <Column>
+              <Title>APP DEVELOPMENT</Title>
+              From Objective-C, Java, and Swift to hybrids like Flutter. We've got you covered.
+          </Column>      
+          <Column>
+              <Title>TRAINING</Title>
+              We've done trainings with web technologies, mobile, and enterprise tech for companies and conferences small and very very large.
+          </Column>      
+
+      </Column.Group>
+      </Section>
 
       <div className="greyBg" >
         <ClientLogos />
       </div>
 
-      <div style={{ margin: '3rem'}}>
-      <Level>
-        <Level.Item>
-            <IoIosMail size="3rem" />
-        </Level.Item>
-      </Level>
-      <Level>
-        <Level.Item>
-            <Title>GET IN TOUCH</Title>
-        </Level.Item>
-      </Level>
-      <Level>
-        <Level.Item>
-            <Content>
-              <p>
-                We would love to chat with you about your new project
-              </p>
-            </Content>
-        </Level.Item>
-      </Level>
-      <Level>
-        <Level.Item>
 
-          <Button 
-              size="medium" 
-              onClick={() => { console.log('navigating to contact'); navigate(`/contact`) }}
-              style={{ backgroundColor: 'rgba(117, 208, 213, 1)'}}>Contact Us Today</Button>
-
-        </Level.Item>
-      </Level>
-      </div>
-
+      <GetInTouchBlock />
     </Layout>
   )
 }

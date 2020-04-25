@@ -6,8 +6,10 @@ import CircleImage from '../../components/CircleImage'
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeaderWithTabs from '../../components/HeaderWithTabs'
+import GetInTouchBlock from '../../components/GetInTouchBlock'
 
-import { Title, Container, Content, Column } from 'rbx'
+import { Title, Container, Column } from 'rbx'
+import AboutMenus from '../../constants/about_menus.json'
 
 export const Team = ({ data, location }) => {
 
@@ -23,13 +25,7 @@ export const Team = ({ data, location }) => {
           title="Who We Are"
           subtitle="Our team is dedicated to making your project successful"
           selectedTab="Team"
-          tabs={[
-            { name: 'Overview', location: '/about'},
-            { name: 'Team', location: '/about/team'},
-            { name: 'Philosophy', location: '/about/tos'},
-            { name: 'Careers', location: '/about/careers'},
-            { name: 'Process', location: '/about/process'},
-          ]}
+          tabs={AboutMenus}
       />
 
       <Container>
@@ -168,6 +164,9 @@ export const Team = ({ data, location }) => {
                   </p>
               </Column>
           </Column.Group>
+
+          <GetInTouchBlock />
+
       </Container>
     </Layout>
   )

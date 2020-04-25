@@ -4,11 +4,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Title, Level, Container, Box } from 'rbx'
+import { Title, Level, Container, Box, Column } from 'rbx'
 import { FaCalendarAlt } from 'react-icons/fa'
 import { FiMap } from "react-icons/fi";
 
-const events = require('../../content/data/events.json')
+import { GetInTouchBlock } from '../components/GetInTouchBlock'
+
+import events from '../../content/data/events.json'
 
 export const Events = ({ data, location }) => {
 
@@ -32,18 +34,20 @@ export const Events = ({ data, location }) => {
         <Container>
             <Level>
                 <Level.Item>
-                    Due to COVID-19 all upcoming events have been cancelled and our team is strictly doing any teaching from home.
+                    Due to COVID-19 all upcoming events have been postponed and our team is strictly doing any teaching from home.
                 </Level.Item>
             </Level>
       </Container>
 
       <hr />
 
-      <Level>
-        <Level.Item>
-            <FiMap size="5em" />
-        </Level.Item>
-      </Level>
+      <GetInTouchBlock 
+              subtitle="Reach out for a training or to have one of us speak at your event"
+              buttonText="Book Us Today!" 
+          />
+
+      <hr />
+
       <Level>
         <Level.Item>
             <Title>PAST EVENTS</Title>
@@ -57,40 +61,42 @@ export const Events = ({ data, location }) => {
                 </em>
               </Level.Item>
           </Level>
-          <Level>
-              <Level.Item>
-                <em>
-                    Use the form below to get in touch.
-                </em>
-              </Level.Item>
-          </Level>
           <hr />
 
-          {events.map((event, key,) => (
-              <Box key={key}>
-                <Level>
-                    <Level.Item>
-                        <FaCalendarAlt size="2em" />
-                    </Level.Item>
-                </Level>
-                <Level>
-                    <Level.Item>
-                        <Title size={5}>{event.title}</Title>
-                    </Level.Item>
-                </Level>
-                <Level>
-                    <Level.Item>
-                        <em>{event.location}</em>
-                    </Level.Item>
-                </Level>
-                <Level>
-                    <Level.Item>
-                        <em>{event.dates}</em>
-                    </Level.Item>
-                </Level>
-                <p>{event.desc}</p>
-              </Box>
+          <Column.Group multiline>
+          {events.map((event, key, idx) => (
+                <Column size={3}>
+                    <Box key={key}>
+                      <Level>
+                          <Level.Item>
+                              <FaCalendarAlt size="2em" />
+                          </Level.Item>
+                      </Level>
+                      <Level>
+                          <Level.Item>
+                              <Title size={5}>{event.title}</Title>
+                          </Level.Item>
+                      </Level>
+                      <Level>
+                          <Level.Item>
+                              <em>{event.location}</em>
+                          </Level.Item>
+                      </Level>
+                      <Level>
+                          <Level.Item>
+                              <em>{event.dates}</em>
+                          </Level.Item>
+                      </Level>
+                      <p>{event.desc}</p>
+                    </Box>
+                </Column>
           ))}
+          </Column.Group>
+
+          <GetInTouchBlock 
+              subtitle="Reach out for a training or to have one of us speak at your event"
+              buttonText="Book Us Today!" 
+          />
 
       </Container>
     </Layout>

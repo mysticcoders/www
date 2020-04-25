@@ -6,7 +6,7 @@ import testimonials from "../../content/data/testimonials.json"
 
 export const RandomTestimonial = () => {
 
-    const testimonialIndex = Math.floor((Math.random() * testimonials.length) + 1); 
+    const testimonialIndex = Math.floor((Math.random() * (testimonials.length - 1)) + 1)
 
     return (
         <Column.Group centered>

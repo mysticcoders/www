@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeaderWithTabs from '../../components/HeaderWithTabs'
+import GetInTouchBlock from '../../components/GetInTouchBlock'
+import AboutMenus from '../../constants/about_menus.json'
 
 import { Title, Container } from 'rbx'
 
@@ -20,13 +22,7 @@ export const Careers = ({ data, location }) => {
           title="Careers"
           subtitle="..."
           selectedTab="Careers"
-          tabs={[
-            { name: 'Overview', location: '/about'},
-            { name: 'Team', location: '/about/team'},
-            { name: 'Philosophy', location: '/about/tos'},
-            { name: 'Careers', location: '/about/careers'},
-            { name: 'Process', location: '/about/process'},
-          ]}
+          tabs={AboutMenus}
       />
 
       <Container>
@@ -36,6 +32,9 @@ export const Careers = ({ data, location }) => {
           </p>
 
       </Container>
+
+      <GetInTouchBlock />
+
     </Layout>
   )
 }

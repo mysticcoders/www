@@ -6,6 +6,8 @@ import SEO from "../../components/seo"
 import Image from 'gatsby-image'
 import HeaderWithTabs from '../../components/HeaderWithTabs'
 import HeaderWithParagraph from '../../components/HeaderWithParagraph'
+import GetInTouchBlock from '../../components/GetInTouchBlock'
+import AboutMenus from '../../constants/about_menus.json'
 
 import { Container, Column } from 'rbx'
 
@@ -22,13 +24,7 @@ export const Process = ({ data, location }) => {
           title="Our Process"
           subtitle="Our team is dedicated to making your project successful"
           selectedTab="Process"
-          tabs={[
-            { name: 'Overview', location: '/about'},
-            { name: 'Team', location: '/about/team'},
-            { name: 'Philosophy', location: '/about/tos'},
-            { name: 'Careers', location: '/about/careers'},
-            { name: 'Process', location: '/about/process'},
-          ]}
+          tabs={AboutMenus}
       />
 
       <Container>
@@ -143,6 +139,8 @@ export const Process = ({ data, location }) => {
             </Column>                
           
           </Column.Group>
+
+          <GetInTouchBlock />
 
       </Container>
     </Layout>
