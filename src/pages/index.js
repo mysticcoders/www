@@ -42,28 +42,23 @@ export const IndexPage = ({data, location}) => {
       <div style={{ width: '100%', backgroundColor: 'rgba(251, 188, 9, 0.5)', minHeight: '400px'}}>
 
         <div style={{padding: '6rem'}}>
-            <Level>
-              <Level.Item>
-                  <Title>We are a boutique development shop specializing in delivering your project</Title>
-              </Level.Item>
-            </Level>
             
-            <Level>
-              <Level.Item>
-                  <Title size={5}>Any technology, we're ready.</Title>
-              </Level.Item>
-            </Level>
-            
-            <Level>
-              <Level.Item>
+            <Container fluid>
+                <Title style={{fontSize: '5rem'}}>We are a boutique development shop specializing in delivering your project</Title>
+                
+                      <Title size={5}>Any technology, we're ready.</Title>
+                
+                <Level>
+                  <Level.Item>
 
-                <Button 
-                    size="medium" 
-                    onClick={() => { console.log('navigating to contact'); navigate(`/contact`) }}
-                    style={{ backgroundColor: 'rgba(117, 208, 213, 1)'}}>Contact Us Today</Button>
+                    <Button 
+                        size="medium" 
+                        onClick={() => { console.log('navigating to contact'); navigate(`/contact`) }}
+                        style={{ backgroundColor: 'rgba(117, 208, 213, 1)'}}>Contact Us Today</Button>
 
-              </Level.Item>
-            </Level>
+                  </Level.Item>
+                </Level>
+            </Container>
         </div>
       </div>
 

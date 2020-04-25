@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import GetInTouchBlock from '../components/GetInTouchBlock'
+
 import { Title, Level, Column, Container, Section } from 'rbx'
 import { FiMap } from "react-icons/fi";
 
@@ -105,24 +107,7 @@ export const Services = ({ data, location }) => {
 
       </Section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <GetInTouchBlock />
 
       </Container>
     </Layout>
